@@ -1,2 +1,17 @@
-# shakemap4
+# ShakeMap4
 
+## Quickstart
+### Build docker
+```
+$ git clone git@gitlab.rm.ingv.it:shakemap/shakemap4.git
+$ cd shakemap4
+$ docker build --tag hyp2000 .
+```
+
+# Contribute
+Please, feel free to contribute.
+
+# Author
+(c) 2019 Valentino Lauciani valentino.lauciani[at]ingv.it
+
+Istituto Nazionale di Geofisica e Vulcanologia, Italia
