@@ -33,3 +33,4 @@ RUN cp -v install.sh install.sh.original
 RUN sed -e 's|"sphinx"|"jupyter"|' install.sh > install.sh.new
 RUN mv install.sh.new install.sh
 RUN bash ./install.sh -d
+RUN echo ". /root/miniconda/etc/profile.d/conda.sh" > /root/.bashrc
