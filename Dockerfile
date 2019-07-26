@@ -41,7 +41,18 @@ SHELL ["/bin/bash", "-c"]
 RUN . /opt/conda/etc/profile.d/conda.sh \ 
     && conda info --envs \
     && conda activate shakemap \ 
-    && sm_profile -c default -a 
+    && sm_profile -c default -a -n 
+
+RUN . /opt/conda/etc/profile.d/conda.sh \
+    && conda info --envs \
+    && conda activate shakemap \
+    && sm_profile -c italy -a -n
+
+RUN . /opt/conda/etc/profile.d/conda.sh \
+    && conda info --envs \
+    && conda activate shakemap \
+    && sm_profile -c world -a -n
+
 #    && py.test .
 
 #RUN py.test .
