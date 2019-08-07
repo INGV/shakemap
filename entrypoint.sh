@@ -66,17 +66,13 @@ fi
 
 #
 echo "-----"
-echo ${PATH}
-echo "-----"
 echo "COMMAND: ${COMMAND}"
 echo "-----"
 echo ""
 
 . /opt/conda/etc/profile.d/conda.sh \
-    && conda info --envs \
     && conda activate shakemap \
     && conda info --envs \
     && source activate shakemap \
     && sm_profile -s ${PROFILE} \
-    && shake 8863681 select assemble -c "test" model mapping
-    #&& ${COMMAND}
+    && eval ${COMMAND}
