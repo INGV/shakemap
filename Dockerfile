@@ -31,13 +31,14 @@ RUN cp -v install.sh install.sh.original \
 RUN bash ./install.sh -d
 
 # Add 'conda' source in the '.bashrc' file
-#RUN echo ". /root/miniconda/etc/profile.d/conda.sh" > /root/.bashrc
-RUN echo ". /opt/conda/etc/profile.d/conda.sh" > /root/.bashrc
+RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /root/.bashrc
+
+# Add bash alias
+RUN echo "alias ll='ls -l'" >> /root/.bashrc
 
 SHELL ["/bin/bash", "-c"]
 
 # Source variable
-#RUN . /root/miniconda/etc/profile.d/conda.sh \ 
 RUN . /opt/conda/etc/profile.d/conda.sh \ 
     && conda info --envs \
     && conda activate shakemap \ 
@@ -53,10 +54,6 @@ RUN . /opt/conda/etc/profile.d/conda.sh \
     && conda activate shakemap \
     && sm_profile -c world -a -n
 
-#    && py.test .
-
-#RUN py.test .
-
 # Copy 'gmice.py' and 'fm10.py'
 WORKDIR /opt/gitwork/shakemap_src/shakelib/gmice
 ADD gmice.py ./
@@ -70,7 +67,20 @@ ADD tusa_langer_2016.py ./
 # Default dir
 WORKDIR /root
 
-# verify the installation
-#RUN verify the installation
+# Acrivate 'shakemap' env
+#RUN . /opt/conda/etc/profile.d/conda.sh \
+#    && conda info --envs \
+#    && conda activate shakemap \
+#    && sm_profile -l
+
+# Copy entrypoint file
+WORKDIR /opt
+COPY entrypoint.sh /opt/
+RUN chmod 755 /opt/entrypoint.sh
+
+RUN echo "source activate shakemap" >> ~/.bashrc
+ENV PATH /opt/conda/envs/env/bin:$PATH
 
 
+# Set entrypoint
+ENTRYPOINT ["./entrypoint.sh"]
