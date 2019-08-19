@@ -64,6 +64,20 @@ else
 fi 
 ### END - Check parameters ###
 
+# Pull last changes
+echo "--->START - Pull last changes:<---"
+cd /opt/gitwork/shakemap_src/
+git status
+echo ""
+git stash
+echo ""
+git pull
+echo ""
+git stash pop
+echo ""
+echo "--->END - Pull last changes<---"
+echo ""
+
 #
 echo "-----"
 echo "COMMAND: ${COMMAND}"
