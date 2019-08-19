@@ -68,14 +68,23 @@ fi
 # Pull last changes
 echo "--->START - Pull last changes:<---"
 cd /opt/gitwork/shakemap_src/
+
+echo "git status:"
 git status
 echo ""
+
+echo "git stash:"
 git stash
 echo ""
+
+echo "git pull:"
 git pull
 echo ""
+
+echo "git stash pop:"
 git stash pop
 echo ""
+
 echo "--->END - Pull last changes<---"
 echo ""
 
