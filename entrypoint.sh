@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo Your container args are: "$@"
+echo ""
 
 ### START -  Functions
 function usage_entrypoint() {
