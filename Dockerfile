@@ -19,6 +19,8 @@ RUN apt-get update \
 WORKDIR /opt
 RUN mkdir gitwork \
     && cd gitwork \
+    && git config --global user.email "valentino.lauciani@ingv.it" \
+    && git config --global user.name "Valentino Lauciani" \
     && git clone https://github.com/usgs/shakemap.git shakemap_src \
     && cd shakemap_src 
 

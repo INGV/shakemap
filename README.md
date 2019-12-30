@@ -1,12 +1,18 @@
 # ShakeMap4
 
 ## Quickstart
-### Build docker
+### Get repository
 ```
 $ git clone git@gitlab.rm.ingv.it:shakemap/shakemap4.git
-$ cd shakemap4
-$ docker build --tag shakemap4 .
 ```
+
+### Build image
+```
+$ cd shakemap4
+$ DOCKER_BUILDKIT=1 docker build --no-cache --tag shakemap4 .
+```
+
+**NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
 
 ### Run ShakeMap
 Run docker container from shakemap4 image:

@@ -1,0 +1,5 @@
+data/shakemap_data/vs30/*.grd
+data/shakemap_data/topo/*.grd
+data/shakemap_profiles/world/
+data/shakemap_profiles/italy/
+data/shakemap_profiles/default/
