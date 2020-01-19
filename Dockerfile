@@ -1,10 +1,13 @@
-FROM continuumio/miniconda3 
+FROM continuumio/miniconda3:4.7.12
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
 ENV FAKE_CHROOT 1
+
+# Make RUN commands use `bash --login`:
+SHELL ["/bin/bash", "--login", "-c"]
 
 # install packages
 RUN apt-get update \
@@ -26,19 +29,26 @@ RUN mkdir gitwork \
 
 WORKDIR /opt/gitwork/shakemap_src
 
+# Install
+RUN bash install.sh -d
+
 # Update 'install.sh' file
-RUN cp -v install.sh install.sh.original \
-    && sed -e 's|"sphinx"|"jupyter"|' install.sh > install.sh.new \
-    && mv install.sh.new install.sh
-RUN bash ./install.sh -d
+#RUN cp -v install.sh install.sh.original \
+#    && sed -e 's|"sphinx"|"jupyter"|' install.sh > install.sh.new \
+#    && mv install.sh.new install.sh \
+#    && sed -e 's|"scikit-image"|""|' install.sh > install.sh.new \
+#    && mv install.sh.new install.sh \
+#    && chmod 755 install.sh  
+#RUN conda init bash \
+#    && bash -c "./install.sh -d" \
+#    && conda info --envs \
+#    && sleep 10000
 
 # Add 'conda' source in the '.bashrc' file
 RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /root/.bashrc
 
 # Add bash alias
 RUN echo "alias ll='ls -l'" >> /root/.bashrc
-
-SHELL ["/bin/bash", "-c"]
 
 # Source variable
 RUN . /opt/conda/etc/profile.d/conda.sh \ 
@@ -69,12 +79,6 @@ ADD tusa_langer_2016.py ./
 # Default dir
 WORKDIR /root
 
-# Acrivate 'shakemap' env
-#RUN . /opt/conda/etc/profile.d/conda.sh \
-#    && conda info --envs \
-#    && conda activate shakemap \
-#    && sm_profile -l
-
 # Copy entrypoint file
 WORKDIR /opt
 COPY entrypoint.sh /opt/
@@ -82,7 +86,6 @@ RUN chmod 755 /opt/entrypoint.sh
 
 RUN echo "source activate shakemap" >> ~/.bashrc
 ENV PATH /opt/conda/envs/env/bin:$PATH
-
 
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
