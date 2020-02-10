@@ -66,26 +66,34 @@ fi
 ### END - Check parameters ###
 
 # Pull last changes
-echo "--->START - Pull last changes:<---"
+echo "--->START - GIT commands:<---"
 cd /opt/gitwork/shakemap_src/
 
 echo "git status:"
 git status
 echo ""
 
-echo "git stash:"
-git stash
+#echo "git stash:"
+#git stash
+#echo ""
+
+#echo "git pull:"
+#git pull
+#echo ""
+
+#echo "git stash pop:"
+#git stash pop
+#echo ""
+
+echo "git fetch:"
+git fetch
 echo ""
 
-echo "git pull:"
-git pull
+echo "git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e:"
+git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e
 echo ""
 
-echo "git stash pop:"
-git stash pop
-echo ""
-
-echo "--->END - Pull last changes<---"
+echo "--->END - GIT commands:<---"
 echo ""
 
 #
