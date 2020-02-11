@@ -89,8 +89,12 @@ echo "git fetch:"
 git fetch
 echo ""
 
-echo "git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e:"
-git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e
+#echo "git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e:"
+#git merge 03be81dfdab95bb4562e491ab14d4261b9662e8e
+#echo ""
+
+echo "git status:"
+git status
 echo ""
 
 echo "--->END - GIT commands:<---"
