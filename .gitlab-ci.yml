@@ -12,7 +12,7 @@ stages:
 
 variables:
   # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
-  #DOCKER_HOST: tcp://docker:2375
+  #DOCKER_HOST: tcp://docker:2376
   DOCKER_HOST: tcp://docker:2375
   #DOCKER_TLS_CERTDIR: "/certs"
   DOCKER_TLS_CERTDIR: ""
@@ -30,7 +30,7 @@ before_script:
 build:
   stage: build
   script:
-    - docker build --pull -t $CONTAINER_TEST_IMAGE .
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_TEST_IMAGE .
     - docker push $CONTAINER_TEST_IMAGE
   only:
     - master
