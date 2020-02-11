@@ -2,9 +2,10 @@ image: docker:19.03.1
 #image: docker:latest
 
 services:
-  #- docker:19.03.1-dind
-  - docker:dind
-  
+  # Remeber to set 'privileged = true' into the runner 'config.toml' file (es on hgp5: /srv/gitlab-runner/config/config.toml)
+  #- docker:dind
+  - docker:19.03.1-dind
+
 stages:
   - build
   - release
