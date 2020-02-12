@@ -32,7 +32,7 @@ before_script:
 build:
   stage: build
   tags:
-    - hgp5_runner
+    - sqlx2-srvr_runner
   script:
     #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_TEST_IMAGE .
     - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
