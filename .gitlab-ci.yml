@@ -48,8 +48,8 @@ build:
 release-image:
   stage: release
   tags:
-    #- sqlx2-srvr_runner
-    - hgp5_runner
+    - sqlx2-srvr_runner
+    #- hgp5_runner
   script:
     - docker pull $CONTAINER_TEST_IMAGE
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
