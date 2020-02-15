@@ -1,3 +1,5 @@
+[![pipeline status](https://gitlab.rm.ingv.it/shakemap/shakemap4/badges/master/pipeline.svg)](https://gitlab.rm.ingv.it/shakemap/shakemap4/commits/master)
+
 # ShakeMap4
 
 ## Quickstart
