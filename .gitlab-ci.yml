@@ -9,6 +9,7 @@ services:
 stages:
   - build
   - release
+  - clean
 
 variables:
   # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
@@ -60,3 +61,13 @@ release-image:
     - docker image rm $CONTAINER_TEST_IMAGE
   only:
     - master
+
+clean_tags:
+    stage: clean
+  tags:
+    - sqlx2-srvr_runner
+    #- hgp5_runner
+  script:
+    - "curl --request DELETE --data 'name_regex=latest$' --header \"PRIVATE-TOKEN: t7VGsApTQs2g93gEiysY\" \"https://gitlab.rm.ingv.it/api/v4/projects/698/registry/repositories/29/tags\" "
+    #- "curl --request DELETE --data 'name_regex=latest$' --data 'keep_n=2' --header \"PRIVATE-TOKEN: t7VGsApTQs2g93gEiysY\" \"https://gitlab.rm.ingv.it/api/v4/projects/698/registry/repositories/29/tags\" "    
+    
