@@ -73,6 +73,7 @@ release-image-date:
     - master
 
 clean_tags:
+  image: debian:stable
   stage: clean
   tags:
     - sqlx2-srvr_runner
