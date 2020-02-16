@@ -39,12 +39,10 @@ build:
     - sqlx2-srvr_runner
     #- hgp5_runner
   script:
-    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_TEST_IMAGE .
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
     #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
-    ###- docker push $CONTAINER_TEST_IMAGE
+    - docker push $CONTAINER_TEST_IMAGE
     #- docker push $CONTAINER_RELEASE_IMAGE
-  artifacts:
-    image: $CONTAINER_TEST_IMAGE
   only:
     - master
     
@@ -54,7 +52,7 @@ release-image-latest:
     #- sqlx2-srvr_runner
     #- hgp5_runner
   script:
-    ###- docker pull $CONTAINER_TEST_IMAGE
+    - docker pull $CONTAINER_TEST_IMAGE
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
     - docker push $CONTAINER_RELEASE_IMAGE
     #- docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
@@ -68,7 +66,7 @@ release-image-date:
     #- sqlx2-srvr_runner
     #- hgp5_runner
   script:
-    ###- docker pull $CONTAINER_TEST_IMAGE
+    - docker pull $CONTAINER_TEST_IMAGE
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
     - docker push $CONTAINER_RELEASE_DATE_IMAGE
   only:
