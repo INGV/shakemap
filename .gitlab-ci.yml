@@ -57,8 +57,6 @@ release-image:
     - docker push $CONTAINER_RELEASE_IMAGE
     - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
     - docker push $CONTAINER_RELEASE_DATE_IMAGE
-    - docker push $CONTAINER_RELEASE_IMAGE
-    - docker image rm $CONTAINER_TEST_IMAGE
   only:
     - master
 
