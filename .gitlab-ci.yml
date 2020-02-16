@@ -63,7 +63,7 @@ release-image:
     - master
 
 clean_tags:
-    stage: clean
+  stage: clean
   tags:
     - sqlx2-srvr_runner
     #- hgp5_runner
