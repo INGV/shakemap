@@ -39,7 +39,7 @@ build:
     - sqlx2-srvr_runner
     #- hgp5_runner
   script:
-    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_TEST_IMAGE .
     #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
     - docker push $CONTAINER_TEST_IMAGE
     #- docker push $CONTAINER_RELEASE_IMAGE
