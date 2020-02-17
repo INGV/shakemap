@@ -1,4 +1,4 @@
-image: docker:19.03.1
+image: docker:19.03.6
 #image: docker:latest
 
 services:
@@ -73,14 +73,12 @@ release-image-date:
     - master
 
 clean_tags:
-  image: docker:latest
   stage: clean
   tags:
     - sqlx2-srvr_runner
     #- hgp5_runner
   script:
-    - apt-get update
-    - apt-get install -y curl
+    - apk add --update curl
     - "curl --request DELETE --data 'name_regex=latest$' --header 'PRIVATE-TOKEN: t7VGsApTQs2g93gEiysY' 'https://gitlab.rm.ingv.it/api/v4/projects/698/registry/repositories/29/tags' "
     #- "curl --request DELETE --data 'name_regex=latest$' --data 'keep_n=2' --header \"PRIVATE-TOKEN: t7VGsApTQs2g93gEiysY\" \"https://gitlab.rm.ingv.it/api/v4/projects/698/registry/repositories/29/tags\" "    
     
