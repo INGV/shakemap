@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:4.7.12
+FROM continuumio/miniconda3:4.8.2
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
 
@@ -17,7 +17,8 @@ RUN apt-get update \
         vim \
         bc \
 	git \
-	curl
+	curl \
+        clang
 
 WORKDIR /opt
 RUN mkdir gitwork \
@@ -28,6 +29,10 @@ RUN mkdir gitwork \
     && cd shakemap_src 
 
 WORKDIR /opt/gitwork/shakemap_src
+
+# FIX: remove di line
+#RUN mv setup.py setup.py.original \
+#    && sed -e 's/os.environ.*//' setup.py.original > setup.py
 
 # Install
 RUN bash install.sh -d
