@@ -23,13 +23,47 @@ $ DOCKER_BUILDKIT=1 docker build --no-cache --tag shakemap4:20200211 .
 ### Run ShakeMap
 Run docker container from shakemap4 image:
 ```
-# docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local shakemap4 -p world -c'shake 8863681 select assemble -c "SM4 run" model mapping contour'
+# docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local shakemap4:20200530 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
 ```
 
 ### Override `entrypoint`:
 Enter into the container:
 ```
 $ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4 
+```
+
+## Mini-HowTo
+Piccola guida per interaggire con il docker
+```
+$ ssh shake@shakemap4.int.ingv.it
+```
+
+andare nella directory dove sono presenti le directory da montare, come "volumi", nel *container*:
+```
+$
+$ cd /home/shake/gitwork/_shakemap/shakemap4
+shake@shakemap4:~/gitwork/_shakemap/shakemap4$
+```
+
+i "volumi" sono:
+- `$(pwd)/data/shakemap_profiles`
+- `$(pwd)/data/shakemap_data`
+- `$(pwd)/data/local`
+
+creare un container dell'immagine Docker *shakemap4:20200530* montando all'interno i volumi necessari:
+```
+shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4:20200530
+(shakemap) root@d0263fbd02ae:/opt#
+```
+
+i volumi, all'interno del *container* ora sono nelle seguenti dir:
+- `/root/shakemap_profiles`
+- `/root/shakemap_data`
+- `/root/.local`
+
+lanciare una shakemap:
+```
+(shakemap) root@d0263fbd02ae:/opt# shake 8863681 select assemble -c "SM4 run" model contour shape save info stations raster rupture gridxml history plotregr mapping
 ```
 
 ## Contribute
