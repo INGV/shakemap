@@ -23,7 +23,7 @@ $ DOCKER_BUILDKIT=1 docker build --no-cache --tag shakemap4:20200211 .
 ### Run ShakeMap
 Run docker container from shakemap4 image:
 ```
-# docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local shakemap4 -p world -c'shake 8863681 select assemble -c "SM4 run" model mapping contour'
+# docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local shakemap4:20200530 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
 ```
 
 ### Override `entrypoint`:
