@@ -1,4 +1,5 @@
 FROM continuumio/miniconda3:4.8.2
+#FROM continuumio/anaconda3:2020.02
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
 
@@ -30,24 +31,18 @@ RUN mkdir gitwork \
 
 WORKDIR /opt/gitwork/shakemap_src
 
-# FIX: remove di line
+# INGV FIX
+RUN mv install.sh install.sh.original \
+    && sed \
+        -e 's|gdal|gdal=3.0.2|' \
+        -e 's|cartopy|cartopy=0.17|' \
+        install.sh.original > install.sh
+
 #RUN mv setup.py setup.py.original \
 #    && sed -e 's/os.environ.*//' setup.py.original > setup.py
 
 # Install
-RUN bash install.sh -d
-
-# Update 'install.sh' file
-#RUN cp -v install.sh install.sh.original \
-#    && sed -e 's|"sphinx"|"jupyter"|' install.sh > install.sh.new \
-#    && mv install.sh.new install.sh \
-#    && sed -e 's|"scikit-image"|""|' install.sh > install.sh.new \
-#    && mv install.sh.new install.sh \
-#    && chmod 755 install.sh  
-#RUN conda init bash \
-#    && bash -c "./install.sh -d" \
-#    && conda info --envs \
-#    && sleep 10000
+RUN bash install.sh
 
 # Add 'conda' source in the '.bashrc' file
 RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /root/.bashrc
