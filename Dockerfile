@@ -36,6 +36,7 @@ RUN mv install.sh install.sh.original \
     && sed \
         -e 's|gdal|gdal=3.0.2|' \
         -e 's|cartopy|cartopy=0.17|' \
+        -e 's|3.8|3.7|' \
         install.sh.original > install.sh
 
 #RUN mv setup.py setup.py.original \
@@ -86,6 +87,11 @@ RUN chmod 755 /opt/entrypoint.sh
 
 RUN echo "source activate shakemap" >> ~/.bashrc
 ENV PATH /opt/conda/envs/env/bin:$PATH
+
+# Start test
+WORKDIR /opt/gitwork/shakemap_src
+RUN py.test .
+WORKDIR /opt
 
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
