@@ -45,7 +45,7 @@ build:
     - sqlx2-srvr_runner
   script:
     - docker build --no-cache --pull --tag ${DOCKERHUB_CONTAINER_TEST_IMAGE} .
-    - docker push ${DOCKERHUB_CONTAINER_TEST_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_TEST_IMAGE}
   only:
     - master
     
@@ -56,9 +56,10 @@ release-image-latest:
   tags:
     - sqlx2-srvr_runner
   script:
+    - docker push ${DOCKERHUB_CONTAINER_TEST_IMAGE}
 #    - docker push $DOCKERHUB_CONTAINER_RELEASE_IMAGE && docker image rm $DOCKERHUB_CONTAINER_RELEASE_IMAGE
-    - docker pull ${DOCKERHUB_CONTAINER_TEST_IMAGE}
-    - docker tag ${DOCKERHUB_CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
+#    - docker pull ${DOCKERHUB_CONTAINER_TEST_IMAGE}
+#    - docker tag ${DOCKERHUB_CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
 #    - docker push $CONTAINER_RELEASE_IMAGE
     #- docker tag $DOCKERHUB_CONTAINER_RELEASE_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
     #- docker push $CONTAINER_RELEASE_DATE_IMAGE
