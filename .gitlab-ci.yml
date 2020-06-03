@@ -21,7 +21,6 @@ variables:
   GIT_STRATEGY: clone
   
 before_script:
-  - docker info | grep Registr
   - export CI_JOB_DATE=$( date +%Y%m%d )
 #  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE="$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
   - export CONTAINER_TEST_IMAGE=${CI_PROJECT_NAME}:$CI_COMMIT_REF_SLUG
