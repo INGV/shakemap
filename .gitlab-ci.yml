@@ -66,7 +66,7 @@ push:
     - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
     - docker tag ${CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
     - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
-    - docker image rm ${CONTAINER_RELEASE_IMAGE}
+    - docker image rm ${CONTAINER_TEST_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
 #    - docker push $DOCKERHUB_CONTAINER_RELEASE_IMAGE && docker image rm $DOCKERHUB_CONTAINER_RELEASE_IMAGE
 #    - docker pull ${DOCKERHUB_CONTAINER_TEST_IMAGE}
