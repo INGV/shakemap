@@ -35,8 +35,6 @@ before_script:
   - echo $CONTAINER_RELEASE_IMAGE
   - echo $CONTAINER_RELEASE_DATE_IMAGE
   - echo $CI_COMMIT_SHA
-#  - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
-  - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
   
 build:
   stage: build_image
@@ -50,13 +48,13 @@ build:
     
 test:
   stage: test
-  only:
-    - master
   tags:
     - sqlx2-srvr_runner
   script:
     - docker images
-    - docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd gitwork/shakemap_src && py.test ."
+    - docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd /opt/gitwork/shakemap_src && py.test ."
+  only:
+    - master
 
 push:
   stage: push-to-dockerhub
@@ -65,8 +63,10 @@ push:
   tags:
     - sqlx2-srvr_runner
   script:
+    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
     - docker tag ${CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
     - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
+    - docker image rm ${CONTAINER_RELEASE_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
 #    - docker push $DOCKERHUB_CONTAINER_RELEASE_IMAGE && docker image rm $DOCKERHUB_CONTAINER_RELEASE_IMAGE
 #    - docker pull ${DOCKERHUB_CONTAINER_TEST_IMAGE}
