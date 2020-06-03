@@ -7,9 +7,9 @@ services:
   - docker:19.03.1-dind
 
 stages:
-  - build
+  - build_image
   - test
-  - push
+  - push-to-dockerhub
 
 variables:
   # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
@@ -39,7 +39,7 @@ before_script:
   - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
   
 build:
-  stage: build
+  stage: build_image
   tags:
     - sqlx2-srvr_runner
   script:
@@ -55,10 +55,10 @@ test:
   tags:
     - sqlx2-srvr_runner
   script:
-    docker run -it --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd gitwork/shakemap_src && py.test ."
+    docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd gitwork/shakemap_src && py.test ."
 
-push-to-dockerhub:
-  stage: push
+push:
+  stage: push-to-dockerhub
   only:
     - master
   tags:
