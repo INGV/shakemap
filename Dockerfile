@@ -39,63 +39,63 @@ WORKDIR /opt/gitwork/shakemap_src
 RUN mv install.sh install.sh.original \
     && sed \
         -e 's|gdal|gdal=3.0.2|' \
-##        -e 's|cartopy|cartopy=0.17|' \
-##        -e "s|3.8|${PYTHON_VER}|" \
-##        install.sh.original > install.sh
-##
-###RUN mv setup.py setup.py.original \
-###    && sed -e 's/os.environ.*//' setup.py.original > setup.py
-##
-### Install
-##RUN bash install.sh
-##
-### Add 'conda' source in the '.bashrc' file
-##RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /root/.bashrc
-##
-### Add bash alias
-##RUN echo "alias ll='ls -l'" >> /root/.bashrc
-##
-### Source variable
-##RUN . /opt/conda/etc/profile.d/conda.sh \ 
-##    && conda info --envs \
-##    && conda activate shakemap \ 
-##    && sm_profile -c default -a -n 
-##
-##RUN . /opt/conda/etc/profile.d/conda.sh \
-##    && conda info --envs \
-##    && conda activate shakemap \
-##    && sm_profile -c italy -a -n
-##
-##RUN . /opt/conda/etc/profile.d/conda.sh \
-##    && conda info --envs \
-##    && conda activate shakemap \
-##    && sm_profile -c world -a -n
-##
-### Copy 'gmice.py' and 'fm10.py'
-##WORKDIR /opt/gitwork/shakemap_src/shakelib/gmice
-##ADD gmice.py ./
-##ADD fm10.py ./
-##
-### Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
-##WORKDIR /opt/conda/envs/shakemap/lib/python${PYTHON_VER}/site-packages/openquake/hazardlib/gsim
-##ADD bindi_2011.py ./
-##ADD tusa_langer_2016.py ./
-##
-### Default dir
-##WORKDIR /root
-##
-### Copy entrypoint file
-##WORKDIR /opt
-##COPY entrypoint.sh /opt/
-##RUN chmod 755 /opt/entrypoint.sh
-##
-##RUN echo "source activate shakemap" >> ~/.bashrc
-##ENV PATH /opt/conda/envs/env/bin:$PATH
-##
-### Start test
-##WORKDIR /opt/gitwork/shakemap_src
-##RUN py.test .
-##WORKDIR /opt
-##
-### Set entrypoint
-##ENTRYPOINT ["./entrypoint.sh"]
+        -e 's|cartopy|cartopy=0.17|' \
+        -e "s|3.8|${PYTHON_VER}|" \
+        install.sh.original > install.sh
+
+#RUN mv setup.py setup.py.original \
+#    && sed -e 's/os.environ.*//' setup.py.original > setup.py
+
+# Install
+RUN bash install.sh
+
+# Add 'conda' source in the '.bashrc' file
+RUN echo ". /opt/conda/etc/profile.d/conda.sh" >> /root/.bashrc
+
+# Add bash alias
+RUN echo "alias ll='ls -l'" >> /root/.bashrc
+
+# Source variable
+RUN . /opt/conda/etc/profile.d/conda.sh \ 
+    && conda info --envs \
+    && conda activate shakemap \ 
+    && sm_profile -c default -a -n 
+
+RUN . /opt/conda/etc/profile.d/conda.sh \
+    && conda info --envs \
+    && conda activate shakemap \
+    && sm_profile -c italy -a -n
+
+RUN . /opt/conda/etc/profile.d/conda.sh \
+    && conda info --envs \
+    && conda activate shakemap \
+    && sm_profile -c world -a -n
+
+# Copy 'gmice.py' and 'fm10.py'
+WORKDIR /opt/gitwork/shakemap_src/shakelib/gmice
+ADD gmice.py ./
+ADD fm10.py ./
+
+# Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
+WORKDIR /opt/conda/envs/shakemap/lib/python${PYTHON_VER}/site-packages/openquake/hazardlib/gsim
+ADD bindi_2011.py ./
+ADD tusa_langer_2016.py ./
+
+# Default dir
+WORKDIR /root
+
+# Copy entrypoint file
+WORKDIR /opt
+COPY entrypoint.sh /opt/
+RUN chmod 755 /opt/entrypoint.sh
+
+RUN echo "source activate shakemap" >> ~/.bashrc
+ENV PATH /opt/conda/envs/env/bin:$PATH
+
+# Start test
+#WORKDIR /opt/gitwork/shakemap_src
+#RUN py.test .
+#WORKDIR /opt
+
+# Set entrypoint
+ENTRYPOINT ["./entrypoint.sh"]
