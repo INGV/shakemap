@@ -1,10 +1,10 @@
 image: docker:19.03.6
 #image: docker:latest
 
-services:
+#services:
   # Remeber to set 'privileged = true' into the runner 'config.toml' file (es on hgp5: /srv/gitlab-runner/config/config.toml)
   #- docker:dind
-  - docker:19.03.1-dind
+#  - docker:19.03.1-dind
 
 stages:
   - build_image
@@ -44,7 +44,7 @@ build:
     - sqlx2-srvr_runner
   script:
     - docker build --no-cache --pull --tag ${CONTAINER_TEST_IMAGE} .
-#    - docker push ${DOCKERHUB_CONTAINER_TEST_IMAGE}
+    - docker images 
   only:
     - master
     
@@ -55,7 +55,8 @@ test:
   tags:
     - sqlx2-srvr_runner
   script:
-    docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd gitwork/shakemap_src && py.test ."
+    - docker images
+    - docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd gitwork/shakemap_src && py.test ."
 
 push:
   stage: push-to-dockerhub
