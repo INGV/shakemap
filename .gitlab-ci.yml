@@ -23,16 +23,16 @@ variables:
 before_script:
   - export CI_JOB_DATE=$( date +%Y%m%d )
 #  - export CONTAINER_TEST_IMAGE="$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
-  - export CONTAINER_TEST_IMAGE="$CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG"
+  - export CONTAINER_TEST_IMAGE=$${DOCKERHUB_REGISTRY_USER}/CI_PROJECT_NAME:$CI_COMMIT_REF_SLUG
   - export CONTAINER_RELEASE_IMAGE="$CI_PROJECT_NAME:latest"
   - export CONTAINER_RELEASE_DATE_IMAGE="$CI_PROJECT_NAME:$CI_JOB_DATE"
-  - echo $CI_REGISTRY_USER
-  - echo $CI_REGISTRY_PASSWORD
+  - echo $DOCKERHUB_REGISTRY_USER
+  - echo $DOCKERHUB_REGISTRY_PSW
   - echo $CI_REGISTRY
 #  - echo $CONTAINER_TEST_IMAGE
   - echo $CONTAINER_RELEASE_IMAGE
   - echo $CONTAINER_RELEASE_DATE_IMAGE
-  - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+#  - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
   
 build:
   stage: build
@@ -40,7 +40,7 @@ build:
     - sqlx2-srvr_runner
   script:
     - docker info
-    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag ${DOCKERHUB_REGISTRY_USER}/${CONTAINER_TEST_IMAGE} .
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag ${CONTAINER_TEST_IMAGE} .
       #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
 #    - docker push $CONTAINER_TEST_IMAGE
     #- docker push $CONTAINER_RELEASE_IMAGE
@@ -54,8 +54,8 @@ release-image-latest:
   tags:
     - sqlx2-srvr_runner
   script:
-    - echo "${DOCKERHUB_REGISTRY_PSW}" | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    - docker push ${DOCKERHUB_REGISTRY_USER}/$CONTAINER_TEST_IMAGE && docker image rm $CONTAINER_TEST_IMAGE
+    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+    - docker push $CONTAINER_TEST_IMAGE && docker image rm $CONTAINER_TEST_IMAGE
 #    - docker pull $CONTAINER_TEST_IMAGE
 #    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
 #    - docker push $CONTAINER_RELEASE_IMAGE
