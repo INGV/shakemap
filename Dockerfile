@@ -7,6 +7,9 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
 ENV FAKE_CHROOT 1
 
+# Set Python version
+ENV PYTHON_VER=3.7
+
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
 
@@ -36,7 +39,7 @@ RUN mv install.sh install.sh.original \
     && sed \
         -e 's|gdal|gdal=3.0.2|' \
         -e 's|cartopy|cartopy=0.17|' \
-        -e 's|3.8|3.7|' \
+        -e "s|3.8|${PYTHON_VER}|" \
         install.sh.original > install.sh
 
 #RUN mv setup.py setup.py.original \
@@ -73,7 +76,7 @@ ADD gmice.py ./
 ADD fm10.py ./
 
 # Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
-WORKDIR /opt/conda/envs/shakemap/lib/python3.6/site-packages/openquake/hazardlib/gsim
+WORKDIR /opt/conda/envs/shakemap/lib/python${PYTHON_VER}/site-packages/openquake/hazardlib/gsim
 ADD bindi_2011.py ./
 ADD tusa_langer_2016.py ./
 
