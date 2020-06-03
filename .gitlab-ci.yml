@@ -40,7 +40,7 @@ build:
     - sqlx2-srvr_runner
   script:
     - docker info
-    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_TEST_IMAGE .
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag ${DOCKERHUB_REGISTRY_USER}/${CONTAINER_TEST_IMAGE} .
       #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
 #    - docker push $CONTAINER_TEST_IMAGE
     #- docker push $CONTAINER_RELEASE_IMAGE
@@ -55,7 +55,7 @@ release-image-latest:
     - sqlx2-srvr_runner
   script:
     - echo "${DOCKERHUB_REGISTRY_PSW}" | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    - docker push vlauciani/$CONTAINER_TEST_IMAGE && docker image rm $CONTAINER_TEST_IMAGE
+    - docker push ${DOCKERHUB_REGISTRY_USER}/$CONTAINER_TEST_IMAGE && docker image rm $CONTAINER_TEST_IMAGE
 #    - docker pull $CONTAINER_TEST_IMAGE
 #    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
 #    - docker push $CONTAINER_RELEASE_IMAGE
