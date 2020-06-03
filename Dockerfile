@@ -30,7 +30,8 @@ RUN mkdir gitwork \
     && git config --global user.email "valentino.lauciani@ingv.it" \
     && git config --global user.name "Valentino Lauciani" \
     && git clone https://github.com/usgs/shakemap.git shakemap_src \
-    && cd shakemap_src 
+    && cd shakemap_src \
+    && git checkout 3367757f17ca95ae1d8d46ebd8b77ffaa5910bc8
 
 WORKDIR /opt/gitwork/shakemap_src
 
