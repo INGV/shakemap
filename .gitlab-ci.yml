@@ -22,28 +22,28 @@ variables:
   
 before_script:
   - export CI_JOB_DATE=$( date +%Y%m%d )
-#  - export CONTAINER_TEST_IMAGE="$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
-  - export CONTAINER_TEST_IMAGE=${DOCKERHUB_REGISTRY_USER}/${CI_PROJECT_NAME}:$CI_COMMIT_REF_SLUG
+#  - export DOCKERHUB_IMAGE="$CI_REGISTRY_IMAGE:$CI_COMMIT_REF_SLUG"
+  - export IMAGE_TMP=${CI_PROJECT_NAME}:$CI_COMMIT_REF_SLUG
+  - export DOCKERHUB_IMAGE=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_IMAGE_TMP}
   - export CONTAINER_RELEASE_IMAGE="$CI_PROJECT_NAME:latest"
   - export CONTAINER_RELEASE_DATE_IMAGE="$CI_PROJECT_NAME:$CI_JOB_DATE"
+  - echo $IMAGE_TMP
   - echo $DOCKERHUB_REGISTRY_USER
   - echo $DOCKERHUB_REGISTRY_PSW
   - echo $CI_REGISTRY
-#  - echo $CONTAINER_TEST_IMAGE
+#  - echo $DOCKERHUB_IMAGE
   - echo $CONTAINER_RELEASE_IMAGE
   - echo $CONTAINER_RELEASE_DATE_IMAGE
 #  - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
   
 build:
   stage: build
   tags:
     - sqlx2-srvr_runner
   script:
-    - docker info
-    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag ${CONTAINER_TEST_IMAGE} .
-      #- DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag $CONTAINER_RELEASE_IMAGE .
-#    - docker push $CONTAINER_TEST_IMAGE
-    #- docker push $CONTAINER_RELEASE_IMAGE
+    - DOCKER_BUILDKIT=1 docker build --no-cache --pull --tag ${IMAGE_TMP} .
+    - docker push ${IMAGE_TMP}
   only:
     - master
     
@@ -54,19 +54,18 @@ release-image-latest:
   tags:
     - sqlx2-srvr_runner
   script:
-    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    - docker push $CONTAINER_TEST_IMAGE && docker image rm $CONTAINER_TEST_IMAGE
-#    - docker pull $CONTAINER_TEST_IMAGE
-#    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_IMAGE
+#    - docker push $DOCKERHUB_IMAGE && docker image rm $DOCKERHUB_IMAGE
+    - docker pull ${IMAGE_TMP}
+    - docker tag ${IMAGE_TMP} ${DOCKERHUB_IMAGE}
 #    - docker push $CONTAINER_RELEASE_IMAGE
-    #- docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
+    #- docker tag $DOCKERHUB_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
     #- docker push $CONTAINER_RELEASE_DATE_IMAGE
     
 #release-image-date:
 #  stage: release
 #  script:
-#    - docker pull $CONTAINER_TEST_IMAGE
-#    - docker tag $CONTAINER_TEST_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
+#    - docker pull $DOCKERHUB_IMAGE
+#    - docker tag $DOCKERHUB_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
 #    - docker push $CONTAINER_RELEASE_DATE_IMAGE
 #  only:
 #    - master
