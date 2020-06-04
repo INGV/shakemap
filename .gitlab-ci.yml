@@ -23,25 +23,24 @@ variables:
 before_script:
   - export CI_JOB_DATE=$( date +%Y%m%d )
   - SHAKEMAP_CHECKOUT=$( grep "SHAKEMAP_CHECKOUT=" Dockerfile | awk -F"=" '{print $2}' )
-  - export CONTAINER_TEST_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}-${SHAKEMAP_CHECKOUT}-${CI_COMMIT_SHORT_SHA}
-  - export DOCKERHUB_CONTAINER_TEST_IMAGE=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_TEST_IMAGE}
-  - export CONTAINER_RELEASE_IMAGE=${CI_PROJECT_NAME}:latest
-  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_RELEASE_IMAGE}
-  - export CONTAINER_RELEASE_DATE_IMAGE="$CI_PROJECT_NAME:$CI_JOB_DATE"
-  - echo $CONTAINER_TEST_IMAGE 
-  - echo $DOCKERHUB_CONTAINER_TEST_IMAGE
-  - echo $CONTAINER_RELEASE_IMAGE
-  - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE
-  - echo $CONTAINER_RELEASE_IMAGE
-  - echo $CONTAINER_RELEASE_DATE_IMAGE
-  - echo $CI_COMMIT_SHA
+  - export CONTAINER_TMP_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}-sm4${SHAKEMAP_CHECKOUT}-our${CI_COMMIT_SHORT_SHA}
+  - export CONTAINER_RELEASE_IMAGE_LATEST=${CI_PROJECT_NAME}:latest
+  - export CONTAINER_RELEASE_IMAGE_SM4=${CI_PROJECT_NAME}:sm4${SHAKEMAP_CHECKOUT}
+  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_RELEASE_IMAGE_LATEST}
+  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_RELEASE_IMAGE_SM4}
+  - echo $SHAKEMAP_CHECKOUT
+  - echo $CONTAINER_TMP_IMAGE 
+  - echo $CONTAINER_RELEASE_IMAGE_LATEST
+  - echo $CONTAINER_RELEASE_IMAGE_SM4
+  - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST
+  - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4
   
 build:
   stage: build_image
   tags:
     - sqlx2-srvr_runner
   script:
-    - docker build --no-cache --pull --tag ${CONTAINER_TEST_IMAGE} .
+    - docker build --no-cache --pull --tag ${CONTAINER_TMP_IMAGE} .
     - docker images 
   only:
     - master
@@ -52,7 +51,7 @@ test:
     - sqlx2-srvr_runner
   script:
     - docker images
-    - docker run --rm --entrypoint=bash ${CONTAINER_TEST_IMAGE} -c ". /root/.bashrc && cd /opt/gitwork/shakemap_src && py.test ."
+    - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c ". /root/.bashrc && cd /opt/gitwork/shakemap_src && py.test ."
   only:
     - master
 
@@ -64,10 +63,16 @@ push:
     - sqlx2-srvr_runner
   script:
     - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    - docker tag ${CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
-    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
-    - docker image rm ${CONTAINER_TEST_IMAGE}
-    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
+    # Push tag latest
+    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+    # Push tag with SM4 commit
+    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4}
+    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4}
+    # Remove images
+    - docker image rm ${CONTAINER_TMP_IMAGE}
+    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4}
     
 #clean_tags:
 #  stage: clean
