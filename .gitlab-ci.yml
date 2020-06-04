@@ -1,10 +1,7 @@
+# NOTE: GUIDE: https://stanislas.blog/2018/09/build-push-docker-images-gitlab-ci/
+
 image: docker:19.03.6
 #image: docker:latest
-
-#services:
-  # Remeber to set 'privileged = true' into the runner 'config.toml' file (es on hgp5: /srv/gitlab-runner/config/config.toml)
-  #- docker:dind
-#  - docker:19.03.1-dind
 
 stages:
   - build-image
@@ -12,10 +9,6 @@ stages:
   - push-to-dockerhub
 
 variables:
-  # Use TLS https://docs.gitlab.com/ee/ci/docker/using_docker_build.html#tls-enabled
-  #DOCKER_HOST: tcp://docker:2376
-#  DOCKER_HOST: tcp://docker:2375
-  #DOCKER_TLS_CERTDIR: "/certs"
   DOCKER_TLS_CERTDIR: ""
   # https://gitlab.rm.ingv.it/help/user/project/pipelines/settings#git-strategy
   GIT_STRATEGY: clone
