@@ -9,27 +9,29 @@ $ git clone git@gitlab.rm.ingv.it:shakemap/shakemap4.git
 ```
 
 ### Build image
+**NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
+#### Build by yourself
 ```
 $ cd shakemap4
-$ DOCKER_BUILDKIT=1 docker build --no-cache --tag shakemap4 .
-```
-or with tag:
-```
-$ DOCKER_BUILDKIT=1 docker build --no-cache --tag shakemap4:20200211 .
+$ DOCKER_BUILDKIT=1 docker build --no-cache --tag vlauciani/shakemap4 .
 ```
 
-**NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
+#### Get from DockerHub
+Inseted of build by yourself, you can get the last image from dockerhub:
+```
+docker pull vlauciani/shakemap4:latest
+```
 
 ### Run ShakeMap
 Run docker container from shakemap4 image:
 ```
-# docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local shakemap4:20200530 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
+# docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local vlauciani/shakemap4 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
 ```
 
 ### Override `entrypoint`:
 Enter into the container:
 ```
-$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4 
+$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash vlauciani/shakemap4 
 ```
 
 ## Mini-HowTo
@@ -50,9 +52,9 @@ i "volumi" sono:
 - `$(pwd)/data/shakemap_data`
 - `$(pwd)/data/local`
 
-creare un container dell'immagine Docker *shakemap4:20200530* montando all'interno i volumi necessari:
+creare un container dall'immagine Docker *shakemap4* montando all'interno i volumi necessari:
 ```
-shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4:20200530
+shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4
 (shakemap) root@d0263fbd02ae:/opt#
 ```
 
