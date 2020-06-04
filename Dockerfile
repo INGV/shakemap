@@ -9,7 +9,7 @@ ENV INITRD No
 ENV FAKE_CHROOT 1
 
 # Set Python version
-ENV PYTHON_VER=3.7
+ENV PYTHON_VER=3.8
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
 ENV SHAKEMAP_COMMIT=3367757
