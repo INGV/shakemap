@@ -7,7 +7,7 @@ image: docker:19.03.6
 #  - docker:19.03.1-dind
 
 stages:
-  - build_image
+  - build-image
   - test
   - push-to-dockerhub
 
@@ -36,7 +36,7 @@ before_script:
   - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM4
   
 build:
-  stage: build_image
+  stage: build-image
   tags:
     - sqlx2-srvr_runner
   script:
