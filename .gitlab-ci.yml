@@ -22,7 +22,7 @@ variables:
   
 before_script:
   - export CI_JOB_DATE=$( date +%Y%m%d )
-  - SHAKEMAP_CHECKOUT=$( grep "SHAKEMAP_CHECKOUT=" Dockerfile | awk -F"=" '{print $2}' )
+  - SHAKEMAP_CHECKOUT=$( grep "SHAKEMAP_COMMIT=" Dockerfile | awk -F"=" '{print $2}' )
   - export CONTAINER_TMP_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}-sm${SHAKEMAP_CHECKOUT}-our${CI_COMMIT_SHORT_SHA}
   - export CONTAINER_RELEASE_IMAGE_LATEST=${CI_PROJECT_NAME}:latest
   - export CONTAINER_RELEASE_IMAGE_SM=${CI_PROJECT_NAME}:sm${SHAKEMAP_CHECKOUT}
