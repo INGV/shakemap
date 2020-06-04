@@ -3,12 +3,16 @@ FROM continuumio/miniconda3:4.8.2
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
 
+#
 ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
 ENV FAKE_CHROOT 1
 
 # Set Python version
 ENV PYTHON_VER=3.7
+
+# Set Shakemap checkout: https://github.com/usgs/shakemap.git
+ENV SHAKEMAP_CHECKOUT=3367757f17
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -31,7 +35,7 @@ RUN mkdir gitwork \
     && git config --global user.name "Valentino Lauciani" \
     && git clone https://github.com/usgs/shakemap.git shakemap_src \
     && cd shakemap_src \
-    && git checkout 3367757f17ca95ae1d8d46ebd8b77ffaa5910bc8
+    && git checkout ${SHAKEMAP_CHECKOUT}
 
 WORKDIR /opt/gitwork/shakemap_src
 
