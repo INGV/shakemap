@@ -68,27 +68,10 @@ push:
     - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
     - docker image rm ${CONTAINER_TEST_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
-#    - docker push $DOCKERHUB_CONTAINER_RELEASE_IMAGE && docker image rm $DOCKERHUB_CONTAINER_RELEASE_IMAGE
-#    - docker pull ${DOCKERHUB_CONTAINER_TEST_IMAGE}
-#    - docker tag ${DOCKERHUB_CONTAINER_TEST_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE}
-#    - docker push $CONTAINER_RELEASE_IMAGE
-    #- docker tag $DOCKERHUB_CONTAINER_RELEASE_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
-    #- docker push $CONTAINER_RELEASE_DATE_IMAGE
     
-#release-image-date:
-#  stage: release
-#  script:
-#    - docker pull $DOCKERHUB_CONTAINER_RELEASE_IMAGE
-#    - docker tag $DOCKERHUB_CONTAINER_RELEASE_IMAGE $CONTAINER_RELEASE_DATE_IMAGE
-#    - docker push $CONTAINER_RELEASE_DATE_IMAGE
-#  only:
-#    - master
-
 #clean_tags:
 #  stage: clean
-#  tags:
-#    - sqlx2-srvr_runner
 #  script:
-#    - apk add --update curl
-#    - "curl --request DELETE --data 'name_regex=latest$' --header 'PRIVATE-TOKEN: t7VGsApTQs2g93gEiysY' 'https://gitlab.rm.ingv.it/api/v4/projects/698/registry/repositories/29/tags' "
-    
+#    - docker run --rm -it lumir/remove-dockerhub-tag --user ${DOCKERHUB_REGISTRY_USER} --password ${DOCKERHUB_REGISTRY_PSW} ${DOCKERHUB_REGISTRY_USER}/shakemap4:latest
+#  only:
+#    - master
