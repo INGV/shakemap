@@ -12,7 +12,7 @@ ENV FAKE_CHROOT 1
 ENV PYTHON_VER=3.7
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
-ENV SHAKEMAP_CHECKOUT=3367757
+ENV SHAKEMAP_COMMIT=3367757
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -35,7 +35,7 @@ RUN mkdir gitwork \
     && git config --global user.name "Valentino Lauciani" \
     && git clone https://github.com/usgs/shakemap.git shakemap_src \
     && cd shakemap_src \
-    && git checkout ${SHAKEMAP_CHECKOUT}
+    && git checkout ${SHAKEMAP_COMMIT}
 
 WORKDIR /opt/gitwork/shakemap_src
 
