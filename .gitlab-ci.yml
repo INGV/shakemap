@@ -33,6 +33,8 @@ before_script:
   - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM
   - echo $DOCKERHUB_CONTAINER_BRANCH_IMAGE
   - echo ${CI_COMMIT_BRANCH}
+  - echo ${CI_COMMIT_REF_NAME}
+  - echo ${CI_COMMIT_TAG}
   
 build:
   stage: build-image
@@ -88,6 +90,21 @@ push-dev:
     - branches
   except:
     - master
+  tags:
+    - sqlx2-srvr_runner
+  script:
+    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+    # Push tag latest
+    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+    # Remove images
+    - docker image rm ${CONTAINER_TMP_IMAGE}
+    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+
+push-tag:
+  stage: push-tag-to-dockerhub
+  only:
+    - tags
   tags:
     - sqlx2-srvr_runner
   script:
