@@ -37,7 +37,9 @@ RUN mkdir gitwork \
     && cd shakemap_src \
     && git checkout ${SHAKEMAP_COMMIT}
 
+# Copy modified plotregr.py (issue: https://gitlab.rm.ingv.it/shakemap/shakemap4/-/issues/5)
 WORKDIR /opt/gitwork/shakemap_src
+COPY plotregr.py /opt/gitwork/shakemap_src/shakemap/coremods/
 
 # INGV FIX
 RUN mv install.sh install.sh.original \
@@ -75,14 +77,8 @@ RUN . /opt/conda/etc/profile.d/conda.sh \
     && conda activate shakemap \
     && sm_profile -c world -a -n
 
-# Copy 'gmice.py' and 'fm10.py'
-WORKDIR /opt/gitwork/shakemap_src/shakelib/gmice
-ADD gmice.py ./
-ADD fm10.py ./
-
 # Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
 WORKDIR /opt/conda/envs/shakemap/lib/python${PYTHON_VER}/site-packages/openquake/hazardlib/gsim
-ADD bindi_2011.py ./
 ADD tusa_langer_2016.py ./
 
 # Default dir
