@@ -97,10 +97,5 @@ RUN chmod 755 /opt/entrypoint.sh
 RUN echo "source activate shakemap" >> ~/.bashrc
 ENV PATH /opt/conda/envs/env/bin:$PATH
 
-# Start test
-#WORKDIR /opt/gitwork/shakemap_src
-#RUN py.test .
-#WORKDIR /opt
-
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
