@@ -77,6 +77,11 @@ RUN . /opt/conda/etc/profile.d/conda.sh \
     && conda activate shakemap \
     && sm_profile -c world -a -n
 
+# Copy 'gmice.py' and 'fm10.py'
+WORKDIR /opt/gitwork/shakemap_src/shakelib/gmice
+ADD gmice.py ./
+ADD fm10.py ./
+
 # Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
 WORKDIR /opt/conda/envs/shakemap/lib/python${PYTHON_VER}/site-packages/openquake/hazardlib/gsim
 ADD tusa_langer_2016.py ./
