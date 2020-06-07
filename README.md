@@ -3,23 +3,21 @@
 # ShakeMap4
 
 ## Quickstart
-### Get repository
-```
-$ git clone git@gitlab.rm.ingv.it:shakemap/shakemap4.git
-```
+### Docker image
+To obtain *shakemap4* docker image, you have two options:
 
-### Build image
-**NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
-#### Build by yourself
-```
-$ cd shakemap4
-$ DOCKER_BUILDKIT=1 docker build --no-cache --tag vlauciani/shakemap4 .
-```
-
-#### Get from DockerHub
-Inseted of build by yourself, you can get the last image from dockerhub:
+#### 1) Get built image
+Get the last built image from dockerhub:
 ```
 docker pull vlauciani/shakemap4:latest
+```
+
+#### 2) Build by yourself
+**NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
+```
+$ git clone https://gitlab.rm.ingv.it/shakemap/shakemap4.git
+$ cd shakemap4
+$ DOCKER_BUILDKIT=1 docker build --no-cache --tag vlauciani/shakemap4 .
 ```
 
 ### Run ShakeMap
