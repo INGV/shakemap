@@ -8,6 +8,7 @@ stages:
   - test
   - push-to-dockerhub
   - push-dev-to-dockerhub
+  #- push-tag-to-dockerhub
 
 variables:
   DOCKER_TLS_CERTDIR: ""
@@ -101,20 +102,20 @@ push-dev:
     - docker image rm ${CONTAINER_TMP_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
 
-push-tag:
-  stage: push-tag-to-dockerhub
-  only:
-    - tags
-  tags:
-    - sqlx2-srvr_runner
-  script:
-    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    # Push tag latest
-    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    # Remove images
-    - docker image rm ${CONTAINER_TMP_IMAGE}
-    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#push-tag:
+#  stage: push-tag-to-dockerhub
+#  only:
+#    - tags
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    # Remove images
+#    - docker image rm ${CONTAINER_TMP_IMAGE}
+#    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
     
 #clean_tags:
 #  stage: clean
