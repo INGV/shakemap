@@ -42,13 +42,21 @@ build:
     - docker build --no-cache --pull --tag ${CONTAINER_TMP_IMAGE} .
     - docker images 
     
-test:
+py-test:
   stage: test
   tags:
     - sqlx2-srvr_runner
   script:
-    - docker images
     - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c ". /root/.bashrc && cd /opt/gitwork/shakemap_src && py.test ."
+
+shakemap-test:
+  stage: test
+  tags:
+    - sqlx2-srvr_runner
+  script:
+    - pwd
+    - ls -l
+    - ls -l data/
 
 push:
   stage: push-to-dockerhub
