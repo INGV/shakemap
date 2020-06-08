@@ -127,6 +127,8 @@ push-dev:
 
 cleanup_job:
   stage: cleanup
+  tags:
+    - sqlx2-srvr_runner
   script:
     - docker image rm ${CONTAINER_TMP_IMAGE}
   when: always
