@@ -72,7 +72,7 @@ shakemap-test:
     #- docker ps
     #- docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local ${CONTAINER_TMP_IMAGE} -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
     #- docker cp $(pwd)/data/shakemap_profiles/. ${CONTAINER_TMP_IMAGE}:/root/shakemap_profiles
-    - docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local ${CONTAINER_TMP_IMAGE} --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c "ls -l /root/shakemap_profiles/ && ls -l /root/shakemap_profiles/world/ && ls -l /root/shakemap_profiles/world/install/ && ls -l /root/shakemap_profiles/world/data"
+    - docker run --rm --entrypoint=bash -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local ${CONTAINER_TMP_IMAGE} -c "ls -l /root/shakemap_profiles/ && ls -l /root/shakemap_profiles/world/ && ls -l /root/shakemap_profiles/world/install/ && ls -l /root/shakemap_profiles/world/data"
 
 push:
   stage: push-to-dockerhub
