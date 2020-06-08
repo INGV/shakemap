@@ -9,6 +9,7 @@ stages:
   - push-to-dockerhub
   - push-dev-to-dockerhub
   #- push-tag-to-dockerhub
+  - cleanup_build
 
 variables:
   DOCKER_TLS_CERTDIR: ""
@@ -83,7 +84,6 @@ push:
     - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
     - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
     # Remove images
-    - docker image rm ${CONTAINER_TMP_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
     - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
 
@@ -101,7 +101,6 @@ push-dev:
     - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
     - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
     # Remove images
-    - docker image rm ${CONTAINER_TMP_IMAGE}
     - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
 
 #push-tag:
@@ -125,3 +124,15 @@ push-dev:
 #    - docker run --rm -it lumir/remove-dockerhub-tag --user ${DOCKERHUB_REGISTRY_USER} --password ${DOCKERHUB_REGISTRY_PSW} ${DOCKERHUB_REGISTRY_USER}/shakemap4:latest
 #  only:
 #    - master
+
+cleanup_job:
+  stage: cleanup
+  script:
+    - docker image rm ${CONTAINER_TMP_IMAGE}
+  when: always
+
+#cleanup_build_job:
+#  stage: cleanup_build
+#  script:
+#    - docker image rm ${CONTAINER_TMP_IMAGE}
+#  when: on_failure
