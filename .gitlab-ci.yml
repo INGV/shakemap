@@ -56,6 +56,10 @@ shakemap-test:
   stage: test
   tags:
     - sqlx2-srvr_runner
+  variables:
+    GIT_STRATEGY: none
+  services:
+    - docker:dind
   script:
     - pwd
     - ls -l $(pwd)/
@@ -66,11 +70,11 @@ shakemap-test:
     - mkdir -p $(pwd)/data/shakemap_profiles/world/data/8863681/current/
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
-    - docker run -t --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
-    - docker ps
+    #- docker run -t --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
+    #- docker ps
     #- docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local ${CONTAINER_TMP_IMAGE} -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
     #- docker cp $(pwd)/data/shakemap_profiles/. ${CONTAINER_TMP_IMAGE}:/root/shakemap_profiles
-    #- docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c "ls -l /root/shakemap_profiles/ && ls -l /root/shakemap_profiles/world/ && ls -l /root/shakemap_profiles/world/install/ && ls -l /root/shakemap_profiles/world/data"
+    - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c "ls -l /root/shakemap_profiles/ && ls -l /root/shakemap_profiles/world/ && ls -l /root/shakemap_profiles/world/install/ && ls -l /root/shakemap_profiles/world/data"
 
 push:
   stage: push-to-dockerhub
