@@ -60,6 +60,9 @@ shakemap-test:
     - pwd
     - ls -l
     - ls -l data/
+    - ls -l data/shakemap_profiles/
+    - ls -l data/shakemap_profiles/world/
+    - ls -l data/shakemap_profiles/world/install/
     - mkdir -p data/shakemap_profiles/world/data/8863681/current/
     - wget -O data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
     - wget -O data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
