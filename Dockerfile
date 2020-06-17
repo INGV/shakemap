@@ -42,12 +42,12 @@ WORKDIR /opt/gitwork/shakemap_src
 COPY plotregr.py /opt/gitwork/shakemap_src/shakemap/coremods/
 
 # INGV FIX
-RUN mv install.sh install.sh.original \
-    && sed \
-        -e 's|gdal|gdal=3.0.2|' \
-        -e 's|cartopy|cartopy=0.17|' \
-        -e "s|3.8|${PYTHON_VER}|" \
-        install.sh.original > install.sh
+#RUN mv install.sh install.sh.original \
+#    && sed \
+#        -e 's|gdal|gdal=3.0.2|' \
+#        -e 's|cartopy|cartopy=0.17|' \
+#        -e "s|3.8|${PYTHON_VER}|" \
+#        install.sh.original > install.sh
 
 #RUN mv setup.py setup.py.original \
 #    && sed -e 's/os.environ.*//' setup.py.original > setup.py
