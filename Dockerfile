@@ -12,7 +12,7 @@ ENV FAKE_CHROOT 1
 ENV PYTHON_VER=3.7
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
-ENV SHAKEMAP_COMMIT=3367757
+ENV SHAKEMAP_COMMIT=4b09630
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
