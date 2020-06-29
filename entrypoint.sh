@@ -67,7 +67,7 @@ fi
 
 # Pull last changes
 echo "--->START - GIT commands:<---"
-cd /opt/gitwork/shakemap_src/
+cd /home/shake/gitwork/shakemap_src/
 
 echo "git status:"
 git status
@@ -106,9 +106,9 @@ echo "COMMAND: ${COMMAND}"
 echo "-----"
 echo ""
 
-. /opt/conda/etc/profile.d/conda.sh \
-    && conda activate shakemap \
+. /home/shake/miniconda/etc/profile.d/conda.sh \
+    && conda activate base \
     && conda info --envs \
-    && source activate shakemap \
+    && conda activate shakemap \
     && sm_profile -s ${PROFILE} \
     && eval ${COMMAND}

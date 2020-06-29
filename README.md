@@ -3,33 +3,24 @@
 # ShakeMap4
 
 ## Quickstart
-### Docker image
-To obtain *shakemap4* docker image, you have two options:
-
-#### 1) Get built image
-Get the last built image from dockerhub:
-```
-docker pull vlauciani/shakemap4:latest
-```
-
-#### 2) Build by yourself
+### Build docker image
 **NOTE**: If you set daemon configuration in `/etc/docker/daemon.json` with `{ "features": { "buildkit": true } }`, the `DOCKER_BUILDKIT=1` could be omitted.
 ```
 $ git clone https://gitlab.rm.ingv.it/shakemap/shakemap4.git
 $ cd shakemap4
-$ DOCKER_BUILDKIT=1 docker build --no-cache --tag vlauciani/shakemap4 .
+$ DOCKER_BUILDKIT=1 docker build --no-cache --build-arg ENV_UID=$(id -u) --build-arg ENV_GID=$(id -g) --tag shakemap4 .
 ```
 
 ### Run ShakeMap
 Run docker container from shakemap4 image:
 ```
-# docker run --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local vlauciani/shakemap4 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"
+# docker run --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local shakemap4 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping"
 ```
 
 ### Override `entrypoint`:
 Enter into the container:
 ```
-$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash vlauciani/shakemap4 
+$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4 
 ```
 
 ## Mini-HowTo
@@ -52,18 +43,18 @@ i "volumi" sono:
 
 creare un container dall'immagine Docker *shakemap4* montando all'interno i volumi necessari:
 ```
-shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/root/shakemap_profiles -v $(pwd)/data/shakemap_data:/root/shakemap_data -v $(pwd)/data/local:/root/.local --entrypoint=bash shakemap4
+shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4
 (shakemap) root@d0263fbd02ae:/opt#
 ```
 
 i volumi, all'interno del *container* ora sono nelle seguenti dir:
-- `/root/shakemap_profiles`
-- `/root/shakemap_data`
-- `/root/.local`
+- `/home/shake/shakemap_profiles`
+- `/home/shake/shakemap_data`
+- `/home/shake/.local`
 
 lanciare una shakemap:
 ```
-(shakemap) root@d0263fbd02ae:/opt# shake 8863681 select assemble -c "SM4 run" model contour shape save info stations raster rupture gridxml history plotregr mapping
+(shakemap) root@d0263fbd02ae:/opt# shake 8863681 select assemble -c "SM4 run" model contour shape info stations raster rupture gridxml history plotregr mapping
 ```
 
 ## Contribute

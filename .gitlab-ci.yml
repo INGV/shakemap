@@ -6,9 +6,9 @@ image: docker:19.03.6
 stages:
   - build-image
   - test
-  - push-to-dockerhub
-  - push-dev-to-dockerhub
-  - push-tag-to-dockerhub
+#  - push-to-dockerhub
+#  - push-dev-to-dockerhub
+#  - push-tag-to-dockerhub
   - cleanup
 
 variables:
@@ -71,53 +71,53 @@ shakemap-test:
     - docker exec shakemap4_container bash -c '/opt/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
     - docker stop shakemap4_container
 
-push:
-  stage: push-to-dockerhub
-  only:
-    - master
-  tags:
-    - sqlx2-srvr_runner
-  script:
-    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    # Push tag latest
-    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
-    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
-    # Push tag with SM commit
-    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
-    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
-    # Remove release images
-    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
-    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+#push:
+#  stage: push-to-dockerhub
+#  only:
+#    - master
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    # Push tag with SM commit
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+#    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+#    # Remove release images
+#    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
 
-push-dev:
-  stage: push-dev-to-dockerhub
-  only:
-    - branches
-  except:
-    - master
-  tags:
-    - sqlx2-srvr_runner
-  script:
-    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    # Push tag latest
-    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    # Remove branch images
-    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#push-dev:
+#  stage: push-dev-to-dockerhub
+#  only:
+#    - branches
+#  except:
+#    - master
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    # Remove branch images
+#    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
 
-push-tag:
-  stage: push-tag-to-dockerhub
-  only:
-    - tags
-  tags:
-    - sqlx2-srvr_runner
-  script:
-    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
-    # Push tag latest
-    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
-    # Remove branch images
-    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#push-tag:
+#  stage: push-tag-to-dockerhub
+#  only:
+#    - tags
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    # Remove branch images
+#    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
     
 #clean_tags:
 #  stage: clean
