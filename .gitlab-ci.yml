@@ -131,7 +131,10 @@ cleanup_job:
   tags:
     - sqlx2-srvr_runner
   script:
+    - docker ps
+    - docker images
     - docker image rm ${CONTAINER_TMP_IMAGE}
+    - docker ps
     - docker images
   when: always
 
