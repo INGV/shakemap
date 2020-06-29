@@ -53,7 +53,7 @@ py-test:
   tags:
     - sqlx2-srvr_runner
   script:
-    - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c ". /root/.bashrc && cd /opt/gitwork/shakemap_src && py.test ."
+    - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c ". /home/shake/.bashrc && cd /home/shake/gitwork/shakemap_src && py.test ."
 
 shakemap-test:
   stage: test
@@ -64,10 +64,10 @@ shakemap-test:
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
     - docker run -it -d --name shakemap4_container --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
-    - docker cp $(pwd)/data/shakemap_data shakemap4_container:/root/
-    - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/root/
-    - docker cp $(pwd)/data/local shakemap4_container:/root/.local
-    - docker exec shakemap4_container bash -c "ls -l /root/shakemap_data/ && ls -l /root/shakemap_profiles/ && ls -l /root/.local/"
+    - docker cp $(pwd)/data/shakemap_data shakemap4_container:/home/shake/
+    - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/home/shake/
+    - docker cp $(pwd)/data/local shakemap4_container:/home/shake/.local
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
     - docker exec shakemap4_container bash -c '/opt/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
     - docker stop shakemap4_container
 
