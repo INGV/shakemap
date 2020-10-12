@@ -8,7 +8,7 @@ stages:
   - test
 #  - push-to-dockerhub
 #  - push-dev-to-dockerhub
-#  - push-tag-to-dockerhub
+  - push-tag-to-dockerhub
   - cleanup
 
 variables:
