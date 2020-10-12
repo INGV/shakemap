@@ -1,5 +1,6 @@
 data/shakemap_profiles/italy/install/data/*.db
 data/shakemap_profiles/world/install/data/*.db
-data/shakemap_profiles/world/data/
+data/shakemap_profiles/world/data/*
 data/shakemap_profiles/italy/data/
 data/shakemap_profiles/default/data/
+!data/shakemap_profiles/world/data/8863681/
