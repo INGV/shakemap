@@ -25,7 +25,7 @@ RUN apt-get update \
         vim \
         bc \
         git \
-	    curl \
+        curl \
         clang \
     && apt-get clean
 
