@@ -61,6 +61,10 @@ shakemap-test:
   tags:
     - sqlx2-srvr_runner
   script:
+    - EVENTS="8863681 4875411"
+    - for EVENT in ${EVENTS}; do \
+        echo ${EVENT}; \
+      done
     - mkdir -pv $(pwd)/data/shakemap_profiles/world/data/8863681/current/
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
@@ -72,13 +76,13 @@ shakemap-test:
     - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
     - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
     - docker exec shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
-    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/shakemap_profiles/world/data/pippo
+    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
   after_script:
     - docker stop shakemap4_container
   artifacts:
     expire_in: 1 week
     paths:
-      - /builds/shakemap/shakemap4/data/shakemap_profiles/world/data
+      - /builds/shakemap/shakemap4/data/output
 
 
 #push:
