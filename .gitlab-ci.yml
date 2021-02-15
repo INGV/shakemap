@@ -72,6 +72,7 @@ shakemap-test:
     - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
     - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
     - docker exec shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
+    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/shakemap_profiles/world/data/pippo
   after_script:
     - docker stop shakemap4_container
   artifacts:
