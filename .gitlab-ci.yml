@@ -77,7 +77,7 @@ shakemap-test:
   artifacts:
     expire_in: 1 week
     paths:
-      - /builds
+      - /builds/shakemap/shakemap4/data/shakemap_profiles/world/data
 
 
 #push:
