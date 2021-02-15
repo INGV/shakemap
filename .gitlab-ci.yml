@@ -61,7 +61,7 @@ shakemap-test:
   tags:
     - sqlx2-srvr_runner
   script:
-    - mkdir -p $(pwd)/data/shakemap_profiles/world/data/8863681/current/
+    - mkdir -pv $(pwd)/data/shakemap_profiles/world/data/8863681/current/
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
     - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
     - docker run -it -d --name shakemap4_container --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
@@ -74,6 +74,11 @@ shakemap-test:
     - docker exec shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
   after_script:
     - docker stop shakemap4_container
+  artifacts:
+    expire_in: 1 week
+    paths:
+      - /builds
+
 
 #push:
 #  stage: push-to-dockerhub
@@ -141,9 +146,3 @@ cleanup_job:
     - docker ps
     - docker images
   when: always
-
-#cleanup_build_job:
-#  stage: cleanup_build
-#  script:
-#    - docker image rm ${CONTAINER_TMP_IMAGE}
-#  when: on_failure
