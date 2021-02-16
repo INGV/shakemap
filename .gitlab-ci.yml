@@ -61,33 +61,19 @@ shakemap-test:
   tags:
     - sqlx2-srvr_runner
   script:
-    - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
-        echo ${DIREVENT}; 
-      done
-    - EVENTS="8863681 4875411"
-    - for EVENT in "${EVENTS}"; do 
-        echo ${EVENT};
-        mkdir -pv $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/ &&
-        wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event" &&
-        wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event_dat" ;
-      done
-    #- for EVENT in "${EVENTS}"; do \
-    #    echo ${EVENT} && \
-    #    mkdir -pv $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/ && \
-    #    wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event" && \
-    #    wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event_dat"; \
-    #  done;
-    - mkdir -pv $(pwd)/data/shakemap_profiles/world/data/8863681/current/
-    - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event"
-    - wget -O $(pwd)/data/shakemap_profiles/world/data/8863681/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=8863681&format=event_dat"
     - docker run -it -d --name shakemap4_container --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
+    - docker cp $(pwd)/data/local shakemap4_container:/home/shake/.local
     - docker cp $(pwd)/data/shakemap_data shakemap4_container:/home/shake/
     - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/home/shake/
-    - docker cp $(pwd)/data/local shakemap4_container:/home/shake/.local
+    - docker cp $(pwd)/test/data shakemap4_container:/home/shake/shakemap_profiles/world/
     - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
     - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
     - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
-    - docker exec shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake 8863681 select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
+    - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
+        echo ${DIREVENT}; 
+        BASENAME_DIREVENT=$( basename ${DIREVENT} )
+        docker exec shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake ${BASENAME_DIREVENT} select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"'
+      done
     - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
   after_script:
     - docker stop shakemap4_container
