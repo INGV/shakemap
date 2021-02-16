@@ -63,7 +63,10 @@ shakemap-test:
   script:
     - EVENTS="8863681 4875411"
     - for EVENT in "${EVENTS}"; do 
-        echo ${EVENT}; 
+        echo ${EVENT};
+        mkdir -pv $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/ &&
+        wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/event.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event" &&
+        wget -O $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/8863681_dat.xml "http://webservices.ingv.it/ingvws/shakedata/1/query?eventid=${EVENT}&format=event_dat" ;
       done
     #- for EVENT in "${EVENTS}"; do \
     #    echo ${EVENT} && \
