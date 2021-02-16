@@ -1,0 +1,3168 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stationlist created="1593458770" xmlns:ingv="http://webservices.ingv.it/ws/shakedata/1/">
+  <station insttype="" source="Italian National Seismic Network" code="GMB" name="GMB" netid="IV" lat="38.16807" commtype="DIG" lon="15.82888">
+    <comp name="--.BHZ" ingv:from="ont">
+      <acc value="1.7500259517776" flag="0"/>
+      <vel value="0.385918" flag="0"/>
+      <psa03 value="1.0882098372023" flag="0"/>
+      <psa10 value="0.18105030769937" flag="0"/>
+      <psa30 value="0.023744703848919" flag="0"/>
+    </comp>
+    <comp name="--.BHE" ingv:from="ont">
+      <acc value="2.3796873550091" flag="0"/>
+      <vel value="0.670511" flag="0"/>
+      <psa03 value="4.1677051796485" flag="0"/>
+      <psa10 value="0.54143729000219" flag="0"/>
+      <psa30 value="0.068907221120362" flag="0"/>
+    </comp>
+    <comp name="--.BHN" ingv:from="ont">
+      <acc value="1.7332364263026" flag="0"/>
+      <vel value="0.700071" flag="0"/>
+      <psa03 value="2.5770418032662" flag="0"/>
+      <psa10 value="0.75430875987213" flag="0"/>
+      <psa30 value="0.074223001738616" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MSCL" name="MSCL" netid="IV" lat="38.232" commtype="DIG" lon="15.79">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.67354519637185" flag="0"/>
+      <vel value="0.111737" flag="0"/>
+      <psa03 value="0.67362595789592" flag="0"/>
+      <psa10 value="0.14757475794486" flag="0"/>
+      <psa30 value="0.0095913487276491" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="1.0653291389006" flag="0"/>
+      <vel value="0.42252" flag="0"/>
+      <psa03 value="1.449559737525" flag="0"/>
+      <psa10 value="0.29645556841531" flag="0"/>
+      <psa30 value="0.037130824491544" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.7875476334936" flag="0"/>
+      <vel value="0.492446" flag="0"/>
+      <psa03 value="0.65017034359338" flag="0"/>
+      <psa10 value="0.49739890788394" flag="0"/>
+      <psa30 value="0.033480342420704" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MSRU" name="MSRU" netid="IV" lat="38.2639" commtype="DIG" lon="15.5083">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.28935089964463" flag="0"/>
+      <vel value="0.098756" flag="0"/>
+      <psa03 value="0.70388950355116" flag="0"/>
+      <psa10 value="0.058157984632877" flag="0"/>
+      <psa30 value="0.0093613007500013" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.32764746371085" flag="0"/>
+      <vel value="0.128976" flag="0"/>
+      <psa03 value="0.6277472939281" flag="0"/>
+      <psa10 value="0.070895259849184" flag="0"/>
+      <psa30 value="0.0075227524180021" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.249216704991" flag="0"/>
+      <vel value="0.07486" flag="0"/>
+      <psa03 value="0.32951537986978" flag="0"/>
+      <psa10 value="0.023264927370713" flag="0"/>
+      <psa30 value="0.0036229497330893" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ATN" name="ATN" netid="IV" lat="38.15948" commtype="DIG" lon="15.46472">
+    <comp name="--.BHE" ingv:from="ont">
+      <acc value="0.80068616703971" flag="0"/>
+      <vel value="0.326003" flag="0"/>
+      <psa03 value="2.3532499885282" flag="0"/>
+      <psa10 value="0.10845130600154" flag="0"/>
+      <psa30 value="0.013904238450439" flag="0"/>
+    </comp>
+    <comp name="--.BHN" ingv:from="ont">
+      <acc value="0.95360056696221" flag="0"/>
+      <vel value="0.441033" flag="0"/>
+      <psa03 value="3.2927049502124" flag="0"/>
+      <psa10 value="0.16522451601719" flag="0"/>
+      <psa30 value="0.015732793563551" flag="0"/>
+    </comp>
+    <comp name="--.BHZ" ingv:from="ont">
+      <acc value="0.25733629730846" flag="0"/>
+      <vel value="0.082718" flag="0"/>
+      <psa03 value="0.64372532924087" flag="0"/>
+      <psa10 value="0.027842331479149" flag="0"/>
+      <psa30 value="0.0043353234794757" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MTTG" name="MTTG" netid="IV" lat="38.0031" commtype="DIG" lon="15.69992">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.16659277123177" flag="0"/>
+      <vel value="0.090614" flag="0"/>
+      <psa03 value="0.56201587698144" flag="0"/>
+      <psa10 value="0.062371757939765" flag="0"/>
+      <psa30 value="0.0051779149862593" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.2467040222706" flag="0"/>
+      <vel value="0.148695" flag="0"/>
+      <psa03 value="0.61069723096062" flag="0"/>
+      <psa10 value="0.090821330423743" flag="0"/>
+      <psa30 value="0.010417930689889" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.33843534744281" flag="0"/>
+      <vel value="0.246114" flag="0"/>
+      <psa03 value="0.70130635844045" flag="0"/>
+      <psa10 value="0.13328149775917" flag="0"/>
+      <psa30 value="0.019085110613716" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MPNC" name="MPNC" netid="IV" lat="38.1465" commtype="DIG" lon="15.3528">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.57241963361596" flag="0"/>
+      <vel value="0.200203" flag="0"/>
+      <psa03 value="0.9115847919524" flag="0"/>
+      <psa10 value="0.08148266737367" flag="0"/>
+      <psa30 value="0.012036016376642" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.4737944150143" flag="0"/>
+      <vel value="0.184175" flag="0"/>
+      <psa03 value="1.5068125200757" flag="0"/>
+      <psa10 value="0.093641151667491" flag="0"/>
+      <psa30 value="0.010151172928574" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.24799477905299" flag="0"/>
+      <vel value="0.099736" flag="0"/>
+      <psa03 value="0.55739799013934" flag="0"/>
+      <psa10 value="0.043391270209501" flag="0"/>
+      <psa30 value="0.0041254658828448" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MILZ" name="MILZ" netid="IV" lat="38.2713" commtype="DIG" lon="15.2313">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.20558100880525" flag="0"/>
+      <vel value="0.034506" flag="0"/>
+      <psa03 value="0.15283353642681" flag="0"/>
+      <psa10 value="0.015370284449838" flag="0"/>
+      <psa30 value="0.0028841653367868" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.2274767632168" flag="0"/>
+      <vel value="0.118921" flag="0"/>
+      <psa03 value="0.44992601958875" flag="0"/>
+      <psa10 value="0.056785446610208" flag="0"/>
+      <psa30 value="0.0075296864882503" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.14871755390475" flag="0"/>
+      <vel value="0.071928" flag="0"/>
+      <psa03 value="0.3759470359399" flag="0"/>
+      <psa10 value="0.03313588228396" flag="0"/>
+      <psa30 value="0.0044801231817185" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MPAZ" name="MPAZ" netid="IV" lat="37.9531" commtype="DIG" lon="16.0067">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.45347136891803" flag="0"/>
+      <vel value="0.149684" flag="0"/>
+      <psa03 value="0.74164062141506" flag="0"/>
+      <psa10 value="0.13367164118226" flag="0"/>
+      <psa30 value="0.011919666756742" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.40553695706485" flag="0"/>
+      <vel value="0.148861" flag="0"/>
+      <psa03 value="0.90073215624092" flag="0"/>
+      <psa10 value="0.059784431992576" flag="0"/>
+      <psa30 value="0.0097950880270021" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.30401951736832" flag="0"/>
+      <vel value="0.110396" flag="0"/>
+      <psa03 value="0.44669382510847" flag="0"/>
+      <psa10 value="0.055304614725722" flag="0"/>
+      <psa30 value="0.006403002044531" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MCSR" name="MCSR" netid="IV" lat="38.0646" commtype="DIG" lon="15.2301">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.085123564112108" flag="0"/>
+      <vel value="0.037618" flag="0"/>
+      <psa03 value="0.21985081551804" flag="0"/>
+      <psa10 value="0.043669856678886" flag="0"/>
+      <psa30 value="0.0041615638367842" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.49047982746402" flag="0"/>
+      <vel value="0.239025" flag="0"/>
+      <psa03 value="1.7778105673191" flag="0"/>
+      <psa10 value="0.093024019415397" flag="0"/>
+      <psa30 value="0.010546822819209" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.51677596324943" flag="0"/>
+      <vel value="0.285916" flag="0"/>
+      <psa03 value="1.6819619339938" flag="0"/>
+      <psa10 value="0.080855235987825" flag="0"/>
+      <psa30 value="0.010613818174402" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PLAC" name="PLAC" netid="IV" lat="38.4494" commtype="DIG" lon="16.4383">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.1381696093977" flag="0"/>
+      <vel value="0.111709" flag="0"/>
+      <psa03 value="0.29904891068816" flag="0"/>
+      <psa10 value="0.13867967144744" flag="0"/>
+      <psa30 value="0.0075708830232546" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.051220549321124" flag="0"/>
+      <vel value="0.033557" flag="0"/>
+      <psa03 value="0.10140608668608" flag="0"/>
+      <psa10 value="0.033262021179506" flag="0"/>
+      <psa30 value="0.0042325360852075" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.11056558559753" flag="0"/>
+      <vel value="0.054813" flag="0"/>
+      <psa03 value="0.27894785681145" flag="0"/>
+      <psa10 value="0.050602091437953" flag="0"/>
+      <psa30 value="0.0032754304477064" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ISTR" name="ISTR" netid="IV" lat="38.7866" commtype="DIG" lon="15.1918">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.1229120035894" flag="0"/>
+      <vel value="0.027774" flag="0"/>
+      <psa03 value="0.11880479062677" flag="0"/>
+      <psa10 value="0.0085572545160682" flag="0"/>
+      <psa30 value="0.0012631224730158" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.15511270413444" flag="0"/>
+      <vel value="0.039734" flag="0"/>
+      <psa03 value="0.23234488841755" flag="0"/>
+      <psa10 value="0.013746080465806" flag="0"/>
+      <psa30 value="0.0022568359225628" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.1331940061081" flag="0"/>
+      <vel value="0.030807" flag="0"/>
+      <psa03 value="0.24068198620324" flag="0"/>
+      <psa10 value="0.013060525255821" flag="0"/>
+      <psa30 value="0.0024656738029806" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ESLN" name="ESLN" netid="IV" lat="37.6934" commtype="DIG" lon="14.9744">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.11894500160605" flag="0"/>
+      <vel value="0.025292" flag="0"/>
+      <psa03 value="0.10237665257759" flag="0"/>
+      <psa10 value="0.018528447533052" flag="0"/>
+      <psa30 value="0.001795006449705" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.10498406693417" flag="0"/>
+      <vel value="0.039087" flag="0"/>
+      <psa03 value="0.15126684443719" flag="0"/>
+      <psa10 value="0.035423309692912" flag="0"/>
+      <psa30 value="0.0035275042955545" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.067376219198197" flag="0"/>
+      <vel value="0.022198" flag="0"/>
+      <psa03 value="0.10916143637226" flag="0"/>
+      <psa10 value="0.02306985565917" flag="0"/>
+      <psa30 value="0.0027816838573825" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="IFIL" name="IFIL" netid="IV" lat="38.5642" commtype="DIG" lon="14.5753">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.41352266064354" flag="0"/>
+      <vel value="0.099245" flag="0"/>
+      <psa03 value="0.90161013190029" flag="0"/>
+      <psa10 value="0.038621139736811" flag="0"/>
+      <psa30 value="0.0041414754273886" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.11260879097347" flag="0"/>
+      <vel value="0.038106" flag="0"/>
+      <psa03 value="0.23621868833904" flag="0"/>
+      <psa10 value="0.015460529334686" flag="0"/>
+      <psa30 value="0.001821009213136" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.20429300525664" flag="0"/>
+      <vel value="0.050486" flag="0"/>
+      <psa03 value="0.3973020348437" flag="0"/>
+      <psa10 value="0.015455226810379" flag="0"/>
+      <psa30 value="0.0026934784049599" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HCRL" name="HCRL" netid="IV" lat="37.2831" commtype="DIG" lon="15.0325">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.27817215868824" flag="0"/>
+      <vel value="0.047675" flag="0"/>
+      <psa03 value="0.209013679493" flag="0"/>
+      <psa10 value="0.016556418348774" flag="0"/>
+      <psa30 value="0.0025686651404914" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.57299862848169" flag="0"/>
+      <vel value="0.090118" flag="0"/>
+      <psa03 value="0.47585821865775" flag="0"/>
+      <psa10 value="0.040031305287738" flag="0"/>
+      <psa30 value="0.0072616030958584" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.667949809568" flag="0"/>
+      <vel value="0.122853" flag="0"/>
+      <psa03 value="0.41130396210735" flag="0"/>
+      <psa10 value="0.027233764843244" flag="0"/>
+      <psa30 value="0.0051143866661908" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HAGA" name="HAGA" netid="IV" lat="37.285" commtype="DIG" lon="15.155">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.1157038336231" flag="0"/>
+      <vel value="0.014071" flag="0"/>
+      <psa03 value="0.073072251992271" flag="0"/>
+      <psa10 value="0.0040944665099703" flag="0"/>
+      <psa30 value="0.00079782596503393" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.12604314419297" flag="0"/>
+      <vel value="0.021509" flag="0"/>
+      <psa03 value="0.092714739488" flag="0"/>
+      <psa10 value="0.0092548423773664" flag="0"/>
+      <psa30 value="0.00094476707132405" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.1303859116008" flag="0"/>
+      <vel value="0.023569" flag="0"/>
+      <psa03 value="0.07883629985775" flag="0"/>
+      <psa10 value="0.012014908251034" flag="0"/>
+      <psa30 value="0.0014046590833771" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="IACL" name="IACL" netid="IV" lat="38.533" commtype="DIG" lon="14.355">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.18708111332616" flag="0"/>
+      <vel value="0.051091" flag="0"/>
+      <psa03 value="0.40609749506712" flag="0"/>
+      <psa10 value="0.015987824588417" flag="0"/>
+      <psa30 value="0.0035191426226081" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.12323525362892" flag="0"/>
+      <vel value="0.039412" flag="0"/>
+      <psa03 value="0.19438727802053" flag="0"/>
+      <psa10 value="0.011376056043603" flag="0"/>
+      <psa30 value="0.002654831160488" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.19547633493599" flag="0"/>
+      <vel value="0.064839" flag="0"/>
+      <psa03 value="0.35694900909077" flag="0"/>
+      <psa10 value="0.018985178424844" flag="0"/>
+      <psa30 value="0.0030065312823441" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MSFR" name="MSFR" netid="IV" lat="38.0339" commtype="DIG" lon="14.5916">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.025043822304253" flag="0"/>
+      <vel value="0.012282" flag="0"/>
+      <psa03 value="0.065553782382363" flag="0"/>
+      <psa10 value="0.0076068790055727" flag="0"/>
+      <psa30 value="0.0017618656727833" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0190869461029" flag="0"/>
+      <vel value="0.007212" flag="0"/>
+      <psa03 value="0.045824007178802" flag="0"/>
+      <psa10 value="0.0078516108966875" flag="0"/>
+      <psa30 value="0.00090877108900593" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.027292908383597" flag="0"/>
+      <vel value="0.011584" flag="0"/>
+      <psa03 value="0.078551595091086" flag="0"/>
+      <psa10 value="0.0077395440848812" flag="0"/>
+      <psa30 value="0.0024889233326365" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HLNI" name="HLNI" netid="IV" lat="37.3485" commtype="DIG" lon="14.872">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.14577240953843" flag="0"/>
+      <vel value="0.030744" flag="0"/>
+      <psa03 value="0.12275190814396" flag="0"/>
+      <psa10 value="0.0087511025681553" flag="0"/>
+      <psa30 value="0.0012910626972514" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.14915266681283" flag="0"/>
+      <vel value="0.022802" flag="0"/>
+      <psa03 value="0.07142214721643" flag="0"/>
+      <psa10 value="0.0064853951145396" flag="0"/>
+      <psa30 value="0.0018657747548857" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.12705837365461" flag="0"/>
+      <vel value="0.020888" flag="0"/>
+      <psa03 value="0.070687441684979" flag="0"/>
+      <psa10 value="0.0048291720414209" flag="0"/>
+      <psa30 value="0.0011915383948647" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CET2" name="CET2" netid="IV" lat="39.528756" commtype="DIG" lon="15.954618">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.080841163904085" flag="0"/>
+      <vel value="0.024844" flag="0"/>
+      <psa03 value="0.13338642655749" flag="0"/>
+      <psa10 value="0.01298261893715" flag="0"/>
+      <psa30 value="0.0018342655239047" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.2100526683424" flag="0"/>
+      <vel value="0.062983" flag="0"/>
+      <psa03 value="0.41479628619355" flag="0"/>
+      <psa10 value="0.048848791381359" flag="0"/>
+      <psa30 value="0.0041345413571403" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.15319961454727" flag="0"/>
+      <vel value="0.052317" flag="0"/>
+      <psa03 value="0.28325401640723" flag="0"/>
+      <psa10 value="0.04133654204035" flag="0"/>
+      <psa30 value="0.0023991883058945" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HAVL" name="HAVL" netid="IV" lat="36.9596" commtype="DIG" lon="15.122">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.082805647188387" flag="0"/>
+      <vel value="0.017762" flag="0"/>
+      <psa03 value="0.16160411557464" flag="0"/>
+      <psa10 value="0.0061213564265065" flag="0"/>
+      <psa30 value="0.00099554893873035" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.081436168314358" flag="0"/>
+      <vel value="0.025686" flag="0"/>
+      <psa03 value="0.22260262169038" flag="0"/>
+      <psa10 value="0.0099603840251258" flag="0"/>
+      <psa30 value="0.001955917668113" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.043266864831517" flag="0"/>
+      <vel value="0.011383" flag="0"/>
+      <psa03 value="0.069892470925341" flag="0"/>
+      <psa10 value="0.005328119184431" flag="0"/>
+      <psa30 value="0.00099055232928676" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SSY" name="SSY" netid="IV" lat="37.1577" commtype="DIG" lon="15.0737">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.078477869608888" flag="0"/>
+      <vel value="0.020016" flag="0"/>
+      <psa03 value="0.068096546731045" flag="0"/>
+      <psa10 value="0.0071770686218026" flag="0"/>
+      <psa30 value="0.0010744749736148" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.090749236487486" flag="0"/>
+      <vel value="0.017155" flag="0"/>
+      <psa03 value="0.086951711338734" flag="0"/>
+      <psa10 value="0.0052734623954154" flag="0"/>
+      <psa30 value="0.0010379691331902" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.12022974206278" flag="0"/>
+      <vel value="0.045187" flag="0"/>
+      <psa03 value="0.22070391010182" flag="0"/>
+      <psa10 value="0.013349308887337" flag="0"/>
+      <psa30 value="0.0018166244334202" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GALF" name="GALF" netid="IV" lat="37.7107" commtype="DIG" lon="14.5665">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.023945689914497" flag="0"/>
+      <vel value="0.012976" flag="0"/>
+      <psa03 value="0.083061290042981" flag="0"/>
+      <psa10 value="0.0073725482198304" flag="0"/>
+      <psa30 value="0.0014797101966523" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.03646658135041" flag="0"/>
+      <vel value="0.028912" flag="0"/>
+      <psa03 value="0.11325478119439" flag="0"/>
+      <psa10 value="0.021354081159213" flag="0"/>
+      <psa30 value="0.0017302544701809" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.035652032039483" flag="0"/>
+      <vel value="0.023912" flag="0"/>
+      <psa03 value="0.11138768080843" flag="0"/>
+      <psa10 value="0.020987595152269" flag="0"/>
+      <psa30 value="0.0022968087981115" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CAGR" name="CAGR" netid="IV" lat="37.622" commtype="DIG" lon="14.4999">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.022759657987182" flag="0"/>
+      <vel value="0.018509" flag="0"/>
+      <psa03 value="0.081774408182203" flag="0"/>
+      <psa10 value="0.0240543916628" flag="0"/>
+      <psa30 value="0.0025397052000428" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.015340304793176" flag="0"/>
+      <vel value="0.014691" flag="0"/>
+      <psa03 value="0.031060861762172" flag="0"/>
+      <psa10 value="0.019261521518561" flag="0"/>
+      <psa30 value="0.0030121397215155" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.028516771782413" flag="0"/>
+      <vel value="0.030568" flag="0"/>
+      <psa03 value="0.082736000571041" flag="0"/>
+      <psa10 value="0.019807375607368" flag="0"/>
+      <psa30 value="0.0038236298838033" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GIB" name="GIB" netid="IV" lat="37.990126" commtype="DIG" lon="14.026023">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.01204366424824" flag="0"/>
+      <vel value="0.010253" flag="0"/>
+      <psa03 value="0.038831507191549" flag="0"/>
+      <psa10 value="0.0070386931317014" flag="0"/>
+      <psa30 value="0.00093355019298129" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0088461401192048" flag="0"/>
+      <vel value="0.005153" flag="0"/>
+      <psa03 value="0.038081505916903" flag="0"/>
+      <psa10 value="0.0044652353250091" flag="0"/>
+      <psa30 value="0.00061121789805897" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.011906920304079" flag="0"/>
+      <vel value="0.008521" flag="0"/>
+      <psa03 value="0.060276852951824" flag="0"/>
+      <psa10 value="0.010197264101401" flag="0"/>
+      <psa30 value="0.00098504586173668" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MMN" name="MMN" netid="IV" lat="39.890961" commtype="DIG" lon="15.990414">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.034776299755778" flag="0"/>
+      <vel value="0.00977" flag="0"/>
+      <psa03 value="0.059123655886567" flag="0"/>
+      <psa10 value="0.0077790071023234" flag="0"/>
+      <psa30 value="0.00048161196738948" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.011693697643946" flag="0"/>
+      <vel value="0.004586" flag="0"/>
+      <psa03 value="0.019589972110762" flag="0"/>
+      <psa10 value="0.0085728561741267" flag="0"/>
+      <psa30 value="0.00055380787526831" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.025236242753642" flag="0"/>
+      <vel value="0.007462" flag="0"/>
+      <psa03 value="0.038677224128525" flag="0"/>
+      <psa10 value="0.0057802613532654" flag="0"/>
+      <psa30 value="0.00043490896483509" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SOLUN" name="SOLUN" netid="IV" lat="38.09193" commtype="DIG" lon="13.53261">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0019499013424564" flag="0"/>
+      <vel value="0.00164" flag="0"/>
+      <psa03 value="0.0041485114692581" flag="0"/>
+      <psa10 value="0.002331581120974" flag="0"/>
+      <psa30 value="0.00020567676015765" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0018034700942728" flag="0"/>
+      <vel value="0.001355" flag="0"/>
+      <psa03 value="0.0065482096332591" flag="0"/>
+      <psa10 value="0.0017130212661816" flag="0"/>
+      <psa30 value="0.00025921186133899" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0017958222226754" flag="0"/>
+      <vel value="0.000889" flag="0"/>
+      <psa03 value="0.004962754865321" flag="0"/>
+      <psa10 value="0.00090234687686417" flag="0"/>
+      <psa30 value="0.00018660806697496" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HMDC" name="HMDC" netid="IV" lat="36.959" commtype="DIG" lon="14.7831">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.031921604217546" flag="0"/>
+      <vel value="0.008739" flag="0"/>
+      <psa03 value="0.038731982889162" flag="0"/>
+      <psa10 value="0.0055395063553813" flag="0"/>
+      <psa30 value="0.00086910412832109" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.033618106081078" flag="0"/>
+      <vel value="0.01" flag="0"/>
+      <psa03 value="0.050829692096689" flag="0"/>
+      <psa10 value="0.0062949121259553" flag="0"/>
+      <psa30 value="0.0010943594397679" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.019423860339667" flag="0"/>
+      <vel value="0.0069" flag="0"/>
+      <psa03 value="0.031092880851259" flag="0"/>
+      <psa10 value="0.0029151647096613" flag="0"/>
+      <psa30 value="0.00050669698622873" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ALJA" name="ALJA" netid="IV" lat="37.74897" commtype="DIG" lon="13.75373">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0026632948050558" flag="0"/>
+      <vel value="0.00198" flag="0"/>
+      <psa03 value="0.0097890717013455" flag="0"/>
+      <psa10 value="0.0027461977331709" flag="0"/>
+      <psa30 value="0.00065486175197443" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0051304981823559" flag="0"/>
+      <vel value="0.00396" flag="0"/>
+      <psa03 value="0.021825088077988" flag="0"/>
+      <psa10 value="0.0063609897365563" flag="0"/>
+      <psa30 value="0.00076376744352047" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0061734639249897" flag="0"/>
+      <vel value="0.004784" flag="0"/>
+      <psa03 value="0.026786313368989" flag="0"/>
+      <psa10 value="0.0048499742521656" flag="0"/>
+      <psa30 value="0.00055656110904335" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CMPR" name="CMPR" netid="IV" lat="40.3181" commtype="DIG" lon="15.303">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.030550187882712" flag="0"/>
+      <vel value="0.011909" flag="0"/>
+      <psa03 value="0.078485007622379" flag="0"/>
+      <psa10 value="0.0080907343486308" flag="0"/>
+      <psa30 value="0.0008221971825241" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.019360739906084" flag="0"/>
+      <vel value="0.009799" flag="0"/>
+      <psa03 value="0.057737147751781" flag="0"/>
+      <psa10 value="0.0081295855363452" flag="0"/>
+      <psa30 value="0.00069911743561767" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.012017151626702" flag="0"/>
+      <vel value="0.007964" flag="0"/>
+      <psa03 value="0.033810730473709" flag="0"/>
+      <psa10 value="0.0091931495464812" flag="0"/>
+      <psa30 value="0.00071247571800768" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CORL" name="CORL" netid="IV" lat="37.8943" commtype="DIG" lon="13.3038">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0024804596880688" flag="0"/>
+      <vel value="0.001509" flag="0"/>
+      <psa03 value="0.010736184119959" flag="0"/>
+      <psa10 value="0.0022941575359577" flag="0"/>
+      <psa30 value="0.00062416829396379" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.005299363187225" flag="0"/>
+      <vel value="0.003634" flag="0"/>
+      <psa03 value="0.018434531669836" flag="0"/>
+      <psa10 value="0.0036406927951951" flag="0"/>
+      <psa30 value="0.001032054779155" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0046189065583048" flag="0"/>
+      <vel value="0.002521" flag="0"/>
+      <psa03 value="0.017278173484319" flag="0"/>
+      <psa10 value="0.0025512279932495" flag="0"/>
+      <psa30 value="0.00087032778777666" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="USI" name="USI" netid="IV" lat="38.70787" commtype="DIG" lon="13.17913">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.016046764185527" flag="0"/>
+      <vel value="0.007076" flag="0"/>
+      <psa03 value="0.045840628553074" flag="0"/>
+      <psa10 value="0.0038450439242759" flag="0"/>
+      <psa30 value="0.00046295116069198" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.013007398041125" flag="0"/>
+      <vel value="0.007136" flag="0"/>
+      <psa03 value="0.031049236997344" flag="0"/>
+      <psa10 value="0.003207823262786" flag="0"/>
+      <psa30 value="0.00061274747237844" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MCEL" name="MCEL" netid="IV" lat="40.3249" commtype="DIG" lon="15.8019">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0095297578683852" flag="0"/>
+      <vel value="0.010027" flag="0"/>
+      <psa03 value="0.029561471042609" flag="0"/>
+      <psa10 value="0.011804336853054" flag="0"/>
+      <psa30 value="0.001098846191105" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.0088405316800334" flag="0"/>
+      <vel value="0.009682" flag="0"/>
+      <psa03 value="0.02815120352006" flag="0"/>
+      <psa10 value="0.011401548948928" flag="0"/>
+      <psa30 value="0.0010733532857806" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.011342915266681" flag="0"/>
+      <vel value="0.005889" flag="0"/>
+      <psa03 value="0.023393921471654" flag="0"/>
+      <psa10 value="0.0080155812637343" flag="0"/>
+      <psa30 value="0.00084962754865321" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0065801267507253" flag="0"/>
+      <vel value="0.004199" flag="0"/>
+      <psa03 value="0.015557912233026" flag="0"/>
+      <psa10 value="0.0083933861206426" flag="0"/>
+      <psa30 value="0.00068004874243498" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.010517353020654" flag="0"/>
+      <vel value="0.005765" flag="0"/>
+      <psa03 value="0.022432533026059" flag="0"/>
+      <psa10 value="0.0077885924347254" flag="0"/>
+      <psa30 value="0.00082056563658334" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.006247189407188" flag="0"/>
+      <vel value="0.004041" flag="0"/>
+      <psa03 value="0.014911922012104" flag="0"/>
+      <psa10 value="0.0081354998903805" flag="0"/>
+      <psa30 value="0.00065384203576145" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MCT" name="MCT" netid="IV" lat="37.61864" commtype="DIG" lon="13.60761">
+    <comp name="--.BHE" ingv:from="ont">
+      <acc value="0.0020559518286061" flag="0"/>
+      <vel value="0.002437" flag="0"/>
+      <psa03 value="0.0069284618090785" flag="0"/>
+      <psa10 value="0.0033328404704971" flag="0"/>
+      <psa30 value="0.00081047044607486" flag="0"/>
+    </comp>
+    <comp name="--.BHZ" ingv:from="ont">
+      <acc value="0.0012900429810384" flag="0"/>
+      <vel value="0.002123" flag="0"/>
+      <psa03 value="0.0033895366919386" flag="0"/>
+      <psa10 value="0.0018300846874315" flag="0"/>
+      <psa30 value="0.00085095317973008" flag="0"/>
+    </comp>
+    <comp name="--.BHN" ingv:from="ont">
+      <acc value="0.0030326360173964" flag="0"/>
+      <vel value="0.003779" flag="0"/>
+      <psa03 value="0.008055554139283" flag="0"/>
+      <psa10 value="0.0042725089607562" flag="0"/>
+      <psa30 value="0.0015761753504" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MTSN" name="MTSN" netid="IV" lat="40.2663" commtype="DIG" lon="15.7515">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.013689486215986" flag="0"/>
+      <vel value="0.007257" flag="0"/>
+      <psa03 value="0.030802465673803" flag="0"/>
+      <psa10 value="0.011811984724651" flag="0"/>
+      <psa30 value="0.00075000127464527" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0075883201704966" flag="0"/>
+      <vel value="0.006364" flag="0"/>
+      <psa03 value="0.013598935416274" flag="0"/>
+      <psa10 value="0.0090532444820606" flag="0"/>
+      <psa30 value="0.00090958686197631" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.013101619819204" flag="0"/>
+      <vel value="0.011065" flag="0"/>
+      <psa03 value="0.040732972013889" flag="0"/>
+      <psa10 value="0.020136947887403" flag="0"/>
+      <psa30 value="0.0010173708656881" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SLCN" name="SLCN" netid="IV" lat="40.39" commtype="DIG" lon="15.63277">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.010053178200507" flag="0"/>
+      <vel value="0.004998" flag="0"/>
+      <psa03 value="0.026422274680956" flag="0"/>
+      <psa10 value="0.0067578632866473" flag="0"/>
+      <psa30 value="0.00087399876614338" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0097098397515971" flag="0"/>
+      <vel value="0.00481" flag="0"/>
+      <psa03 value="0.025101334298665" flag="0"/>
+      <psa10 value="0.0065346474076265" flag="0"/>
+      <psa30 value="0.00084738417298466" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.013851111235743" flag="0"/>
+      <vel value="0.009342" flag="0"/>
+      <psa03 value="0.036541122605579" flag="0"/>
+      <psa10 value="0.011631800869818" flag="0"/>
+      <psa30 value="0.00085900893781261" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.019545716427118" flag="0"/>
+      <vel value="0.014882" flag="0"/>
+      <psa03 value="0.069240362407142" flag="0"/>
+      <psa10 value="0.017229227106096" flag="0"/>
+      <psa30 value="0.001291980441843" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.012385982980936" flag="0"/>
+      <vel value="0.009852" flag="0"/>
+      <psa03 value="0.03781648167315" flag="0"/>
+      <psa10 value="0.01189203244737" flag="0"/>
+      <psa30 value="0.00080669749608684" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.01749506712282" flag="0"/>
+      <vel value="0.013754" flag="0"/>
+      <psa03 value="0.063987702222471" flag="0"/>
+      <psa10 value="0.016828376662775" flag="0"/>
+      <psa30 value="0.0012274324055615" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CDRU" name="CDRU" netid="IV" lat="40.4896" commtype="DIG" lon="15.3046">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.019144764012175" flag="0"/>
+      <vel value="0.006748" flag="0"/>
+      <psa03 value="0.032410150255184" flag="0"/>
+      <psa10 value="0.0082014755293602" flag="0"/>
+      <psa30 value="0.00052862088480776" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0083786002355544" flag="0"/>
+      <vel value="0.003637" flag="0"/>
+      <psa03 value="0.020836269266263" flag="0"/>
+      <psa10 value="0.0032979661760132" flag="0"/>
+      <psa30 value="0.00026012960593067" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0058819270596993" flag="0"/>
+      <vel value="0.002495" flag="0"/>
+      <psa03 value="0.014137243605105" flag="0"/>
+      <psa10 value="0.0033627181555373" flag="0"/>
+      <psa30 value="0.00028715208557458" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ORI" name="ORI" netid="IV" lat="40.05096" commtype="DIG" lon="16.450405">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.023120331611712" flag="0"/>
+      <vel value="0.014403" flag="0"/>
+      <psa03 value="0.070350017590105" flag="0"/>
+      <psa10 value="0.013260185690322" flag="0"/>
+      <psa30 value="0.0013383775295335" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.014353525413877" flag="0"/>
+      <vel value="0.007524" flag="0"/>
+      <psa03 value="0.031408890905661" flag="0"/>
+      <psa10 value="0.0057109206507829" flag="0"/>
+      <psa30 value="0.0011509536895882" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.033697541974069" flag="0"/>
+      <vel value="0.016832" flag="0"/>
+      <psa03 value="0.074623852181938" flag="0"/>
+      <psa10 value="0.017525964524073" flag="0"/>
+      <psa30 value="0.0013842647591175" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="FAVR" name="FAVR" netid="IV" lat="37.2671" commtype="DIG" lon="13.667">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0047801236915766" flag="0"/>
+      <vel value="0.003147" flag="0"/>
+      <psa03 value="0.014921099458021" flag="0"/>
+      <psa10 value="0.0037688711231664" flag="0"/>
+      <psa30 value="0.00086339371752841" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.002336373787175" flag="0"/>
+      <vel value="0.002181" flag="0"/>
+      <psa03 value="0.010413545910173" flag="0"/>
+      <psa10 value="0.0024907588218199" flag="0"/>
+      <psa30 value="0.00082423661495006" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0043577572361612" flag="0"/>
+      <vel value="0.002637" flag="0"/>
+      <psa03 value="0.011179760672605" flag="0"/>
+      <psa10 value="0.003446844743108" flag="0"/>
+      <psa30 value="0.00067229889921635" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SCTE" name="SCTE" netid="IV" lat="40.0724" commtype="DIG" lon="18.4675">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0045801573422117" flag="0"/>
+      <vel value="0.0018" flag="0"/>
+      <psa03 value="0.0083984847017075" flag="0"/>
+      <psa10 value="0.00062600378314715" flag="0"/>
+      <psa30 value="8.0047722718767E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0049479689802328" flag="0"/>
+      <vel value="0.001037" flag="0"/>
+      <psa03 value="0.0045569078125558" flag="0"/>
+      <psa10 value="0.00058888611299475" flag="0"/>
+      <psa30 value="9.7790784824583E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0031249203346709" flag="0"/>
+      <vel value="0.001134" flag="0"/>
+      <psa03 value="0.0053583027843351" flag="0"/>
+      <psa10 value="0.00025696848567044" flag="0"/>
+      <psa30 value="5.4146930909128E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ACER" name="ACER" netid="IV" lat="40.7867" commtype="DIG" lon="15.9427">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.019027088761198" flag="0"/>
+      <vel value="0.007424" flag="0"/>
+      <psa03 value="0.033633911682379" flag="0"/>
+      <psa10 value="0.011537885006603" flag="0"/>
+      <psa30 value="0.001482361458806" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.017851559910877" flag="0"/>
+      <vel value="0.007099" flag="0"/>
+      <psa03 value="0.031679523588585" flag="0"/>
+      <psa10 value="0.011036286601439" flag="0"/>
+      <psa30 value="0.0014357604278729" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.017941600852483" flag="0"/>
+      <vel value="0.008731" flag="0"/>
+      <psa03 value="0.029354672594617" flag="0"/>
+      <psa10 value="0.015234356278648" flag="0"/>
+      <psa30 value="0.00073745876522564" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.016751184145452" flag="0"/>
+      <vel value="0.008051" flag="0"/>
+      <psa03 value="0.027199400406867" flag="0"/>
+      <psa10 value="0.014495367939103" flag="0"/>
+      <psa30 value="0.0007531623949055" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.017656692142577" flag="0"/>
+      <vel value="0.005872" flag="0"/>
+      <psa03 value="0.023290216332795" flag="0"/>
+      <psa10 value="0.0047069080674848" flag="0"/>
+      <psa30 value="0.00071563683826791" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.016034527590971" flag="0"/>
+      <vel value="0.005575" flag="0"/>
+      <psa03 value="0.021481749629078" flag="0"/>
+      <psa10 value="0.0045077574910902" flag="0"/>
+      <psa30 value="0.00070187066939271" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MCRV" name="MCRV" netid="IV" lat="40.7826" commtype="DIG" lon="15.1684">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0044656432114942" flag="0"/>
+      <vel value="0.002382" flag="0"/>
+      <psa03 value="0.0093524292189484" flag="0"/>
+      <psa10 value="0.0021972844957248" flag="0"/>
+      <psa30 value="0.00023677810465347" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0069698622873254" flag="0"/>
+      <vel value="0.003465" flag="0"/>
+      <psa03 value="0.023712276873346" flag="0"/>
+      <psa10 value="0.0034655055498055" flag="0"/>
+      <psa30 value="0.00025961974782418" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0082534810562221" flag="0"/>
+      <vel value="0.003748" flag="0"/>
+      <psa03 value="0.023298068147635" flag="0"/>
+      <psa10 value="0.0028058511316301" flag="0"/>
+      <psa30 value="0.00024462991949341" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MRLC" name="MRLC" netid="IV" lat="40.7564" commtype="DIG" lon="15.48892">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0040988512896861" flag="0"/>
+      <vel value="0.00318" flag="0"/>
+      <psa03 value="0.014066373328303" flag="0"/>
+      <psa10 value="0.0043973222252247" flag="0"/>
+      <psa30 value="0.00074796184221931" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0019986437774367" flag="0"/>
+      <vel value="0.001459" flag="0"/>
+      <psa03 value="0.0047821631240026" flag="0"/>
+      <psa10 value="0.0028197192721266" flag="0"/>
+      <psa30 value="0.0003695451555832" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0039481372334079" flag="0"/>
+      <vel value="0.003019" flag="0"/>
+      <psa03 value="0.012714739488" flag="0"/>
+      <psa10 value="0.0044100686778869" flag="0"/>
+      <psa30 value="0.00070350221533347" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0050847129243931" flag="0"/>
+      <vel value="0.003437" flag="0"/>
+      <psa03 value="0.021082326788455" flag="0"/>
+      <psa10 value="0.0039664921252415" flag="0"/>
+      <psa30 value="0.00047182269174489" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.0045084712924393" flag="0"/>
+      <vel value="0.003161" flag="0"/>
+      <psa03 value="0.018591364023392" flag="0"/>
+      <psa10 value="0.0041059893031769" flag="0"/>
+      <psa30 value="0.00049078941330628" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="AMUR" name="AMUR" netid="IV" lat="40.9071" commtype="DIG" lon="16.6041">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.016359205233184" flag="0"/>
+      <vel value="0.003718" flag="0"/>
+      <psa03 value="0.020425119689191" flag="0"/>
+      <psa10 value="0.0030614939862236" flag="0"/>
+      <psa30 value="0.00050098657543606" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.017248499742522" flag="0"/>
+      <vel value="0.004977" flag="0"/>
+      <psa03 value="0.019673996726711" flag="0"/>
+      <psa10 value="0.0027703650074184" flag="0"/>
+      <psa30 value="0.00024738315326845" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PAOL" name="PAOL" netid="IV" lat="41.031206" commtype="DIG" lon="14.567486">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0015458897788745" flag="0"/>
+      <vel value="0.001212" flag="0"/>
+      <psa03 value="0.0048282542968292" flag="0"/>
+      <psa10 value="0.0017247480026309" flag="0"/>
+      <psa30 value="0.00036097953939419" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.036533882620467" flag="0"/>
+      <vel value="0.687111" flag="0"/>
+      <psa03 value="0.036589967012181" flag="0"/>
+      <psa10 value="0.10775810291996" flag="0"/>
+      <psa30 value="0.29129509057629" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.020641809384448" flag="0"/>
+      <vel value="0.353339" flag="0"/>
+      <psa03 value="0.030438732900634" flag="0"/>
+      <psa10 value="0.058279126918978" flag="0"/>
+      <psa30 value="0.15205732844549" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.020637424604733" flag="0"/>
+      <vel value="0.363162" flag="0"/>
+      <psa03 value="0.030423437157439" flag="0"/>
+      <psa10 value="0.06722244599328" flag="0"/>
+      <psa30 value="0.15003431345057" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MESG" name="MESG" netid="IV" lat="40.589408" commtype="DIG" lon="17.850423">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.020495174193022" flag="0"/>
+      <vel value="0.00311" flag="0"/>
+      <psa03 value="0.016342685830533" flag="0"/>
+      <psa10 value="0.0019783514247985" flag="0"/>
+      <psa30 value="0.00033130579759653" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.021143305817991" flag="0"/>
+      <vel value="0.004194" flag="0"/>
+      <psa03 value="0.013077044658472" flag="0"/>
+      <psa10 value="0.0021438513661648" flag="0"/>
+      <psa30 value="0.00025696848567044" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.01404179816757" flag="0"/>
+      <vel value="0.002064" flag="0"/>
+      <psa03 value="0.010978468692163" flag="0"/>
+      <psa10 value="0.0013995605023122" flag="0"/>
+      <psa30 value="0.00030775035307674" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MIGL" name="MIGL" netid="IV" lat="40.6044" commtype="DIG" lon="16.441">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.034419195137993" flag="0"/>
+      <vel value="0.00922" flag="0"/>
+      <psa03 value="0.030421295753392" flag="0"/>
+      <psa10 value="0.0096420286234341" flag="0"/>
+      <psa30 value="0.0012162155272188" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.031217388200864" flag="0"/>
+      <vel value="0.016983" flag="0"/>
+      <psa03 value="0.046237502103165" flag="0"/>
+      <psa10 value="0.021932464195214" flag="0"/>
+      <psa30 value="0.0025645862756395" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.033401110470956" flag="0"/>
+      <vel value="0.011933" flag="0"/>
+      <psa03 value="0.053113958385381" flag="0"/>
+      <psa10 value="0.013268445391648" flag="0"/>
+      <psa30 value="0.0032208756303121" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="NOCI" name="NOCI" netid="IV" lat="40.7888" commtype="DIG" lon="17.0644">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.03644853237344" flag="0"/>
+      <vel value="0.004491" flag="0"/>
+      <psa03 value="0.021957039355947" flag="0"/>
+      <psa10 value="0.0024149939071956" flag="0"/>
+      <psa30 value="0.00032875650706408" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.038341125664728" flag="0"/>
+      <vel value="0.0049" flag="0"/>
+      <psa03 value="0.021691811168952" flag="0"/>
+      <psa10 value="0.0031381766454396" flag="0"/>
+      <psa30 value="0.00029938868013032" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="VULT" name="VULT" netid="IV" lat="40.9549" commtype="DIG" lon="15.6163">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0052167661739738" flag="0"/>
+      <vel value="0.001907" flag="0"/>
+      <psa03 value="0.0067227850489209" flag="0"/>
+      <psa10 value="0.00484875059271" flag="0"/>
+      <psa30 value="0.00047345423768565" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0081860778145442" flag="0"/>
+      <vel value="0.003223" flag="0"/>
+      <psa03 value="0.01288207491855" flag="0"/>
+      <psa10 value="0.0058836605772613" flag="0"/>
+      <psa30 value="0.00051322316999179" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0073276807064594" flag="0"/>
+      <vel value="0.004242" flag="0"/>
+      <psa03 value="0.017192109435944" flag="0"/>
+      <psa10 value="0.0057474264912075" flag="0"/>
+      <psa30 value="0.00078722091641896" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PALZ" name="PALZ" netid="IV" lat="40.9441" commtype="DIG" lon="15.9602">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0068015071405628" flag="0"/>
+      <vel value="0.003278" flag="0"/>
+      <psa03 value="0.014937007030943" flag="0"/>
+      <psa10 value="0.0070731595397001" flag="0"/>
+      <psa30 value="0.00081964789199166" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0078159208292332" flag="0"/>
+      <vel value="0.005738" flag="0"/>
+      <psa03 value="0.017724197355876" flag="0"/>
+      <psa10 value="0.014407060515059" flag="0"/>
+      <psa30 value="0.0012531292541286" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0067113642273355" flag="0"/>
+      <vel value="0.005229" flag="0"/>
+      <psa03 value="0.015032350496857" flag="0"/>
+      <psa10 value="0.013814401452076" flag="0"/>
+      <psa30 value="0.0016372563515574" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SNAL" name="SNAL" netid="IV" lat="40.92542" commtype="DIG" lon="15.20908">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0027316157913253" flag="0"/>
+      <vel value="0.003706" flag="0"/>
+      <psa03 value="0.0061592898696293" flag="0"/>
+      <psa10 value="0.0070199303533827" flag="0"/>
+      <psa30 value="0.0010173708656881" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0037799860298879" flag="0"/>
+      <vel value="0.005039" flag="0"/>
+      <psa03 value="0.0089675883201705" flag="0"/>
+      <psa10 value="0.00913726909801" flag="0"/>
+      <psa30 value="0.0013534693294856" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0034741731376158" flag="0"/>
+      <vel value="0.004101" flag="0"/>
+      <psa03 value="0.0079265600383413" flag="0"/>
+      <psa10 value="0.007878837319574" flag="0"/>
+      <psa30 value="0.00087522242559896" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CAFE" name="CAFE" netid="IV" lat="41.028" commtype="DIG" lon="15.2366">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0028809022449052" flag="0"/>
+      <vel value="0.002918" flag="0"/>
+      <psa03 value="0.010570786150214" flag="0"/>
+      <psa10 value="0.0058027970815722" flag="0"/>
+      <psa30 value="0.00071237374638638" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0019929333666441" flag="0"/>
+      <vel value="0.002196" flag="0"/>
+      <psa03 value="0.0049267588830029" flag="0"/>
+      <psa10 value="0.0038585041782872" flag="0"/>
+      <psa30 value="0.0005868466805688" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0021418119337388" flag="0"/>
+      <vel value="0.002046" flag="0"/>
+      <psa03 value="0.0047594234524532" flag="0"/>
+      <psa10 value="0.0037159478517129" flag="0"/>
+      <psa30 value="0.00055125858473587" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0046610208379008" flag="0"/>
+      <vel value="0.003079" flag="0"/>
+      <psa03 value="0.013025752932959" flag="0"/>
+      <psa10 value="0.0043897763252487" flag="0"/>
+      <psa30 value="0.00081689465821662" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0047501440349151" flag="0"/>
+      <vel value="0.002934" flag="0"/>
+      <psa03 value="0.012404949702498" flag="0"/>
+      <psa10 value="0.0043283894092274" flag="0"/>
+      <psa30 value="0.00078630317182728" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MRVN" name="MRVN" netid="IV" lat="41.0609" commtype="DIG" lon="16.1958">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.016554276944726" flag="0"/>
+      <vel value="0.004331" flag="0"/>
+      <psa03 value="0.023527402323933" flag="0"/>
+      <psa10 value="0.0020424915745948" flag="0"/>
+      <psa30 value="0.00028847771665146" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.012475412092815" flag="0"/>
+      <vel value="0.002918" flag="0"/>
+      <psa03 value="0.011903657212198" flag="0"/>
+      <psa10 value="0.0019270596992857" flag="0"/>
+      <psa30 value="0.00018915735750741" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0068786996578852" flag="0"/>
+      <vel value="0.001634" flag="0"/>
+      <psa03 value="0.0092083433180546" flag="0"/>
+      <psa10 value="0.0014048630266197" flag="0"/>
+      <psa30 value="0.00023851162221554" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MODR" name="MODR" netid="IV" lat="41.1459" commtype="DIG" lon="13.8779">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00055299210229793" flag="0"/>
+      <vel value="0.000274" flag="0"/>
+      <psa03 value="0.0013639724064793" flag="0"/>
+      <psa10 value="0.00072022556122631" flag="0"/>
+      <psa30 value="0.00013123747661026" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00029632953149139" flag="0"/>
+      <vel value="0.000268" flag="0"/>
+      <psa03 value="0.00054289691178945" flag="0"/>
+      <psa10 value="0.00032365792599919" flag="0"/>
+      <psa30 value="9.0346856469844E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00061855985479241" flag="0"/>
+      <vel value="0.000417" flag="0"/>
+      <psa03 value="0.0011692066098005" flag="0"/>
+      <psa10 value="0.00061499084804699" flag="0"/>
+      <psa30 value="0.000110945123972" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MRB1" name="MRB1" netid="IV" lat="41.1227" commtype="DIG" lon="14.96815">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0019832460626208" flag="0"/>
+      <vel value="0.001672" flag="0"/>
+      <psa03 value="0.0072622149255862" flag="0"/>
+      <psa10 value="0.0030056135377524" flag="0"/>
+      <psa30 value="0.00048008239307001" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0020279096327492" flag="0"/>
+      <vel value="0.001693" flag="0"/>
+      <psa03 value="0.0069006235564642" flag="0"/>
+      <psa10 value="0.0028379721923389" flag="0"/>
+      <psa30 value="0.00046835565662076" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0041461661219683" flag="0"/>
+      <vel value="0.004001" flag="0"/>
+      <psa03 value="0.018900847894031" flag="0"/>
+      <psa10 value="0.0053571810965008" flag="0"/>
+      <psa30 value="0.00058776442516048" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.0044571795669265" flag="0"/>
+      <vel value="0.003813" flag="0"/>
+      <psa03 value="0.017896019537763" flag="0"/>
+      <psa10 value="0.0051912732686493" flag="0"/>
+      <psa30 value="0.00057899486572887" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0038541193985714" flag="0"/>
+      <vel value="0.003684" flag="0"/>
+      <psa03 value="0.014133878541602" flag="0"/>
+      <psa10 value="0.0052698933886699" flag="0"/>
+      <psa30 value="0.00060489565753851" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0037966074041594" flag="0"/>
+      <vel value="0.003865" flag="0"/>
+      <psa03 value="0.014432451448762" flag="0"/>
+      <psa10 value="0.0054280513733028" flag="0"/>
+      <psa30 value="0.0006050996007811" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SGTA" name="SGTA" netid="IV" lat="41.135" commtype="DIG" lon="15.365">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0020567676015765" flag="0"/>
+      <vel value="0.002098" flag="0"/>
+      <psa03 value="0.0060497723483555" flag="0"/>
+      <psa10 value="0.0040172739926478" flag="0"/>
+      <psa30 value="0.00045102048100014" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0012603692392407" flag="0"/>
+      <vel value="0.000975" flag="0"/>
+      <psa03 value="0.0029959262337292" flag="0"/>
+      <psa10 value="0.0021606766836789" flag="0"/>
+      <psa30 value="0.00030989175712399" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0022063599700203" flag="0"/>
+      <vel value="0.002025" flag="0"/>
+      <psa03 value="0.0060226478970902" flag="0"/>
+      <psa10 value="0.0039281507956336" flag="0"/>
+      <psa30 value="0.00043399122024341" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0015840271652399" flag="0"/>
+      <vel value="0.001724" flag="0"/>
+      <psa03 value="0.0040521482871317" flag="0"/>
+      <psa10 value="0.0034321608296411" flag="0"/>
+      <psa30 value="0.00057960669545665" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0011243390964295" flag="0"/>
+      <vel value="0.00098" flag="0"/>
+      <psa03 value="0.003162649834551" flag="0"/>
+      <psa10 value="0.0022023830767897" flag="0"/>
+      <psa30 value="0.0002862343409829" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PSB1" name="PSB1" netid="IV" lat="41.22345" commtype="DIG" lon="14.81078">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00322699392759" flag="0"/>
+      <vel value="0.000806" flag="0"/>
+      <psa03 value="0.0022368494847884" flag="0"/>
+      <psa10 value="0.0014161818765837" flag="0"/>
+      <psa30 value="0.00025034033028608" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0074562669209159" flag="0"/>
+      <vel value="0.001801" flag="0"/>
+      <psa03 value="0.0044173086629991" flag="0"/>
+      <psa10 value="0.0024288620476921" flag="0"/>
+      <psa30 value="0.0004295044689063" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0042219310365925" flag="0"/>
+      <vel value="0.001378" flag="0"/>
+      <psa03 value="0.0029398418420154" flag="0"/>
+      <psa10 value="0.0024799498299623" flag="0"/>
+      <psa30 value="0.00050424966731759" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MOCO" name="MOCO" netid="IV" lat="41.37" commtype="DIG" lon="15.158">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00056747207252222" flag="0"/>
+      <vel value="0.000997" flag="0"/>
+      <psa03 value="0.001577195066613" flag="0"/>
+      <psa10 value="0.0012250870582717" flag="0"/>
+      <psa30 value="0.00027787266803649" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00038840990552329" flag="0"/>
+      <vel value="0.000612" flag="0"/>
+      <psa03 value="0.00090377447956234" flag="0"/>
+      <psa10 value="0.00085605176079497" flag="0"/>
+      <psa30 value="0.00032365792599919" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0010365415304921" flag="0"/>
+      <vel value="0.001386" flag="0"/>
+      <psa03 value="0.0027643486817619" flag="0"/>
+      <psa10 value="0.0028191074423988" flag="0"/>
+      <psa30 value="0.00070819290991317" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.00096964814692071" flag="0"/>
+      <vel value="0.001342" flag="0"/>
+      <psa03 value="0.0026333151483942" flag="0"/>
+      <psa10 value="0.0027347769115855" flag="0"/>
+      <psa30 value="0.00068983801807957" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.00050985810648896" flag="0"/>
+      <vel value="0.000909" flag="0"/>
+      <psa03 value="0.0015023478965804" flag="0"/>
+      <psa10 value="0.0011635981706291" flag="0"/>
+      <psa30 value="0.00030866809766842" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.00038759413255291" flag="0"/>
+      <vel value="0.000597" flag="0"/>
+      <psa03 value="0.00084371319461794" flag="0"/>
+      <psa10 value="0.00085707147700795" flag="0"/>
+      <psa30 value="0.00030897401253231" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PTRJ" name="PTRJ" netid="IV" lat="41.3641" commtype="DIG" lon="14.529">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.001779914649753" flag="0"/>
+      <vel value="0.001643" flag="0"/>
+      <psa03 value="0.0082786680466826" flag="0"/>
+      <psa10 value="0.0031438870562323" flag="0"/>
+      <psa30 value="0.00032110863546675" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0010110486251676" flag="0"/>
+      <vel value="0.001074" flag="0"/>
+      <psa03 value="0.0032693121504285" flag="0"/>
+      <psa10 value="0.0022172709334992" flag="0"/>
+      <psa30 value="0.00026206706673533" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0026932744617173" flag="0"/>
+      <vel value="0.002374" flag="0"/>
+      <psa03 value="0.0090069493659914" flag="0"/>
+      <psa10 value="0.0047958273212565" flag="0"/>
+      <psa30 value="0.00027797463965778" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SGRT" name="SGRT" netid="IV" lat="41.7546" commtype="DIG" lon="15.7437">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.003590318814274" flag="0"/>
+      <vel value="0.001075" flag="0"/>
+      <psa03 value="0.0062985831043221" flag="0"/>
+      <psa10 value="0.0017155705567141" flag="0"/>
+      <psa30 value="0.00011685947800727" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0057757746019283" flag="0"/>
+      <vel value="0.001724" flag="0"/>
+      <psa03 value="0.0070091213615251" flag="0"/>
+      <psa10 value="0.0022018732186832" flag="0"/>
+      <psa30 value="0.00022301193577827" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0066319283343446" flag="0"/>
+      <vel value="0.002138" flag="0"/>
+      <psa03 value="0.0066405959221549" flag="0"/>
+      <psa10 value="0.0026901133414571" flag="0"/>
+      <psa30 value="0.00012848424283522" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PTMD" name="PTMD" netid="IV" lat="36.7885" commtype="DIG" lon="11.9934">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00080200680150714" flag="0"/>
+      <vel value="0.000473" flag="0"/>
+      <psa03 value="0.0022317509037235" flag="0"/>
+      <psa10 value="0.00038269949473062" flag="0"/>
+      <psa30 value="5.3025243074852E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0011113887005246" flag="0"/>
+      <vel value="0.000681" flag="0"/>
+      <psa03 value="0.0032192440843713" flag="0"/>
+      <psa10 value="0.0005543177333748" flag="0"/>
+      <psa30 value="7.5560971381664E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0023424920844529" flag="0"/>
+      <vel value="0.001315" flag="0"/>
+      <psa03 value="0.0059056864474617" flag="0"/>
+      <psa10 value="0.00055778476849893" flag="0"/>
+      <psa30 value="8.1985183523425E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="BSSO" name="BSSO" netid="IV" lat="41.5461" commtype="DIG" lon="14.5938">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00072461034094212" flag="0"/>
+      <vel value="0.000822" flag="0"/>
+      <psa03 value="0.0027942263668021" flag="0"/>
+      <psa10 value="0.00098810501037561" flag="0"/>
+      <psa30 value="0.00026675776131503" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.00068800252889621" flag="0"/>
+      <vel value="0.000874" flag="0"/>
+      <psa03 value="0.002607210413342" flag="0"/>
+      <psa10 value="0.0010009534346591" flag="0"/>
+      <psa30 value="0.00028266533423748" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00045204019721312" flag="0"/>
+      <vel value="0.000463" flag="0"/>
+      <psa03 value="0.0018310024320232" flag="0"/>
+      <psa10 value="0.0006513947168503" flag="0"/>
+      <psa30 value="0.00026441241402518" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.00045652694855022" flag="0"/>
+      <vel value="0.000464" flag="0"/>
+      <psa03 value="0.0017269913782994" flag="0"/>
+      <psa10 value="0.00064599022092152" flag="0"/>
+      <psa30 value="0.00026023157755197" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0007116599450373" flag="0"/>
+      <vel value="0.000883" flag="0"/>
+      <psa03 value="0.0021926957727664" flag="0"/>
+      <psa10 value="0.001574135917974" flag="0"/>
+      <psa30 value="0.0003233520111353" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.00068341380593781" flag="0"/>
+      <vel value="0.000767" flag="0"/>
+      <psa03 value="0.0020851157122973" flag="0"/>
+      <psa10 value="0.0014693090912799" flag="0"/>
+      <psa30 value="0.00030764838145544" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MELA" name="MELA" netid="IV" lat="41.7059" commtype="DIG" lon="15.127">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0018284531414907" flag="0"/>
+      <vel value="0.001057" flag="0"/>
+      <psa03 value="0.0058181947963882" flag="0"/>
+      <psa10 value="0.0023026211805255" flag="0"/>
+      <psa30 value="0.0003419108462115" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0020073113652471" flag="0"/>
+      <vel value="0.001034" flag="0"/>
+      <psa03 value="0.0054774056380109" flag="0"/>
+      <psa10 value="0.0022926279616383" flag="0"/>
+      <psa30 value="0.00035863419210434" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0031590808278056" flag="0"/>
+      <vel value="0.00196" flag="0"/>
+      <psa03 value="0.0086951201480628" flag="0"/>
+      <psa10 value="0.003903983521386" flag="0"/>
+      <psa30 value="0.00060224439538476" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.0030246822309351" flag="0"/>
+      <vel value="0.001882" flag="0"/>
+      <psa03 value="0.0083954255530686" flag="0"/>
+      <psa10 value="0.0038783886444403" flag="0"/>
+      <psa30 value="0.00059887933188194" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0030889243523527" flag="0"/>
+      <vel value="0.002328" flag="0"/>
+      <psa03 value="0.0096598736571612" flag="0"/>
+      <psa10 value="0.0032658451153044" flag="0"/>
+      <psa30 value="0.00045968806881045" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0029888901918596" flag="0"/>
+      <vel value="0.002221" flag="0"/>
+      <psa03 value="0.0090650731901312" flag="0"/>
+      <psa10 value="0.0031251242779135" flag="0"/>
+      <psa30 value="0.00045397765801777" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MSAG" name="MSAG" netid="IV" lat="41.712" commtype="DIG" lon="15.9096">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0049049369560451" flag="0"/>
+      <vel value="0.001995" flag="0"/>
+      <psa03 value="0.006538930215721" flag="0"/>
+      <psa10 value="0.0020899083784983" flag="0"/>
+      <psa30 value="0.00022005475876064" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.010905660954556" flag="0"/>
+      <vel value="0.003614" flag="0"/>
+      <psa03 value="0.019713051857668" flag="0"/>
+      <psa10 value="0.0035343363941815" flag="0"/>
+      <psa30 value="0.00020027226422887" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.010216230822962" flag="0"/>
+      <vel value="0.003378" flag="0"/>
+      <psa03 value="0.018707713643293" flag="0"/>
+      <psa10 value="0.0034319568863985" flag="0"/>
+      <psa30 value="0.00020149592368444" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0038846089133394" flag="0"/>
+      <vel value="0.00136" flag="0"/>
+      <psa03 value="0.0046236992245058" flag="0"/>
+      <psa10 value="0.0011953113448527" flag="0"/>
+      <psa30 value="0.00015836192787547" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0044439232561578" flag="0"/>
+      <vel value="0.001756" flag="0"/>
+      <psa03 value="0.0061042251941285" flag="0"/>
+      <psa10 value="0.0019780455099346" flag="0"/>
+      <psa30 value="0.00021658772363651" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.0036790341248031" flag="0"/>
+      <vel value="0.001326" flag="0"/>
+      <psa03 value="0.0044044602387156" flag="0"/>
+      <psa10 value="0.0011315790815416" flag="0"/>
+      <psa30 value="0.00016448022515334" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GATE" name="GATE" netid="IV" lat="41.513145" commtype="DIG" lon="14.910201">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00085809119322093" flag="0"/>
+      <vel value="0.000973" flag="0"/>
+      <psa03 value="0.0026373940132461" flag="0"/>
+      <psa10 value="0.0017392279728552" flag="0"/>
+      <psa30 value="0.00032294412465011" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00060560945888759" flag="0"/>
+      <vel value="0.000622" flag="0"/>
+      <psa03 value="0.0013871199645139" flag="0"/>
+      <psa10 value="0.00092529049165617" flag="0"/>
+      <psa30 value="0.00025452116675929" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0010172688940668" flag="0"/>
+      <vel value="0.001044" flag="0"/>
+      <psa03 value="0.0020057817909276" flag="0"/>
+      <psa10 value="0.0012402808298451" flag="0"/>
+      <psa30 value="0.00037607133934626" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.0011952093732314" flag="0"/>
+      <vel value="0.001056" flag="0"/>
+      <psa03 value="0.0019340957411552" flag="0"/>
+      <psa10 value="0.0012025513299649" flag="0"/>
+      <psa30 value="0.00040299184736888" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SACR" name="SACR" netid="IV" lat="41.3974" commtype="DIG" lon="14.7057">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00059877736026064" flag="0"/>
+      <vel value="0.000801" flag="0"/>
+      <psa03 value="0.002151805152626" flag="0"/>
+      <psa10 value="0.0012486425027915" flag="0"/>
+      <psa30 value="0.00034078915837722" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00063202010880372" flag="0"/>
+      <vel value="0.0008" flag="0"/>
+      <psa03 value="0.0022544905752729" flag="0"/>
+      <psa10 value="0.0012627145865306" flag="0"/>
+      <psa30 value="0.00040370564871796" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.00071084417206691" flag="0"/>
+      <vel value="0.001096" flag="0"/>
+      <psa03 value="0.0022553063482433" flag="0"/>
+      <psa10 value="0.001204998648876" flag="0"/>
+      <psa30 value="0.00032386186924179" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.00060642523185797" flag="0"/>
+      <vel value="0.000772" flag="0"/>
+      <psa03 value="0.0021455848837269" flag="0"/>
+      <psa10 value="0.0012210081934198" flag="0"/>
+      <psa30 value="0.0003973834081975" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00040513325141613" flag="0"/>
+      <vel value="0.000573" flag="0"/>
+      <psa03 value="0.00098270051444683" flag="0"/>
+      <psa10 value="0.00092671809435434" flag="0"/>
+      <psa30 value="0.0002543172235167" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CIGN" name="CIGN" netid="IV" lat="41.65418" commtype="DIG" lon="14.90502">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00059418863730224" flag="0"/>
+      <vel value="0.000789" flag="0"/>
+      <psa03 value="0.0016599960231068" flag="0"/>
+      <psa10 value="0.0011616607098245" flag="0"/>
+      <psa30 value="0.00028919151800054" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00065180260333549" flag="0"/>
+      <vel value="0.0007" flag="0"/>
+      <psa03 value="0.0017567670917184" flag="0"/>
+      <psa10 value="0.0011737953327589" flag="0"/>
+      <psa30 value="0.00040350170547537" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00059867538863934" flag="0"/>
+      <vel value="0.00083" flag="0"/>
+      <psa03 value="0.0022930358481235" flag="0"/>
+      <psa10 value="0.0012898390377958" flag="0"/>
+      <psa30 value="0.00029418812744413" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SGG" name="SGG" netid="IV" lat="41.38667" commtype="DIG" lon="14.37917">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00045469145936686" flag="0"/>
+      <vel value="0.000423" flag="0"/>
+      <psa03 value="0.0012133603218224" flag="0"/>
+      <psa10 value="0.00071716641258738" flag="0"/>
+      <psa30 value="0.00011869496719063" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00054085747936349" flag="0"/>
+      <vel value="0.000636" flag="0"/>
+      <psa03 value="0.0019224709763273" flag="0"/>
+      <psa10 value="0.0012351822487802" flag="0"/>
+      <psa30 value="0.00016774331703487" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00059061963055682" flag="0"/>
+      <vel value="0.00075" flag="0"/>
+      <psa03 value="0.0022649936522666" flag="0"/>
+      <psa10 value="0.0010530609331423" flag="0"/>
+      <psa30 value="0.00014592139007714" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MIDA" name="MIDA" netid="IV" lat="41.64188" commtype="DIG" lon="14.25402">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00043623459591196" flag="0"/>
+      <vel value="0.000435" flag="0"/>
+      <psa03 value="0.0014503423697185" flag="0"/>
+      <psa10 value="0.00074735001249152" flag="0"/>
+      <psa30 value="0.00021067336960124" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00051454880106866" flag="0"/>
+      <vel value="0.000548" flag="0"/>
+      <psa03 value="0.0014081261185012" flag="0"/>
+      <psa10 value="0.00098270051444683" flag="0"/>
+      <psa30 value="0.00033405903137157" flag="0"/>
+    </comp>
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.00050190432002774" flag="0"/>
+      <vel value="0.000516" flag="0"/>
+      <psa03 value="0.0012951415621033" flag="0"/>
+      <psa10 value="0.00095414846048345" flag="0"/>
+      <psa30 value="0.0003185593449343" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="ont">
+      <acc value="0.00031070753009437" flag="0"/>
+      <vel value="0.000387" flag="0"/>
+      <psa03 value="0.00065700315602168" flag="0"/>
+      <psa10 value="0.00057899486572887" flag="0"/>
+      <psa30 value="0.00018405877644252" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00029439207068673" flag="0"/>
+      <vel value="0.000426" flag="0"/>
+      <psa03 value="0.00070248249912049" flag="0"/>
+      <psa10 value="0.00059775764404766" flag="0"/>
+      <psa30 value="0.00019211453452504" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="VAGA" name="VAGA" netid="IV" lat="41.4154" commtype="DIG" lon="14.2342">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00048477308764971" flag="0"/>
+      <vel value="0.000482" flag="0"/>
+      <psa03 value="0.0018408936792891" flag="0"/>
+      <psa10 value="0.0010427617993912" flag="0"/>
+      <psa30 value="0.00014123069549744" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0010455150331663" flag="0"/>
+      <vel value="0.000956" flag="0"/>
+      <psa03 value="0.0029830778094456" flag="0"/>
+      <psa10 value="0.0013396011889891" flag="0"/>
+      <psa30 value="0.00021770941147079" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00031590808278056" flag="0"/>
+      <vel value="0.000379" flag="0"/>
+      <psa03 value="0.00085115712297268" flag="0"/>
+      <psa10 value="0.00061499084804699" flag="0"/>
+      <psa30 value="0.00015173377249112" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="TRIV" name="TRIV" netid="IV" lat="41.7666" commtype="DIG" lon="14.5502">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0007853854272356" flag="0"/>
+      <vel value="0.001132" flag="0"/>
+      <psa03 value="0.0021834163552283" flag="0"/>
+      <psa10 value="0.0025761090688461" flag="0"/>
+      <psa30 value="0.00051872963754187" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00059082357379941" flag="0"/>
+      <vel value="0.000775" flag="0"/>
+      <psa03 value="0.0016305262245517" flag="0"/>
+      <psa10 value="0.0016746799365737" flag="0"/>
+      <psa30 value="0.00036118348263678" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00089775815390577" flag="0"/>
+      <vel value="0.001041" flag="0"/>
+      <psa03 value="0.0031975241290349" flag="0"/>
+      <psa10 value="0.0012429320919988" flag="0"/>
+      <psa30 value="0.00031254301927774" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GIUL" name="GIUL" netid="IV" lat="41.55827" commtype="DIG" lon="13.25458">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00023637021816828" flag="0"/>
+      <vel value="0.000127" flag="0"/>
+      <psa03 value="0.00071410726394844" flag="0"/>
+      <psa10 value="0.00022484742496163" flag="0"/>
+      <psa30 value="4.4765541749731E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00018528243589809" flag="0"/>
+      <vel value="0.000149" flag="0"/>
+      <psa03 value="0.00070176869777141" flag="0"/>
+      <psa10 value="0.00016040136030143" flag="0"/>
+      <psa30 value="5.220947010447E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="RNI2" name="RNI2" netid="IV" lat="41.70328" commtype="DIG" lon="14.1524">
+    <comp name="--.HNE" ingv:from="ont">
+      <acc value="0.00061488887642569" flag="0"/>
+      <vel value="0.000526" flag="0"/>
+      <psa03 value="0.0017488133052571" flag="0"/>
+      <psa10 value="0.0010866095965493" flag="0"/>
+      <psa30 value="0.00023025192089042" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00034109507324112" flag="0"/>
+      <vel value="0.000607" flag="0"/>
+      <psa03 value="0.00069187745050552" flag="0"/>
+      <psa10 value="0.000956391836152" flag="0"/>
+      <psa30 value="0.00041390281084774" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0005634951792916" flag="0"/>
+      <vel value="0.00054" flag="0"/>
+      <psa03 value="0.00154945878562" flag="0"/>
+      <psa10 value="0.0013595876267635" flag="0"/>
+      <psa30 value="0.0002447318911147" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.00052902877129295" flag="0"/>
+      <vel value="0.000529" flag="0"/>
+      <psa03 value="0.001486134408794" flag="0"/>
+      <psa10 value="0.0013041150647775" flag="0"/>
+      <psa30 value="0.00024106091274798" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00062325054937211" flag="0"/>
+      <vel value="0.000559" flag="0"/>
+      <psa03 value="0.0018358970698455" flag="0"/>
+      <psa10 value="0.0011095532113413" flag="0"/>
+      <psa30 value="0.00024157077085447" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="FRES" name="FRES" netid="IV" lat="41.97351" commtype="DIG" lon="14.66926">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0016718247311773" flag="0"/>
+      <vel value="0.001093" flag="0"/>
+      <psa03 value="0.0042209113203795" flag="0"/>
+      <psa10 value="0.0016399076137111" flag="0"/>
+      <psa30 value="0.00023259726818027" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.001478588508818" flag="0"/>
+      <vel value="0.000973" flag="0"/>
+      <psa03 value="0.0026641105780261" flag="0"/>
+      <psa10 value="0.0013904850280167" flag="0"/>
+      <psa30 value="0.00035363758266075" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00061560267777478" flag="0"/>
+      <vel value="0.000576" flag="0"/>
+      <psa03 value="0.001038580962918" flag="0"/>
+      <psa10 value="0.00072134724906059" flag="0"/>
+      <psa30 value="0.00020741027771971" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CERA" name="CERA" netid="IV" lat="41.5978" commtype="DIG" lon="14.0183">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00035078237726441" flag="0"/>
+      <vel value="0.000351" flag="0"/>
+      <psa03 value="0.00081352959471379" flag="0"/>
+      <psa10 value="0.00085900893781261" flag="0"/>
+      <psa30 value="8.545221864755E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00055972222930358" flag="0"/>
+      <vel value="0.000651" flag="0"/>
+      <psa03 value="0.0014037413387854" flag="0"/>
+      <psa10 value="0.001262510643288" flag="0"/>
+      <psa30 value="0.00012991184553339" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="ont">
+      <acc value="0.00058745851029658" flag="0"/>
+      <vel value="0.000707" flag="0"/>
+      <psa03 value="0.0013379696430483" flag="0"/>
+      <psa10 value="0.0012074459677872" flag="0"/>
+      <psa30 value="0.00012746452662224" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00053555495505601" flag="0"/>
+      <vel value="0.000702" flag="0"/>
+      <psa03 value="0.0014007841617678" flag="0"/>
+      <psa10 value="0.0013191048931082" flag="0"/>
+      <psa30 value="0.0002401431681563" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="LAV9" name="LAV9" netid="IV" lat="41.67778" commtype="DIG" lon="12.69888">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00088307424043889" flag="0"/>
+      <vel value="0.000493" flag="0"/>
+      <psa03 value="0.0028974216475555" flag="0"/>
+      <psa10 value="0.00034731534214028" flag="0"/>
+      <psa30 value="0.00010105387670611" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="POFI" name="POFI" netid="IV" lat="41.71743" commtype="DIG" lon="13.71202">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00018671003859626" flag="0"/>
+      <vel value="0.000219" flag="0"/>
+      <psa03 value="0.00073276807064594" flag="0"/>
+      <psa10 value="0.00046152355799381" flag="0"/>
+      <psa30 value="0.00011961271178231" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00013246113606583" flag="0"/>
+      <vel value="0.000232" flag="0"/>
+      <psa03 value="0.00052117695645302" flag="0"/>
+      <psa10 value="0.00021679166687911" flag="0"/>
+      <psa30 value="0.0001200205982675" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00021189702905681" flag="0"/>
+      <vel value="0.000188" flag="0"/>
+      <psa03 value="0.00053361749425135" flag="0"/>
+      <psa10 value="0.00037158458800916" flag="0"/>
+      <psa30 value="8.6369963239231E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="FAGN" name="FAGN" netid="IV" lat="42.26573" commtype="DIG" lon="13.58379">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00046029989853824" flag="0"/>
+      <vel value="0.000354" flag="0"/>
+      <psa03 value="0.0011194444586072" flag="0"/>
+      <psa10 value="0.00029541178689971" flag="0"/>
+      <psa30 value="9.6261210505116E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00053708452937547" flag="0"/>
+      <vel value="0.000349" flag="0"/>
+      <psa03 value="0.0012840266553818" flag="0"/>
+      <psa10 value="0.00048100013766169" flag="0"/>
+      <psa30 value="8.7899537558697E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00064466458984465" flag="0"/>
+      <vel value="0.000492" flag="0"/>
+      <psa03 value="0.0014259711522283" flag="0"/>
+      <psa10 value="0.0007946648447737" flag="0"/>
+      <psa30 value="0.00010686625912009" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CAFR" name="CAFR" netid="IV" lat="42.2273" commtype="DIG" lon="14.347">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0018768896616072" flag="0"/>
+      <vel value="0.002654" flag="0"/>
+      <psa03 value="0.0035356620252584" flag="0"/>
+      <psa10 value="0.0039649625509221" flag="0"/>
+      <psa30 value="0.0005080226173056" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00064548036281503" flag="0"/>
+      <vel value="0.000681" flag="0"/>
+      <psa03 value="0.001487154125007" flag="0"/>
+      <psa10 value="0.0010367454737347" flag="0"/>
+      <psa30 value="0.00024830089786013" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0014089418914716" flag="0"/>
+      <vel value="0.001986" flag="0"/>
+      <psa03 value="0.0035613588738254" flag="0"/>
+      <psa10 value="0.0027828055452168" flag="0"/>
+      <psa30 value="0.00051648626187332" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="INTR" name="INTR" netid="IV" lat="42.01154" commtype="DIG" lon="13.9046">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00034017732864944" flag="0"/>
+      <vel value="0.000404" flag="0"/>
+      <psa03 value="0.00089898181336134" flag="0"/>
+      <psa10 value="0.00065526963845962" flag="0"/>
+      <psa30 value="9.473163618565E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00047355620930695" flag="0"/>
+      <vel value="0.000715" flag="0"/>
+      <psa03 value="0.0014180173657671" flag="0"/>
+      <psa10 value="0.0011641080287356" flag="0"/>
+      <psa30 value="0.00017182218188678" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00083443377707984" flag="0"/>
+      <vel value="0.00092" flag="0"/>
+      <psa03 value="0.0019919136504311" flag="0"/>
+      <psa10 value="0.0016743740217098" flag="0"/>
+      <psa30 value="0.00015173377249112" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="VVLD" name="VVLD" netid="IV" lat="41.86965" commtype="DIG" lon="13.62324">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00013082959012507" flag="0"/>
+      <vel value="0.00016" flag="0"/>
+      <psa03 value="0.00034293056242448" flag="0"/>
+      <psa10 value="0.00024993244380089" flag="0"/>
+      <psa30 value="6.9850560588988E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00022250207767178" flag="0"/>
+      <vel value="0.000271" flag="0"/>
+      <psa03 value="0.00064568430605762" flag="0"/>
+      <psa10 value="0.00058368556030857" flag="0"/>
+      <psa30 value="7.2705765985326E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00051893358078447" flag="0"/>
+      <vel value="0.000401" flag="0"/>
+      <psa03 value="0.00066832200598573" flag="0"/>
+      <psa10 value="0.00046407284852626" flag="0"/>
+      <psa30 value="6.9034787618606E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GUAR" name="GUAR" netid="IV" lat="41.7945" commtype="DIG" lon="13.31229">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00024656738029806" flag="0"/>
+      <vel value="0.000175" flag="0"/>
+      <psa03 value="0.00057603768871123" flag="0"/>
+      <psa10 value="0.00021199900067811" flag="0"/>
+      <psa30 value="6.4751979524098E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00043388924862211" flag="0"/>
+      <vel value="0.000255" flag="0"/>
+      <psa03 value="0.0011706342124987" flag="0"/>
+      <psa10 value="0.00032977622327706" flag="0"/>
+      <psa30 value="5.1393697134088E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00042083688109599" flag="0"/>
+      <vel value="0.000153" flag="0"/>
+      <psa03 value="0.00072032753284761" flag="0"/>
+      <psa10 value="0.00033762803811699" flag="0"/>
+      <psa30 value="8.3208842978999E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MA9" name="MA9" netid="IV" lat="41.769756" commtype="DIG" lon="12.65907">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.001628588763747" flag="0"/>
+      <vel value="0.00021" flag="0"/>
+      <psa03 value="0.00058103429815482" flag="0"/>
+      <psa10 value="0.00019191059128245" flag="0"/>
+      <psa30 value="5.3739044423937E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0016728444473903" flag="0"/>
+      <vel value="0.000179" flag="0"/>
+      <psa03 value="0.00051577246052424" flag="0"/>
+      <psa10 value="0.00026145523700754" flag="0"/>
+      <psa30 value="5.9347483595315E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MTCE" name="MTCE" netid="IV" lat="42.0228" commtype="DIG" lon="12.74222">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="9.7280926718094E-5" flag="0"/>
+      <vel value="5.7E-5" flag="0"/>
+      <psa03 value="0.00011318849964055" flag="0"/>
+      <psa10 value="0.00012879015769911" flag="0"/>
+      <psa30 value="4.5479343098816E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00025370539378891" flag="0"/>
+      <vel value="8.5E-5" flag="0"/>
+      <psa03 value="0.00020710436285582" flag="0"/>
+      <psa10 value="0.00013001381715469" flag="0"/>
+      <psa30 value="3.3140776921783E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00015846389949677" flag="0"/>
+      <vel value="8.2E-5" flag="0"/>
+      <psa03 value="0.00025309356406112" flag="0"/>
+      <psa10 value="0.00014469773062157" flag="0"/>
+      <psa30 value="4.1094563383011E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CERT" name="CERT" netid="IV" lat="41.94903" commtype="DIG" lon="12.98176">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00010288936588947" flag="0"/>
+      <vel value="7.6E-5" flag="0"/>
+      <psa03 value="0.00036781163802114" flag="0"/>
+      <psa10 value="0.00017375964269144" flag="0"/>
+      <psa30 value="3.1509230981018E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="TERO" name="TERO" netid="IV" lat="42.62279" commtype="DIG" lon="13.60393">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="9.2896147002289E-5" flag="0"/>
+      <vel value="7.9E-5" flag="0"/>
+      <psa03 value="0.00013919126307149" flag="0"/>
+      <psa10 value="0.00012216200231476" flag="0"/>
+      <psa30 value="3.3752606649569E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="9.6975011854201E-5" flag="0"/>
+      <vel value="7.6E-5" flag="0"/>
+      <psa03 value="0.00024901469920921" flag="0"/>
+      <psa10 value="0.00016356248056166" flag="0"/>
+      <psa30 value="2.2331785064217E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="4.2930052566371E-5" flag="0"/>
+      <vel value="4.8E-5" flag="0"/>
+      <psa03 value="9.4833607806947E-5" flag="0"/>
+      <psa10 value="8.7695594316102E-5" flag="0"/>
+      <psa30 value="1.7437147241923E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="TOLF" name="TOLF" netid="IV" lat="42.06406" commtype="DIG" lon="12.00017">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00041186337842179" flag="0"/>
+      <vel value="6.1E-5" flag="0"/>
+      <psa03 value="0.00039564989063544" flag="0"/>
+      <psa10 value="0.00010961949289513" flag="0"/>
+      <psa30 value="1.7029260756731E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="8.4738417298466E-5" flag="0"/>
+      <vel value="5.5E-5" flag="0"/>
+      <psa03 value="0.00024095894112668" flag="0"/>
+      <psa10 value="5.1189753891492E-5" flag="0"/>
+      <psa30 value="1.6009544543753E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00039473214604376" flag="0"/>
+      <vel value="7.1E-5" flag="0"/>
+      <psa03 value="0.00040727465546338" flag="0"/>
+      <psa10 value="8.1271382174341E-5" flag="0"/>
+      <psa30 value="1.8456863454901E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CESX" name="CESX" netid="IV" lat="42.608486" commtype="DIG" lon="12.58676">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="8.361672946419E-5" flag="0"/>
+      <vel value="8.7E-5" flag="0"/>
+      <psa03 value="0.00020424915745948" flag="0"/>
+      <psa10 value="0.00017426950079793" flag="0"/>
+      <psa30 value="4.802863363126E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00010900766316734" flag="0"/>
+      <vel value="7.1E-5" flag="0"/>
+      <psa03 value="0.00022535728306812" flag="0"/>
+      <psa10 value="0.00018314103185084" flag="0"/>
+      <psa30 value="6.5261837630587E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="5.5778476849893E-5" flag="0"/>
+      <vel value="5.9E-5" flag="0"/>
+      <psa03 value="8.1169410553043E-5" flag="0"/>
+      <psa10 value="6.9136759239904E-5" flag="0"/>
+      <psa30 value="4.2828080945073E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PTQR" name="PTQR" netid="IV" lat="42.02193" commtype="DIG" lon="13.40057">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00013031973201858" flag="0"/>
+      <vel value="0.0001" flag="0"/>
+      <psa03 value="0.00028011604370504" flag="0"/>
+      <psa10 value="0.00016549994136632" flag="0"/>
+      <psa30 value="5.1801583619279E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0001294019874269" flag="0"/>
+      <vel value="0.00016" flag="0"/>
+      <psa03 value="0.00026828733563449" flag="0"/>
+      <psa10 value="0.0002215843330801" flag="0"/>
+      <psa30 value="6.8219014648223E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0001202245415101" flag="0"/>
+      <vel value="0.000149" flag="0"/>
+      <psa03 value="0.00022290996415698" flag="0"/>
+      <psa10 value="0.00031774357196392" flag="0"/>
+      <psa30 value="4.4765541749731E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="TRTR" name="TRTR" netid="IV" lat="42.8081" commtype="DIG" lon="13.9138">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0066895423003778" flag="0"/>
+      <vel value="0.000805" flag="0"/>
+      <psa03 value="0.0023089434210459" flag="0"/>
+      <psa10 value="0.0011004777370458" flag="0"/>
+      <psa30 value="0.00042542560405439" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0089199675730244" flag="0"/>
+      <vel value="0.001016" flag="0"/>
+      <psa03 value="0.0024913706515477" flag="0"/>
+      <psa10 value="0.001872708825134" flag="0"/>
+      <psa30 value="0.00012532312257499" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0017510566809257" flag="0"/>
+      <vel value="0.0004" flag="0"/>
+      <psa03 value="0.0010983363329985" flag="0"/>
+      <psa10 value="0.00064904936956045" flag="0"/>
+      <psa30 value="0.00015122391438463" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GUMA" name="GUMA" netid="IV" lat="43.0627" commtype="DIG" lon="13.3352">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00049843728490361" flag="0"/>
+      <vel value="0.000372" flag="0"/>
+      <psa03 value="0.0010803893276501" flag="0"/>
+      <psa10 value="0.00053830818883105" flag="0"/>
+      <psa30 value="0.00015897375760326" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00045448751612426" flag="0"/>
+      <vel value="0.00043" flag="0"/>
+      <psa03 value="0.0011125103883589" flag="0"/>
+      <psa10 value="0.00070431798830386" flag="0"/>
+      <psa30 value="9.9116415901455E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00042705714999516" flag="0"/>
+      <vel value="0.000194" flag="0"/>
+      <psa03 value="0.00060326411159774" flag="0"/>
+      <psa10 value="0.00042705714999516" flag="0"/>
+      <psa30 value="6.8728872754712E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="NRCA" name="NRCA" netid="IV" lat="42.83355" commtype="DIG" lon="13.11427">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00019619339937695" flag="0"/>
+      <vel value="0.000104" flag="0"/>
+      <psa03 value="0.00026298481132701" flag="0"/>
+      <psa10 value="0.00014112872387615" flag="0"/>
+      <psa30 value="3.834132960797E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00020944971014567" flag="0"/>
+      <vel value="0.00012" flag="0"/>
+      <psa03 value="0.00030275374363315" flag="0"/>
+      <psa10 value="0.00015968755895234" flag="0"/>
+      <psa30 value="5.9347483595315E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00013286902255102" flag="0"/>
+      <vel value="0.000115" flag="0"/>
+      <psa03 value="0.0001570362967986" flag="0"/>
+      <psa10 value="0.00012338566177033" flag="0"/>
+      <psa30 value="4.9252293086834E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MOMA" name="MOMA" netid="IV" lat="42.80387" commtype="DIG" lon="12.570071">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00013806957523721" flag="0"/>
+      <vel value="0.000108" flag="0"/>
+      <psa03 value="0.00026369861267609" flag="0"/>
+      <psa10 value="0.00016519402650242" flag="0"/>
+      <psa30 value="3.4466407998654E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00010737611722658" flag="0"/>
+      <vel value="9.3E-5" flag="0"/>
+      <psa03 value="0.00022862037494965" flag="0"/>
+      <psa10 value="0.00014928645357997" flag="0"/>
+      <psa30 value="3.5282180969036E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="7.5662943002962E-5" flag="0"/>
+      <vel value="7.0E-5" flag="0"/>
+      <psa03 value="0.00011889891043323" flag="0"/>
+      <psa10 value="9.5751352398627E-5" flag="0"/>
+      <psa30 value="4.1298506625606E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="FIAM" name="FIAM" netid="IV" lat="42.26802" commtype="DIG" lon="13.11718">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00011359638612574" flag="0"/>
+      <vel value="0.000134" flag="0"/>
+      <psa03 value="0.00024983047217959" flag="0"/>
+      <psa10 value="0.00028409293693565" flag="0"/>
+      <psa30 value="6.8524929512117E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0001060504861497" flag="0"/>
+      <vel value="0.000127" flag="0"/>
+      <psa03 value="0.00039850509603177" flag="0"/>
+      <psa10 value="0.00031478639494629" flag="0"/>
+      <psa30 value="6.3528320068525E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CAMP" name="CAMP" netid="IV" lat="42.53578" commtype="DIG" lon="13.409">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00010941554965253" flag="0"/>
+      <vel value="0.000197" flag="0"/>
+      <psa03 value="0.00018436469130641" flag="0"/>
+      <psa10 value="0.00028031998694763" flag="0"/>
+      <psa30 value="5.9551426837911E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="7.8314205156705E-5" flag="0"/>
+      <vel value="0.000163" flag="0"/>
+      <psa03 value="0.00016356248056166" flag="0"/>
+      <psa10 value="0.00021760743984949" flag="0"/>
+      <psa30 value="6.1998745749058E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="9.0040941605951E-5" flag="0"/>
+      <vel value="0.000165" flag="0"/>
+      <psa03 value="0.00012654678203056" flag="0"/>
+      <psa10 value="0.00024238654382485" flag="0"/>
+      <psa30 value="4.7620747146069E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="LNSS" name="LNSS" netid="IV" lat="42.60286" commtype="DIG" lon="13.04032">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00011227075504887" flag="0"/>
+      <vel value="9.5E-5" flag="0"/>
+      <psa03 value="0.00015999347381624" flag="0"/>
+      <psa10 value="0.00021964687227545" flag="0"/>
+      <psa30 value="4.4765541749731E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ASSB" name="ASSB" netid="IV" lat="43.0426" commtype="DIG" lon="12.6587">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0002356564168192" flag="0"/>
+      <vel value="8.8E-5" flag="0"/>
+      <psa03 value="0.00020231169665482" flag="0"/>
+      <psa10 value="0.00014000703604187" flag="0"/>
+      <psa30 value="3.5690067454227E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00034609168268471" flag="0"/>
+      <vel value="9.8E-5" flag="0"/>
+      <psa03 value="0.00021944292903285" flag="0"/>
+      <psa10 value="0.00022270602091438" flag="0"/>
+      <psa30 value="4.0584705276522E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00011818510908414" flag="0"/>
+      <vel value="8.4E-5" flag="0"/>
+      <psa03 value="0.0001478588508818" flag="0"/>
+      <psa10 value="0.00010533668480062" flag="0"/>
+      <psa30 value="2.7838252614297E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="FDMO" name="FDMO" netid="IV" lat="43.0365" commtype="DIG" lon="13.0873">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00013949717793538" flag="0"/>
+      <vel value="0.000106" flag="0"/>
+      <psa03 value="0.00016743740217098" flag="0"/>
+      <psa10 value="0.0001432701279234" flag="0"/>
+      <psa30 value="4.2318222838584E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00018150948591007" flag="0"/>
+      <vel value="9.6E-5" flag="0"/>
+      <psa03 value="0.00023871556545813" flag="0"/>
+      <psa10 value="0.00012858621445652" flag="0"/>
+      <psa30 value="6.1998745749058E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="9.9932188871837E-5" flag="0"/>
+      <vel value="9.0E-5" flag="0"/>
+      <psa03 value="0.00014010900766317" flag="0"/>
+      <psa10 value="0.00019150270479725" flag="0"/>
+      <psa30 value="2.9265855312467E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CESI" name="CESI" netid="IV" lat="43.0049" commtype="DIG" lon="12.9046">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00019762100207512" flag="0"/>
+      <vel value="2.5E-5" flag="0"/>
+      <psa03 value="6.9544645725095E-5" flag="0"/>
+      <psa10 value="4.7620747146069E-5" flag="0"/>
+      <psa30 value="9.8912472658859E-6" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="BULG" name="BULG" netid="IV" lat="40.0783" commtype="DIG" lon="15.3776">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0242046" flag="0"/>
+      <vel value="0.011642" flag="0"/>
+      <psa03 value="0.0601783" flag="0"/>
+      <psa10 value="0.0103207" flag="0"/>
+      <psa30 value="0.000824151" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0381309" flag="0"/>
+      <vel value="0.019378" flag="0"/>
+      <psa03 value="0.0847417" flag="0"/>
+      <psa10 value="0.026295" flag="0"/>
+      <psa30 value="0.00171005" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0136396" flag="0"/>
+      <vel value="0.006191" flag="0"/>
+      <psa03 value="0.0340488" flag="0"/>
+      <psa10 value="0.00656368" flag="0"/>
+      <psa30 value="0.000691715" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CELI" name="CELI" netid="IV" lat="39.4027" commtype="DIG" lon="16.5088">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.00973019" flag="0"/>
+      <vel value="0.01022" flag="0"/>
+      <psa03 value="0.0310511" flag="0"/>
+      <psa10 value="0.0145327" flag="0"/>
+      <psa30 value="0.00233912" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0160247" flag="0"/>
+      <vel value="0.009219" flag="0"/>
+      <psa03 value="0.0425051" flag="0"/>
+      <psa10 value="0.00897976" flag="0"/>
+      <psa30 value="0.00119417" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.00835227" flag="0"/>
+      <vel value="0.005527" flag="0"/>
+      <psa03 value="0.0161072" flag="0"/>
+      <psa10 value="0.00918513" flag="0"/>
+      <psa30 value="0.0011709" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="EPOZ" name="EPOZ" netid="IV" lat="37.6719" commtype="DIG" lon="15.1885">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.103982" flag="0"/>
+      <vel value="0.029498" flag="0"/>
+      <psa03 value="0.22559" flag="0"/>
+      <psa10 value="0.0509148" flag="0"/>
+      <psa30 value="0.00485408" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.103495" flag="0"/>
+      <vel value="0.04228" flag="0"/>
+      <psa03 value="0.181027" flag="0"/>
+      <psa10 value="0.0426035" flag="0"/>
+      <psa30 value="0.0037843" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0693798" flag="0"/>
+      <vel value="0.021214" flag="0"/>
+      <psa03 value="0.11973" flag="0"/>
+      <psa10 value="0.0174159" flag="0"/>
+      <psa30 value="0.00310108" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="EVRN" name="EVRN" netid="IV" lat="37.6892" commtype="DIG" lon="15.1356">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.170554" flag="0"/>
+      <vel value="0.072198" flag="0"/>
+      <psa03 value="0.402769" flag="0"/>
+      <psa10 value="0.0477417" flag="0"/>
+      <psa30 value="0.00525587" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.310139" flag="0"/>
+      <vel value="0.111505" flag="0"/>
+      <psa03 value="0.38353" flag="0"/>
+      <psa10 value="0.0493202" flag="0"/>
+      <psa30 value="0.00407825" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.110483" flag="0"/>
+      <vel value="0.036635" flag="0"/>
+      <psa03 value="0.251272" flag="0"/>
+      <psa10 value="0.0279379" flag="0"/>
+      <psa30 value="0.003038" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="HVZN" name="HVZN" netid="IV" lat="37.1783" commtype="DIG" lon="14.7155">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0448148" flag="0"/>
+      <vel value="0.025226" flag="0"/>
+      <psa03 value="0.105815" flag="0"/>
+      <psa10 value="0.0241487" flag="0"/>
+      <psa30 value="0.00242548" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0620601" flag="0"/>
+      <vel value="0.029871" flag="0"/>
+      <psa03 value="0.122325" flag="0"/>
+      <psa10 value="0.0200816" flag="0"/>
+      <psa30 value="0.00254941" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0400409" flag="0"/>
+      <vel value="0.014697" flag="0"/>
+      <psa03 value="0.0776725" flag="0"/>
+      <psa10 value="0.0100146" flag="0"/>
+      <psa30 value="0.00180759" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ILLI" name="ILLI" netid="IV" lat="38.4457" commtype="DIG" lon="14.9483">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.24514" flag="0"/>
+      <vel value="0.083755" flag="0"/>
+      <psa03 value="0.494938" flag="0"/>
+      <psa10 value="0.0678596" flag="0"/>
+      <psa30 value="0.00673728" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.246305" flag="0"/>
+      <vel value="0.097201" flag="0"/>
+      <psa03 value="0.737844" flag="0"/>
+      <psa10 value="0.0873453" flag="0"/>
+      <psa30 value="0.00725763" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.169426" flag="0"/>
+      <vel value="0.04777" flag="0"/>
+      <psa03 value="0.271496" flag="0"/>
+      <psa10 value="0.0164092" flag="0"/>
+      <psa30 value="0.00256149" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="IVPL" name="IVPL" netid="IV" lat="38.3763" commtype="DIG" lon="14.9801">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="JOPP" name="JOPP" netid="IV" lat="38.6068" commtype="DIG" lon="15.8856">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.30505" flag="0"/>
+      <vel value="0.061361" flag="0"/>
+      <psa03 value="0.254807" flag="0"/>
+      <psa10 value="0.0238225" flag="0"/>
+      <psa30 value="0.00165546" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.327257" flag="0"/>
+      <vel value="0.112784" flag="0"/>
+      <psa03 value="0.663482" flag="0"/>
+      <psa10 value="0.07694" flag="0"/>
+      <psa30 value="0.00891981" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.115017" flag="0"/>
+      <vel value="0.040293" flag="0"/>
+      <psa03 value="0.31843" flag="0"/>
+      <psa10 value="0.0153139" flag="0"/>
+      <psa30 value="0.00322189" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="MGR" name="MGR" netid="IV" lat="40.1376" commtype="DIG" lon="15.5535">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0179681" flag="0"/>
+      <vel value="0.009902" flag="0"/>
+      <psa03 value="0.0429525" flag="0"/>
+      <psa10 value="0.0134696" flag="0"/>
+      <psa30 value="0.000629523" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0183534" flag="0"/>
+      <vel value="0.009422" flag="0"/>
+      <psa03 value="0.0523036" flag="0"/>
+      <psa10 value="0.00865762" flag="0"/>
+      <psa30 value="0.000538249" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0117095" flag="0"/>
+      <vel value="0.005158" flag="0"/>
+      <psa03 value="0.0289929" flag="0"/>
+      <psa10 value="0.00825494" flag="0"/>
+      <psa30 value="0.000633997" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="PIPA" name="PIPA" netid="IV" lat="39.4851" commtype="DIG" lon="16.8158">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0115501" flag="0"/>
+      <vel value="0.011592" flag="0"/>
+      <psa03 value="0.0290377" flag="0"/>
+      <psa10 value="0.0129059" flag="0"/>
+      <psa30 value="0.00272212" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0107861" flag="0"/>
+      <vel value="0.0081" flag="0"/>
+      <psa03 value="0.0328408" flag="0"/>
+      <psa10 value="0.00886701" flag="0"/>
+      <psa30 value="0.00149528" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0104611" flag="0"/>
+      <vel value="0.005712" flag="0"/>
+      <psa03 value="0.0136911" flag="0"/>
+      <psa10 value="0.00527108" flag="0"/>
+      <psa30 value="0.000812071" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SALB" name="SALB" netid="IV" lat="39.8772" commtype="DIG" lon="16.3459">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0237076" flag="0"/>
+      <vel value="0.010642" flag="0"/>
+      <psa03 value="0.0659948" flag="0"/>
+      <psa10 value="0.0196266" flag="0"/>
+      <psa30 value="0.00101654" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0200977" flag="0"/>
+      <vel value="0.00801" flag="0"/>
+      <psa03 value="0.0439368" flag="0"/>
+      <psa10 value="0.00964016" flag="0"/>
+      <psa30 value="0.00116151" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0115398" flag="0"/>
+      <vel value="0.005331" flag="0"/>
+      <psa03 value="0.0251899" flag="0"/>
+      <psa10 value="0.00656368" flag="0"/>
+      <psa30 value="0.000497981" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SERS" name="SERS" netid="IV" lat="39.0359" commtype="DIG" lon="16.6886">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0179591" flag="0"/>
+      <vel value="0.008496" flag="0"/>
+      <psa03 value="0.0515878" flag="0"/>
+      <psa10 value="0.00835561" flag="0"/>
+      <psa30 value="0.000975828" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0158039" flag="0"/>
+      <vel value="0.011653" flag="0"/>
+      <psa03 value="0.0469793" flag="0"/>
+      <psa10 value="0.0104777" flag="0"/>
+      <psa30 value="0.00225501" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0075988" flag="0"/>
+      <vel value="0.005046" flag="0"/>
+      <psa03 value="0.0254136" flag="0"/>
+      <psa10 value="0.00712743" flag="0"/>
+      <psa30 value="0.000638024" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SIRI" name="SIRI" netid="IV" lat="40.1821" commtype="DIG" lon="15.8675">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.028675" flag="0"/>
+      <vel value="0.016136" flag="0"/>
+      <psa03 value="0.153645" flag="0"/>
+      <psa10 value="0.0118307" flag="0"/>
+      <psa30 value="0.000803123" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0264218" flag="0"/>
+      <vel value="0.016367" flag="0"/>
+      <psa03 value="0.0980302" flag="0"/>
+      <psa10 value="0.0100227" flag="0"/>
+      <psa30 value="0.000849655" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0126461" flag="0"/>
+      <vel value="0.004452" flag="0"/>
+      <psa03 value="0.0229528" flag="0"/>
+      <psa10 value="0.00513014" flag="0"/>
+      <psa30 value="0.000654578" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="T0701" name="T0701" netid="IV" lat="39.9862" commtype="DIG" lon="16.1161">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0189259" flag="0"/>
+      <vel value="0.010634" flag="0"/>
+      <psa03 value="0.0536906" flag="0"/>
+      <psa10 value="0.0165944" flag="0"/>
+      <psa30 value="0.000830415" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0170839" flag="0"/>
+      <vel value="0.008277" flag="0"/>
+      <psa03 value="0.0663974" flag="0"/>
+      <psa10 value="0.00890325" flag="0"/>
+      <psa30 value="0.000844285" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.00803413" flag="0"/>
+      <vel value="0.003814" flag="0"/>
+      <psa03 value="0.0165994" flag="0"/>
+      <psa10 value="0.0053798" flag="0"/>
+      <psa30 value="0.000800885" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="CEL" name="CEL" netid="MN" lat="38.2603" commtype="DIG" lon="15.8939">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.19360597145814" flag="0"/>
+      <vel value="0.078504" flag="0"/>
+      <psa03 value="0.41728918641942" flag="0"/>
+      <psa10 value="0.077947719149761" flag="0"/>
+      <psa30 value="0.0073688772414637" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.4143431243085" flag="0"/>
+      <vel value="0.166255" flag="0"/>
+      <psa03 value="0.53915322765674" flag="0"/>
+      <psa10 value="0.11076585786176" flag="0"/>
+      <psa30 value="0.014132043052419" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.5928636180551" flag="0"/>
+      <vel value="0.356891" flag="0"/>
+      <psa03 value="1.2344355105974" flag="0"/>
+      <psa10 value="0.27339111725207" flag="0"/>
+      <psa30 value="0.018759515226912" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="TIP" name="TIP" netid="MN" lat="39.1794" commtype="DIG" lon="16.7583">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0079047381113836" flag="0"/>
+      <vel value="0.006927" flag="0"/>
+      <psa03 value="0.018142179031576" flag="0"/>
+      <psa10 value="0.011959843575533" flag="0"/>
+      <psa30 value="0.002126108304059" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0054636394691357" flag="0"/>
+      <vel value="0.005449" flag="0"/>
+      <psa03 value="0.015531705526352" flag="0"/>
+      <psa10 value="0.0058915123921013" flag="0"/>
+      <psa30 value="0.00095700366587979" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0082821350818067" flag="0"/>
+      <vel value="0.009448" flag="0"/>
+      <psa03 value="0.024900858091193" flag="0"/>
+      <psa10 value="0.010426700249321" flag="0"/>
+      <psa30 value="0.0020046601030933" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="CLTB" name="CLTB" netid="MN" lat="37.57857" commtype="DIG" lon="13.21562">
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0024266186720236" flag="0"/>
+      <vel value="0.001291" flag="0"/>
+      <psa03 value="0.0084682332906752" flag="0"/>
+      <psa10 value="0.0010771262357686" flag="0"/>
+      <psa30 value="0.00029418812744413" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0043863092901246" flag="0"/>
+      <vel value="0.003278" flag="0"/>
+      <psa03 value="0.012481020531986" flag="0"/>
+      <psa10 value="0.0026631928334345" flag="0"/>
+      <psa30 value="0.00055125858473587" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0072127586892568" flag="0"/>
+      <vel value="0.005502" flag="0"/>
+      <psa03 value="0.01594010186965" flag="0"/>
+      <psa10 value="0.0050797163149495" flag="0"/>
+      <psa30 value="0.00076570490432513" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="AQU" name="AQU" netid="MN" lat="42.354" commtype="DIG" lon="13.405">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0006514966884716" flag="0"/>
+      <vel value="0.00022" flag="0"/>
+      <psa03 value="0.0002678794491493" flag="0"/>
+      <psa10 value="0.00047916464847833" flag="0"/>
+      <psa30 value="0.00010115584832741" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00055013689690159" flag="0"/>
+      <vel value="0.00029" flag="0"/>
+      <psa03 value="0.0002631887545696" flag="0"/>
+      <psa10 value="0.00052596962265402" flag="0"/>
+      <psa30 value="0.00010839583343955" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00032477961383347" flag="0"/>
+      <vel value="0.000233" flag="0"/>
+      <psa03 value="0.00018874947102221" flag="0"/>
+      <psa10 value="0.00060826072104133" flag="0"/>
+      <psa30 value="7.8314205156705E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="PDG" name="PDG" netid="MN" lat="42.4297" commtype="DIG" lon="19.2608">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0039169339172908" flag="0"/>
+      <vel value="0.001089" flag="0"/>
+      <psa03 value="0.0057131640264514" flag="0"/>
+      <psa10 value="0.00058327767382338" flag="0"/>
+      <psa30 value="6.4038178175014E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0028619355233439" flag="0"/>
+      <vel value="0.000966" flag="0"/>
+      <psa03 value="0.0051755696389695" flag="0"/>
+      <psa10 value="0.00065822681547725" flag="0"/>
+      <psa30 value="6.2712547098143E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0038196529905727" flag="0"/>
+      <vel value="0.00073" flag="0"/>
+      <psa03 value="0.0040044255683643" flag="0"/>
+      <psa10 value="0.0005311701753402" flag="0"/>
+      <psa30 value="4.7212860660878E-5" flag="0"/>
+    </comp>
+    <comp name="--.HLN" ingv:from="ont">
+      <acc value="0.0043510271091555" flag="0"/>
+      <vel value="0.000922" flag="0"/>
+      <psa03 value="0.0050493287718028" flag="0"/>
+      <psa10 value="0.00068596309647025" flag="0"/>
+      <psa30 value="7.9741807854874E-5" flag="0"/>
+    </comp>
+    <comp name="--.HLZ" ingv:from="ont">
+      <acc value="0.0035104750347978" flag="0"/>
+      <vel value="0.001274" flag="0"/>
+      <psa03 value="0.006601948677683" flag="0"/>
+      <psa10 value="0.00087053173101926" flag="0"/>
+      <psa30 value="8.0761524067852E-5" flag="0"/>
+    </comp>
+    <comp name="--.HLE" ingv:from="ont">
+      <acc value="0.0045769962219514" flag="0"/>
+      <vel value="0.001307" flag="0"/>
+      <psa03 value="0.0071554506380874" flag="0"/>
+      <psa10 value="0.00075275450842031" flag="0"/>
+      <psa30 value="9.8912472658859E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="VSL" name="VSL" netid="MN" lat="39.496" commtype="DIG" lon="9.378">
+    <comp name="--.BHN" ingv:from="ont">
+      <acc value="0.00030754640983414" flag="0"/>
+      <vel value="0.000121" flag="0"/>
+      <psa03 value="0.0006052015724024" flag="0"/>
+      <psa10 value="4.8538491737749E-5" flag="0"/>
+      <psa30 value="1.7743062105816E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Mediterranean Very Broadband Seismographic Network" code="CUC" name="CUC" netid="MN" lat="39.9938" commtype="DIG" lon="15.8155">
+    <comp name="--.HLE" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HLN" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HLZ" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+  </station>
+  <station insttype="" source="UniBAS" code="PZUN" name="PZUN" netid="BA" lat="40.6458" commtype="DIG" lon="15.807">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0076038198569338" flag="0"/>
+      <vel value="0.005705" flag="0"/>
+      <psa03 value="0.023844024208063" flag="0"/>
+      <psa10 value="0.011762528488322" flag="0"/>
+      <psa30 value="0.0010568338831303" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.010579351766403" flag="0"/>
+      <vel value="0.006141" flag="0"/>
+      <psa03 value="0.025629547296987" flag="0"/>
+      <psa10 value="0.0078005231144173" flag="0"/>
+      <psa30 value="0.00096006281451872" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.006215680176207" flag="0"/>
+      <vel value="0.004101" flag="0"/>
+      <psa03 value="0.011987273941662" flag="0"/>
+      <psa10 value="0.0067447089474999" flag="0"/>
+      <psa30 value="0.00077416854889284" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="GEOFON" code="MATE" name="MATE" netid="GE" lat="40.649071" commtype="DIG" lon="16.70442">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.018100778553329" flag="0"/>
+      <vel value="0.003742" flag="0"/>
+      <psa03 value="0.017537895203765" flag="0"/>
+      <psa10 value="0.0022992561170226" flag="0"/>
+      <psa30 value="0.00035975587993861" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.021288717349962" flag="0"/>
+      <vel value="0.003766" flag="0"/>
+      <psa03 value="0.015368652903897" flag="0"/>
+      <psa10 value="0.0032705358098841" flag="0"/>
+      <psa30 value="0.00050751275919911" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="National Observatory of Athens Seismic Network" code="KEK" name="KEK" netid="HL" lat="39.7127" commtype="DIG" lon="19.79623">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0012695466851575" flag="0"/>
+      <vel value="0.000531" flag="0"/>
+      <psa03 value="0.0019849795801828" flag="0"/>
+      <psa10 value="0.00033099988273264" flag="0"/>
+      <psa30 value="4.0074847170033E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00096301999153636" flag="0"/>
+      <vel value="0.000415" flag="0"/>
+      <psa03 value="0.0020607444948071" flag="0"/>
+      <psa10 value="0.00028470476666344" flag="0"/>
+      <psa30 value="2.4065302626279E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0025180872163277" flag="0"/>
+      <vel value="0.000681" flag="0"/>
+      <psa03 value="0.0035618687319319" flag="0"/>
+      <psa10 value="0.00031519428143148" flag="0"/>
+      <psa30 value="3.1917117466209E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="National Observatory of Athens Seismic Network" code="VLS" name="VLS" netid="HL" lat="38.17683" commtype="DIG" lon="20.5886">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0071787001677433" flag="0"/>
+      <vel value="0.001337" flag="0"/>
+      <psa03 value="0.0065010987442195" flag="0"/>
+      <psa10 value="0.0004991510862527" flag="0"/>
+      <psa30 value="5.0272009299812E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0060665976658696" flag="0"/>
+      <vel value="0.001589" flag="0"/>
+      <psa03 value="0.010261302279576" flag="0"/>
+      <psa10 value="0.0004529579418048" flag="0"/>
+      <psa30 value="6.7811128163032E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0030550697740819" flag="0"/>
+      <vel value="0.000698" flag="0"/>
+      <psa03 value="0.0032137376168212" flag="0"/>
+      <psa10 value="0.00021403843310407" flag="0"/>
+      <psa30 value="3.4058521513463E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="National Observatory of Athens Seismic Network" code="ITM" name="ITM" netid="HL" lat="37.17872" commtype="DIG" lon="21.92522">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00087715988640361" flag="0"/>
+      <vel value="0.000194" flag="0"/>
+      <psa03 value="0.00099024641442287" flag="0"/>
+      <psa10 value="0.00012083637123788" flag="0"/>
+      <psa30 value="4.017681879133E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00054595606042838" flag="0"/>
+      <vel value="0.000145" flag="0"/>
+      <psa03 value="0.00037790682852962" flag="0"/>
+      <psa10 value="9.7790784824583E-5" flag="0"/>
+      <psa30 value="2.447318911147E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0008916398566279" flag="0"/>
+      <vel value="0.000238" flag="0"/>
+      <psa03 value="0.00075979055028985" flag="0"/>
+      <psa10 value="0.00014428984413638" flag="0"/>
+      <psa30 value="4.3745825536753E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="National Observatory of Athens Seismic Network" code="KLV" name="KLV" netid="HL" lat="38.04367" commtype="DIG" lon="22.15042">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00083219040141129" flag="0"/>
+      <vel value="0.000421" flag="0"/>
+      <psa03 value="0.0016437825353204" flag="0"/>
+      <psa10 value="0.000540347621257" flag="0"/>
+      <psa30 value="0.0001016657064339" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00086696272427383" flag="0"/>
+      <vel value="0.000421" flag="0"/>
+      <psa03 value="0.0013970112117798" flag="0"/>
+      <psa10 value="0.00042165265406637" flag="0"/>
+      <psa30 value="5.9041568731422E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00075520182733145" flag="0"/>
+      <vel value="0.000483" flag="0"/>
+      <psa03 value="0.0016195132894515" flag="0"/>
+      <psa10 value="0.00080598369473775" flag="0"/>
+      <psa30 value="6.4344093038907E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="National Observatory of Athens Seismic Network" code="THL" name="THL" netid="HL" lat="39.56468" commtype="DIG" lon="22.0144">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.00022290996415698" flag="0"/>
+      <vel value="0.000108" flag="0"/>
+      <psa03 value="0.00026961296671136" flag="0"/>
+      <psa10 value="8.0761524067852E-5" flag="0"/>
+      <psa30 value="1.570362967986E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.00037005501368969" flag="0"/>
+      <vel value="0.000152" flag="0"/>
+      <psa03 value="0.0014683913466882" flag="0"/>
+      <psa10 value="9.4017834836565E-5" flag="0"/>
+      <psa30 value="2.0598267502154E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.00012093834285918" flag="0"/>
+      <vel value="5.9E-5" flag="0"/>
+      <psa03 value="0.00040788648519117" flag="0"/>
+      <psa10 value="6.6485497086161E-5" flag="0"/>
+      <psa30 value="1.1012935100162E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Albanian Seismological Network" code="SRN" name="SRN" netid="AC" lat="39.880001" commtype="DIG" lon="20.0005">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0037688711231664" flag="0"/>
+      <vel value="0.00068" flag="0"/>
+      <psa03 value="0.0036603733181056" flag="0"/>
+      <psa10 value="0.00075193873544992" flag="0"/>
+      <psa30 value="0.00012797438472873" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0025625468432135" flag="0"/>
+      <vel value="0.000578" flag="0"/>
+      <psa03 value="0.0031003451739381" flag="0"/>
+      <psa10 value="0.00059969510485232" flag="0"/>
+      <psa30 value="8.2087155144723E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0027465036480348" flag="0"/>
+      <vel value="0.000741" flag="0"/>
+      <psa03 value="0.0035291358414953" flag="0"/>
+      <psa10 value="0.00075234662193512" flag="0"/>
+      <psa30 value="7.6886602458536E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Albanian Seismological Network" code="VLO" name="VLO" netid="AC" lat="40.468601" commtype="DIG" lon="19.495501">
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.018032253623816" flag="0"/>
+      <vel value="0.003207" flag="0"/>
+      <psa03 value="0.014130003619993" flag="0"/>
+      <psa10 value="0.0023738993438126" flag="0"/>
+      <psa30 value="0.00031488836656758" flag="0"/>
+    </comp>
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.025447527952971" flag="0"/>
+      <vel value="0.005912" flag="0"/>
+      <psa03 value="0.023377402069004" flag="0"/>
+      <psa10 value="0.0033806651608857" flag="0"/>
+      <psa30 value="0.00031029964360918" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0081897487929109" flag="0"/>
+      <vel value="0.001654" flag="0"/>
+      <psa03 value="0.0099475356008423" flag="0"/>
+      <psa10 value="0.0011922521962138" flag="0"/>
+      <psa30 value="0.00018344694671473" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Albanian Seismological Network" code="PUK" name="PUK" netid="AC" lat="42.042599" commtype="DIG" lon="19.892599">
+    <comp name="--.HHN" ingv:from="ont">
+      <acc value="0.0056313827861706" flag="0"/>
+      <vel value="0.002032" flag="0"/>
+      <psa03 value="0.0086896136805127" flag="0"/>
+      <psa10 value="0.00081587494200364" flag="0"/>
+      <psa30 value="6.8320986269521E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHZ" ingv:from="ont">
+      <acc value="0.0019293030749542" flag="0"/>
+      <vel value="0.000733" flag="0"/>
+      <psa03 value="0.0030487475335614" flag="0"/>
+      <psa10 value="0.00054840337933953" flag="0"/>
+      <psa30 value="6.5771695737076E-5" flag="0"/>
+    </comp>
+    <comp name="--.HHE" ingv:from="ont">
+      <acc value="0.0037095236395711" flag="0"/>
+      <vel value="0.001426" flag="0"/>
+      <psa03 value="0.011466912758179" flag="0"/>
+      <psa10 value="0.00093069498758496" flag="0"/>
+      <psa30 value="7.2705765985326E-5" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Croatian Seismograph Network" code="STON" name="STON" netid="CR" lat="42.8715" commtype="DIG" lon="17.699">
+    <comp name="--.BHE" ingv:from="ont">
+      <acc value="0.0024844365812994" flag="0"/>
+      <vel value="0.000525" flag="0"/>
+      <psa03 value="0.0033894347203173" flag="0"/>
+      <psa10 value="0.00020414718583818" flag="0"/>
+      <psa30 value="9.6363182126414E-5" flag="0"/>
+    </comp>
+    <comp name="--.BHN" ingv:from="ont">
+      <acc value="0.0024710782989094" flag="0"/>
+      <vel value="0.000492" flag="0"/>
+      <psa03 value="0.0038727802052689" flag="0"/>
+      <psa10 value="0.00038035414744077" flag="0"/>
+      <psa30 value="6.4650007902801E-5" flag="0"/>
+    </comp>
+    <comp name="--.BHZ" ingv:from="ont">
+      <acc value="0.0013723340794257" flag="0"/>
+      <vel value="0.000273" flag="0"/>
+      <psa03 value="0.0019945649125848" flag="0"/>
+      <psa10 value="0.00033864775432997" flag="0"/>
+      <psa30 value="5.6798193062871E-5" flag="0"/>
+    </comp>
+  </station>
+</stationlist>

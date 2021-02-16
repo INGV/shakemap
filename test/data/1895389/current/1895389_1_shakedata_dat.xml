@@ -1,0 +1,1475 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<stationlist created="1594725001" xmlns:ingv="http://webservices.ingv.it/ws/shakedata/1/">
+  <station insttype="" source="UniBAS" code="SANL" name="SANL" netid="BA" lat="40.25275" commtype="DIG" lon="16.271763">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.238414" flag="0"/>
+      <vel value="0.9732" flag="0"/>
+      <psa03 value="0.281742" flag="0"/>
+      <psa10 value="0.629413" flag="0"/>
+      <psa30 value="0.398412" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.257626" flag="0"/>
+      <vel value="0.941005" flag="0"/>
+      <psa03 value="0.325902" flag="0"/>
+      <psa10 value="0.696145" flag="0"/>
+      <psa30 value="0.484518" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.149234" flag="0"/>
+      <vel value="0.71039" flag="0"/>
+      <psa03 value="0.198118" flag="0"/>
+      <psa10 value="0.393962" flag="0"/>
+      <psa30 value="0.392533" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="UniBAS" code="TTS" name="TTS" netid="BA" lat="40.601345" commtype="DIG" lon="15.723605">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.257216" flag="0"/>
+      <vel value="0.722433" flag="0"/>
+      <psa03 value="0.29248" flag="0"/>
+      <psa10 value="0.825602" flag="0"/>
+      <psa30 value="0.323832" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.352793" flag="0"/>
+      <vel value="0.652961" flag="0"/>
+      <psa03 value="0.404962" flag="0"/>
+      <psa10 value="1.10301" flag="0"/>
+      <psa30 value="0.30768" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0994857" flag="0"/>
+      <vel value="0.373114" flag="0"/>
+      <psa03 value="0.161833" flag="0"/>
+      <psa10 value="0.297689" flag="0"/>
+      <psa30 value="0.145034" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="ANT" name="ANT" netid="IT" lat="42.41811" commtype="DIG" lon="13.078598">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="2.0139" flag="0"/>
+      <vel value="1.79967" flag="0"/>
+      <psa03 value="5.34249" flag="0"/>
+      <psa10 value="2.05386" flag="0"/>
+      <psa30 value="0.466804" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="2.64901" flag="0"/>
+      <vel value="2.468156" flag="0"/>
+      <psa03 value="5.33994" flag="0"/>
+      <psa10 value="3.34381" flag="0"/>
+      <psa30 value="0.432561" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="1.17034" flag="0"/>
+      <vel value="1.16987" flag="0"/>
+      <psa03 value="3.5583" flag="0"/>
+      <psa10 value="1.44594" flag="0"/>
+      <psa30 value="0.335839" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AQA" name="AQA" netid="IT" lat="42.37553" commtype="DIG" lon="13.339298">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="40.2639" flag="0"/>
+      <vel value="31.9158" flag="0"/>
+      <psa03 value="59.9112" flag="0"/>
+      <psa10 value="34.1421" flag="0"/>
+      <psa30 value="4.4048" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="44.2527" flag="0"/>
+      <vel value="26.6662" flag="0"/>
+      <psa03 value="91.4441" flag="0"/>
+      <psa10 value="23.8194" flag="0"/>
+      <psa30 value="3.13015" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="44.4102" flag="0"/>
+      <vel value="9.37884" flag="0"/>
+      <psa03 value="31.4089" flag="0"/>
+      <psa10 value="8.16981" flag="0"/>
+      <psa30 value="1.78627" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AQG" name="AQG" netid="IT" lat="42.373474" commtype="DIG" lon="13.337026">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="44.6176" flag="0"/>
+      <vel value="30.9592" flag="0"/>
+      <psa03 value="98.687" flag="0"/>
+      <psa10 value="44.9652" flag="0"/>
+      <psa30 value="5.37412" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="48.8852" flag="0"/>
+      <vel value="35.7636" flag="0"/>
+      <psa03 value="80.1839" flag="0"/>
+      <psa10 value="46.3259" flag="0"/>
+      <psa30 value="1.87497" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="23.9309" flag="0"/>
+      <vel value="10.4048" flag="0"/>
+      <psa03 value="23.6242" flag="0"/>
+      <psa10 value="11.2043" flag="0"/>
+      <psa30 value="1.70802" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AQK" name="AQK" netid="IT" lat="42.344967" commtype="DIG" lon="13.400949">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="33.0207" flag="0"/>
+      <vel value="32.2179" flag="0"/>
+      <psa03 value="60.5295" flag="0"/>
+      <psa10 value="41.0431" flag="0"/>
+      <psa30 value="5.73488" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="35.372" flag="0"/>
+      <vel value="35.7976" flag="0"/>
+      <psa03 value="63.2364" flag="0"/>
+      <psa10 value="35.6273" flag="0"/>
+      <psa30 value="8.65829" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="36.2569" flag="0"/>
+      <vel value="20.0701" flag="0"/>
+      <psa03 value="41.9736" flag="0"/>
+      <psa10 value="42.9667" flag="0"/>
+      <psa30 value="3.9356" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AQV" name="AQV" netid="IT" lat="42.377222" commtype="DIG" lon="13.343888">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="65.7132" flag="0"/>
+      <vel value="40.2058" flag="0"/>
+      <psa03 value="84.5265" flag="0"/>
+      <psa10 value="46.9887" flag="0"/>
+      <psa30 value="5.50079" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="54.5907" flag="0"/>
+      <vel value="42.7202" flag="0"/>
+      <psa03 value="131.321" flag="0"/>
+      <psa10 value="31.0742" flag="0"/>
+      <psa30 value="2.62964" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="49.6384" flag="0"/>
+      <vel value="12.443307" flag="0"/>
+      <psa03 value="36.6987" flag="0"/>
+      <psa10 value="16.7398" flag="0"/>
+      <psa30 value="1.88641" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="ASS" name="ASS" netid="IT" lat="43.074982" commtype="DIG" lon="12.604141">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.616822" flag="0"/>
+      <vel value="0.435867" flag="0"/>
+      <psa03 value="2.24458" flag="0"/>
+      <psa10 value="0.365831" flag="0"/>
+      <psa30 value="0.100055" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.320097" flag="0"/>
+      <vel value="0.393317" flag="0"/>
+      <psa03 value="1.0612" flag="0"/>
+      <psa10 value="0.42347" flag="0"/>
+      <psa30 value="0.169178" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.217809" flag="0"/>
+      <vel value="0.304632" flag="0"/>
+      <psa03 value="0.360488" flag="0"/>
+      <psa10 value="0.383387" flag="0"/>
+      <psa30 value="0.117097" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AVL" name="AVL" netid="IT" lat="40.922832" commtype="DIG" lon="14.787044">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.129465" flag="0"/>
+      <vel value="0.370023" flag="0"/>
+      <psa03 value="0.157314" flag="0"/>
+      <psa10 value="0.26175" flag="0"/>
+      <psa30 value="0.147124" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.125567" flag="0"/>
+      <vel value="0.389086" flag="0"/>
+      <psa03 value="0.149036" flag="0"/>
+      <psa10 value="0.320783" flag="0"/>
+      <psa30 value="0.15863" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0888716" flag="0"/>
+      <vel value="0.331225" flag="0"/>
+      <psa03 value="0.100849" flag="0"/>
+      <psa10 value="0.250113" flag="0"/>
+      <psa30 value="0.178" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="AVZ" name="AVZ" netid="IT" lat="42.027458" commtype="DIG" lon="13.425929">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="5.59705" flag="0"/>
+      <vel value="10.8036" flag="0"/>
+      <psa03 value="14.9507" flag="0"/>
+      <psa10 value="9.51653" flag="0"/>
+      <psa30 value="3.48458" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="6.90453" flag="0"/>
+      <vel value="11.294976" flag="0"/>
+      <psa03 value="15.6882" flag="0"/>
+      <psa10 value="9.97382" flag="0"/>
+      <psa30 value="2.79365" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="2.66444" flag="0"/>
+      <vel value="3.71844" flag="0"/>
+      <psa03 value="7.73145" flag="0"/>
+      <psa10 value="5.1864" flag="0"/>
+      <psa30 value="1.09515" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="BBN" name="BBN" netid="IT" lat="43.747646" commtype="DIG" lon="11.821428">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.0634002" flag="0"/>
+      <vel value="0.246192" flag="0"/>
+      <psa03 value="0.0990592" flag="0"/>
+      <psa10 value="0.217499" flag="0"/>
+      <psa30 value="0.0837221" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.102207" flag="0"/>
+      <vel value="0.241838" flag="0"/>
+      <psa03 value="0.123533" flag="0"/>
+      <psa10 value="0.258239" flag="0"/>
+      <psa30 value="0.129587" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0763132" flag="0"/>
+      <vel value="0.255982" flag="0"/>
+      <psa03 value="0.106979" flag="0"/>
+      <psa10 value="0.20099" flag="0"/>
+      <psa30 value="0.116782" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="BDT" name="BDT" netid="IT" lat="43.706772" commtype="DIG" lon="12.188036">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.203355" flag="0"/>
+      <vel value="0.291771" flag="0"/>
+      <psa03 value="0.4808" flag="0"/>
+      <psa10 value="0.371001" flag="0"/>
+      <psa30 value="0.230977" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.179747" flag="0"/>
+      <vel value="0.385581" flag="0"/>
+      <psa03 value="0.432075" flag="0"/>
+      <psa10 value="0.458616" flag="0"/>
+      <psa30 value="0.257903" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.149872" flag="0"/>
+      <vel value="0.363771" flag="0"/>
+      <psa03 value="0.229125" flag="0"/>
+      <psa10 value="0.247592" flag="0"/>
+      <psa30 value="0.127693" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="BNE" name="BNE" netid="IT" lat="41.127556" commtype="DIG" lon="14.784882">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.201477" flag="0"/>
+      <vel value="0.440984" flag="0"/>
+      <psa03 value="0.23342" flag="0"/>
+      <psa10 value="0.568914" flag="0"/>
+      <psa30 value="0.301727" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.208689" flag="0"/>
+      <vel value="0.685202" flag="0"/>
+      <psa03 value="0.216731" flag="0"/>
+      <psa10 value="0.687693" flag="0"/>
+      <psa30 value="0.280498" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.167628" flag="0"/>
+      <vel value="0.396646" flag="0"/>
+      <psa03 value="0.198521" flag="0"/>
+      <psa10 value="0.499436" flag="0"/>
+      <psa30 value="0.220221" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="BOJ" name="BOJ" netid="IT" lat="41.484451" commtype="DIG" lon="14.472103">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="1.31651" flag="0"/>
+      <vel value="3.23498" flag="0"/>
+      <psa03 value="1.88579" flag="0"/>
+      <psa10 value="4.66267" flag="0"/>
+      <psa30 value="1.29166" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="1.44437" flag="0"/>
+      <vel value="3.334105" flag="0"/>
+      <psa03 value="2.1602" flag="0"/>
+      <psa10 value="6.29219" flag="0"/>
+      <psa30 value="0.984816" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.529634" flag="0"/>
+      <vel value="1.44227" flag="0"/>
+      <psa03 value="1.04169" flag="0"/>
+      <psa10 value="1.85709" flag="0"/>
+      <psa30 value="0.4393" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CAN" name="CAN" netid="IT" lat="41.203197" commtype="DIG" lon="15.475419">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.193852" flag="0"/>
+      <vel value="0.310359" flag="0"/>
+      <psa03 value="0.244606" flag="0"/>
+      <psa10 value="0.491543" flag="0"/>
+      <psa30 value="0.203215" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.145141" flag="0"/>
+      <vel value="0.35963" flag="0"/>
+      <psa03 value="0.29239" flag="0"/>
+      <psa10 value="0.488406" flag="0"/>
+      <psa30 value="0.186476" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0857689" flag="0"/>
+      <vel value="0.192758" flag="0"/>
+      <psa03 value="0.139238" flag="0"/>
+      <psa10 value="0.26719" flag="0"/>
+      <psa30 value="0.125748" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CDS" name="CDS" netid="IT" lat="41.78714" commtype="DIG" lon="14.11187">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="1.01509" flag="0"/>
+      <vel value="1.71417" flag="0"/>
+      <psa03 value="2.43747" flag="0"/>
+      <psa10 value="2.80706" flag="0"/>
+      <psa30 value="0.899578" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.935265" flag="0"/>
+      <vel value="1.718462" flag="0"/>
+      <psa03 value="2.60708" flag="0"/>
+      <psa10 value="2.60201" flag="0"/>
+      <psa30 value="0.891802" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.712861" flag="0"/>
+      <vel value="1.645315" flag="0"/>
+      <psa03 value="1.16464" flag="0"/>
+      <psa10 value="1.40008" flag="0"/>
+      <psa30 value="0.721356" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CER" name="CER" netid="IT" lat="41.2595" commtype="DIG" lon="15.9102">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.178476" flag="0"/>
+      <vel value="0.452405" flag="0"/>
+      <psa03 value="0.297625" flag="0"/>
+      <psa10 value="0.527776" flag="0"/>
+      <psa30 value="0.279124" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.124665" flag="0"/>
+      <vel value="0.356493" flag="0"/>
+      <psa03 value="0.320175" flag="0"/>
+      <psa10 value="0.299308" flag="0"/>
+      <psa30 value="0.272333" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0855211" flag="0"/>
+      <vel value="0.194663" flag="0"/>
+      <psa03 value="0.141296" flag="0"/>
+      <psa10 value="0.206196" flag="0"/>
+      <psa30 value="0.082655" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CHT" name="CHT" netid="IT" lat="42.369827" commtype="DIG" lon="14.147809">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="2.84767" flag="0"/>
+      <vel value="7.869166" flag="0"/>
+      <psa03 value="5.91586" flag="0"/>
+      <psa10 value="6.11441" flag="0"/>
+      <psa30 value="3.42008" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="3.00182" flag="0"/>
+      <vel value="6.854861" flag="0"/>
+      <psa03 value="6.21308" flag="0"/>
+      <psa10 value="4.60259" flag="0"/>
+      <psa30 value="2.32692" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="1.71307" flag="0"/>
+      <vel value="3.89923" flag="0"/>
+      <psa03 value="2.58699" flag="0"/>
+      <psa10 value="3.18417" flag="0"/>
+      <psa30 value="2.72237" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CLN" name="CLN" netid="IT" lat="42.085224" commtype="DIG" lon="13.520722">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="8.1381" flag="0"/>
+      <vel value="4.857461" flag="0"/>
+      <psa03 value="18.8071" flag="0"/>
+      <psa10 value="3.3872" flag="0"/>
+      <psa30 value="1.18457" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="9.02374" flag="0"/>
+      <vel value="6.63028" flag="0"/>
+      <psa03 value="14.6908" flag="0"/>
+      <psa10 value="8.37071" flag="0"/>
+      <psa30 value="1.3598" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="4.48134" flag="0"/>
+      <vel value="7.04811" flag="0"/>
+      <psa03 value="8.35212" flag="0"/>
+      <psa10 value="4.16681" flag="0"/>
+      <psa30 value="1.60199" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CMB" name="CMB" netid="IT" lat="41.5628" commtype="DIG" lon="14.6523">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.292646" flag="0"/>
+      <vel value="1.321928" flag="0"/>
+      <psa03 value="0.331361" flag="0"/>
+      <psa10 value="0.557458" flag="0"/>
+      <psa30 value="0.66661" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.294478" flag="0"/>
+      <vel value="0.862683" flag="0"/>
+      <psa03 value="0.314806" flag="0"/>
+      <psa10 value="0.71857" flag="0"/>
+      <psa30 value="0.629116" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.212926" flag="0"/>
+      <vel value="0.84627" flag="0"/>
+      <psa03 value="0.21861" flag="0"/>
+      <psa10 value="0.430638" flag="0"/>
+      <psa30 value="0.495135" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CMR" name="CMR" netid="IT" lat="41.833427" commtype="DIG" lon="14.712029">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.540143" flag="0"/>
+      <vel value="0.830199" flag="0"/>
+      <psa03 value="1.13292" flag="0"/>
+      <psa10 value="0.922306" flag="0"/>
+      <psa30 value="0.422906" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.411587" flag="0"/>
+      <vel value="0.795296" flag="0"/>
+      <psa03 value="1.29913" flag="0"/>
+      <psa10 value="0.890224" flag="0"/>
+      <psa30 value="0.248282" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.251797" flag="0"/>
+      <vel value="0.672996" flag="0"/>
+      <psa03 value="0.565318" flag="0"/>
+      <psa10 value="0.594319" flag="0"/>
+      <psa30 value="0.2097" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CNM" name="CNM" netid="IT" lat="41.618225" commtype="DIG" lon="15.104517">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.178866" flag="0"/>
+      <vel value="0.830502" flag="0"/>
+      <psa03 value="0.278252" flag="0"/>
+      <psa10 value="0.345813" flag="0"/>
+      <psa30 value="0.354367" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.191598" flag="0"/>
+      <vel value="0.707581" flag="0"/>
+      <psa03 value="0.472388" flag="0"/>
+      <psa10 value="0.415332" flag="0"/>
+      <psa30 value="0.327295" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.161571" flag="0"/>
+      <vel value="0.520131" flag="0"/>
+      <psa03 value="0.237581" flag="0"/>
+      <psa10 value="0.328587" flag="0"/>
+      <psa30 value="0.29968" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CSO1" name="CSO1" netid="IT" lat="42.100933" commtype="DIG" lon="13.088044">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="1.86536" flag="0"/>
+      <vel value="2.360621" flag="0"/>
+      <psa03 value="5.10799" flag="0"/>
+      <psa10 value="2.90052" flag="0"/>
+      <psa30 value="0.403469" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="1.78481" flag="0"/>
+      <vel value="1.487642" flag="0"/>
+      <psa03 value="2.94708" flag="0"/>
+      <psa10 value="2.55899" flag="0"/>
+      <psa30 value="0.366251" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="1.63697" flag="0"/>
+      <vel value="1.727574" flag="0"/>
+      <psa03 value="4.79417" flag="0"/>
+      <psa10 value="1.8186" flag="0"/>
+      <psa30 value="0.59998" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CSS" name="CSS" netid="IT" lat="41.48579" commtype="DIG" lon="13.82309">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.851602" flag="0"/>
+      <vel value="1.61285" flag="0"/>
+      <psa03 value="1.54258" flag="0"/>
+      <psa10 value="1.75854" flag="0"/>
+      <psa30 value="0.434085" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.963093" flag="0"/>
+      <vel value="1.4048" flag="0"/>
+      <psa03 value="2.73706" flag="0"/>
+      <psa10 value="2.00526" flag="0"/>
+      <psa30 value="0.359028" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.289719" flag="0"/>
+      <vel value="0.752017" flag="0"/>
+      <psa03 value="0.951398" flag="0"/>
+      <psa10 value="1.04565" flag="0"/>
+      <psa30 value="0.32148" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="CTL" name="CTL" netid="IT" lat="43.955116" commtype="DIG" lon="12.735809">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.444973" flag="0"/>
+      <vel value="0.727732" flag="0"/>
+      <psa03 value="0.790058" flag="0"/>
+      <psa10 value="2.13297" flag="0"/>
+      <psa30 value="0.200739" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.345616" flag="0"/>
+      <vel value="0.739813" flag="0"/>
+      <psa03 value="0.89122" flag="0"/>
+      <psa10 value="1.54178" flag="0"/>
+      <psa30 value="0.260353" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.132703" flag="0"/>
+      <vel value="0.316303" flag="0"/>
+      <psa03 value="0.24899" flag="0"/>
+      <psa10 value="0.312737" flag="0"/>
+      <psa30 value="0.185485" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="FMG" name="FMG" netid="IT" lat="42.268028" commtype="DIG" lon="13.11722">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="2.39724" flag="0"/>
+      <vel value="2.581606" flag="0"/>
+      <psa03 value="4.41015" flag="0"/>
+      <psa10 value="4.31661" flag="0"/>
+      <psa30 value="0.673956" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="2.68502" flag="0"/>
+      <vel value="1.79797" flag="0"/>
+      <psa03 value="5.68781" flag="0"/>
+      <psa10 value="2.58466" flag="0"/>
+      <psa30 value="0.415878" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="1.95113" flag="0"/>
+      <vel value="1.402784" flag="0"/>
+      <psa03 value="4.24407" flag="0"/>
+      <psa10 value="1.36016" flag="0"/>
+      <psa30 value="0.554311" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="FOR" name="FOR" netid="IT" lat="44.199409" commtype="DIG" lon="12.041916">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.156527" flag="0"/>
+      <vel value="0.586196" flag="0"/>
+      <psa03 value="0.289974" flag="0"/>
+      <psa10 value="0.405168" flag="0"/>
+      <psa30 value="0.476791" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.16208" flag="0"/>
+      <vel value="0.628092" flag="0"/>
+      <psa03 value="0.210691" flag="0"/>
+      <psa10 value="0.377271" flag="0"/>
+      <psa30 value="0.20435" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0740863" flag="0"/>
+      <vel value="0.292501" flag="0"/>
+      <psa03 value="0.10407" flag="0"/>
+      <psa10 value="0.252263" flag="0"/>
+      <psa30 value="0.164676" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="GNL" name="GNL" netid="IT" lat="40.843315" commtype="DIG" lon="16.033119">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.198527" flag="0"/>
+      <vel value="0.553675" flag="0"/>
+      <psa03 value="0.372926" flag="0"/>
+      <psa10 value="0.586946" flag="0"/>
+      <psa30 value="0.295083" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.223747" flag="0"/>
+      <vel value="0.565711" flag="0"/>
+      <psa03 value="0.285545" flag="0"/>
+      <psa10 value="0.60952" flag="0"/>
+      <psa30 value="0.212952" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0893043" flag="0"/>
+      <vel value="0.247277" flag="0"/>
+      <psa03 value="0.128858" flag="0"/>
+      <psa10 value="0.346196" flag="0"/>
+      <psa30 value="0.171122" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="GSA" name="GSA" netid="IT" lat="42.420689" commtype="DIG" lon="13.519362">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="14.9546" flag="0"/>
+      <vel value="9.784584" flag="0"/>
+      <psa03 value="48.2746" flag="0"/>
+      <psa10 value="9.31757" flag="0"/>
+      <psa30 value="2.87865" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="14.5365" flag="0"/>
+      <vel value="7.47407" flag="0"/>
+      <psa03 value="48.8258" flag="0"/>
+      <psa10 value="7.50934" flag="0"/>
+      <psa30 value="2.52183" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="10.9442" flag="0"/>
+      <vel value="4.39918" flag="0"/>
+      <psa03 value="16.6781" flag="0"/>
+      <psa10 value="5.33559" flag="0"/>
+      <psa30 value="1.00734" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="ISR" name="ISR" netid="IT" lat="41.6106" commtype="DIG" lon="14.2359">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.732928" flag="0"/>
+      <vel value="0.858554" flag="0"/>
+      <psa03 value="1.63998" flag="0"/>
+      <psa10 value="1.31096" flag="0"/>
+      <psa30 value="0.262124" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.613428" flag="0"/>
+      <vel value="0.731654" flag="0"/>
+      <psa03 value="1.61206" flag="0"/>
+      <psa10 value="1.28802" flag="0"/>
+      <psa30 value="0.329908" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.334507" flag="0"/>
+      <vel value="0.47471" flag="0"/>
+      <psa03 value="1.37708" flag="0"/>
+      <psa10 value="0.524853" flag="0"/>
+      <psa30 value="0.276643" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="LSS" name="LSS" netid="IT" lat="42.558243" commtype="DIG" lon="12.968894">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.980642" flag="0"/>
+      <vel value="0.684367" flag="0"/>
+      <psa03 value="2.27143" flag="0"/>
+      <psa10 value="1.38894" flag="0"/>
+      <psa30 value="0.302142" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.77807" flag="0"/>
+      <vel value="0.831016" flag="0"/>
+      <psa03 value="1.86016" flag="0"/>
+      <psa10 value="1.45992" flag="0"/>
+      <psa30 value="0.276461" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.641991" flag="0"/>
+      <vel value="0.754929" flag="0"/>
+      <psa03 value="1.79846" flag="0"/>
+      <psa10 value="0.864348" flag="0"/>
+      <psa30 value="0.227921" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="MMP" name="MMP" netid="IT" lat="42.248547" commtype="DIG" lon="12.748537">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.902182" flag="0"/>
+      <vel value="0.86207" flag="0"/>
+      <psa03 value="2.22964" flag="0"/>
+      <psa10 value="0.825051" flag="0"/>
+      <psa30 value="0.322327" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.704093" flag="0"/>
+      <vel value="0.63292" flag="0"/>
+      <psa03 value="1.75157" flag="0"/>
+      <psa10 value="0.578043" flag="0"/>
+      <psa30 value="0.228623" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.521275" flag="0"/>
+      <vel value="0.513015" flag="0"/>
+      <psa03 value="1.39569" flag="0"/>
+      <psa10 value="0.593896" flag="0"/>
+      <psa30 value="0.293361" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="MNG" name="MNG" netid="IT" lat="41.70354" commtype="DIG" lon="15.95803">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.236648" flag="0"/>
+      <vel value="0.336078" flag="0"/>
+      <psa03 value="0.537175" flag="0"/>
+      <psa10 value="0.549114" flag="0"/>
+      <psa30 value="0.110954" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.204598" flag="0"/>
+      <vel value="0.340616" flag="0"/>
+      <psa03 value="0.703571" flag="0"/>
+      <psa10 value="0.484235" flag="0"/>
+      <psa30 value="0.0744287" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.128144" flag="0"/>
+      <vel value="0.171232" flag="0"/>
+      <psa03 value="0.27503" flag="0"/>
+      <psa10 value="0.322341" flag="0"/>
+      <psa30 value="0.0998655" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="MNN" name="MNN" netid="IT" lat="41.634186" commtype="DIG" lon="15.91132">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.241704" flag="0"/>
+      <vel value="0.289168" flag="0"/>
+      <psa03 value="0.862988" flag="0"/>
+      <psa10 value="0.310076" flag="0"/>
+      <psa30 value="0.104573" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.138423" flag="0"/>
+      <vel value="0.242311" flag="0"/>
+      <psa03 value="0.385723" flag="0"/>
+      <psa10 value="0.33995" flag="0"/>
+      <psa30 value="0.123854" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0919437" flag="0"/>
+      <vel value="0.195809" flag="0"/>
+      <psa03 value="0.266529" flag="0"/>
+      <psa10 value="0.219601" flag="0"/>
+      <psa30 value="0.079459" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="MTR" name="MTR" netid="IT" lat="42.524021" commtype="DIG" lon="13.244796">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="4.37804" flag="0"/>
+      <vel value="3.5396" flag="0"/>
+      <psa03 value="8.8973" flag="0"/>
+      <psa10 value="5.92978" flag="0"/>
+      <psa30 value="0.955036" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="6.25987" flag="0"/>
+      <vel value="2.886434" flag="0"/>
+      <psa03 value="16.0035" flag="0"/>
+      <psa10 value="4.93891" flag="0"/>
+      <psa30 value="0.598476" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="2.30608" flag="0"/>
+      <vel value="3.26282" flag="0"/>
+      <psa03 value="5.4679" flag="0"/>
+      <psa10 value="3.07015" flag="0"/>
+      <psa30 value="1.46046" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="NAP" name="NAP" netid="IT" lat="40.799255" commtype="DIG" lon="14.179607">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.248259" flag="0"/>
+      <vel value="0.821252" flag="0"/>
+      <psa03 value="0.356014" flag="0"/>
+      <psa10 value="0.673563" flag="0"/>
+      <psa30 value="0.34608" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.266945" flag="0"/>
+      <vel value="0.866225" flag="0"/>
+      <psa03 value="0.381517" flag="0"/>
+      <psa10 value="0.761166" flag="0"/>
+      <psa30 value="0.352932" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.140564" flag="0"/>
+      <vel value="0.363146" flag="0"/>
+      <psa03 value="0.16313" flag="0"/>
+      <psa10 value="0.454352" flag="0"/>
+      <psa30 value="0.187542" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="ORC" name="ORC" netid="IT" lat="41.953606" commtype="DIG" lon="13.642346">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="6.5358" flag="0"/>
+      <vel value="5.86739" flag="0"/>
+      <psa03 value="18.5427" flag="0"/>
+      <psa10 value="7.09321" flag="0"/>
+      <psa30 value="0.556978" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="4.12377" flag="0"/>
+      <vel value="3.286639" flag="0"/>
+      <psa03 value="11.7604" flag="0"/>
+      <psa10 value="7.2035" flag="0"/>
+      <psa30 value="0.87395" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="3.11102" flag="0"/>
+      <vel value="3.67701" flag="0"/>
+      <psa03 value="6.74547" flag="0"/>
+      <psa10 value="2.74082" flag="0"/>
+      <psa30 value="0.638091" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="PDM" name="PDM" netid="IT" lat="41.355354" commtype="DIG" lon="14.385376">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.1549" flag="0"/>
+      <vel value="0.318141" flag="0"/>
+      <psa03 value="0.208767" flag="0"/>
+      <psa10 value="0.198332" flag="0"/>
+      <psa30 value="0.178718" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.145501" flag="0"/>
+      <vel value="0.337298" flag="0"/>
+      <psa03 value="0.265321" flag="0"/>
+      <psa10 value="0.264214" flag="0"/>
+      <psa30 value="0.176819" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.101981" flag="0"/>
+      <vel value="0.353885" flag="0"/>
+      <psa03 value="0.225501" flag="0"/>
+      <psa10 value="0.223636" flag="0"/>
+      <psa30 value="0.224017" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="PIC" name="PIC" netid="IT" lat="42.850376" commtype="DIG" lon="11.684975">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.09023" flag="0"/>
+      <vel value="0.173979" flag="0"/>
+      <psa03 value="0.165546" flag="0"/>
+      <psa10 value="0.252315" flag="0"/>
+      <psa30 value="0.0641192" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.126452" flag="0"/>
+      <vel value="0.303024" flag="0"/>
+      <psa03 value="0.225545" flag="0"/>
+      <psa10 value="0.328687" flag="0"/>
+      <psa30 value="0.120831" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0678451" flag="0"/>
+      <vel value="0.110387" flag="0"/>
+      <psa03 value="0.0936007" flag="0"/>
+      <psa10 value="0.231843" flag="0"/>
+      <psa30 value="0.0413158" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="PTF" name="PTF" netid="IT" lat="41.6963" commtype="DIG" lon="14.7024">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.671926" flag="0"/>
+      <vel value="1.325036" flag="0"/>
+      <psa03 value="1.66763" flag="0"/>
+      <psa10 value="1.49685" flag="0"/>
+      <psa30 value="0.691361" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.70027" flag="0"/>
+      <vel value="1.02312" flag="0"/>
+      <psa03 value="2.08203" flag="0"/>
+      <psa10 value="1.49757" flag="0"/>
+      <psa30 value="0.470576" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.491198" flag="0"/>
+      <vel value="0.894628" flag="0"/>
+      <psa03 value="1.07842" flag="0"/>
+      <psa10 value="0.922274" flag="0"/>
+      <psa30 value="0.623903" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="RIC" name="RIC" netid="IT" lat="41.482738" commtype="DIG" lon="14.83767">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.256441" flag="0"/>
+      <vel value="0.536291" flag="0"/>
+      <psa03 value="0.380711" flag="0"/>
+      <psa10 value="0.528892" flag="0"/>
+      <psa30 value="0.254698" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.241075" flag="0"/>
+      <vel value="0.547498" flag="0"/>
+      <psa03 value="0.400622" flag="0"/>
+      <psa10 value="0.822691" flag="0"/>
+      <psa30 value="0.282215" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.161284" flag="0"/>
+      <vel value="0.520649" flag="0"/>
+      <psa03 value="0.223443" flag="0"/>
+      <psa10 value="0.388042" flag="0"/>
+      <psa30 value="0.291346" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SBC" name="SBC" netid="IT" lat="41.913158" commtype="DIG" lon="13.105518">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.597872" flag="0"/>
+      <vel value="0.994436" flag="0"/>
+      <psa03 value="1.396" flag="0"/>
+      <psa10 value="0.992054" flag="0"/>
+      <psa30 value="0.212665" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.678016" flag="0"/>
+      <vel value="1.245934" flag="0"/>
+      <psa03 value="1.81398" flag="0"/>
+      <psa10 value="1.43339" flag="0"/>
+      <psa30 value="0.450169" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.509672" flag="0"/>
+      <vel value="1.11154" flag="0"/>
+      <psa03 value="1.59018" flag="0"/>
+      <psa10 value="0.622781" flag="0"/>
+      <psa30 value="0.338838" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SCM" name="SCM" netid="IT" lat="41.710827" commtype="DIG" lon="14.983749">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.30473" flag="0"/>
+      <vel value="0.791734" flag="0"/>
+      <psa03 value="0.791534" flag="0"/>
+      <psa10 value="1.36208" flag="0"/>
+      <psa30 value="0.481153" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.436686" flag="0"/>
+      <vel value="0.685801" flag="0"/>
+      <psa03 value="0.687464" flag="0"/>
+      <psa10 value="0.937221" flag="0"/>
+      <psa30 value="0.381906" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.292556" flag="0"/>
+      <vel value="0.61591" flag="0"/>
+      <psa03 value="0.650238" flag="0"/>
+      <psa10 value="0.94161" flag="0"/>
+      <psa30 value="0.416968" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SCP" name="SCP" netid="IT" lat="41.807213" commtype="DIG" lon="15.164646">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.329555" flag="0"/>
+      <vel value="0.662428" flag="0"/>
+      <psa03 value="0.82876" flag="0"/>
+      <psa10 value="0.89318" flag="0"/>
+      <psa30 value="0.395912" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.57562" flag="0"/>
+      <vel value="1.19317" flag="0"/>
+      <psa03 value="1.26616" flag="0"/>
+      <psa10 value="1.11718" flag="0"/>
+      <psa30 value="0.567" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.262552" flag="0"/>
+      <vel value="0.496495" flag="0"/>
+      <psa03 value="0.564199" flag="0"/>
+      <psa10 value="0.538649" flag="0"/>
+      <psa30 value="0.330857" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SDG" name="SDG" netid="IT" lat="41.8426" commtype="DIG" lon="15.5589">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.122732" flag="0"/>
+      <vel value="0.224279" flag="0"/>
+      <psa03 value="0.221474" flag="0"/>
+      <psa10 value="0.178399" flag="0"/>
+      <psa30 value="0.0926141" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.135096" flag="0"/>
+      <vel value="0.149554" flag="0"/>
+      <psa03 value="0.336059" flag="0"/>
+      <psa10 value="0.14612" flag="0"/>
+      <psa30 value="0.125743" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.203747" flag="0"/>
+      <vel value="0.518695" flag="0"/>
+      <psa03 value="0.428451" flag="0"/>
+      <psa10 value="0.28825" flag="0"/>
+      <psa30 value="0.328338" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SEP" name="SEP" netid="IT" lat="41.625019" commtype="DIG" lon="14.880167">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SNM" name="SNM" netid="IT" lat="43.934326" commtype="DIG" lon="12.44929">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.231745" flag="0"/>
+      <vel value="0.681829" flag="0"/>
+      <psa03 value="0.271719" flag="0"/>
+      <psa10 value="0.867594" flag="0"/>
+      <psa30 value="0.282657" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.147024" flag="0"/>
+      <vel value="0.671507" flag="0"/>
+      <psa03 value="0.165501" flag="0"/>
+      <psa10 value="0.429124" flag="0"/>
+      <psa30 value="0.264898" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0827832" flag="0"/>
+      <vel value="0.421496" flag="0"/>
+      <psa03 value="0.0968669" flag="0"/>
+      <psa10 value="0.364409" flag="0"/>
+      <psa30 value="0.255329" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SNS" name="SNS" netid="IT" lat="43.56739" commtype="DIG" lon="12.143375">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.390623" flag="0"/>
+      <vel value="0.748683" flag="0"/>
+      <psa03 value="0.581112" flag="0"/>
+      <psa10 value="1.44855" flag="0"/>
+      <psa30 value="0.283087" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.343758" flag="0"/>
+      <vel value="0.484318" flag="0"/>
+      <psa03 value="0.563036" flag="0"/>
+      <psa10 value="0.768579" flag="0"/>
+      <psa30 value="0.299167" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.188729" flag="0"/>
+      <vel value="0.511856" flag="0"/>
+      <psa03 value="0.277402" flag="0"/>
+      <psa10 value="0.790126" flag="0"/>
+      <psa30 value="0.124344" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SPC" name="SPC" netid="IT" lat="42.743469" commtype="DIG" lon="12.739693">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.770589" flag="0"/>
+      <vel value="0.691554" flag="0"/>
+      <psa03 value="1.32338" flag="0"/>
+      <psa10 value="1.01126" flag="0"/>
+      <psa30 value="0.161939" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.606958" flag="0"/>
+      <vel value="0.621134" flag="0"/>
+      <psa03 value="1.81841" flag="0"/>
+      <psa10 value="0.851781" flag="0"/>
+      <psa30 value="0.226108" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.358496" flag="0"/>
+      <vel value="0.598387" flag="0"/>
+      <psa03 value="1.0288" flag="0"/>
+      <psa10 value="0.589829" flag="0"/>
+      <psa30 value="0.200252" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SPO" name="SPO" netid="IT" lat="42.733585" commtype="DIG" lon="12.740602">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.637561" flag="0"/>
+      <vel value="0.593235" flag="0"/>
+      <psa03 value="1.56132" flag="0"/>
+      <psa10 value="0.677557" flag="0"/>
+      <psa30 value="0.219488" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.976641" flag="0"/>
+      <vel value="0.815398" flag="0"/>
+      <psa03 value="2.20628" flag="0"/>
+      <psa10 value="0.723523" flag="0"/>
+      <psa30 value="0.168278" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.530683" flag="0"/>
+      <vel value="0.63855" flag="0"/>
+      <psa03 value="1.30254" flag="0"/>
+      <psa10 value="0.572748" flag="0"/>
+      <psa30 value="0.20454" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SSR" name="SSR" netid="IT" lat="41.691341" commtype="DIG" lon="15.37362">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.400294" flag="0"/>
+      <vel value="1.077679" flag="0"/>
+      <psa03 value="0.890415" flag="0"/>
+      <psa10 value="0.911345" flag="0"/>
+      <psa30 value="0.761396" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.545904" flag="0"/>
+      <vel value="1.30956" flag="0"/>
+      <psa03 value="0.787284" flag="0"/>
+      <psa10 value="1.08257" flag="0"/>
+      <psa30 value="0.822755" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.170742" flag="0"/>
+      <vel value="0.389515" flag="0"/>
+      <psa03 value="0.237134" flag="0"/>
+      <psa10 value="0.390072" flag="0"/>
+      <psa30 value="0.12871" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="STL" name="STL" netid="IT" lat="40.541065" commtype="DIG" lon="15.642169">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.095922" flag="0"/>
+      <vel value="0.278112" flag="0"/>
+      <psa03 value="0.106039" flag="0"/>
+      <psa10 value="0.280297" flag="0"/>
+      <psa30 value="0.132623" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.0789821" flag="0"/>
+      <vel value="0.293873" flag="0"/>
+      <psa03 value="0.0888133" flag="0"/>
+      <psa10 value="0.22778" flag="0"/>
+      <psa30 value="0.144131" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0623277" flag="0"/>
+      <vel value="0.26205" flag="0"/>
+      <psa03 value="0.0715875" flag="0"/>
+      <psa10 value="0.15723" flag="0"/>
+      <psa30 value="0.0763741" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="STN" name="STN" netid="IT" lat="41.018353" commtype="DIG" lon="15.11167">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.139591" flag="0"/>
+      <vel value="0.301073" flag="0"/>
+      <psa03 value="0.14756" flag="0"/>
+      <psa10 value="0.416303" flag="0"/>
+      <psa30 value="0.165238" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.110668" flag="0"/>
+      <vel value="0.314113" flag="0"/>
+      <psa03 value="0.206888" flag="0"/>
+      <psa10 value="0.282057" flag="0"/>
+      <psa30 value="0.197957" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.0795525" flag="0"/>
+      <vel value="0.2014" flag="0"/>
+      <psa03 value="0.122146" flag="0"/>
+      <psa10 value="0.267009" flag="0"/>
+      <psa30 value="0.0947537" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="SUL" name="SUL" netid="IT" lat="42.089" commtype="DIG" lon="13.934">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="3.42965" flag="0"/>
+      <vel value="2.81214" flag="0"/>
+      <psa03 value="7.35369" flag="0"/>
+      <psa10 value="3.38808" flag="0"/>
+      <psa30 value="0.948906" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="2.76603" flag="0"/>
+      <vel value="3.72505" flag="0"/>
+      <psa03 value="6.34149" flag="0"/>
+      <psa10 value="4.11152" flag="0"/>
+      <psa30 value="0.667742" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="2.40314" flag="0"/>
+      <vel value="2.47153" flag="0"/>
+      <psa03 value="3.26305" flag="0"/>
+      <psa10 value="1.40151" flag="0"/>
+      <psa30 value="0.700985" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="TLS" name="TLS" netid="IT" lat="41.222237" commtype="DIG" lon="14.529974">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.264353" flag="0"/>
+      <vel value="0.544508" flag="0"/>
+      <psa03 value="0.358788" flag="0"/>
+      <psa10 value="0.656537" flag="0"/>
+      <psa30 value="0.197931" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.214049" flag="0"/>
+      <vel value="0.509842" flag="0"/>
+      <psa03 value="0.290064" flag="0"/>
+      <psa10 value="0.714338" flag="0"/>
+      <psa30 value="0.173692" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.117012" flag="0"/>
+      <vel value="0.334454" flag="0"/>
+      <psa03 value="0.209394" flag="0"/>
+      <psa10 value="0.434165" flag="0"/>
+      <psa30 value="0.16472" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="TMO" name="TMO" netid="IT" lat="41.989445" commtype="DIG" lon="14.975007">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="1.00398" flag="0"/>
+      <vel value="2.101134" flag="0"/>
+      <psa03 value="1.78723" flag="0"/>
+      <psa10 value="1.5143" flag="0"/>
+      <psa30 value="1.24837" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.87163" flag="0"/>
+      <vel value="2.85713" flag="0"/>
+      <psa03 value="2.28109" flag="0"/>
+      <psa10 value="1.78042" flag="0"/>
+      <psa30 value="1.18989" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.46417" flag="0"/>
+      <vel value="0.908089" flag="0"/>
+      <psa03 value="0.71167" flag="0"/>
+      <psa10 value="0.940684" flag="0"/>
+      <psa30 value="0.837758" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="VIE" name="VIE" netid="IT" lat="41.876976" commtype="DIG" lon="16.165255">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.212217" flag="0"/>
+      <vel value="0.361925" flag="0"/>
+      <psa03 value="0.439771" flag="0"/>
+      <psa10 value="0.463086" flag="0"/>
+      <psa30 value="0.0845726" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.224162" flag="0"/>
+      <vel value="0.482817" flag="0"/>
+      <psa03 value="0.677039" flag="0"/>
+      <psa10 value="0.373131" flag="0"/>
+      <psa30 value="0.369038" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.130306" flag="0"/>
+      <vel value="0.189444" flag="0"/>
+      <psa03 value="0.433865" flag="0"/>
+      <psa10 value="0.412074" flag="0"/>
+      <psa30 value="0.081561" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian Strong Motion Network" code="VRP" name="VRP" netid="IT" lat="41.33321" commtype="DIG" lon="14.131685">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.312076" flag="0"/>
+      <vel value="0.829056" flag="0"/>
+      <psa03 value="0.42514" flag="0"/>
+      <psa10 value="1.03784" flag="0"/>
+      <psa30 value="0.267475" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.359273" flag="0"/>
+      <vel value="0.652798" flag="0"/>
+      <psa03 value="0.497489" flag="0"/>
+      <psa10 value="0.680167" flag="0"/>
+      <psa30 value="0.241936" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.269866" flag="0"/>
+      <vel value="0.534831" flag="0"/>
+      <psa03 value="0.383396" flag="0"/>
+      <psa10 value="1.07294" flag="0"/>
+      <psa30 value="0.1706" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="CDCA" name="CDCA" netid="IV" lat="43.4584" commtype="DIG" lon="12.2336">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0.592462" flag="0"/>
+      <vel value="0.813596" flag="0"/>
+      <psa03 value="1.00339" flag="0"/>
+      <psa10 value="2.10759" flag="0"/>
+      <psa30 value="0.27708" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0.951457" flag="0"/>
+      <vel value="1.39385" flag="0"/>
+      <psa03 value="1.936" flag="0"/>
+      <psa10 value="2.74678" flag="0"/>
+      <psa30 value="0.583644" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.655213" flag="0"/>
+      <vel value="0.769221" flag="0"/>
+      <psa03 value="0.82442" flag="0"/>
+      <psa10 value="1.3879" flag="0"/>
+      <psa30 value="0.173751" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="GUMA" name="GUMA" netid="IV" lat="43.0627" commtype="DIG" lon="13.3352">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="2.07962" flag="0"/>
+      <vel value="1.70046" flag="0"/>
+      <psa03 value="5.24244" flag="0"/>
+      <psa10 value="1.7988" flag="0"/>
+      <psa30 value="0.283752" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="1.78769" flag="0"/>
+      <vel value="2.2329" flag="0"/>
+      <psa03 value="6.44869" flag="0"/>
+      <psa10 value="1.86225" flag="0"/>
+      <psa30 value="0.486446" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.985048" flag="0"/>
+      <vel value="0.844831" flag="0"/>
+      <psa03 value="4.42988" flag="0"/>
+      <psa10 value="1.2341" flag="0"/>
+      <psa30 value="0.467851" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="ROM9" name="ROM9" netid="IV" lat="41.82869" commtype="DIG" lon="12.51553">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0" flag="1"/>
+      <vel value="0" flag="1"/>
+      <psa03 value="0" flag="1"/>
+      <psa10 value="0" flag="1"/>
+      <psa30 value="0" flag="1"/>
+    </comp>
+  </station>
+  <station insttype="" source="Italian National Seismic Network" code="SENI" name="SENI" netid="IV" lat="43.7052" commtype="DIG" lon="13.2331">
+    <comp name="--.HNE" ingv:from="esm">
+      <acc value="1.36434" flag="0"/>
+      <vel value="1.84234" flag="0"/>
+      <psa03 value="5.95814" flag="0"/>
+      <psa10 value="2.064" flag="0"/>
+      <psa30 value="0.499663" flag="0"/>
+    </comp>
+    <comp name="--.HNN" ingv:from="esm">
+      <acc value="1.29757" flag="0"/>
+      <vel value="1.434147" flag="0"/>
+      <psa03 value="5.35166" flag="0"/>
+      <psa10 value="1.50369" flag="0"/>
+      <psa30 value="0.502813" flag="0"/>
+    </comp>
+    <comp name="--.HNZ" ingv:from="esm">
+      <acc value="0.466168" flag="0"/>
+      <vel value="0.863146" flag="0"/>
+      <psa03 value="1.32804" flag="0"/>
+      <psa10 value="0.604455" flag="0"/>
+      <psa30 value="0.369444" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Seismic Network of the Republic of Slovenia" code="BOJS" name="BOJS" netid="SL" lat="45.5043" commtype="DIG" lon="15.2518">
+    <comp name="--.HGE" ingv:from="esm">
+      <acc value="0.131759" flag="0"/>
+      <vel value="0.681191" flag="0"/>
+      <psa03 value="0.199908" flag="0"/>
+      <psa10 value="0.30927" flag="0"/>
+      <psa30 value="0.257682" flag="0"/>
+    </comp>
+    <comp name="--.HGN" ingv:from="esm">
+      <acc value="0.11824" flag="0"/>
+      <vel value="0.461151" flag="0"/>
+      <psa03 value="0.194718" flag="0"/>
+      <psa10 value="0.281075" flag="0"/>
+      <psa30 value="0.144709" flag="0"/>
+    </comp>
+    <comp name="--.HGZ" ingv:from="esm">
+      <acc value="0.100663" flag="0"/>
+      <vel value="0.561805" flag="0"/>
+      <psa03 value="0.170647" flag="0"/>
+      <psa10 value="0.273613" flag="0"/>
+      <psa30 value="0.113244" flag="0"/>
+    </comp>
+  </station>
+  <station insttype="" source="Seismic Network of the Republic of Slovenia" code="LJU" name="LJU" netid="SL" lat="46.0438" commtype="DIG" lon="14.5278">
+    <comp name="--.HGE" ingv:from="esm">
+      <acc value="0.149922" flag="0"/>
+      <vel value="0.529972" flag="0"/>
+      <psa03 value="0.342233" flag="0"/>
+      <psa10 value="0.467991" flag="0"/>
+      <psa30 value="0.183822" flag="0"/>
+    </comp>
+    <comp name="--.HGN" ingv:from="esm">
+      <acc value="0.145065" flag="0"/>
+      <vel value="0.414574" flag="0"/>
+      <psa03 value="0.366662" flag="0"/>
+      <psa10 value="0.430284" flag="0"/>
+      <psa30 value="0.166938" flag="0"/>
+    </comp>
+    <comp name="--.HGZ" ingv:from="esm">
+      <acc value="0.121347" flag="0"/>
+      <vel value="0.499667" flag="0"/>
+      <psa03 value="0.164562" flag="0"/>
+      <psa10 value="0.232101" flag="0"/>
+      <psa30 value="0.170913" flag="0"/>
+    </comp>
+  </station>
+</stationlist>

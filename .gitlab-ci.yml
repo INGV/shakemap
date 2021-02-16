@@ -61,6 +61,9 @@ shakemap-test:
   tags:
     - sqlx2-srvr_runner
   script:
+    - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
+        echo ${DIREVENT}; 
+      done
     - EVENTS="8863681 4875411"
     - for EVENT in "${EVENTS}"; do 
         echo ${EVENT};

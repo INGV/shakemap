@@ -1,0 +1,2971 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!DOCTYPE stationlist [
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+]>
+<stationlist created="1480506526">
+<station code="0CAN" name="Cantiano Temporanea" insttype="UNR" lat="43.4723" lon="12.6308" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.84120004" flag="0" />
+<vel value="0.73005800" flag="0" />
+<psa03 value="4.68092955" flag="0" />
+<psa10 value="0.62351198" flag="0" />
+<psa30 value="0.21242147" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.41203772" flag="0" />
+<vel value="0.81330700" flag="0" />
+<psa03 value="2.82806930" flag="0" />
+<psa10 value="0.77688209" flag="0" />
+<psa30 value="0.20265330" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.18061491" flag="0" />
+<vel value="0.74527500" flag="0" />
+<psa03 value="2.78816286" flag="0" />
+<psa10 value="0.77583004" flag="0" />
+<psa30 value="0.21781906" flag="0" />
+</comp>
+</station>
+<station code="0MBT" name="Citta_di_Castello_(Ospizio)" insttype="UNR" lat="43.4621" lon="12.2488" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.05274188" flag="0" />
+<vel value="2.48499500" flag="0" />
+<psa03 value="6.74531538" flag="0" />
+<psa10 value="3.11999185" flag="0" />
+<psa30 value="1.39841313" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.39581369" flag="0" />
+<vel value="2.80098900" flag="0" />
+<psa03 value="6.97988452" flag="0" />
+<psa10 value="4.37471587" flag="0" />
+<psa30 value="1.10631776" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.06721420" flag="0" />
+<vel value="1.76852700" flag="0" />
+<psa03 value="2.47167654" flag="0" />
+<psa10 value="1.91676815" flag="0" />
+<psa30 value="0.65821849" flag="0" />
+</comp>
+</station>
+<station code="0PIO" name="Piobbico_Temporanea" insttype="UNR" lat="43.5873" lon="12.5127" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.33598385" flag="0" />
+<vel value="0.86086500" flag="0" />
+<psa03 value="2.78541767" flag="0" />
+<psa10 value="0.85159632" flag="0" />
+<psa30 value="0.17937970" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.52632869" flag="0" />
+<vel value="0.59449000" flag="0" />
+<psa03 value="3.59399566" flag="0" />
+<psa10 value="0.49737357" flag="0" />
+<psa30 value="0.14599485" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.87990398" flag="0" />
+<vel value="0.60432900" flag="0" />
+<psa03 value="3.04422363" flag="0" />
+<psa10 value="0.60690417" flag="0" />
+<psa30 value="0.22762331" flag="0" />
+</comp>
+</station>
+<station code="0REN" name="Renzetti Temporanea" insttype="UNR" lat="43.5462" lon="12.2640" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.27716405" flag="0" />
+<vel value="0.59114300" flag="0" />
+<psa03 value="0.68350573" flag="0" />
+<psa10 value="0.57099140" flag="0" />
+<psa30 value="0.35276538" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.32357542" flag="0" />
+<vel value="0.91888400" flag="0" />
+<psa03 value="0.94458810" flag="0" />
+<psa10 value="0.49887591" flag="0" />
+<psa30 value="0.57728528" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.30350651" flag="0" />
+<vel value="0.84199600" flag="0" />
+<psa03 value="0.66429142" flag="0" />
+<psa10 value="0.45510529" flag="0" />
+<psa30 value="0.94287635" flag="0" />
+</comp>
+</station>
+<station code="0UM8" name="Umbertide Temporanea" insttype="UNR" lat="43.3041" lon="12.3410" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.72996773" flag="0" />
+<vel value="3.01050200" flag="0" />
+<psa03 value="6.61557708" flag="0" />
+<psa10 value="4.43370509" flag="0" />
+<psa30 value="1.71394438" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.26415425" flag="0" />
+<vel value="3.09279300" flag="0" />
+<psa03 value="6.05329466" flag="0" />
+<psa10 value="5.19903398" flag="0" />
+<psa30 value="0.92847371" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.68149885" flag="0" />
+<vel value="1.60257800" flag="0" />
+<psa03 value="3.15278896" flag="0" />
+<psa10 value="3.82851951" flag="0" />
+<psa30 value="0.60728865" flag="0" />
+</comp>
+</station>
+<station code="ACC" name="Accumoli" insttype="UNR" lat="42.6960" lon="13.2420" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="46.52319723" flag="0" />
+<vel value="38.59933100" flag="0" />
+<psa03 value="135.52901442" flag="0" />
+<psa10 value="37.08220395" flag="0" />
+<psa30 value="7.29103651" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="39.87389077" flag="0" />
+<vel value="43.19803600" flag="0" />
+<psa03 value="114.94431006" flag="0" />
+<psa10 value="63.35976453" flag="0" />
+<psa30 value="6.99771596" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="55.07923161" flag="0" />
+<vel value="19.20808600" flag="0" />
+<psa03 value="60.36682158" flag="0" />
+<psa10 value="24.91933422" flag="0" />
+<psa30 value="5.95847401" flag="0" />
+</comp>
+</station>
+<station code="ACT" name="Acquasanta Terme" insttype="UNR" lat="42.7713" lon="13.4125" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="26.04973296" flag="0" />
+<vel value="4.89021400" flag="0" />
+<psa03 value="10.81305505" flag="0" />
+<psa10 value="5.28396617" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="38.72409713" flag="0" />
+<vel value="8.86951300" flag="0" />
+<psa03 value="20.95518243" flag="0" />
+<psa10 value="5.77062979" flag="0" />
+<psa30 value="2.31801476" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="29.07874760" flag="0" />
+<vel value="6.42981800" flag="0" />
+<psa03 value="16.13671039" flag="0" />
+<psa10 value="7.28378429" flag="0" />
+<psa30 value="2.49585482" flag="0" />
+</comp>
+</station>
+<station code="AMT" name="Amatrice" insttype="UNR" lat="42.6325" lon="13.2866" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="62.03594268" flag="0" />
+<vel value="26.36429800" flag="0" />
+<psa03 value="71.37681307" flag="0" />
+<psa10 value="20.06593206" flag="0" />
+<psa30 value="5.68875022" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="44.97555708" flag="0" />
+<vel value="29.70794300" flag="0" />
+<psa03 value="136.45416643" flag="0" />
+<psa10 value="20.87029235" flag="0" />
+<psa30 value="3.22763860" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="36.15417317" flag="0" />
+<vel value="22.88884900" flag="0" />
+<psa03 value="77.57729780" flag="0" />
+<psa10 value="18.74136783" flag="0" />
+<psa30 value="5.94625763" flag="0" />
+</comp>
+</station>
+<station code="ANB" name="Ancona2" insttype="UNR" lat="43.5922" lon="13.5074" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.19164756" flag="0" />
+<vel value="2.78396700" flag="0" />
+<psa03 value="10.94598945" flag="0" />
+<psa10 value="3.62764235" flag="0" />
+<psa30 value="0.63690386" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.32985959" flag="0" />
+<vel value="2.79328200" flag="0" />
+<psa03 value="16.46367363" flag="0" />
+<psa10 value="3.26263760" flag="0" />
+<psa30 value="0.50369147" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.32533912" flag="0" />
+<vel value="1.51054700" flag="0" />
+<psa03 value="7.61302905" flag="0" />
+<psa10 value="1.18565439" flag="0" />
+<psa30 value="0.30544913" flag="0" />
+</comp>
+</station>
+<station code="ANT" name="Antrodoco" insttype="UNR" lat="42.4182" lon="13.0786" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.95399618" flag="0" />
+<vel value="5.54060600" flag="0" />
+<psa03 value="8.38405304" flag="0" />
+<psa10 value="5.50580200" flag="0" />
+<psa30 value="0.91223158" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="4.68477002" flag="0" />
+<vel value="5.26984100" flag="0" />
+<psa03 value="10.19158217" flag="0" />
+<psa10 value="7.31653581" flag="0" />
+<psa30 value="1.32798741" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.88072906" flag="0" />
+<vel value="2.54164100" flag="0" />
+<psa03 value="5.18509247" flag="0" />
+<psa10 value="4.03169843" flag="0" />
+<psa30 value="1.21033089" flag="0" />
+</comp>
+</station>
+<station code="AQA" name="L_Aquila_Fiume_Aterno" insttype="UNR" lat="42.3755" lon="13.3393" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.66926984" flag="0" />
+<vel value="3.49780900" flag="0" />
+<psa03 value="5.89428127" flag="0" />
+<psa10 value="6.13355671" flag="0" />
+<psa30 value="1.13067447" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.71399205" flag="0" />
+<vel value="4.95543200" flag="0" />
+<psa03 value="10.32490564" flag="0" />
+<psa10 value="5.02144053" flag="0" />
+<psa30 value="1.77502544" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.12616205" flag="0" />
+<vel value="3.49320700" flag="0" />
+<psa03 value="3.50974647" flag="0" />
+<psa10 value="4.35536736" flag="0" />
+<psa30 value="2.15271106" flag="0" />
+</comp>
+</station>
+<station code="AQF" name="L_Aquila_Valle_Aterno_Ferriera" insttype="UNR" lat="42.3807" lon="13.3547" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.63691794" flag="0" />
+<vel value="3.26181600" flag="0" />
+<psa03 value="10.28770658" flag="0" />
+<psa10 value="3.91716166" flag="0" />
+<psa30 value="0.95057293" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.25790895" flag="0" />
+<vel value="4.70077400" flag="0" />
+<psa03 value="21.40321660" flag="0" />
+<psa10 value="3.46547721" flag="0" />
+<psa30 value="2.99189069" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.17334867" flag="0" />
+<vel value="3.55529000" flag="0" />
+<psa03 value="15.85878546" flag="0" />
+<psa10 value="3.33495453" flag="0" />
+<psa30 value="2.52637317" flag="0" />
+</comp>
+</station>
+<station code="AQG" name="L_Aquila_Colle_dei_Grilli" insttype="UNR" lat="42.3737" lon="13.3370" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.35344469" flag="0" />
+<vel value="4.99278100" flag="0" />
+<psa03 value="9.51927050" flag="0" />
+<psa10 value="4.93058708" flag="0" />
+<psa30 value="1.25898872" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="8.79175980" flag="0" />
+<vel value="6.32853600" flag="0" />
+<psa03 value="14.89350104" flag="0" />
+<psa10 value="7.62764345" flag="0" />
+<psa30 value="1.86804195" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.14773044" flag="0" />
+<vel value="4.82814500" flag="0" />
+<psa03 value="3.75821297" flag="0" />
+<psa10 value="3.91050599" flag="0" />
+<psa30 value="2.19770154" flag="0" />
+</comp>
+</station>
+<station code="AQK" name="L_Aquila_Aquilpark" insttype="UNR" lat="42.3450" lon="13.4009" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.70909671" flag="0" />
+<vel value="13.71009900" flag="0" />
+<psa03 value="9.68601215" flag="0" />
+<psa10 value="11.45305342" flag="0" />
+<psa30 value="3.14481429" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="7.34815680" flag="0" />
+<vel value="14.44539500" flag="0" />
+<psa03 value="13.28575360" flag="0" />
+<psa10 value="17.59355779" flag="0" />
+<psa30 value="3.42104035" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.57761831" flag="0" />
+<vel value="5.25176100" flag="0" />
+<psa03 value="7.43935334" flag="0" />
+<psa10 value="6.28894323" flag="0" />
+<psa30 value="1.13412229" flag="0" />
+</comp>
+</station>
+<station code="AQV" name="L_Aquila_Centro_Valle" insttype="UNR" lat="42.3771" lon="13.3439" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.86779370" flag="0" />
+<vel value="4.62201200" flag="0" />
+<psa03 value="13.23218966" flag="0" />
+<psa10 value="6.63434897" flag="0" />
+<psa30 value="1.19198946" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="7.08812270" flag="0" />
+<vel value="4.84285400" flag="0" />
+<psa03 value="16.07502952" flag="0" />
+<psa10 value="5.81269521" flag="0" />
+<psa30 value="2.17508427" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.66019374" flag="0" />
+<vel value="4.04145100" flag="0" />
+<psa03 value="7.09875426" flag="0" />
+<psa10 value="4.89644881" flag="0" />
+<psa30 value="2.28680594" flag="0" />
+</comp>
+</station>
+<station code="ASP" name="Ascoli_Piceno" insttype="UNR" lat="42.8480" lon="13.6479" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="13.99954895" flag="0" />
+<vel value="6.82748200" flag="0" />
+<psa03 value="16.19248563" flag="0" />
+<psa10 value="3.53885201" flag="0" />
+<psa30 value="2.38037822" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="11.88866263" flag="0" />
+<vel value="7.57882100" flag="0" />
+<psa03 value="24.23527600" flag="0" />
+<psa10 value="3.36197825" flag="0" />
+<psa30 value="2.48156072" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.58302473" flag="0" />
+<vel value="5.19114600" flag="0" />
+<psa03 value="7.96812009" flag="0" />
+<psa10 value="5.40263672" flag="0" />
+<psa30 value="1.85780867" flag="0" />
+</comp>
+</station>
+<station code="AVZ" name="Avezzano" insttype="UNR" lat="42.0274" lon="13.4259" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.88268721" flag="0" />
+<vel value="3.36663400" flag="0" />
+<psa03 value="4.44202397" flag="0" />
+<psa10 value="4.97959188" flag="0" />
+<psa30 value="2.21686404" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.72385850" flag="0" />
+<vel value="3.40417400" flag="0" />
+<psa03 value="4.35699469" flag="0" />
+<psa10 value="4.01687391" flag="0" />
+<psa30 value="1.16203761" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.03743475" flag="0" />
+<vel value="1.74052400" flag="0" />
+<psa03 value="3.00118139" flag="0" />
+<psa10 value="1.59843600" flag="0" />
+<psa30 value="1.09378671" flag="0" />
+</comp>
+</station>
+<station code="BDT" name="Badia_Tedalda" insttype="UNR" lat="43.7068" lon="12.1880" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.02346320" flag="0" />
+<vel value="1.63295000" flag="0" />
+<psa03 value="2.37588683" flag="0" />
+<psa10 value="1.54387755" flag="0" />
+<psa30 value="0.77319829" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.04415492" flag="0" />
+<vel value="1.46602400" flag="0" />
+<psa03 value="2.67111065" flag="0" />
+<psa10 value="2.65901517" flag="0" />
+<psa30 value="0.64802230" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.49894101" flag="0" />
+<vel value="1.09267300" flag="0" />
+<psa03 value="1.11514048" flag="0" />
+<psa10 value="1.08296864" flag="0" />
+<psa30 value="0.92142743" flag="0" />
+</comp>
+</station>
+<station code="BGR" name="Bagno_di_Romagna" insttype="UNR" lat="43.8895" lon="11.9912" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.32489492" flag="0" />
+<vel value="0.82468700" flag="0" />
+<psa03 value="0.76816290" flag="0" />
+<psa10 value="0.85264366" flag="0" />
+<psa30 value="0.55957770" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.27719420" flag="0" />
+<vel value="0.64989400" flag="0" />
+<psa03 value="0.91111525" flag="0" />
+<psa10 value="0.70411743" flag="0" />
+<psa30 value="0.30744530" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.28529682" flag="0" />
+<vel value="0.61924400" flag="0" />
+<psa03 value="0.52934909" flag="0" />
+<psa10 value="0.72877614" flag="0" />
+<psa30 value="0.27051665" flag="0" />
+</comp>
+</station>
+<station code="BRS" name="Barisciano" insttype="UNR" lat="42.3243" lon="13.5902" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.01856812" flag="0" />
+<vel value="2.11204700" flag="0" />
+<psa03 value="8.18194773" flag="0" />
+<psa10 value="1.78614909" flag="0" />
+<psa30 value="0.87856404" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.00672406" flag="0" />
+<vel value="2.89856900" flag="0" />
+<psa03 value="7.86526979" flag="0" />
+<psa10 value="1.67514610" flag="0" />
+<psa30 value="1.53691354" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.20560307" flag="0" />
+<vel value="2.46510400" flag="0" />
+<psa03 value="3.08863965" flag="0" />
+<psa10 value="1.84017794" flag="0" />
+<psa30 value="1.36810183" flag="0" />
+</comp>
+</station>
+<station code="BSS" name="Bussi" insttype="UNR" lat="42.1917" lon="13.8453" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.49458200" flag="0" />
+<vel value="1.65163200" flag="0" />
+<psa03 value="4.52201591" flag="0" />
+<psa10 value="2.46572370" flag="0" />
+<psa30 value="0.49583056" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.85691748" flag="0" />
+<vel value="2.20412300" flag="0" />
+<psa03 value="4.04832688" flag="0" />
+<psa10 value="3.44724177" flag="0" />
+<psa30 value="0.71273503" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.93550047" flag="0" />
+<vel value="1.54567000" flag="0" />
+<psa03 value="2.52616499" flag="0" />
+<psa10 value="1.19396836" flag="0" />
+<psa30 value="0.89580600" flag="0" />
+</comp>
+</station>
+<station code="BTT2" name="Borgo_Ottomila_2" insttype="UNR" lat="41.9983" lon="13.5431" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.48635514" flag="0" />
+<vel value="11.67618000" flag="0" />
+<psa03 value="6.73791191" flag="0" />
+<psa10 value="8.36766629" flag="0" />
+<psa30 value="8.61068368" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="4.09582729" flag="0" />
+<vel value="17.12053700" flag="0" />
+<psa03 value="6.49980952" flag="0" />
+<psa10 value="10.57359861" flag="0" />
+<psa30 value="16.09360876" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.38712319" flag="0" />
+<vel value="4.21245200" flag="0" />
+<psa03 value="2.51693581" flag="0" />
+<psa10 value="2.94934493" flag="0" />
+<psa30 value="2.62880301" flag="0" />
+</comp>
+</station>
+<station code="BVG" name="Bevagna" insttype="UNR" lat="42.9323" lon="12.6110" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="7.65674347" flag="0" />
+<vel value="11.47588800" flag="0" />
+<psa03 value="12.62296084" flag="0" />
+<psa10 value="10.17618890" flag="0" />
+<psa30 value="5.94132781" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="8.39891608" flag="0" />
+<vel value="7.25949900" flag="0" />
+<psa03 value="11.27942523" flag="0" />
+<psa10 value="10.43091535" flag="0" />
+<psa30 value="3.34898679" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.34369612" flag="0" />
+<vel value="3.95004200" flag="0" />
+<psa03 value="11.76832622" flag="0" />
+<psa10 value="4.87400559" flag="0" />
+<psa30 value="1.41595933" flag="0" />
+</comp>
+</station>
+<station code="BZZ" name="L_Aquila_Bazzano" insttype="UNR" lat="42.3370" lon="13.4685" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.58543467" flag="0" />
+<vel value="3.51983800" flag="0" />
+<psa03 value="9.78069565" flag="0" />
+<psa10 value="3.69448963" flag="0" />
+<psa30 value="1.99582435" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.54990065" flag="0" />
+<vel value="2.91613300" flag="0" />
+<psa03 value="9.19443199" flag="0" />
+<psa10 value="3.65710569" flag="0" />
+<psa30 value="1.48859451" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.52514014" flag="0" />
+<vel value="4.27081900" flag="0" />
+<psa03 value="4.28720354" flag="0" />
+<psa10 value="2.87324733" flag="0" />
+<psa30 value="2.31446760" flag="0" />
+</comp>
+</station>
+<station code="CCT" name="Citta_di_Castello_(Trestina)" insttype="UNR" lat="43.3683" lon="12.2346" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.07451610" flag="0" />
+<vel value="2.56872800" flag="0" />
+<psa03 value="4.59538243" flag="0" />
+<psa10 value="3.72882863" flag="0" />
+<psa30 value="0.94904208" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.16904977" flag="0" />
+<vel value="2.11517000" flag="0" />
+<psa03 value="4.10903225" flag="0" />
+<psa10 value="3.69033173" flag="0" />
+<psa30 value="1.07984081" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.11442907" flag="0" />
+<vel value="1.59022400" flag="0" />
+<psa03 value="2.19555013" flag="0" />
+<psa10 value="2.41295508" flag="0" />
+<psa30 value="0.41158996" flag="0" />
+</comp>
+</station>
+<station code="CDM" name="Colle_di_Macine" insttype="UNR" lat="42.0033" lon="14.1994" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.91165916" flag="0" />
+<vel value="1.91035200" flag="0" />
+<psa03 value="1.47646511" flag="0" />
+<psa10 value="1.97858096" flag="0" />
+<psa30 value="1.16803409" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.85285491" flag="0" />
+<vel value="2.34659700" flag="0" />
+<psa03 value="1.21531202" flag="0" />
+<psa10 value="1.95783211" flag="0" />
+<psa30 value="0.79031638" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.72183318" flag="0" />
+<vel value="1.80326400" flag="0" />
+<psa03 value="1.14338611" flag="0" />
+<psa10 value="1.48566658" flag="0" />
+<psa30 value="0.63941185" flag="0" />
+</comp>
+</station>
+<station code="CIT" name="Cittareale" insttype="UNR" lat="42.5942" lon="13.1632" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="35.95745187" flag="0" />
+<vel value="15.25236800" flag="0" />
+<psa03 value="65.83008651" flag="0" />
+<psa10 value="18.70502183" flag="0" />
+<psa30 value="2.85258913" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="24.67882053" flag="0" />
+<vel value="14.26750800" flag="0" />
+<psa03 value="85.79482902" flag="0" />
+<psa10 value="10.82457544" flag="0" />
+<psa30 value="4.10313480" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="13.53813936" flag="0" />
+<vel value="8.68684000" flag="0" />
+<psa03 value="20.85376212" flag="0" />
+<psa10 value="8.70398789" flag="0" />
+<psa30 value="3.89299065" flag="0" />
+</comp>
+</station>
+<station code="CLF" name="Colfiorito_Casone" insttype="UNR" lat="43.0367" lon="12.9204" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="11.70040522" flag="0" />
+<vel value="9.57094100" flag="0" />
+<psa03 value="37.39514464" flag="0" />
+<psa10 value="24.37690507" flag="0" />
+<psa30 value="1.61267757" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="16.59169968" flag="0" />
+<vel value="10.91405800" flag="0" />
+<psa03 value="60.61598396" flag="0" />
+<psa10 value="19.83351188" flag="0" />
+<psa30 value="2.23689494" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="9.77126484" flag="0" />
+<vel value="5.14775400" flag="0" />
+<psa03 value="38.82258870" flag="0" />
+<psa10 value="8.22519980" flag="0" />
+<psa30 value="1.47317559" flag="0" />
+</comp>
+</station>
+<station code="CLN" name="Celano" insttype="UNR" lat="42.0852" lon="13.5207" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.73599606" flag="0" />
+<vel value="1.09584800" flag="0" />
+<psa03 value="1.49878773" flag="0" />
+<psa10 value="1.05466833" flag="0" />
+<psa30 value="0.61226456" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.71350777" flag="0" />
+<vel value="1.83892200" flag="0" />
+<psa03 value="1.99893256" flag="0" />
+<psa10 value="0.67654734" flag="0" />
+<psa30 value="1.34157593" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.43658869" flag="0" />
+<vel value="1.28787900" flag="0" />
+<psa03 value="0.98063159" flag="0" />
+<psa10 value="0.55428875" flag="0" />
+<psa30 value="1.00609799" flag="0" />
+</comp>
+</station>
+<station code="CLO" name="Castelluccio" insttype="UNR" lat="42.8294" lon="13.2060" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="48.89782833" flag="0" />
+<vel value="66.09681700" flag="0" />
+<psa03 value="115.08679372" flag="0" />
+<psa10 value="88.09778481" flag="0" />
+<psa30 value="10.45316327" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="64.79431343" flag="0" />
+<vel value="54.36327700" flag="0" />
+<psa03 value="160.27168174" flag="0" />
+<psa10 value="103.98289842" flag="0" />
+<psa30 value="8.36240861" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="66.40377630" flag="0" />
+<vel value="53.98617200" flag="0" />
+<psa03 value="148.43843880" flag="0" />
+<psa10 value="62.09124699" flag="0" />
+<psa30 value="19.13488065" flag="0" />
+</comp>
+</station>
+<station code="CMB" name="Campobasso" insttype="UNR" lat="41.5628" lon="14.6524" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.18715099" flag="0" />
+<vel value="0.81180300" flag="0" />
+<psa03 value="0.20814144" flag="0" />
+<psa10 value="0.32174400" flag="0" />
+<psa30 value="0.41602053" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.24058555" flag="0" />
+<vel value="1.01660400" flag="0" />
+<psa03 value="0.25397640" flag="0" />
+<psa10 value="0.36727450" flag="0" />
+<psa30 value="0.66223689" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.20025436" flag="0" />
+<vel value="0.96588500" flag="0" />
+<psa03 value="0.21693432" flag="0" />
+<psa10 value="0.39164512" flag="0" />
+<psa30 value="0.42749381" flag="0" />
+</comp>
+</station>
+<station code="CNE" name="Castel Santangelo sul Nera" insttype="UNR" lat="42.8944" lon="13.1528" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="46.46586558" flag="0" />
+<vel value="39.53915000" flag="0" />
+<psa03 value="108.76648725" flag="0" />
+<psa10 value="52.75483661" flag="0" />
+<psa30 value="4.05277248" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="35.07976951" flag="0" />
+<vel value="27.87291500" flag="0" />
+<psa03 value="71.47374221" flag="0" />
+<psa10 value="31.48959532" flag="0" />
+<psa30 value="2.53960786" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="60.89750806" flag="0" />
+<vel value="16.83345600" flag="0" />
+<psa03 value="100.74234634" flag="0" />
+<psa10 value="19.05133471" flag="0" />
+<psa30 value="2.84009906" flag="0" />
+</comp>
+</station>
+<station code="CPS" name="Capestrano" insttype="UNR" lat="42.2716" lon="13.7583" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.91481624" flag="0" />
+<vel value="1.75677100" flag="0" />
+<psa03 value="4.41797539" flag="0" />
+<psa10 value="2.22553071" flag="0" />
+<psa30 value="0.70812653" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.91899673" flag="0" />
+<vel value="2.02115800" flag="0" />
+<psa03 value="5.81889006" flag="0" />
+<psa10 value="2.07913902" flag="0" />
+<psa30 value="1.06591238" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.21278021" flag="0" />
+<vel value="1.80864200" flag="0" />
+<psa03 value="3.13183928" flag="0" />
+<psa10 value="1.50773688" flag="0" />
+<psa30 value="1.32957264" flag="0" />
+</comp>
+</station>
+<station code="CRO" name="Cortona" insttype="UNR" lat="43.2678" lon="11.9805" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.29428286" flag="0" />
+<vel value="0.77282300" flag="0" />
+<psa03 value="0.78102242" flag="0" />
+<psa10 value="0.47967366" flag="0" />
+<psa30 value="0.32588167" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.36176204" flag="0" />
+<vel value="0.41636000" flag="0" />
+<psa03 value="1.04894503" flag="0" />
+<psa10 value="0.56309512" flag="0" />
+<psa30 value="0.14376505" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.23247894" flag="0" />
+<vel value="0.48868100" flag="0" />
+<psa03 value="0.50535519" flag="0" />
+<psa10 value="0.41758389" flag="0" />
+<psa30 value="0.21366239" flag="0" />
+</comp>
+</station>
+<station code="CSA" name="Castelnuovo_Assisi" insttype="UNR" lat="43.0080" lon="12.5906" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.42376148" flag="0" />
+<vel value="9.70753700" flag="0" />
+<psa03 value="18.03199825" flag="0" />
+<psa10 value="8.91732742" flag="0" />
+<psa30 value="7.01721767" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.70564226" flag="0" />
+<vel value="15.25659400" flag="0" />
+<psa03 value="15.37574329" flag="0" />
+<psa10 value="8.86123015" flag="0" />
+<psa30 value="8.42820875" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.74283961" flag="0" />
+<vel value="5.39572600" flag="0" />
+<psa03 value="7.58993441" flag="0" />
+<psa10 value="4.68208073" flag="0" />
+<psa30 value="3.28926735" flag="0" />
+</comp>
+</station>
+<station code="CSC" name="Cascia" insttype="UNR" lat="42.7190" lon="13.0122" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="15.40554900" flag="0" />
+<vel value="10.99188300" flag="0" />
+<psa03 value="33.83205498" flag="0" />
+<psa10 value="12.27654965" flag="0" />
+<psa30 value="3.38447871" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="17.61342987" flag="0" />
+<vel value="12.36835600" flag="0" />
+<psa03 value="30.96641594" flag="0" />
+<psa10 value="12.74369328" flag="0" />
+<psa30 value="3.05580729" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="17.22337600" flag="0" />
+<vel value="5.63915300" flag="0" />
+<psa03 value="20.12329630" flag="0" />
+<psa10 value="6.37980097" flag="0" />
+<psa30 value="3.03188646" flag="0" />
+</comp>
+</station>
+<station code="CSD" name="Castel_Viscardo" insttype="UNR" lat="42.7540" lon="12.0035" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.08552631" flag="0" />
+<vel value="1.59561700" flag="0" />
+<psa03 value="4.91410948" flag="0" />
+<psa10 value="1.31201243" flag="0" />
+<psa30 value="0.71278491" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.44136288" flag="0" />
+<vel value="1.18499100" flag="0" />
+<psa03 value="3.69777107" flag="0" />
+<psa10 value="1.78494896" flag="0" />
+<psa30 value="0.39457253" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.70078969" flag="0" />
+<vel value="0.89427300" flag="0" />
+<psa03 value="1.15549436" flag="0" />
+<psa10 value="1.12185410" flag="0" />
+<psa30 value="0.35209443" flag="0" />
+</comp>
+</station>
+<station code="CSN" name="Cesena" insttype="UNR" lat="44.1370" lon="12.2414" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.87549231" flag="0" />
+<vel value="0.94124000" flag="0" />
+<psa03 value="3.39541748" flag="0" />
+<psa10 value="1.18074920" flag="0" />
+<psa30 value="0.35067160" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.68367170" flag="0" />
+<vel value="0.99030300" flag="0" />
+<psa03 value="2.73973263" flag="0" />
+<psa10 value="0.85541288" flag="0" />
+<psa30 value="0.41136093" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.27995901" flag="0" />
+<vel value="0.43952100" flag="0" />
+<psa03 value="1.00779522" flag="0" />
+<psa10 value="0.72025235" flag="0" />
+<psa30 value="0.19347952" flag="0" />
+</comp>
+</station>
+<station code="CSO1" name="Carsoli_1" insttype="UNR" lat="42.1009" lon="13.0880" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.93800705" flag="0" />
+<vel value="2.63598200" flag="0" />
+<psa03 value="5.72042108" flag="0" />
+<psa10 value="3.09498484" flag="0" />
+<psa30 value="0.60386904" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.20302635" flag="0" />
+<vel value="1.91212900" flag="0" />
+<psa03 value="2.52749818" flag="0" />
+<psa10 value="2.65003220" flag="0" />
+<psa30 value="1.25701718" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.77208063" flag="0" />
+<vel value="1.73509400" flag="0" />
+<psa03 value="1.75797521" flag="0" />
+<psa10 value="1.25288850" flag="0" />
+<psa30 value="1.14572087" flag="0" />
+</comp>
+</station>
+<station code="CSS" name="Cassino" insttype="UNR" lat="41.4858" lon="13.8231" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.30225895" flag="0" />
+<vel value="0.84604900" flag="0" />
+<psa03 value="0.64999466" flag="0" />
+<psa10 value="0.58590657" flag="0" />
+<psa30 value="0.57641403" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.25840176" flag="0" />
+<vel value="0.79677000" flag="0" />
+<psa03 value="0.80938731" flag="0" />
+<psa10 value="0.55351213" flag="0" />
+<psa30 value="0.30857757" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.15636927" flag="0" />
+<vel value="0.75400600" flag="0" />
+<psa03 value="0.24715670" flag="0" />
+<psa10 value="0.33562214" flag="0" />
+<psa30 value="0.36284199" flag="0" />
+</comp>
+</station>
+<station code="CTD" name="Cittaducale" insttype="UNR" lat="42.3884" lon="12.9477" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.59378068" flag="0" />
+<vel value="5.01206900" flag="0" />
+<psa03 value="20.30942274" flag="0" />
+<psa10 value="8.89790053" flag="0" />
+<psa30 value="1.15090885" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.16547508" flag="0" />
+<vel value="3.12526700" flag="0" />
+<psa03 value="20.14144048" flag="0" />
+<psa10 value="2.79082364" flag="0" />
+<psa30 value="0.60129023" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.18416648" flag="0" />
+<vel value="2.45599100" flag="0" />
+<psa03 value="5.60597200" flag="0" />
+<psa10 value="2.25337479" flag="0" />
+<psa30 value="1.35014131" flag="0" />
+</comp>
+</station>
+<station code="CTL" name="Cattolica" insttype="UNR" lat="43.9550" lon="12.7358" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.75189329" flag="0" />
+<vel value="2.57719400" flag="0" />
+<psa03 value="5.04189423" flag="0" />
+<psa10 value="4.84568566" flag="0" />
+<psa30 value="0.54916352" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.58309077" flag="0" />
+<vel value="2.09444900" flag="0" />
+<psa03 value="3.30420296" flag="0" />
+<psa10 value="5.71743357" flag="0" />
+<psa30 value="0.48195323" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.55808027" flag="0" />
+<vel value="0.67292700" flag="0" />
+<psa03 value="1.34098971" flag="0" />
+<psa10 value="0.75593957" flag="0" />
+<psa30 value="0.35172058" flag="0" />
+</comp>
+</station>
+<station code="CTS" name="Citta_Di_Castello" insttype="UNR" lat="43.4919" lon="12.2233" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.62764190" flag="0" />
+<vel value="1.80100300" flag="0" />
+<psa03 value="3.57630259" flag="0" />
+<psa10 value="2.36033118" flag="0" />
+<psa30 value="1.02217149" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.34498624" flag="0" />
+<vel value="2.57340800" flag="0" />
+<psa03 value="2.71613915" flag="0" />
+<psa10 value="2.82360654" flag="0" />
+<psa30 value="2.24897579" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.63650232" flag="0" />
+<vel value="1.67276600" flag="0" />
+<psa03 value="1.33720749" flag="0" />
+<psa10 value="1.74225317" flag="0" />
+<psa30 value="1.10521942" flag="0" />
+</comp>
+</station>
+<station code="CVM" name="Civitella_Marittima" insttype="UNR" lat="42.9941" lon="11.2822" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.12044066" flag="0" />
+<vel value="0.48408400" flag="0" />
+<psa03 value="0.19031255" flag="0" />
+<psa10 value="0.22070979" flag="0" />
+<psa30 value="0.17684657" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.07549095" flag="0" />
+<vel value="0.18735700" flag="0" />
+<psa03 value="0.10809510" flag="0" />
+<psa10 value="0.22189909" flag="0" />
+<psa30 value="0.09884109" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.06412447" flag="0" />
+<vel value="0.29305700" flag="0" />
+<psa03 value="0.07528481" flag="0" />
+<psa10 value="0.14131490" flag="0" />
+<psa30 value="0.10174317" flag="0" />
+</comp>
+</station>
+<station code="DUR" name="Duronia" insttype="UNR" lat="41.6611" lon="14.4565" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.67874209" flag="0" />
+<vel value="1.76163800" flag="0" />
+<psa03 value="0.98824998" flag="0" />
+<psa10 value="1.25874252" flag="0" />
+<psa30 value="0.89027902" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.33616728" flag="0" />
+<vel value="1.40865900" flag="0" />
+<psa03 value="0.58111676" flag="0" />
+<psa10 value="0.71080550" flag="0" />
+<psa30 value="0.74919304" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.15909576" flag="0" />
+<vel value="0.55181100" flag="0" />
+<psa03 value="0.25939147" flag="0" />
+<psa10 value="0.38178670" flag="0" />
+<psa30 value="0.32437503" flag="0" />
+</comp>
+</station>
+<station code="FAZ" name="Faenza" insttype="UNR" lat="44.2980" lon="11.8907" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.41858350" flag="0" />
+<vel value="1.85080400" flag="0" />
+<psa03 value="0.91387220" flag="0" />
+<psa10 value="0.76220116" flag="0" />
+<psa30 value="0.85313402" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.40391106" flag="0" />
+<vel value="1.01575500" flag="0" />
+<psa03 value="0.95081423" flag="0" />
+<psa10 value="1.14291589" flag="0" />
+<psa30 value="0.53352672" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.18083442" flag="0" />
+<vel value="0.67091100" flag="0" />
+<psa03 value="0.33835916" flag="0" />
+<psa10 value="0.56139441" flag="0" />
+<psa30 value="0.28617247" flag="0" />
+</comp>
+</station>
+<station code="FBR" name="Fabriano" insttype="UNR" lat="43.3436" lon="12.9119" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="9.06827887" flag="0" />
+<vel value="3.23541600" flag="0" />
+<psa03 value="19.88083958" flag="0" />
+<psa10 value="2.06202328" flag="0" />
+<psa30 value="1.01330769" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.96390718" flag="0" />
+<vel value="2.66293100" flag="0" />
+<psa03 value="17.84204187" flag="0" />
+<psa10 value="3.01051388" flag="0" />
+<psa30 value="0.75977381" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.91248695" flag="0" />
+<vel value="2.06678700" flag="0" />
+<psa03 value="9.30834738" flag="0" />
+<psa10 value="2.45953406" flag="0" />
+<psa30 value="0.67741042" flag="0" />
+</comp>
+</station>
+<station code="FIE" name="Fiesole" insttype="UNR" lat="43.8072" lon="11.2944" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.09126613" flag="0" />
+<vel value="0.23958400" flag="0" />
+<psa03 value="0.18261944" flag="0" />
+<psa10 value="0.21151751" flag="0" />
+<psa30 value="0.09706220" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.09026232" flag="0" />
+<vel value="0.25735400" flag="0" />
+<psa03 value="0.25303739" flag="0" />
+<psa10 value="0.23654210" flag="0" />
+<psa30 value="0.23108370" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.08321727" flag="0" />
+<vel value="0.19547500" flag="0" />
+<psa03 value="0.14104632" flag="0" />
+<psa10 value="0.13606325" flag="0" />
+<psa30 value="0.11770210" flag="0" />
+</comp>
+</station>
+<station code="FLT" name="Filettino" insttype="UNR" lat="41.8933" lon="13.3254" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.64116202" flag="0" />
+<vel value="1.05071400" flag="0" />
+<psa03 value="0.98059643" flag="0" />
+<psa10 value="1.53252130" flag="0" />
+<psa30 value="0.91662454" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.86493740" flag="0" />
+<vel value="1.41180500" flag="0" />
+<psa03 value="1.35016287" flag="0" />
+<psa10 value="1.42967713" flag="0" />
+<psa30 value="0.97914028" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.34832540" flag="0" />
+<vel value="1.12971000" flag="0" />
+<psa03 value="0.75554304" flag="0" />
+<psa10 value="0.78336811" flag="0" />
+<psa30 value="0.84078826" flag="0" />
+</comp>
+</station>
+<station code="FMG" name="Fiamignano" insttype="UNR" lat="42.2680" lon="13.1172" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.27212471" flag="0" />
+<vel value="2.51948900" flag="0" />
+<psa03 value="5.77087078" flag="0" />
+<psa10 value="3.76612672" flag="0" />
+<psa30 value="1.11279734" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.16831649" flag="0" />
+<vel value="3.07835900" flag="0" />
+<psa03 value="4.32012890" flag="0" />
+<psa10 value="5.45964235" flag="0" />
+<psa30 value="1.71423852" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.50314482" flag="0" />
+<vel value="2.17642100" flag="0" />
+<psa03 value="4.51753209" flag="0" />
+<psa10 value="1.30438105" flag="0" />
+<psa30 value="1.57403310" flag="0" />
+</comp>
+</station>
+<station code="FOC" name="Foligno_Colfiorito" insttype="UNR" lat="43.0263" lon="12.8965" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="37.41664640" flag="0" />
+<vel value="12.45184100" flag="0" />
+<psa03 value="147.21243799" flag="0" />
+<psa10 value="5.05531442" flag="0" />
+<psa30 value="1.06106667" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="34.79379786" flag="0" />
+<vel value="6.91111500" flag="0" />
+<psa03 value="36.61555466" flag="0" />
+<psa10 value="2.61332666" flag="0" />
+<psa30 value="1.32050566" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="22.82660138" flag="0" />
+<vel value="5.20980200" flag="0" />
+<psa03 value="22.40220699" flag="0" />
+<psa10 value="3.76072290" flag="0" />
+<psa30 value="1.37368318" flag="0" />
+</comp>
+</station>
+<station code="FOPC" name="Foligno Prot Civ Reg" insttype="UNR" lat="42.9697" lon="12.7031" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="11.98420072" flag="0" />
+<vel value="5.65814100" flag="0" />
+<psa03 value="14.88852175" flag="0" />
+<psa10 value="7.95470338" flag="0" />
+<psa30 value="1.06633385" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="8.86745076" flag="0" />
+<vel value="5.80372900" flag="0" />
+<psa03 value="18.76095927" flag="0" />
+<psa10 value="6.32692054" flag="0" />
+<psa30 value="1.59769659" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.88934427" flag="0" />
+<vel value="3.96693800" flag="0" />
+<psa03 value="7.84295565" flag="0" />
+<psa10 value="3.58569201" flag="0" />
+<psa30 value="1.06623747" flag="0" />
+</comp>
+</station>
+<station code="FOS" name="Foligno_Seggio" insttype="UNR" lat="43.0146" lon="12.8351" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="7.89896094" flag="0" />
+<vel value="5.53567800" flag="0" />
+<psa03 value="22.03549959" flag="0" />
+<psa10 value="3.49667008" flag="0" />
+<psa30 value="1.70165432" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="11.82586604" flag="0" />
+<vel value="6.93888200" flag="0" />
+<psa03 value="24.06070195" flag="0" />
+<psa10 value="6.23654232" flag="0" />
+<psa30 value="1.04961270" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.28301530" flag="0" />
+<vel value="2.80739200" flag="0" />
+<psa03 value="10.62964836" flag="0" />
+<psa10 value="3.32602511" flag="0" />
+<psa30 value="1.27660974" flag="0" />
+</comp>
+</station>
+<station code="FRT" name="Ferentino" insttype="UNR" lat="41.6926" lon="13.2550" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.71869523" flag="0" />
+<vel value="1.29550600" flag="0" />
+<psa03 value="1.95923696" flag="0" />
+<psa10 value="1.50381853" flag="0" />
+<psa30 value="0.64420574" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.53604033" flag="0" />
+<vel value="0.93677900" flag="0" />
+<psa03 value="1.46834440" flag="0" />
+<psa10 value="1.26953116" flag="0" />
+<psa30 value="0.73364096" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.36081373" flag="0" />
+<vel value="0.69902200" flag="0" />
+<psa03 value="0.55590474" flag="0" />
+<psa10 value="1.13275250" flag="0" />
+<psa30 value="0.64573741" flag="0" />
+</comp>
+</station>
+<station code="FSS" name="Fossombrone_Marche" insttype="UNR" lat="43.6905" lon="12.8101" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.59784518" flag="0" />
+<vel value="0.74890300" flag="0" />
+<psa03 value="2.65918983" flag="0" />
+<psa10 value="0.93407683" flag="0" />
+<psa30 value="0.28450007" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.32935260" flag="0" />
+<vel value="0.83758500" flag="0" />
+<psa03 value="2.01219700" flag="0" />
+<psa10 value="0.81641458" flag="0" />
+<psa30 value="0.15489238" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.76924325" flag="0" />
+<vel value="0.50835600" flag="0" />
+<psa03 value="2.01321940" flag="0" />
+<psa10 value="0.72675422" flag="0" />
+<psa30 value="0.17516457" flag="0" />
+</comp>
+</station>
+<station code="GBC" name="Gubbio Centro" insttype="UNR" lat="43.3553" lon="12.5726" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.16823645" flag="0" />
+<vel value="1.24747200" flag="0" />
+<psa03 value="3.86623745" flag="0" />
+<psa10 value="1.28021944" flag="0" />
+<psa30 value="0.77160121" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.54883027" flag="0" />
+<vel value="1.21037900" flag="0" />
+<psa03 value="4.39006743" flag="0" />
+<psa10 value="1.28951473" flag="0" />
+<psa30 value="0.67188855" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.84305066" flag="0" />
+<vel value="1.02016800" flag="0" />
+<psa03 value="2.17160692" flag="0" />
+<psa10 value="1.38081204" flag="0" />
+<psa30 value="0.72840331" flag="0" />
+</comp>
+</station>
+<station code="GBP" name="Gubbio_Piana" insttype="UNR" lat="43.3138" lon="12.5894" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.48073763" flag="0" />
+<vel value="10.10961200" flag="0" />
+<psa03 value="9.77574518" flag="0" />
+<psa10 value="6.29651941" flag="0" />
+<psa30 value="8.82233283" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.34594996" flag="0" />
+<vel value="8.05164200" flag="0" />
+<psa03 value="14.71915949" flag="0" />
+<psa10 value="8.81779168" flag="0" />
+<psa30 value="5.23486694" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.71859430" flag="0" />
+<vel value="3.31207500" flag="0" />
+<psa03 value="6.84398407" flag="0" />
+<psa10 value="3.46801372" flag="0" />
+<psa30 value="2.18943918" flag="0" />
+</comp>
+</station>
+<station code="GNU" name="Giano_nell_Umbria" insttype="UNR" lat="42.8038" lon="12.5702" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.10489550" flag="0" />
+<vel value="3.07989300" flag="0" />
+<psa03 value="11.02155715" flag="0" />
+<psa10 value="1.69403020" flag="0" />
+<psa30 value="1.20526126" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.25854582" flag="0" />
+<vel value="2.25078600" flag="0" />
+<psa03 value="7.99572155" flag="0" />
+<psa10 value="2.46882220" flag="0" />
+<psa30 value="0.60772647" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.71532909" flag="0" />
+<vel value="2.21344200" flag="0" />
+<psa03 value="3.26051430" flag="0" />
+<psa10 value="1.93480686" flag="0" />
+<psa30 value="1.06009341" flag="0" />
+</comp>
+</station>
+<station code="GRN" name="Guarcino" insttype="UNR" lat="41.8134" lon="13.3169" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.61963727" flag="0" />
+<vel value="1.12805400" flag="0" />
+<psa03 value="1.65063680" flag="0" />
+<psa10 value="1.20723903" flag="0" />
+<psa30 value="0.53769208" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.54511794" flag="0" />
+<vel value="1.18705900" flag="0" />
+<psa03 value="1.51206177" flag="0" />
+<psa10 value="1.65058100" flag="0" />
+<psa30 value="0.94076745" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.33542990" flag="0" />
+<vel value="0.88831700" flag="0" />
+<psa03 value="0.73521270" flag="0" />
+<psa10 value="0.98158337" flag="0" />
+<psa30 value="0.82504874" flag="0" />
+</comp>
+</station>
+<station code="GSA" name="Assergi_Gran_Sasso_LNGS_esterni" insttype="UNR" lat="42.4207" lon="13.5194" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.41126087" flag="0" />
+<vel value="2.39334000" flag="0" />
+<psa03 value="15.58478736" flag="0" />
+<psa10 value="3.13096466" flag="0" />
+<psa30 value="0.79680056" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.64383148" flag="0" />
+<vel value="3.97295500" flag="0" />
+<psa03 value="16.46723070" flag="0" />
+<psa10 value="4.78534157" flag="0" />
+<psa30 value="1.94134838" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.33505440" flag="0" />
+<vel value="3.83807900" flag="0" />
+<psa03 value="7.92152149" flag="0" />
+<psa10 value="2.68978627" flag="0" />
+<psa30 value="2.48721176" flag="0" />
+</comp>
+</station>
+<station code="LAT" name="Latina" insttype="UNR" lat="41.4723" lon="12.9072" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.85182954" flag="0" />
+<vel value="3.64664600" flag="0" />
+<psa03 value="1.40441441" flag="0" />
+<psa10 value="2.76017836" flag="0" />
+<psa30 value="1.98822864" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.37276900" flag="0" />
+<vel value="4.19179300" flag="0" />
+<psa03 value="1.99723021" flag="0" />
+<psa10 value="3.19540850" flag="0" />
+<psa30 value="3.16270368" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.54546675" flag="0" />
+<vel value="1.64391300" flag="0" />
+<psa03 value="0.77978375" flag="0" />
+<psa10 value="1.18062115" flag="0" />
+<psa30 value="1.86812596" flag="0" />
+</comp>
+</station>
+<station code="LDP" name="Lama_dei_Peligni" insttype="UNR" lat="42.0392" lon="14.1826" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.90882260" flag="0" />
+<vel value="1.27865200" flag="0" />
+<psa03 value="3.12430561" flag="0" />
+<psa10 value="1.50676495" flag="0" />
+<psa30 value="0.49989086" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.16975565" flag="0" />
+<vel value="1.51625100" flag="0" />
+<psa03 value="3.31001619" flag="0" />
+<psa10 value="1.77879182" flag="0" />
+<psa30 value="0.56294826" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.86910461" flag="0" />
+<vel value="0.92195400" flag="0" />
+<psa03 value="2.56768609" flag="0" />
+<psa10 value="1.67582849" flag="0" />
+<psa30 value="0.49498373" flag="0" />
+</comp>
+</station>
+<station code="LSS" name="Leonessa" insttype="UNR" lat="42.5582" lon="12.9689" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.58282613" flag="0" />
+<vel value="2.81802400" flag="0" />
+<psa03 value="8.10519247" flag="0" />
+<psa10 value="1.95694982" flag="0" />
+<psa30 value="0.91324326" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.98491049" flag="0" />
+<vel value="4.47585500" flag="0" />
+<psa03 value="13.05633851" flag="0" />
+<psa10 value="4.54485403" flag="0" />
+<psa30 value="1.41235903" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.44112408" flag="0" />
+<vel value="3.52644900" flag="0" />
+<psa03 value="8.53841418" flag="0" />
+<psa10 value="2.58769674" flag="0" />
+<psa30 value="1.21195822" flag="0" />
+</comp>
+</station>
+<station code="MCR" name="Macerata_Feltria" insttype="UNR" lat="43.7998" lon="12.4475" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.57125939" flag="0" />
+<vel value="1.16205300" flag="0" />
+<psa03 value="4.57893415" flag="0" />
+<psa10 value="1.26021839" flag="0" />
+<psa30 value="0.35534010" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.05154573" flag="0" />
+<vel value="1.02327800" flag="0" />
+<psa03 value="4.21921938" flag="0" />
+<psa10 value="0.99728886" flag="0" />
+<psa30 value="0.40434061" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.67543827" flag="0" />
+<vel value="0.71564200" flag="0" />
+<psa03 value="2.00804032" flag="0" />
+<psa10 value="0.72887180" flag="0" />
+<psa30 value="0.31907811" flag="0" />
+</comp>
+</station>
+<station code="MCS" name="Mercato_Saraceno" insttype="UNR" lat="43.9937" lon="12.1067" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.35902962" flag="0" />
+<vel value="0.55997100" flag="0" />
+<psa03 value="1.19926723" flag="0" />
+<psa10 value="0.47368709" flag="0" />
+<psa30 value="0.27237751" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.49821294" flag="0" />
+<vel value="0.59109200" flag="0" />
+<psa03 value="1.79730872" flag="0" />
+<psa10 value="0.77319185" flag="0" />
+<psa30 value="0.25327449" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.21811871" flag="0" />
+<vel value="0.60901000" flag="0" />
+<psa03 value="0.45630440" flag="0" />
+<psa10 value="0.42504939" flag="0" />
+<psa30 value="0.31901331" flag="0" />
+</comp>
+</station>
+<station code="MCV" name="Monte Cavallo" insttype="UNR" lat="42.9934" lon="13.0013" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="30.61818180" flag="0" />
+<vel value="7.16626300" flag="0" />
+<psa03 value="26.27447597" flag="0" />
+<psa10 value="5.15045127" flag="0" />
+<psa30 value="1.14273673" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="39.71226024" flag="0" />
+<vel value="12.46043500" flag="0" />
+<psa03 value="56.39130771" flag="0" />
+<psa10 value="3.46001841" flag="0" />
+<psa30 value="1.45171431" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="46.16557827" flag="0" />
+<vel value="5.71039300" flag="0" />
+<psa03 value="17.50479096" flag="0" />
+<psa10 value="4.35843132" flag="0" />
+<psa30 value="1.40552890" flag="0" />
+</comp>
+</station>
+<station code="MMO" name="Montemonaco" insttype="UNR" lat="42.8993" lon="13.3268" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="20.75307171" flag="0" />
+<vel value="10.22582400" flag="0" />
+<psa03 value="35.74237595" flag="0" />
+<psa10 value="9.80785653" flag="0" />
+<psa30 value="2.10446101" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="19.58655918" flag="0" />
+<vel value="12.05671500" flag="0" />
+<psa03 value="63.43971436" flag="0" />
+<psa10 value="10.81995948" flag="0" />
+<psa30 value="2.79843417" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="14.74574488" flag="0" />
+<vel value="7.66377300" flag="0" />
+<psa03 value="39.14516992" flag="0" />
+<psa10 value="8.55009687" flag="0" />
+<psa30 value="1.45959321" flag="0" />
+</comp>
+</station>
+<station code="MMP1" name="Mompeo_1" insttype="UNR" lat="42.2492" lon="12.7483" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.90287008" flag="0" />
+<vel value="1.20085200" flag="0" />
+<psa03 value="6.98482323" flag="0" />
+<psa10 value="1.87927200" flag="0" />
+<psa30 value="0.32723193" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.26236175" flag="0" />
+<vel value="1.41299700" flag="0" />
+<psa03 value="5.62518090" flag="0" />
+<psa10 value="1.78354913" flag="0" />
+<psa30 value="0.55047209" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.16138557" flag="0" />
+<vel value="1.00761700" flag="0" />
+<psa03 value="3.23654789" flag="0" />
+<psa10 value="1.08449990" flag="0" />
+<psa30 value="0.63025943" flag="0" />
+</comp>
+</station>
+<station code="MNF" name="MonteFiegni-Fiastra" insttype="UNR" lat="43.0596" lon="13.1844" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="12.54483323" flag="0" />
+<vel value="5.15887500" flag="0" />
+<psa03 value="36.48878711" flag="0" />
+<psa10 value="4.36745159" flag="0" />
+<psa30 value="1.04174995" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="11.47127323" flag="0" />
+<vel value="5.35901800" flag="0" />
+<psa03 value="23.82780307" flag="0" />
+<psa10 value="3.75895841" flag="0" />
+<psa30 value="0.96944048" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="10.09070147" flag="0" />
+<vel value="6.12745900" flag="0" />
+<psa03 value="25.51122430" flag="0" />
+<psa10 value="3.66698955" flag="0" />
+<psa30 value="1.12601681" flag="0" />
+</comp>
+</station>
+<station code="MNT" name="Monticiano" insttype="UNR" lat="43.1396" lon="11.1827" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.06632790" flag="0" />
+<vel value="0.16876100" flag="0" />
+<psa03 value="0.15309172" flag="0" />
+<psa10 value="0.15503137" flag="0" />
+<psa30 value="0.06409575" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.12288651" flag="0" />
+<vel value="0.24104800" flag="0" />
+<psa03 value="0.18509544" flag="0" />
+<psa10 value="0.32178590" flag="0" />
+<psa30 value="0.06516344" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.07992970" flag="0" />
+<vel value="0.25454200" flag="0" />
+<psa03 value="0.13034731" flag="0" />
+<psa10 value="0.17954762" flag="0" />
+<psa30 value="0.08127199" flag="0" />
+</comp>
+</station>
+<station code="MSC" name="Mascioni" insttype="UNR" lat="42.5268" lon="13.3508" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="8.11750041" flag="0" />
+<vel value="7.67078500" flag="0" />
+<psa03 value="29.93859299" flag="0" />
+<psa10 value="11.88679912" flag="0" />
+<psa30 value="3.12115070" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="9.12375466" flag="0" />
+<vel value="8.58710400" flag="0" />
+<psa03 value="20.43076960" flag="0" />
+<psa10 value="6.52113774" flag="0" />
+<psa30 value="3.40371837" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.85987776" flag="0" />
+<vel value="7.71919400" flag="0" />
+<psa03 value="9.77279937" flag="0" />
+<psa10 value="8.78693647" flag="0" />
+<psa30 value="3.39273248" flag="0" />
+</comp>
+</station>
+<station code="MSCT" name="Mascioni" insttype="UNR" lat="42.5267" lon="13.3509" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="8.45011358" flag="0" />
+<vel value="7.91716300" flag="0" />
+<psa03 value="31.17372588" flag="0" />
+<psa10 value="12.35405108" flag="0" />
+<psa30 value="3.23065452" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="9.38757671" flag="0" />
+<vel value="8.78977000" flag="0" />
+<psa03 value="21.10714290" flag="0" />
+<psa10 value="6.68312536" flag="0" />
+<psa30 value="3.50848256" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.04487550" flag="0" />
+<vel value="7.92755400" flag="0" />
+<psa03 value="10.22017854" flag="0" />
+<psa10 value="9.09649711" flag="0" />
+<psa30 value="3.47256458" flag="0" />
+</comp>
+</station>
+<station code="MTL" name="Matelica" insttype="UNR" lat="43.2494" lon="13.0083" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="7.84840516" flag="0" />
+<vel value="3.91207100" flag="0" />
+<psa03 value="14.44165880" flag="0" />
+<psa10 value="5.53828842" flag="0" />
+<psa30 value="1.04082279" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="12.58735078" flag="0" />
+<vel value="4.60936700" flag="0" />
+<psa03 value="25.34356489" flag="0" />
+<psa10 value="5.96269650" flag="0" />
+<psa30 value="0.79911519" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.31181708" flag="0" />
+<vel value="2.99315000" flag="0" />
+<psa03 value="11.85310408" flag="0" />
+<psa10 value="3.75408235" flag="0" />
+<psa30 value="0.96179858" flag="0" />
+</comp>
+</station>
+<station code="MVB" name="Marsciano_Monte_Vibiano" insttype="UNR" lat="42.9619" lon="12.2570" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.88987993" flag="0" />
+<vel value="1.08777800" flag="0" />
+<psa03 value="2.27733987" flag="0" />
+<psa10 value="0.67359877" flag="0" />
+<psa30 value="0.45628948" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.95243624" flag="0" />
+<vel value="0.84384700" flag="0" />
+<psa03 value="2.42834047" flag="0" />
+<psa10 value="1.02937874" flag="0" />
+<psa30 value="0.22705498" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.56183970" flag="0" />
+<vel value="1.30538900" flag="0" />
+<psa03 value="1.25724437" flag="0" />
+<psa10 value="0.54857138" flag="0" />
+<psa30 value="0.47138748" flag="0" />
+</comp>
+</station>
+<station code="NCR" name="Nocera_Umbra" insttype="UNR" lat="43.1115" lon="12.7845" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="17.42852615" flag="0" />
+<vel value="5.86282300" flag="0" />
+<psa03 value="23.15602550" flag="0" />
+<psa10 value="1.88684859" flag="0" />
+<psa30 value="0.43763614" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="19.66789535" flag="0" />
+<vel value="4.46201800" flag="0" />
+<psa03 value="13.08960778" flag="0" />
+<psa10 value="1.98248020" flag="0" />
+<psa30 value="1.36010530" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.44522837" flag="0" />
+<vel value="2.70196600" flag="0" />
+<psa03 value="6.92546680" flag="0" />
+<psa10 value="2.77592022" flag="0" />
+<psa30 value="1.00969103" flag="0" />
+</comp>
+</station>
+<station code="NOR" name="Norcia" insttype="UNR" lat="42.7924" lon="13.0924" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="36.90903034" flag="0" />
+<vel value="56.37153200" flag="0" />
+<psa03 value="80.19727063" flag="0" />
+<psa10 value="89.36433745" flag="0" />
+<psa30 value="13.73462826" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="28.86335660" flag="0" />
+<vel value="43.40969500" flag="0" />
+<psa03 value="58.05292477" flag="0" />
+<psa10 value="87.20109581" flag="0" />
+<psa30 value="12.19978815" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="28.15610940" flag="0" />
+<vel value="17.34415600" flag="0" />
+<psa03 value="48.38159170" flag="0" />
+<psa10 value="20.47590940" flag="0" />
+<psa30 value="2.97618613" flag="0" />
+</comp>
+</station>
+<station code="NRC" name="Norcia" insttype="UNR" lat="42.7925" lon="13.0964" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="48.76902720" flag="0" />
+<vel value="47.05167400" flag="0" />
+<psa03 value="193.65125972" flag="0" />
+<psa10 value="82.43191635" flag="0" />
+<psa30 value="9.32801046" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="33.38991704" flag="0" />
+<vel value="38.81330500" flag="0" />
+<psa03 value="115.49102763" flag="0" />
+<psa10 value="54.70111532" flag="0" />
+<psa30 value="11.18343644" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="38.66650672" flag="0" />
+<vel value="18.37652800" flag="0" />
+<psa03 value="69.78703668" flag="0" />
+<psa10 value="27.96160246" flag="0" />
+<psa30 value="3.28800855" flag="0" />
+</comp>
+</station>
+<station code="NRN" name="Narni" insttype="UNR" lat="42.5155" lon="12.5194" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.31941917" flag="0" />
+<vel value="2.24295800" flag="0" />
+<psa03 value="4.90652706" flag="0" />
+<psa10 value="2.37189368" flag="0" />
+<psa30 value="0.93608608" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.47762477" flag="0" />
+<vel value="1.71353000" flag="0" />
+<psa03 value="3.89543037" flag="0" />
+<psa10 value="1.43120900" flag="0" />
+<psa30 value="0.62366845" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.88103830" flag="0" />
+<vel value="1.53541500" flag="0" />
+<psa03 value="1.84502457" flag="0" />
+<psa10 value="0.86550645" flag="0" />
+<psa30 value="0.74346933" flag="0" />
+</comp>
+</station>
+<station code="ORC" name="Ortucchio" insttype="UNR" lat="41.9536" lon="13.6423" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.97068078" flag="0" />
+<vel value="1.59194400" flag="0" />
+<psa03 value="2.18388226" flag="0" />
+<psa10 value="3.20485638" flag="0" />
+<psa30 value="0.42860105" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.05742559" flag="0" />
+<vel value="2.04186600" flag="0" />
+<psa03 value="1.62736984" flag="0" />
+<psa10 value="3.16529394" flag="0" />
+<psa30 value="0.66373299" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.38067824" flag="0" />
+<vel value="1.09654400" flag="0" />
+<psa03 value="1.03067821" flag="0" />
+<psa10 value="0.98885981" flag="0" />
+<psa30 value="0.52008241" flag="0" />
+</comp>
+</station>
+<station code="PCB" name="Poggio_Cancelli" insttype="UNR" lat="42.5580" lon="13.3380" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="14.52214814" flag="0" />
+<vel value="8.32933900" flag="0" />
+<psa03 value="27.12243530" flag="0" />
+<psa10 value="10.57886334" flag="0" />
+<psa30 value="2.39361741" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="23.14751408" flag="0" />
+<vel value="9.63423500" flag="0" />
+<psa03 value="16.48961659" flag="0" />
+<psa10 value="12.84508631" flag="0" />
+<psa30 value="3.74517327" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.27492566" flag="0" />
+<vel value="7.80478200" flag="0" />
+<psa03 value="8.45195451" flag="0" />
+<psa10 value="5.58241378" flag="0" />
+<psa30 value="3.67625736" flag="0" />
+</comp>
+</station>
+<station code="PGG" name="Poggio_Picenze" insttype="UNR" lat="42.3229" lon="13.5394" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="7.51852410" flag="0" />
+<vel value="2.50257300" flag="0" />
+<psa03 value="10.96333596" flag="0" />
+<psa10 value="3.28682446" flag="0" />
+<psa30 value="0.63435642" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.30012217" flag="0" />
+<vel value="3.53606300" flag="0" />
+<psa03 value="10.61907138" flag="0" />
+<psa10 value="2.55976334" flag="0" />
+<psa30 value="1.73519687" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="4.68805381" flag="0" />
+<vel value="2.19776400" flag="0" />
+<psa03 value="13.06425421" flag="0" />
+<psa10 value="1.30226725" flag="0" />
+<psa30 value="1.21035695" flag="0" />
+</comp>
+</station>
+<station code="PNN" name="Pennabilli" insttype="UNR" lat="43.8181" lon="12.2628" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.52134501" flag="0" />
+<vel value="2.29909800" flag="0" />
+<psa03 value="5.34086581" flag="0" />
+<psa10 value="1.17886576" flag="0" />
+<psa30 value="1.45205423" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.91342548" flag="0" />
+<vel value="1.31395600" flag="0" />
+<psa03 value="4.38917236" flag="0" />
+<psa10 value="1.52728191" flag="0" />
+<psa30 value="0.76094686" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.49786638" flag="0" />
+<vel value="1.20478600" flag="0" />
+<psa03 value="1.27236537" flag="0" />
+<psa10 value="0.85639256" flag="0" />
+<psa30 value="0.94453444" flag="0" />
+</comp>
+</station>
+<station code="PRE" name="Preci" insttype="UNR" lat="42.8793" lon="13.0334" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="26.66475284" flag="0" />
+<vel value="10.88801300" flag="0" />
+<psa03 value="48.91841928" flag="0" />
+<psa10 value="12.53640603" flag="0" />
+<psa30 value="0.99704859" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="32.23633709" flag="0" />
+<vel value="14.05491800" flag="0" />
+<psa03 value="43.07263099" flag="0" />
+<psa10 value="13.09421128" flag="0" />
+<psa30 value="2.79156500" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="20.69717015" flag="0" />
+<vel value="6.71809600" flag="0" />
+<psa03 value="17.69807671" flag="0" />
+<psa10 value="9.10511144" flag="0" />
+<psa30 value="1.61789161" flag="0" />
+</comp>
+</station>
+<station code="PRG" name="Perugia" insttype="UNR" lat="43.1110" lon="12.3251" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.64545596" flag="0" />
+<vel value="0.62530700" flag="0" />
+<psa03 value="1.14288604" flag="0" />
+<psa10 value="0.57780262" flag="0" />
+<psa30 value="0.24597230" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.75189225" flag="0" />
+<vel value="0.65433300" flag="0" />
+<psa03 value="1.19705153" flag="0" />
+<psa10 value="0.98176580" flag="0" />
+<psa30 value="0.27649689" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.43032731" flag="0" />
+<vel value="0.59470300" flag="0" />
+<psa03 value="1.00906904" flag="0" />
+<psa10 value="0.50406031" flag="0" />
+<psa30 value="0.34283869" flag="0" />
+</comp>
+</station>
+<station code="PSC" name="Pescasseroli" insttype="UNR" lat="41.8120" lon="13.7892" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.44873118" flag="0" />
+<vel value="1.18320200" flag="0" />
+<psa03 value="0.74099435" flag="0" />
+<psa10 value="2.18377976" flag="0" />
+<psa30 value="0.71811985" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.56262551" flag="0" />
+<vel value="1.33228000" flag="0" />
+<psa03 value="1.11131881" flag="0" />
+<psa10 value="1.92247653" flag="0" />
+<psa30 value="0.58464052" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.39009822" flag="0" />
+<vel value="1.59245800" flag="0" />
+<psa03 value="0.61140271" flag="0" />
+<psa10 value="1.07305002" flag="0" />
+<psa30 value="0.71014549" flag="0" />
+</comp>
+</station>
+<station code="PTI" name="Petritoli" insttype="UNR" lat="43.0665" lon="13.6570" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.36340171" flag="0" />
+<vel value="6.50261800" flag="0" />
+<psa03 value="11.80170780" flag="0" />
+<psa10 value="5.79474705" flag="0" />
+<psa30 value="1.47536053" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.75525012" flag="0" />
+<vel value="7.26918600" flag="0" />
+<psa03 value="8.38111264" flag="0" />
+<psa10 value="6.85209394" flag="0" />
+<psa30 value="3.18611239" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.11689979" flag="0" />
+<vel value="7.61783800" flag="0" />
+<psa03 value="6.05976085" flag="0" />
+<psa10 value="3.55032754" flag="0" />
+<psa30 value="3.44894667" flag="0" />
+</comp>
+</station>
+<station code="PTL" name="Pietralunga" insttype="UNR" lat="43.4273" lon="12.4485" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.79406356" flag="0" />
+<vel value="1.52413700" flag="0" />
+<psa03 value="5.52856797" flag="0" />
+<psa10 value="1.58825525" flag="0" />
+<psa30 value="0.69342363" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.76895210" flag="0" />
+<vel value="1.76921900" flag="0" />
+<psa03 value="3.43053350" flag="0" />
+<psa10 value="2.21396504" flag="0" />
+<psa30 value="1.06698926" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.97985763" flag="0" />
+<vel value="1.16710100" flag="0" />
+<psa03 value="3.50069820" flag="0" />
+<psa10 value="1.48047860" flag="0" />
+<psa30 value="0.84366110" flag="0" />
+</comp>
+</station>
+<station code="PZI1" name="Pizzoli" insttype="UNR" lat="42.4356" lon="13.3262" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.93695202" flag="0" />
+<vel value="8.28185700" flag="0" />
+<psa03 value="10.00433766" flag="0" />
+<psa10 value="7.11931322" flag="0" />
+<psa30 value="2.69916863" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.20319025" flag="0" />
+<vel value="7.02214200" flag="0" />
+<psa03 value="13.35259311" flag="0" />
+<psa10 value="10.94927212" flag="0" />
+<psa30 value="2.99753029" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.02499450" flag="0" />
+<vel value="4.55894100" flag="0" />
+<psa03 value="3.68179997" flag="0" />
+<psa10 value="7.67448539" flag="0" />
+<psa30 value="2.85823782" flag="0" />
+</comp>
+</station>
+<station code="RTI" name="Rieti" insttype="UNR" lat="42.4302" lon="12.8290" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.87978501" flag="0" />
+<vel value="10.60017300" flag="0" />
+<psa03 value="20.14602845" flag="0" />
+<psa10 value="14.98812373" flag="0" />
+<psa30 value="1.70553486" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.31701838" flag="0" />
+<vel value="7.24449400" flag="0" />
+<psa03 value="19.03887009" flag="0" />
+<psa10 value="7.95754627" flag="0" />
+<psa30 value="1.60059559" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.69541094" flag="0" />
+<vel value="3.30497900" flag="0" />
+<psa03 value="8.78056144" flag="0" />
+<psa10 value="4.04447537" flag="0" />
+<psa30 value="0.63524321" flag="0" />
+</comp>
+</station>
+<station code="SBC" name="Subiaco" insttype="UNR" lat="41.9132" lon="13.1055" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.74103820" flag="0" />
+<vel value="1.75890500" flag="0" />
+<psa03 value="1.10295528" flag="0" />
+<psa10 value="1.22347708" flag="0" />
+<psa30 value="0.79652728" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.71228668" flag="0" />
+<vel value="1.11272500" flag="0" />
+<psa03 value="1.53286847" flag="0" />
+<psa10 value="1.39017642" flag="0" />
+<psa30 value="0.71968790" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.36747052" flag="0" />
+<vel value="0.73273900" flag="0" />
+<psa03 value="1.34757241" flag="0" />
+<psa10 value="0.69083020" flag="0" />
+<psa30 value="0.46859375" flag="0" />
+</comp>
+</station>
+<station code="SBT" name="San_Benedetto_del_Tronto" insttype="UNR" lat="42.9338" lon="13.8604" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.04136595" flag="0" />
+<vel value="7.24337900" flag="0" />
+<psa03 value="18.74222560" flag="0" />
+<psa10 value="4.24963134" flag="0" />
+<psa30 value="3.69680691" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.97898837" flag="0" />
+<vel value="6.57935200" flag="0" />
+<psa03 value="13.97076780" flag="0" />
+<psa10 value="5.21749508" flag="0" />
+<psa30 value="2.53447998" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.43127772" flag="0" />
+<vel value="4.35474100" flag="0" />
+<psa03 value="6.20865971" flag="0" />
+<psa10 value="3.53511793" flag="0" />
+<psa30 value="2.56800597" flag="0" />
+</comp>
+</station>
+<station code="SDM" name="San_Demetrio_Ne_Vestini" insttype="UNR" lat="42.2897" lon="13.5577" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.83983477" flag="0" />
+<vel value="2.18323600" flag="0" />
+<psa03 value="6.61185394" flag="0" />
+<psa10 value="3.16509966" flag="0" />
+<psa30 value="1.01534463" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.66644419" flag="0" />
+<vel value="3.59649600" flag="0" />
+<psa03 value="6.03780001" flag="0" />
+<psa10 value="3.57403865" flag="0" />
+<psa30 value="1.77354426" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.80558653" flag="0" />
+<vel value="3.41403400" flag="0" />
+<psa03 value="4.55865318" flag="0" />
+<psa10 value="5.15833702" flag="0" />
+<psa30 value="1.54796065" flag="0" />
+</comp>
+</station>
+<station code="SGMA" name="San Giuliano, Marchesale Palace, Italy" insttype="UNR" lat="41.6845" lon="14.9644" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HNE">
+<acc value="0.18427968" flag="0" />
+<vel value="0.44318500" flag="0" />
+<psa03 value="0.69144238" flag="0" />
+<psa10 value="0.34043249" flag="0" />
+<psa30 value="0.18145283" flag="0" />
+</comp>
+<comp name="--.HNN">
+<acc value="0.27609902" flag="0" />
+<vel value="0.52613400" flag="0" />
+<psa03 value="0.76122188" flag="0" />
+<psa10 value="0.57325503" flag="0" />
+<psa30 value="0.21525947" flag="0" />
+</comp>
+<comp name="--.HNZ">
+<acc value="0.14731926" flag="0" />
+<vel value="0.42465300" flag="0" />
+<psa03 value="0.43230866" flag="0" />
+<psa10 value="0.23181280" flag="0" />
+<psa30 value="0.19776456" flag="0" />
+</comp>
+</station>
+<station code="SGPA" name="San Giuliano, Parco della Memoria, Italy" insttype="UNR" lat="41.6876" lon="14.9629" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.54678748" flag="0" />
+<vel value="0.49510800" flag="0" />
+<psa03 value="1.40298433" flag="0" />
+<psa10 value="0.40728560" flag="0" />
+<psa30 value="0.18813783" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.43806201" flag="0" />
+<vel value="0.65360200" flag="0" />
+<psa03 value="0.87137396" flag="0" />
+<psa10 value="0.63026546" flag="0" />
+<psa30 value="0.20794011" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.19386502" flag="0" />
+<vel value="0.42324300" flag="0" />
+<psa03 value="0.59441656" flag="0" />
+<psa10 value="0.32001743" flag="0" />
+<psa30 value="0.18822174" flag="0" />
+</comp>
+<comp name="--.HNE">
+<acc value="0.21805024" flag="0" />
+<vel value="0.48923600" flag="0" />
+<psa03 value="0.44901437" flag="0" />
+<psa10 value="0.37609457" flag="0" />
+<psa30 value="0.18476902" flag="0" />
+</comp>
+<comp name="--.HNN">
+<acc value="0.20644972" flag="0" />
+<vel value="0.58096600" flag="0" />
+<psa03 value="0.36665527" flag="0" />
+<psa10 value="0.51363676" flag="0" />
+<psa30 value="0.18795582" flag="0" />
+</comp>
+<comp name="--.HNZ">
+<acc value="0.15097945" flag="0" />
+<vel value="0.42803700" flag="0" />
+<psa03 value="0.28536775" flag="0" />
+<psa10 value="0.36486473" flag="0" />
+<psa30 value="0.19627786" flag="0" />
+</comp>
+</station>
+<station code="SGSC" name="San Giuliano, Nuova Scuola Jovine, Italy" insttype="UNR" lat="41.6892" lon="14.9581" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.20750831" flag="0" />
+<vel value="0.54500400" flag="0" />
+<psa03 value="0.44396692" flag="0" />
+<psa10 value="0.37694487" flag="0" />
+<psa30 value="0.20000387" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.25440094" flag="0" />
+<vel value="0.56508300" flag="0" />
+<psa03 value="0.48765231" flag="0" />
+<psa10 value="0.76969099" flag="0" />
+<psa30 value="0.17855229" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.14131133" flag="0" />
+<vel value="0.47086000" flag="0" />
+<psa03 value="0.36111828" flag="0" />
+<psa10 value="0.30193416" flag="0" />
+<psa30 value="0.21562003" flag="0" />
+</comp>
+<comp name="--.HNE">
+<acc value="0.17760316" flag="0" />
+<vel value="0.52779300" flag="0" />
+<psa03 value="0.28836425" flag="0" />
+<psa10 value="0.33328595" flag="0" />
+<psa30 value="0.21404380" flag="0" />
+</comp>
+<comp name="--.HNN">
+<acc value="0.18745963" flag="0" />
+<vel value="0.59397800" flag="0" />
+<psa03 value="0.38665408" flag="0" />
+<psa10 value="0.70096548" flag="0" />
+<psa30 value="0.18056021" flag="0" />
+</comp>
+<comp name="--.HNZ">
+<acc value="0.14542273" flag="0" />
+<vel value="0.47839400" flag="0" />
+<psa03 value="0.37963294" flag="0" />
+<psa10 value="0.30579242" flag="0" />
+<psa30 value="0.22063416" flag="0" />
+</comp>
+</station>
+<station code="SIG" name="Sigillo" insttype="UNR" lat="43.3308" lon="12.7408" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.88128537" flag="0" />
+<vel value="1.50855500" flag="0" />
+<psa03 value="7.79607314" flag="0" />
+<psa10 value="1.49096841" flag="0" />
+<psa30 value="0.36644638" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="4.06366056" flag="0" />
+<vel value="1.74349600" flag="0" />
+<psa03 value="8.27189753" flag="0" />
+<psa10 value="2.01365273" flag="0" />
+<psa30 value="0.44082897" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.42219897" flag="0" />
+<vel value="1.27502400" flag="0" />
+<psa03 value="7.56766155" flag="0" />
+<psa10 value="1.33192140" flag="0" />
+<psa30 value="0.68077331" flag="0" />
+</comp>
+</station>
+<station code="SNG" name="Senigallia" insttype="UNR" lat="43.6855" lon="13.2261" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.51229006" flag="0" />
+<vel value="3.63927300" flag="0" />
+<psa03 value="15.02584054" flag="0" />
+<psa10 value="3.89079253" flag="0" />
+<psa30 value="0.89833125" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="5.32532978" flag="0" />
+<vel value="3.77416800" flag="0" />
+<psa03 value="14.40461099" flag="0" />
+<psa10 value="3.46946475" flag="0" />
+<psa30 value="0.91663108" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.20664455" flag="0" />
+<vel value="1.60334100" flag="0" />
+<psa03 value="7.02341262" flag="0" />
+<psa10 value="1.40920412" flag="0" />
+<psa30 value="0.43157854" flag="0" />
+</comp>
+</station>
+<station code="SNI" name="Sangemini" insttype="UNR" lat="42.6320" lon="12.5540" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="4.17647761" flag="0" />
+<vel value="3.74592700" flag="0" />
+<psa03 value="10.19474474" flag="0" />
+<psa10 value="8.01196246" flag="0" />
+<psa30 value="0.95985974" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.03850448" flag="0" />
+<vel value="4.81568100" flag="0" />
+<psa03 value="12.20151451" flag="0" />
+<psa10 value="11.25268920" flag="0" />
+<psa30 value="1.11692612" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.74695030" flag="0" />
+<vel value="2.71035700" flag="0" />
+<psa03 value="5.41976994" flag="0" />
+<psa10 value="3.56659461" flag="0" />
+<psa30 value="0.83108386" flag="0" />
+</comp>
+</station>
+<station code="SNM" name="San_Marino" insttype="UNR" lat="43.9343" lon="12.4493" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.79636826" flag="0" />
+<vel value="1.98793100" flag="0" />
+<psa03 value="1.12256971" flag="0" />
+<psa10 value="1.79977266" flag="0" />
+<psa30 value="0.54016420" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.53304597" flag="0" />
+<vel value="1.91306800" flag="0" />
+<psa03 value="0.58517472" flag="0" />
+<psa10 value="1.49633769" flag="0" />
+<psa30 value="0.67662971" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.32410860" flag="0" />
+<vel value="0.83358600" flag="0" />
+<psa03 value="0.42446266" flag="0" />
+<psa10 value="0.99701200" flag="0" />
+<psa30 value="0.48554433" flag="0" />
+</comp>
+</station>
+<station code="SNO" name="Sarnano" insttype="UNR" lat="43.0371" lon="13.3041" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="8.12077838" flag="0" />
+<vel value="6.49768700" flag="0" />
+<psa03 value="15.18770970" flag="0" />
+<psa10 value="7.75901214" flag="0" />
+<psa30 value="1.89994992" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="11.97950443" flag="0" />
+<vel value="5.70883500" flag="0" />
+<psa03 value="11.51531050" flag="0" />
+<psa10 value="4.99973806" flag="0" />
+<psa30 value="0.99920398" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="7.47761671" flag="0" />
+<vel value="5.19809800" flag="0" />
+<psa03 value="12.68067134" flag="0" />
+<psa10 value="4.82393249" flag="0" />
+<psa30 value="1.75401302" flag="0" />
+</comp>
+</station>
+<station code="SNS1" name="Sansepolcro" insttype="UNR" lat="43.5735" lon="12.1312" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.35778454" flag="0" />
+<vel value="1.95681000" flag="0" />
+<psa03 value="2.32693988" flag="0" />
+<psa10 value="4.18965149" flag="0" />
+<psa30 value="1.11148325" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.10835900" flag="0" />
+<vel value="1.99867800" flag="0" />
+<psa03 value="2.27990846" flag="0" />
+<psa10 value="3.84029449" flag="0" />
+<psa30 value="0.97897278" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.61562827" flag="0" />
+<vel value="1.16568900" flag="0" />
+<psa03 value="1.23809505" flag="0" />
+<psa10 value="1.89243178" flag="0" />
+<psa30 value="0.49526795" flag="0" />
+</comp>
+</station>
+<station code="SOR" name="Sora" insttype="UNR" lat="41.7203" lon="13.6136" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.00751039" flag="0" />
+<vel value="1.94805300" flag="0" />
+<psa03 value="1.98752694" flag="0" />
+<psa10 value="2.52682019" flag="0" />
+<psa30 value="0.98386530" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.07759895" flag="0" />
+<vel value="1.84037000" flag="0" />
+<psa03 value="1.89263291" flag="0" />
+<psa10 value="2.40830774" flag="0" />
+<psa30 value="0.85134399" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.78377558" flag="0" />
+<vel value="1.51855300" flag="0" />
+<psa03 value="1.49700935" flag="0" />
+<psa10 value="1.01932962" flag="0" />
+<psa30 value="0.96822185" flag="0" />
+</comp>
+</station>
+<station code="SPD" name="Sella_Pedicate" insttype="UNR" lat="42.5151" lon="13.3710" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.94885537" flag="0" />
+<vel value="7.79662200" flag="0" />
+<psa03 value="12.22410000" flag="0" />
+<psa10 value="6.59518737" flag="0" />
+<psa30 value="3.33492182" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="10.17909486" flag="0" />
+<vel value="6.80600800" flag="0" />
+<psa03 value="21.09936589" flag="0" />
+<psa10 value="9.11288764" flag="0" />
+<psa30 value="2.65116959" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.42508730" flag="0" />
+<vel value="7.45779000" flag="0" />
+<psa03 value="7.52217243" flag="0" />
+<psa10 value="6.05282638" flag="0" />
+<psa30 value="3.80138041" flag="0" />
+</comp>
+</station>
+<station code="SPM" name="Spoleto_Monteluco" insttype="UNR" lat="42.7232" lon="12.7512" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="9.54636515" flag="0" />
+<vel value="5.56098500" flag="0" />
+<psa03 value="16.55632979" flag="0" />
+<psa10 value="5.82767640" flag="0" />
+<psa30 value="2.33150373" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="7.61329498" flag="0" />
+<vel value="3.74526600" flag="0" />
+<psa03 value="15.97992659" flag="0" />
+<psa10 value="6.60543292" flag="0" />
+<psa30 value="1.05289261" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="5.77549257" flag="0" />
+<vel value="3.90758400" flag="0" />
+<psa03 value="6.83460476" flag="0" />
+<psa10 value="3.11213063" flag="0" />
+<psa30 value="1.38019506" flag="0" />
+</comp>
+</station>
+<station code="SPO1" name="Spoleto" insttype="UNR" lat="42.7344" lon="12.7363" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="9.91223349" flag="0" />
+<vel value="7.12192500" flag="0" />
+<psa03 value="15.06960176" flag="0" />
+<psa10 value="13.55367774" flag="0" />
+<psa30 value="1.56953773" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="7.84289402" flag="0" />
+<vel value="8.90466700" flag="0" />
+<psa03 value="16.74613491" flag="0" />
+<psa10 value="15.23921053" flag="0" />
+<psa30 value="1.53926956" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="7.03511473" flag="0" />
+<vel value="3.85375500" flag="0" />
+<psa03 value="8.60031263" flag="0" />
+<psa10 value="7.00681851" flag="0" />
+<psa30 value="1.09457988" flag="0" />
+</comp>
+</station>
+<station code="SRL" name="Sirolo" insttype="UNR" lat="43.5179" lon="13.6193" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.83353537" flag="0" />
+<vel value="1.67561800" flag="0" />
+<psa03 value="6.51140636" flag="0" />
+<psa10 value="2.10669704" flag="0" />
+<psa30 value="0.32179254" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.23295535" flag="0" />
+<vel value="1.47329800" flag="0" />
+<psa03 value="6.15353906" flag="0" />
+<psa10 value="1.50234358" flag="0" />
+<psa30 value="0.34108862" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.12503305" flag="0" />
+<vel value="0.78545000" flag="0" />
+<psa03 value="2.79688890" flag="0" />
+<psa10 value="0.78101485" flag="0" />
+<psa30 value="0.26560175" flag="0" />
+</comp>
+</station>
+<station code="SSC" name="San_Casciano_dei_Bagni" insttype="UNR" lat="42.8746" lon="11.8768" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.33237382" flag="0" />
+<vel value="1.82622000" flag="0" />
+<psa03 value="0.77415723" flag="0" />
+<psa10 value="0.66469378" flag="0" />
+<psa30 value="0.80114733" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.25417017" flag="0" />
+<vel value="0.58397700" flag="0" />
+<psa03 value="0.70480748" flag="0" />
+<psa10 value="0.58941867" flag="0" />
+<psa30 value="0.21604906" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.24351286" flag="0" />
+<vel value="0.95982100" flag="0" />
+<psa03 value="0.34951746" flag="0" />
+<psa10 value="0.36933833" flag="0" />
+<psa30 value="0.40413641" flag="0" />
+</comp>
+</station>
+<station code="SSO" name="Sansepolcro Ospedale" insttype="UNR" lat="43.5715" lon="12.1540" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.57370777" flag="0" />
+<vel value="0.86925000" flag="0" />
+<psa03 value="1.72406259" flag="0" />
+<psa10 value="1.69772494" flag="0" />
+<psa30 value="0.54751044" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.51992942" flag="0" />
+<vel value="1.27328600" flag="0" />
+<psa03 value="1.16354680" flag="0" />
+<psa10 value="1.30141490" flag="0" />
+<psa30 value="0.62394102" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.46574584" flag="0" />
+<vel value="0.83898700" flag="0" />
+<psa03 value="0.88173612" flag="0" />
+<psa10 value="1.06167598" flag="0" />
+<psa30 value="0.48092469" flag="0" />
+</comp>
+</station>
+<station code="STF" name="Santa_Sofia" insttype="UNR" lat="43.9081" lon="11.7944" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.16921428" flag="0" />
+<vel value="0.26526900" flag="0" />
+<psa03 value="0.48382318" flag="0" />
+<psa10 value="0.35342814" flag="0" />
+<psa30 value="0.18631367" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.15196976" flag="0" />
+<vel value="0.35466500" flag="0" />
+<psa03 value="0.38424001" flag="0" />
+<psa10 value="0.35029162" flag="0" />
+<psa30 value="0.15847909" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.14133637" flag="0" />
+<vel value="0.34179900" flag="0" />
+<psa03 value="0.28155354" flag="0" />
+<psa10 value="0.41243209" flag="0" />
+<psa30 value="0.17623767" flag="0" />
+</comp>
+</station>
+<station code="SUL" name="Sulmona" insttype="UNR" lat="42.0895" lon="13.9343" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.11406125" flag="0" />
+<vel value="1.78013300" flag="0" />
+<psa03 value="1.63060795" flag="0" />
+<psa10 value="1.29876547" flag="0" />
+<psa30 value="0.69892567" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.97993152" flag="0" />
+<vel value="1.32537600" flag="0" />
+<psa03 value="2.19349336" flag="0" />
+<psa10 value="1.48738395" flag="0" />
+<psa30 value="0.63529911" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.64694624" flag="0" />
+<vel value="1.23552100" flag="0" />
+<psa03 value="0.99666544" flag="0" />
+<psa10 value="1.36406217" flag="0" />
+<psa30 value="0.47935745" flag="0" />
+</comp>
+</station>
+<station code="SULA" name="Sulmona_autoparco" insttype="UNR" lat="42.0734" lon="13.9166" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.81523973" flag="0" />
+<vel value="4.64499700" flag="0" />
+<psa03 value="5.64309625" flag="0" />
+<psa10 value="6.37977532" flag="0" />
+<psa30 value="4.48007998" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.47971764" flag="0" />
+<vel value="4.78705500" flag="0" />
+<psa03 value="7.05086272" flag="0" />
+<psa10 value="5.33217340" flag="0" />
+<psa30 value="2.89773434" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.70391632" flag="0" />
+<vel value="2.99522100" flag="0" />
+<psa03 value="2.94664389" flag="0" />
+<psa10 value="3.18123684" flag="0" />
+<psa30 value="0.70404466" flag="0" />
+</comp>
+</station>
+<station code="SULC" name="Sulmona_consorzio" insttype="UNR" lat="42.0680" lon="13.9090" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.12677556" flag="0" />
+<vel value="3.45289800" flag="0" />
+<psa03 value="4.53889965" flag="0" />
+<psa10 value="4.21086658" flag="0" />
+<psa30 value="2.96891072" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.96064169" flag="0" />
+<vel value="4.14071600" flag="0" />
+<psa03 value="4.39771383" flag="0" />
+<psa10 value="3.52459204" flag="0" />
+<psa30 value="1.57647435" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.97670087" flag="0" />
+<vel value="1.67544100" flag="0" />
+<psa03 value="2.18705660" flag="0" />
+<psa10 value="3.16936038" flag="0" />
+<psa30 value="0.77318132" flag="0" />
+</comp>
+</station>
+<station code="SULP" name="Sulmona_polizia" insttype="UNR" lat="42.0850" lon="13.9274" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="3.23313645" flag="0" />
+<vel value="3.07868200" flag="0" />
+<psa03 value="8.71856089" flag="0" />
+<psa10 value="5.53457774" flag="0" />
+<psa30 value="2.08253451" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.19901994" flag="0" />
+<vel value="4.19506000" flag="0" />
+<psa03 value="8.65371826" flag="0" />
+<psa10 value="7.01515455" flag="0" />
+<psa30 value="1.03431408" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.68423505" flag="0" />
+<vel value="1.76237200" flag="0" />
+<psa03 value="4.89655172" flag="0" />
+<psa10 value="2.68700316" flag="0" />
+<psa30 value="0.51338003" flag="0" />
+</comp>
+</station>
+<station code="TER" name="Teramo" insttype="UNR" lat="42.6565" lon="13.6895" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="8.39694812" flag="0" />
+<vel value="4.00335200" flag="0" />
+<psa03 value="11.44636495" flag="0" />
+<psa10 value="6.04285298" flag="0" />
+<psa30 value="1.42951800" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="7.47247288" flag="0" />
+<vel value="5.74720300" flag="0" />
+<psa03 value="16.08238700" flag="0" />
+<psa10 value="4.32926385" flag="0" />
+<psa30 value="1.54985523" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.96582695" flag="0" />
+<vel value="3.56077100" flag="0" />
+<psa03 value="9.16308470" flag="0" />
+<psa10 value="3.08634322" flag="0" />
+<psa30 value="1.66805117" flag="0" />
+</comp>
+</station>
+<station code="TLN" name="Tolentino" insttype="UNR" lat="43.2159" lon="13.2584" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="11.79771332" flag="0" />
+<vel value="6.55592100" flag="0" />
+<psa03 value="49.21519469" flag="0" />
+<psa10 value="9.16692803" flag="0" />
+<psa30 value="1.35548269" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="9.42270949" flag="0" />
+<vel value="7.50775900" flag="0" />
+<psa03 value="21.72867966" flag="0" />
+<psa10 value="5.56648366" flag="0" />
+<psa30 value="1.26709021" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="7.07887595" flag="0" />
+<vel value="3.63442300" flag="0" />
+<psa03 value="18.34842743" flag="0" />
+<psa10 value="3.35655450" flag="0" />
+<psa30 value="0.79703440" flag="0" />
+</comp>
+</station>
+<station code="TOD" name="Todi" insttype="UNR" lat="42.7381" lon="12.3873" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="2.45457603" flag="0" />
+<vel value="3.33278900" flag="0" />
+<psa03 value="6.54187831" flag="0" />
+<psa10 value="4.10080576" flag="0" />
+<psa30 value="1.07678962" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.18857805" flag="0" />
+<vel value="2.98321700" flag="0" />
+<psa03 value="5.54680648" flag="0" />
+<psa10 value="6.92926251" flag="0" />
+<psa30 value="0.98825611" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.49365678" flag="0" />
+<vel value="2.69052300" flag="0" />
+<psa03 value="4.47288551" flag="0" />
+<psa10 value="3.55999147" flag="0" />
+<psa30 value="0.61752878" flag="0" />
+</comp>
+</station>
+<station code="TRE" name="Trevi" insttype="UNR" lat="42.8765" lon="12.7358" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="12.25429090" flag="0" />
+<vel value="5.81011000" flag="0" />
+<psa03 value="30.37215084" flag="0" />
+<psa10 value="5.40583670" flag="0" />
+<psa30 value="0.82387947" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="11.83319849" flag="0" />
+<vel value="9.58200500" flag="0" />
+<psa03 value="35.15981286" flag="0" />
+<psa10 value="18.38410607" flag="0" />
+<psa30 value="1.84510388" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="6.43791270" flag="0" />
+<vel value="3.87337600" flag="0" />
+<psa03 value="17.10551447" flag="0" />
+<psa10 value="5.29407763" flag="0" />
+<psa30 value="1.35441623" flag="0" />
+</comp>
+</station>
+<station code="TRL" name="Terminillo" insttype="UNR" lat="42.4613" lon="12.9323" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="8.66139624" flag="0" />
+<vel value="6.33811100" flag="0" />
+<psa03 value="19.72611583" flag="0" />
+<psa10 value="10.74647359" flag="0" />
+<psa30 value="1.16787170" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="8.88644872" flag="0" />
+<vel value="9.43783100" flag="0" />
+<psa03 value="20.07533548" flag="0" />
+<psa10 value="7.47526897" flag="0" />
+<psa30 value="1.63487132" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.06771778" flag="0" />
+<vel value="2.82954300" flag="0" />
+<psa03 value="6.26303532" flag="0" />
+<psa10 value="2.24426162" flag="0" />
+<psa30 value="1.04590846" flag="0" />
+</comp>
+</station>
+<station code="TRN1" name="Terni" insttype="UNR" lat="42.5582" lon="12.6461" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.95562235" flag="0" />
+<vel value="2.63170600" flag="0" />
+<psa03 value="4.68394118" flag="0" />
+<psa10 value="2.29058407" flag="0" />
+<psa30 value="0.93301906" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.64322842" flag="0" />
+<vel value="2.38258200" flag="0" />
+<psa03 value="3.06951640" flag="0" />
+<psa10 value="2.60934076" flag="0" />
+<psa30 value="0.73986504" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="1.41312287" flag="0" />
+<vel value="2.20219900" flag="0" />
+<psa03 value="2.05469758" flag="0" />
+<psa10 value="1.34186096" flag="0" />
+<psa30 value="1.26168159" flag="0" />
+</comp>
+</station>
+<station code="TSC" name="Tuscania" insttype="UNR" lat="42.4226" lon="11.8696" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.77908879" flag="0" />
+<vel value="1.53020300" flag="0" />
+<psa03 value="1.52173133" flag="0" />
+<psa10 value="2.17596074" flag="0" />
+<psa30 value="0.68392393" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.76001776" flag="0" />
+<vel value="1.45127900" flag="0" />
+<psa03 value="1.95428475" flag="0" />
+<psa10 value="1.49405986" flag="0" />
+<psa30 value="0.37883097" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.45227414" flag="0" />
+<vel value="1.33694000" flag="0" />
+<psa03 value="0.89021259" flag="0" />
+<psa10 value="0.60589781" flag="0" />
+<psa30 value="0.39590563" flag="0" />
+</comp>
+</station>
+<station code="TVL" name="Tivoli" insttype="UNR" lat="41.8930" lon="12.7732" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.99350666" flag="0" />
+<vel value="2.72565100" flag="0" />
+<psa03 value="5.69630106" flag="0" />
+<psa10 value="1.71189129" flag="0" />
+<psa30 value="1.00158821" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="2.04053082" flag="0" />
+<vel value="2.61537900" flag="0" />
+<psa03 value="6.51501882" flag="0" />
+<psa10 value="1.98453278" flag="0" />
+<psa30 value="1.08525536" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.64081608" flag="0" />
+<vel value="1.16502700" flag="0" />
+<psa03 value="2.65556419" flag="0" />
+<psa10 value="0.94835366" flag="0" />
+<psa30 value="0.61307736" flag="0" />
+</comp>
+</station>
+<station code="UMB" name="Umbertide" insttype="UNR" lat="43.2544" lon="12.2556" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.04045057" flag="0" />
+<vel value="1.01753200" flag="0" />
+<psa03 value="3.38798202" flag="0" />
+<psa10 value="1.04365557" flag="0" />
+<psa30 value="0.30977556" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.20175355" flag="0" />
+<vel value="0.96996000" flag="0" />
+<psa03 value="3.57311936" flag="0" />
+<psa10 value="1.76950204" flag="0" />
+<psa30 value="0.24677508" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.78525503" flag="0" />
+<vel value="0.57303700" flag="0" />
+<psa03 value="2.43643185" flag="0" />
+<psa10 value="0.75340971" flag="0" />
+<psa30 value="0.15209251" flag="0" />
+</comp>
+</station>
+<station code="VAL" name="Valfabbrica" insttype="UNR" lat="43.1593" lon="12.6017" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="6.62263358" flag="0" />
+<vel value="2.59044900" flag="0" />
+<psa03 value="19.34989423" flag="0" />
+<psa10 value="2.55070740" flag="0" />
+<psa30 value="0.23669908" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="6.68850700" flag="0" />
+<vel value="3.19933100" flag="0" />
+<psa03 value="19.84107826" flag="0" />
+<psa10 value="3.05960177" flag="0" />
+<psa30 value="0.54776154" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="3.15416804" flag="0" />
+<vel value="1.52060100" flag="0" />
+<psa03 value="7.18949222" flag="0" />
+<psa10 value="1.05685776" flag="0" />
+<psa30 value="0.57615546" flag="0" />
+</comp>
+</station>
+<station code="VLN" name="Valiano" insttype="UNR" lat="43.1427" lon="11.8947" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="1.45196020" flag="0" />
+<vel value="2.82380200" flag="0" />
+<psa03 value="4.66748861" flag="0" />
+<psa10 value="3.09676690" flag="0" />
+<psa30 value="1.57916078" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="1.61301126" flag="0" />
+<vel value="2.32098300" flag="0" />
+<psa03 value="4.53903374" flag="0" />
+<psa10 value="2.99023536" flag="0" />
+<psa30 value="0.91565702" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.51337216" flag="0" />
+<vel value="1.31891700" flag="0" />
+<psa03 value="1.51803976" flag="0" />
+<psa10 value="1.13013107" flag="0" />
+<psa30 value="0.49055131" flag="0" />
+</comp>
+</station>
+<station code="VNF1" name="Venafro" insttype="UNR" lat="41.4805" lon="14.0501" netid="IT" source="DPC, Dipartimento Protezione Civile" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.97688728" flag="0" />
+<vel value="2.20678200" flag="0" />
+<psa03 value="1.03144420" flag="0" />
+<psa10 value="4.06268741" flag="0" />
+<psa30 value="1.01770014" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.87752211" flag="0" />
+<vel value="2.46540000" flag="0" />
+<psa03 value="1.00151350" flag="0" />
+<psa10 value="3.79514304" flag="0" />
+<psa30 value="0.84617737" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.38327310" flag="0" />
+<vel value="0.88550700" flag="0" />
+<psa03 value="0.50808618" flag="0" />
+<psa10 value="1.06350260" flag="0" />
+<psa30 value="0.29395663" flag="0" />
+</comp>
+</station>
+
+</stationlist>
