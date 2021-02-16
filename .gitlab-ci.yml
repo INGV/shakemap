@@ -62,7 +62,9 @@ shakemap-test:
     - sqlx2-srvr_runner
   script:
     - EVENTS="8863681 4875411"
-    - for EVENT in "${EVENTS}"; do echo ${EVENT}; done
+    - for EVENT in "${EVENTS}"; do 
+        echo ${EVENT}; 
+      done
     #- for EVENT in "${EVENTS}"; do \
     #    echo ${EVENT} && \
     #    mkdir -pv $(pwd)/data/shakemap_profiles/world/data/${EVENT}/current/ && \
