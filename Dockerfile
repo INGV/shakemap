@@ -132,6 +132,9 @@ RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}
 
 # Install shakemap software
 WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
+# BUG FIX: https://github.com/usgs/shakemap/issues/1124
+RUN mv install.sh install.sh.original \
+    && sed -e "s|impactutils=.*|impactutils=0.8.26\"|" install.sh.original > install.sh
 RUN bash install.sh
 
 # Source variable
