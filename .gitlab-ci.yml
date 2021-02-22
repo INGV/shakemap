@@ -72,8 +72,12 @@ shakemap-test:
     - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
         BASENAME_DIREVENT=$( basename ${DIREVENT} ) ;
         echo " ********** BASENAME_DIREVENT=${BASENAME_DIREVENT} ********** ";
+        docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'pwd' ;
         docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake ${BASENAME_DIREVENT} select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"' ;
-        echo "" ;
+        echo "\n" ;
+        echo " ----- DIFF ----- ";
+        docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'diff /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/grid.xml /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/current/products/grid.xml' ;
+        echo "\n" ;
         echo "" ;
       done
     - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
