@@ -147,8 +147,9 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 COPY ./gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
-# Copy 'bindi_2011.py' and 'tusa_langer_2016.py'
-COPY ./tusa_langer_2016.py ${HOMEDIR_USER}/miniconda/envs/shakemap/lib/python3.8/site-packages/openquake/hazardlib/gsim/
+# Copy 'tusa_langer_2016.py'
+COPY ./tusa_langer_2016.py /tmp/
+RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
 
 #
 WORKDIR ${HOMEDIR_USER}
