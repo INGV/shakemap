@@ -9,7 +9,7 @@ ENV INITRD No
 ENV FAKE_CHROOT 1
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
-ENV SHAKEMAP_COMMIT=192ded2
+ENV SHAKEMAP_COMMIT=7aa933d7925192481e9c222d46676f348cb10f2d
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
