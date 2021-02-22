@@ -9,7 +9,7 @@ ENV INITRD No
 ENV FAKE_CHROOT 1
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
-ENV SHAKEMAP_COMMIT=7aa933d7925192481e9c222d46676f348cb10f2d
+ENV SHAKEMAP_COMMIT=0c60b73a1937774736119eff59d44d5d08f2e04d
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -133,8 +133,8 @@ RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}
 # Install shakemap software
 WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
 # BUG FIX: https://github.com/usgs/shakemap/issues/1124
-RUN mv install.sh install.sh.original \
-    && sed -e "s|impactutils=.*|impactutils=0.8.26\"|" install.sh.original > install.sh
+#RUN mv install.sh install.sh.original \
+#    && sed -e "s|\"impactutils.*|\"impactutils\"|" install.sh.original > install.sh
 RUN bash install.sh
 
 # Source variable
