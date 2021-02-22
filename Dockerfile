@@ -149,7 +149,7 @@ COPY ./fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
 # Copy 'tusa_langer_2016.py'
 COPY ./tusa_langer_2016.py /tmp/
-RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
+RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
 
 #
 WORKDIR ${HOMEDIR_USER}
