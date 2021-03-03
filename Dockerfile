@@ -1,4 +1,3 @@
-#FROM debian:latest
 FROM debian:buster-slim
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
@@ -132,9 +131,6 @@ RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}
 
 # Install shakemap software
 WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
-# BUG FIX: https://github.com/usgs/shakemap/issues/1124
-#RUN mv install.sh install.sh.original \
-#    && sed -e "s|\"impactutils.*|\"impactutils\"|" install.sh.original > install.sh
 RUN bash install.sh
 
 # Source variable
