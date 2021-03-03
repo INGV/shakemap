@@ -75,9 +75,9 @@ shakemap-test:
         docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'pwd' ;
         docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake ${BASENAME_DIREVENT} select assemble -c \"SM4 run\" model contour shape save info stations raster rupture gridxml history plotregr mapping"' ;
         echo "" ;
-        echo " ----- START - DIFF ----- ";
+        echo " ----- START - grid.xml diff ----- ";
         docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'diff <(grep "^[0-9]" /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/grid.xml) <(grep "^[0-9]" /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/current/products/grid.xml)' ;
-        echo " ----- END - DIFF ----- ";
+        echo " ----- END - grid.xml diff ----- ";
         echo "" ;
         echo "" ;
       done
