@@ -124,7 +124,7 @@ RUN mkdir gitwork \
     && git checkout ${SHAKEMAP_COMMIT}
 
 # Copy modified plotregr.py (issue: https://gitlab.rm.ingv.it/shakemap/shakemap4/-/issues/5)
-COPY ./plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
+COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 
 # Add 'conda' source in the '.bashrc' file - It must be run BEFORE to install shakemap software; because, if not exists, the intalleer will add '. /etc/profile.d/conda.sh' that doesn't exist.
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
@@ -140,12 +140,19 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && sm_profile -c world -a -n
 
 # Copy 'gmice.py' and 'fm10.py'
-COPY ./gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
-COPY ./fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/gmic.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/ofm21b.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
-# Copy 'tusa_langer_2016.py'
-COPY ./tusa_langer_2016.py /tmp/
-RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
+# Copy 'tusa_langer_2016.py' and 'pasolini_2008_ipe.py'
+COPY ./ext/tusa_langer_2016.py /tmp/
+COPY ./ext/pasolini_2008_ipe.py /tmp/
+#RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
+RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
+    && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
+    && cp -v /tmp/tusa_langer_2016.py ${PATHTUSA}/ \
+    && cp -v /tmp/pasolini_2008_ipe.py ${PATHTUSA}/
 
 #
 WORKDIR ${HOMEDIR_USER}
