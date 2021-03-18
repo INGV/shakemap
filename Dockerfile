@@ -150,8 +150,10 @@ COPY ./ext/tusa_langer_2016.py /tmp/
 COPY ./ext/pasolini_2008_ipe.py /tmp/
 #RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
 RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
+    && echo "PATHTUSA=${PATHTUSA}" \
     && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
-    && cp -v /tmp/tusa_langer_2016.py ${PATHTUSA}/ \
+    && echo "DIRNAME_PATHTUSA=${DIRNAME_PATHTUSA}" \
+    && cp -v /tmp/tusa_langer_2016.py ${PATHTUSA} \
     && cp -v /tmp/pasolini_2008_ipe.py ${PATHTUSA}/
 
 #
