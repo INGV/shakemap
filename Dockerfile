@@ -30,7 +30,7 @@ RUN apt-get update \
 
 # Set .bashrc for root user
 RUN echo "" >> /root/.bashrc \
-    && echo "##################################" >> /root/.bashrc \
+    && echo "###################################" >> /root/.bashrc \
     && echo "alias ll='ls -l --color'" >> /root/.bashrc \
     && echo "" >> /root/.bashrc \
     && echo "export LC_ALL=\"C\"" >> /root/.bashrc \
