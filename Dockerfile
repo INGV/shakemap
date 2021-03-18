@@ -153,8 +153,8 @@ RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
     && echo "PATHTUSA=${PATHTUSA}" \
     && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
     && echo "DIRNAME_PATHTUSA=${DIRNAME_PATHTUSA}" \
-    && cp -v /tmp/tusa_langer_2016.py ${PATHTUSA} \
-    && cp -v /tmp/pasolini_2008_ipe.py ${PATHTUSA}/
+    && cp -v /tmp/tusa_langer_2016.py ${PATHTUSA}/tusa_langer_2016.py \
+    && cp -v /tmp/pasolini_2008_ipe.py ${PATHTUSA}/pasolini_2008_ipe.py
 
 #
 WORKDIR ${HOMEDIR_USER}
