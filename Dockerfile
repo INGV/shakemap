@@ -139,7 +139,7 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda activate shakemap \
     && sm_profile -c world -a -n
 
-# Copy 'gmice.py' and 'fm10.py'
+# Copy own libs
 COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
@@ -147,7 +147,12 @@ COPY ./ext/ofm21b.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
 # Copy 'tusa_langer_2016.py'
 COPY ./ext/tusa_langer_2016.py /tmp/
-RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
+COPY ./ext/pasolini_2008_ipe.py /tmp/
+#RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
+RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
+    && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
+    && cp -v /tmp/tusa_langer_2016.py ${DIRNAME_PATHTUSA}/ \
+    && cp -v /tmp/pasolini_2008_ipe.py ${DIRNAME_PATHTUSA}
 
 #
 WORKDIR ${HOMEDIR_USER}
