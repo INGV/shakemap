@@ -21,7 +21,7 @@ class OFM21B(GMICE):
     # MMI = C1 + C2 * log10 (Y) + C3 * log10 (Y) * log10(Y)
     #
     # This equation is valid only for intensitied greater than ~ 3,
-    # since we calibate the data with this intensity as lowe values.
+    # since we calibate the data with this intensity as low values.
     # for intensity values smaller than 3, we used a straight line
     # whose values are indicatively similar to those of FM10.
     # We have adopted this strategy because we are most interested
@@ -29,7 +29,7 @@ class OFM21B(GMICE):
     #
     # MMI = D1 + D2 * log10(Y)
     #
-    # The value at which is occurs is in the variable IL con constants
+    # The value at which is occurs is in the variable IL 
     #
     # Limit the distance residuals to between 0 and 300 km.
     # Limit the magnitude residuals to between M 4.0 and M6.9.
@@ -87,13 +87,6 @@ class OFM21B(GMICE):
         lfact = np.log10(np.e)
         c = self._getConsts(imt)
 
-        if dists is not None and mag is not None:
-            doresid = True
-            ldd = np.log10(np.clip(dists, 10, 300))
-            lmm = np.clip(mag, 3.0, 7.3)
-        else:
-            doresid = False
-
         #
         # Convert (for accelerations) from ln(g) to cm/s^2
         # then take the log10
@@ -113,18 +106,16 @@ class OFM21B(GMICE):
         dmmi_damp = np.zeros_like(amps)
 
         #
-        # This is the MMI 1 to 2 range that is discussed in the paper but not
-        # specifically implemented there
-        #
         # This part if for small intensity < c['IL']
-        mmi = c['D1']+ c['D2'] * lamps
-        dmmi_damp = c['D2'] * lfact *np.ones(len(mmi))
+        #
+        idx = mmi <= c['IL']
+        mmi[idx] = c['D1']+ c['D2'] * lamps[idx]
+        dmmi_damp[idx] = c['D2'] * lfact
 
         # This is for larger values if intensity
         idx = mmi > c['IL']
         mmi[idx] = c['C1'] + c['C2'] * lamps[idx] + c['C3'] * lamps[idx] * lamps[idx]
         dmmi_damp[idx] = c['C2'] * lfact + 2 * c['C3'] * lfact * lamps[idx]
-
         mmi = np.clip(mmi, 1.0, 10.0)
         mmi[np.isnan(amps)] = np.nan
         return mmi, dmmi_damp
@@ -160,26 +151,17 @@ class OFM21B(GMICE):
         ix_nan = np.isnan(mmi)
         mmi[ix_nan] = 1.0
 
-        if dists is not None and mag is not None:
-            doresid = True
-            # Limit distances and take the log10
-            ldd = np.log10(np.clip(dists, 10, 300))
-            # Limit magnitudes
-            lmm = np.clip(mag, 3.0, 7.3)
-        else:
-            doresid = False
-
         pgm = np.zeros_like(mmi)
         dpgm_dmmi = np.zeros_like(mmi)
-        dummy_variable = np.ones(len(mmi))
 
         #
         # MMI to PGM
         #
 
         # This part if for small intensity < c['IL']
-        pgm = np.power(10, (mmi - c['D1']) / c['D2'])
-        dpgm_dmmi = 1.0 / (c['D2'] * lfact) * dummy_variable
+        idx = mmi <= c['IL']
+        pgm[idx] = np.power(10, (mmi[idx] - c['D1']) / c['D2'])
+        dpgm_dmmi[idx] = 1.0 / (c['D2'] * lfact)
 
         # This is for larger values if intensity
         idx= mmi > c['IL']
@@ -188,7 +170,7 @@ class OFM21B(GMICE):
         pgm[idx] = np.power(10, ((-c['C2']+np.sqrt(c['C2']*c['C2'] -
                         4 * c['C3'] * (c['C1']-mmi[idx])))/(2*c['C3'])))
         dpgm_dmmi[idx] = 1.0 / (np.sqrt(c['C2']*c['C2'] -
-                        4 * c['C3'] * (c['C1']-mmi[idx])) * lfact)* dummy_variable[idx]
+                        4 * c['C3'] * (c['C1']-mmi[idx])) * lfact)
 
         #print ("pgm", pgm, "dpgm", dpgm_dmmi)
         if imt != self._pgv:
