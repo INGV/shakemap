@@ -29,7 +29,7 @@ class OFM21B(GMICE):
     #
     # MMI = D1 + D2 * log10(Y)
     #
-    # The value at which is occurs is in the variable IL 
+    # The value at which is occurs is in the variable IL
     #
     # Limit the distance residuals to between 0 and 300 km.
     # Limit the magnitude residuals to between M 4.0 and M6.9.
@@ -45,11 +45,11 @@ class OFM21B(GMICE):
         self.name = 'Oliveti Faenza Michelini (2021)'
         self.scale = 'scale_ofm21b.ps'
         self._constants = {
-            self._pga: {'C1':  3.05, 'C2':  0, 'C3':  0.85, 'D1': 3.05,'D2': 7.78, 'IL': 3.05, 'SMMI': 0.38, 'SPGM': 0.37},
-            self._pgv: {'C1':  4.31, 'C2':  1.94, 'C3':  0.61, 'D1': 20.47, 'D2': 11.13, 'IL': 2.77, 'SMMI': 0.41, 'SPGM': 0.47},
-            self._sa03: {'C1':  2.81, 'C2':  0, 'C3':  0.67, 'D1': 2.81, 'D2': 18.63, 'IL': 2.81, 'SMMI': 0.36, 'SPGM': 0.42},
-            self._sa10: {'C1':  3.04, 'C2':  0.86, 'C3':  0.52, 'D1': 9.77, 'D2': 8.48, 'IL': 2.68, 'SMMI': 0.38, 'SPGM': 0.59},
-            self._sa30: {'C1':  4.10, 'C2':  1.63, 'C3':  0.61, 'D1': 11.44, 'D2': 6.31, 'IL': 3.02, 'SMMI': 0.27, 'SPGM': 0.50}
+            self._pga: {'C1':  3.01, 'C2':  0, 'C3':  0.86, 'D1': 3.01,'D2': 7.63, 'IL': 3.01, 'SMMI': 0.16, 'SPGM': 0.25},
+            self._pgv: {'C1':  4.31, 'C2':  1.99, 'C3':  0.58, 'D1': 84.89, 'D2': 47.97, 'IL': 2.60, 'SMMI': 0.15, 'SPGM': 0.31},
+            self._sa03: {'C1':  2.77, 'C2':  0, 'C3':  0.68, 'D1': 2.77, 'D2': 18.22, 'IL': 2.77, 'SMMI': 0.14, 'SPGM': 0.28},
+            self._sa10: {'C1':  3.00, 'C2':  0.91, 'C3':  0.51, 'D1': 12.61, 'D2': 11.23, 'IL': 2.60, 'SMMI': 0.14, 'SPGM': 0.38},
+            self._sa30: {'C1':  4.04, 'C2':  1.63, 'C3':  0.66, 'D1': 9.01, 'D2': 4.84, 'IL': 3.03, 'SMMI': 0.14, 'SPGM': 0.35}
         }
 
         self.DEFINED_FOR_INTENSITY_MEASURE_TYPES = set([
@@ -165,8 +165,6 @@ class OFM21B(GMICE):
 
         # This is for larger values if intensity
         idx= mmi > c['IL']
-        #print (idx)
-
         pgm[idx] = np.power(10, ((-c['C2']+np.sqrt(c['C2']*c['C2'] -
                         4 * c['C3'] * (c['C1']-mmi[idx])))/(2*c['C3'])))
         dpgm_dmmi[idx] = 1.0 / (np.sqrt(c['C2']*c['C2'] -
