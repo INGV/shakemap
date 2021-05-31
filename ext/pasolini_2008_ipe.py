@@ -64,7 +64,7 @@ class PasoliniEtAl2008(IPE):
     REQUIRES_RUPTURE_PARAMETERS = set(('mag', ))
 
     #: Required distance measure is rupture distance
-    REQUIRES_DISTANCES = set(('rhypo',))
+    REQUIRES_DISTANCES = set(('repi',))
 
 
 
@@ -78,8 +78,8 @@ class PasoliniEtAl2008(IPE):
         C = self.COEFFS[imt]
 
         mean = (self._compute_magnitude_term(C, rup.mag) +
-                self._compute_distance_term(C, dists.rhypo, rup.mag))
-        stddevs = self._get_stddevs(C, dists.rhypo, stddev_types)
+                self._compute_distance_term(C, dists.repi, rup.mag))
+        stddevs = self._get_stddevs(C, dists.repi, stddev_types)
         return mean, stddevs
 
 
@@ -90,11 +90,11 @@ class PasoliniEtAl2008(IPE):
         return C["m1"] + (C["m2"] * mag)
 
 
-    def _compute_distance_term(self, C, rhypo, mag):
+    def _compute_distance_term(self, C, repi, mag):
         """
         Returns the distance scaling term
         """
-        D_1 = np.sqrt(rhypo**2 + C['d2']**2)
+        D_1 = np.sqrt(repi**2 + C['d2']**2)
         D_2 = np.log(D_1)- np.log(C['d2'])
 
         return C["d1"] * (D_1 - C['d2']) + C['d3'] * D_2
