@@ -10,7 +10,7 @@ stages:
 #  - push-to-dockerhub
 #  - push-dev-to-dockerhub
 #  - push-tag-to-dockerhub
-  - cleanup
+#  - cleanup
 
 variables:
   DOCKER_TLS_CERTDIR: ""
