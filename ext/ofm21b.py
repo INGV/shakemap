@@ -45,11 +45,11 @@ class OFM21B(GMICE):
         self.name = 'Oliveti Faenza Michelini (2021)'
         self.scale = 'scale_ofm21b.ps'
         self._constants = {
-            self._pga: {'C1':  3.01, 'C2':  0, 'C3':  0.86, 'D1': 3.01,'D2': 7.63, 'IL': 3.01, 'SMMI': 0.16, 'SPGM': 0.25},
-            self._pgv: {'C1':  4.31, 'C2':  1.99, 'C3':  0.58, 'D1': 84.89, 'D2': 47.97, 'IL': 2.60, 'SMMI': 0.15, 'SPGM': 0.31},
-            self._sa03: {'C1':  2.77, 'C2':  0, 'C3':  0.68, 'D1': 2.77, 'D2': 18.22, 'IL': 2.77, 'SMMI': 0.14, 'SPGM': 0.28},
-            self._sa10: {'C1':  3.00, 'C2':  0.91, 'C3':  0.51, 'D1': 12.61, 'D2': 11.23, 'IL': 2.60, 'SMMI': 0.14, 'SPGM': 0.38},
-            self._sa30: {'C1':  4.04, 'C2':  1.63, 'C3':  0.66, 'D1': 9.01, 'D2': 4.84, 'IL': 3.03, 'SMMI': 0.14, 'SPGM': 0.35}
+                self._pga: {'C1':  3.01, 'C2':  0, 'C3':  0.86, 'D1': 1.781,'D2': 2.963, 'IL': 3.21, 'SMMI': 0.16, 'SPGM': 0.25},
+                self._pgv: {'C1':  4.31, 'C2':  1.99, 'C3':  0.58, 'D1': 6.109, 'D2': 2.921, 'IL': 2.80, 'SMMI': 0.15, 'SPGM': 0.31},
+                self._sa03: {'C1':  2.77, 'C2':  0, 'C3':  0.68, 'D1': 1.299, 'D2': 3.081, 'IL': 2.97, 'SMMI': 0.14, 'SPGM': 0.28},
+                self._sa10: {'C1':  3.00, 'C2':  0.91, 'C3':  0.51, 'D1': 3.394, 'D2': 2.315, 'IL': 2.80, 'SMMI': 0.14, 'SPGM': 0.38},
+                self._sa30: {'C1':  4.04, 'C2':  1.63, 'C3':  0.66, 'D1': 4.822, 'D2': 2.309, 'IL': 3.23, 'SMMI': 0.14, 'SPGM': 0.35}
         }
 
         self.DEFINED_FOR_INTENSITY_MEASURE_TYPES = set([
@@ -106,13 +106,13 @@ class OFM21B(GMICE):
         dmmi_damp = np.zeros_like(amps)
 
         #
-        # This part if for small intensity < c['IL']
+        # This part is for small intensity < c['IL']
         #
         idx = mmi <= c['IL']
         mmi[idx] = c['D1']+ c['D2'] * lamps[idx]
         dmmi_damp[idx] = c['D2'] * lfact
 
-        # This is for larger values if intensity
+        # This is for larger values of intensity
         idx = mmi > c['IL']
         mmi[idx] = c['C1'] + c['C2'] * lamps[idx] + c['C3'] * lamps[idx] * lamps[idx]
         dmmi_damp[idx] = c['C2'] * lfact + 2 * c['C3'] * lfact * lamps[idx]
@@ -158,19 +158,18 @@ class OFM21B(GMICE):
         # MMI to PGM
         #
 
-        # This part if for small intensity < c['IL']
+        # This part is for small intensity < c['IL']
         idx = mmi <= c['IL']
         pgm[idx] = np.power(10, (mmi[idx] - c['D1']) / c['D2'])
         dpgm_dmmi[idx] = 1.0 / (c['D2'] * lfact)
 
-        # This is for larger values if intensity
+        # This is for larger values of intensity
         idx= mmi > c['IL']
         pgm[idx] = np.power(10, ((-c['C2']+np.sqrt(c['C2']*c['C2'] -
                         4 * c['C3'] * (c['C1']-mmi[idx])))/(2*c['C3'])))
         dpgm_dmmi[idx] = 1.0 / (np.sqrt(c['C2']*c['C2'] -
                         4 * c['C3'] * (c['C1']-mmi[idx])) * lfact)
 
-        #print ("pgm", pgm, "dpgm", dpgm_dmmi)
         if imt != self._pgv:
             units = 981.0
         else:
