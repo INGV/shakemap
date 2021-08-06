@@ -151,7 +151,7 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
-#COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 #COPY ./ext/ofm21b.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
 # Copy 'tusa_langer_2016.py'
