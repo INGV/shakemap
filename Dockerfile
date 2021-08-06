@@ -149,7 +149,7 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && sm_profile -c world -a -n
 
 # Copy own libs
-#COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 #COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 #COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 #COPY ./ext/ofm21b.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
