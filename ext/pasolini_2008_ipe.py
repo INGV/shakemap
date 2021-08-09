@@ -16,15 +16,33 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with OpenQuake. If not, see <http://www.gnu.org/licenses/>.
 
-"""
+
 Module exports :
 class:`PasoliniEtAl2008`,
+
 """
 import numpy as np
 
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import MMI
+
+
+
+def _compute_magnitude_term(self, C, mag):
+        """
+        Returns the magnitude scaling term
+        """
+        return C["m1"] + (C["m2"] * mag)
+
+def _compute_distance_term(self, C, repi):
+        """
+        Returns the distance scaling term
+        """
+        D_1 = np.sqrt(repi**2 + C['d2']**2)
+        D_2 = np.log(D_1) - np.log(C['d2'])
+
+        return C["d1"] * (D_1 - C['d2']) + C['d3'] * D_2
 
 
 class PasoliniEtAl2008(GMPE):
@@ -42,73 +60,38 @@ class PasoliniEtAl2008(GMPE):
 
     Model implemented by licia.faenza@ingv.it
     """
-    #: The GMPE is derived from induced earthquakes
+
     DEFINED_FOR_TECTONIC_REGION_TYPE = const.TRT.ACTIVE_SHALLOW_CRUST
 
-    #: Supported intensity measure types are peak ground acceleration
-    #: and peak ground velocity
-    DEFINED_FOR_INTENSITY_MEASURE_TYPES = set([
-        MMI,
-    ])
+    DEFINED_FOR_INTENSITY_MEASURE_TYPES = {MMI}
 
-    #: Supported intensity measure component is not considered for IPEs, so
-    #: we assume equivalent to 'average horizontal'
-    DEFINED_FOR_INTENSITY_MEASURE_COMPONENT = const.IMC.AVERAGE_HORIZONTAL
+    DEFINED_FOR_INTENSITY_MEASURE_COMPONENT = const.IMC.HORIZONTAL
 
-    #: Supported standard deviation types is total.
-    DEFINED_FOR_STANDARD_DEVIATION_TYPES = set([
-        const.StdDev.TOTAL
-    ])
+    DEFINED_FOR_STANDARD_DEVIATION_TYPES = {const.StdDev.TOTAL}
 
-    #: No required site parameters (in the present version)
     REQUIRES_SITES_PARAMETERS = set()
 
-    #: Required rupture parameters are magnitude (ML is used)
     REQUIRES_RUPTURE_PARAMETERS = {'mag'}
 
-    #: Required distance measure is rupture distance
     REQUIRES_DISTANCES = {'repi'}
 
-    def get_mean_and_stddevs(self, sites, rup, dists, imt, stddev_types):
+    fixedh = None
+
+    def compute(self, ctx, imts, mean, sig, tau, phi):
         """
         See :meth:`superclass method
-        <.base.GroundShakingIntensityModel.get_mean_and_stddevs>`
+        <.base.GroundShakingIntensityModel.compute>`
         for spec of input and result values.
         """
-        C = self.COEFFS[imt]
-        mean = (self._compute_magnitude_term(C, rup.mag) +
-                self._compute_distance_term(C, dists.repi))
-        stddevs = self._get_stddevs(C, dists.repi, stddev_types)
-        return mean, stddevs
+        
+        for m, imt in enumerate(imts):
+            C = self.COEFFS[imt]
+            mean[m] = (_compute_magnitude_term(C, ctx.mag) +
+                       _compute_distance_term(C, ctx.repi))
+            # the total standard deviation, which is a function of distance
+            sig[m] = C["s1"]
 
-    def _compute_magnitude_term(self, C, mag):
-        """
-        Returns the magnitude scaling term
-        """
-        return C["m1"] + (C["m2"] * mag)
-
-    def _compute_distance_term(self, C, repi):
-        """
-        Returns the distance scaling term
-        """
-        D_1 = np.sqrt(repi**2 + C['d2']**2)
-        D_2 = np.log(D_1) - np.log(C['d2'])
-
-        return C["d1"] * (D_1 - C['d2']) + C['d3'] * D_2
-
-    def _get_stddevs(self, C, distance, stddev_types):
-        """
-        Returns the total standard deviation
-        """
-        stddevs = []
-        for stddev_type in stddev_types:
-            assert stddev_type in self.DEFINED_FOR_STANDARD_DEVIATION_TYPES
-            if stddev_type == const.StdDev.TOTAL:
-                sigma = C["s1"]
-                stddevs.append(sigma + np.zeros_like(distance))
-        return stddevs
-
-    COEFFS = CoeffsTable(sa_damping=5, table="""
+    COEFFS = CoeffsTable(table="""
     IMT     m1     m2      d1     d2    d3     s1
     mmi  -2.466 1.842  -0.0085  4.27  -1.049 0.652584
     """)
