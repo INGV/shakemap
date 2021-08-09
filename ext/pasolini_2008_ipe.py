@@ -15,8 +15,7 @@
 #
 # You should have received a copy of the GNU Affero General Public License
 # along with OpenQuake. If not, see <http://www.gnu.org/licenses/>.
-
-
+"""
 Module exports :
 class:`PasoliniEtAl2008`,
 
@@ -83,7 +82,7 @@ class PasoliniEtAl2008(GMPE):
         <.base.GroundShakingIntensityModel.compute>`
         for spec of input and result values.
         """
-        
+
         for m, imt in enumerate(imts):
             C = self.COEFFS[imt]
             mean[m] = (_compute_magnitude_term(C, ctx.mag) +
