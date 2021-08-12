@@ -85,6 +85,7 @@ shakemap-test:
   after_script:
     - docker stop shakemap4_container
   artifacts:
+    when: always
     expire_in: 1 week
     paths:
       - /builds/shakemap/shakemap4/data/output
