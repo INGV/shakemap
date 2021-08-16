@@ -66,9 +66,9 @@ shakemap-test:
     - docker cp $(pwd)/data/shakemap_data shakemap4_container:/home/shake/
     - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/home/shake/
     - docker cp $(pwd)/test/data shakemap4_container:/home/shake/shakemap_profiles/world/
-    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
     - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
-    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/.local/"
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
     - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
         BASENAME_DIREVENT=$( basename ${DIREVENT} ) ;
         echo " ********** BASENAME_DIREVENT=${BASENAME_DIREVENT} ********** ";
@@ -81,8 +81,8 @@ shakemap-test:
         echo "" ;
         echo "" ;
       done
-    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
   after_script:
+    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
     - docker stop shakemap4_container
   artifacts:
     when: always
