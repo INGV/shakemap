@@ -18,7 +18,7 @@ Run docker container from shakemap4 image:
 ```
 
 ### Override `entrypoint`:
-Enter into the container:
+Enter into the container :
 ```
 $ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4 
 ```
