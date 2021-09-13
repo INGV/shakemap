@@ -129,7 +129,7 @@ COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 # Add 'conda' source in the '.bashrc' file - It must be run BEFORE to install shakemap software; because, if not exists, the intalleer will add '. /etc/profile.d/conda.sh' that doesn't exist.
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
 
-# BUGFIX 1/2 - il paccketto 'numpy' se installato nei 'package_list', da errore; se installato singolarmente successivamente a 'bash install.sh', va bene... boh! 
+# BUGFIX 1/2 - il paccketto 'numpy' se installato nei 'package_list', da errore; se installato singolarmente successivamente a 'bash install.sh', va bene... boh!
 #WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
 #RUN mv install.sh install.sh.original \
 #    && sed -e 's/"numpy==1.20"//' install.sh.original > install.sh
@@ -138,7 +138,7 @@ RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}
 WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
 RUN bash install.sh
 
-# BUGFIX 2/2 
+# BUGFIX 2/2
 #RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 #    && conda install -n shakemap numpy==1.20 -y
 
@@ -151,8 +151,8 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
-COPY ./ext/ofm21a.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
-COPY ./ext/ofm21b.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/ofm21.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/fm11_ch.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
 # Copy 'tusa_langer_2016.py'
 COPY ./ext/tusa_langer_2016.py /tmp/
@@ -160,7 +160,7 @@ COPY ./ext/pasolini_2008_ipe.py /tmp/
 #RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
 RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
     && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
-    && cp -v /tmp/tusa_langer_2016.py ${DIRNAME_PATHTUSA}\  
+    && cp -v /tmp/tusa_langer_2016.py ${DIRNAME_PATHTUSA}\
     && cp -v /tmp/pasolini_2008_ipe.py ${DIRNAME_PATHTUSA}/
 
 #
