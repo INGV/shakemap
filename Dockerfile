@@ -131,9 +131,9 @@ COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
 
 # BUGFIX 1/3
-WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
-RUN mv install.sh install.sh.original \
-    && sed -e 's/curl -L/curl --tls-max 1.2 -L/' install.sh.original > install.sh
+#WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
+#RUN mv install.sh install.sh.original \
+#    && sed -e 's/curl -L/curl --tls-max 1.2 -L/' install.sh.original > install.sh
 
 # BUGFIX 2/3 - il paccketto 'numpy' se installato nei 'package_list', da errore; se installato singolarmente successivamente a 'bash install.sh', va bene... boh!
 #WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
