@@ -130,7 +130,12 @@ COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 # Add 'conda' source in the '.bashrc' file - It must be run BEFORE to install shakemap software; because, if not exists, the intalleer will add '. /etc/profile.d/conda.sh' that doesn't exist.
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
 
-# BUGFIX 1/2 - il paccketto 'numpy' se installato nei 'package_list', da errore; se installato singolarmente successivamente a 'bash install.sh', va bene... boh!
+# BUGFIX 1/3
+WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
+RUN mv install.sh install.sh.original \
+    && sed -e 's/curl -L/curl --tls-max 1.2 -L/' install.sh.original > install.sh
+
+# BUGFIX 2/3 - il paccketto 'numpy' se installato nei 'package_list', da errore; se installato singolarmente successivamente a 'bash install.sh', va bene... boh!
 #WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
 #RUN mv install.sh install.sh.original \
 #    && sed -e 's/"numpy==1.20"//' install.sh.original > install.sh
@@ -139,7 +144,7 @@ RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}
 WORKDIR ${HOMEDIR_USER}/gitwork/shakemap_src
 RUN bash install.sh
 
-# BUGFIX 2/2
+# BUGFIX 3/3
 #RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 #    && conda install -n shakemap numpy==1.20 -y
 
