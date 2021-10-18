@@ -28,13 +28,13 @@ from openquake.hazardlib.imt import MMI
 
 
 
-def _compute_magnitude_term(self, C, mag):
+def _compute_magnitude_term(C, mag):
         """
         Returns the magnitude scaling term
         """
         return C["m1"] + (C["m2"] * mag)
 
-def _compute_distance_term(self, C, repi):
+def _compute_distance_term(C, repi):
         """
         Returns the distance scaling term
         """
