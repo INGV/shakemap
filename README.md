@@ -117,7 +117,7 @@ A questo punto devi riportare il file modificato dentro il *container* (quello d
 
 Fai un po' di prove per vedere se il modulo lavora correttamente, lanciano il comando standard di ShakeMap quando si è dentro al *container*, tipo questo
 ```
-shake EVENT-ID select assemble -c "SM4 run" model contour shape info stations raster rupture gridxml history plotregr mappin
+shake EVENT-ID select assemble -c "SM4 run" model contour shape info stations raster rupture gridxml history plotregr mapping
 ```
 
 Quando sei soddisfatto del modulo lo metti qui:
