@@ -33,7 +33,7 @@ andare nella directory dove sono presenti le directory da montare, come "volumi"
 ```
 $
 $ cd /home/shake/gitwork/_shakemap/shakemap4
-shake@shakemap4:~/gitwork/_shakemap/shakemap4$
+$ shake@shakemap4:~/gitwork/_shakemap/shakemap4
 ```
 
 i "volumi" sono:
