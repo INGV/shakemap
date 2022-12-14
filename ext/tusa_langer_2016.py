@@ -31,7 +31,7 @@ from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGA, SA
 
 
-[docs]class TusaLanger2016RepiBA08SE(GMPE):
+class TusaLanger2016RepiBA08SE(GMPE):
     """
     Implements GMPE developed by Giuseppina Tusa and Horst Langer (2016) and
     published as "Prediction of ground motion parameters for the volcanic area
