@@ -84,7 +84,7 @@ class TusaLanger2016RepiBA08SE(GMPE):
     #: Required distance measure is Repi
     REQUIRES_DISTANCES = set(('repi',))
 
-[docs]    def get_mean_and_stddevs(self, sites, rup, dists, imt, stddev_types):
+    def get_mean_and_stddevs(self, sites, rup, dists, imt, stddev_types):
         """
         See :meth:`superclass method
         <.base.GroundShakingIntensityModel.get_mean_and_stddevs>`
@@ -213,7 +213,7 @@ class TusaLanger2016RepiBA08SE(GMPE):
 
 
 
-[docs]class TusaLanger2016RepiBA08DE(TusaLanger2016RepiBA08SE):
+class TusaLanger2016RepiBA08DE(TusaLanger2016RepiBA08SE):
     """
     Implements Tusa and Langer (2016) using the BA08 model and DE.
 
@@ -252,7 +252,7 @@ class TusaLanger2016RepiBA08SE(GMPE):
 
 
 
-[docs]class TusaLanger2016RepiSP87SE(TusaLanger2016RepiBA08SE):
+class TusaLanger2016RepiSP87SE(TusaLanger2016RepiBA08SE):
     """
     Implements Tusa and Langer (2016) using the SP87 model and SE.
 
@@ -304,7 +304,7 @@ class TusaLanger2016RepiBA08SE(GMPE):
 
 
 
-[docs]class TusaLanger2016RepiSP87DE(TusaLanger2016RepiSP87SE):
+class TusaLanger2016RepiSP87DE(TusaLanger2016RepiSP87SE):
     """
     Implements Tusa and Langer (2016) using the SP87 model and DE.
 
@@ -342,8 +342,7 @@ class TusaLanger2016RepiBA08SE(GMPE):
     """)
 
 
-
-[docs]class TusaLanger2016Rhypo(TusaLanger2016RepiBA08SE):
+class TusaLanger2016Rhypo(TusaLanger2016RepiBA08SE):
     """
     Implements the GMPE using the BA08 model and hypocentral distance (not
     described in Tusa and Langer, 2016). This version has been developed in the
