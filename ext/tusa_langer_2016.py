@@ -174,10 +174,10 @@ class TusaLanger2016RepiBA08SE(GMPE):
         idx = (sites.vs30 >= 800.0)
         ssa[idx] = 1.0
 
-        for value in sites.vs30:
-            if 180 <= value < 360:
-                raise Exception(
-                    'GMPE does not consider site class C (Vs30 = 180-360 m/s)')
+#        for value in sites.vs30:
+#            if 180 <= value < 360:
+#                raise Exception(
+#                    'GMPE does not consider site class C (Vs30 = 180-360 m/s)')
 
         return ssa, ssb, ssd
 
