@@ -1,9 +1,7 @@
-
-
 # -*- coding: utf-8 -*-
 # vim: tabstop=4 shiftwidth=4 softtabstop=4
 #
-# Copyright (C) 2015-2021 GEM Foundation
+# Copyright (C) 2015-2019 GEM Foundation
 #
 # OpenQuake is free software: you can redistribute it and/or modify it
 # under the terms of the GNU Affero General Public License as published
@@ -31,107 +29,6 @@ from scipy.constants import g
 from openquake.hazardlib.gsim.base import GMPE, CoeffsTable
 from openquake.hazardlib import const
 from openquake.hazardlib.imt import PGA, SA
-from openquake.baselib.general import CallableDict
-
-_compute_distance = CallableDict()
-
-@_compute_distance.add("BA08SE", "BA08DE")
-def _compute_distance1(kind, ctx, C):
-    """
-    Compute the distance function, equation (9):
-    """
-    mref = 3.6
-    rref = 1.0
-    rval = np.sqrt(ctx.repi ** 2 + C['h'] ** 2)
-    return (C['c1'] + C['c2'] * (ctx.mag - mref)) *\
-        np.log10(rval / rref) + C['c3'] * (rval - rref)
-
-
-@_compute_distance.add("SP87SE", "SP87DE")
-def _compute_distance2(kind, ctx, C):
-    """
-    Compute the distance function, equation (5).
-    """
-    rval = np.sqrt(ctx.repi ** 2 + C['h'] ** 2)
-    return C['c1'] * np.log10(rval)
-
-
-@_compute_distance.add("Rhypo")
-def _compute_distance3(kind, ctx, C):
-    """
-    Compute the distance function, equation (9):
-    """
-    mref = 3.6
-    rref = 1.0
-    rval = np.sqrt(ctx.rhypo ** 2 + C['h'] ** 2)
-    return (C['c1'] + C['c2'] * (ctx.mag - mref)) *\
-        np.log10(rval / rref) + C['c3'] * (rval - rref)
-
-
-_compute_magnitude = CallableDict()
-
-
-@_compute_magnitude.add("BA08SE", "BA08DE", "Rhypo")
-def _compute_magnitude1(kind, ctx, C):
-    """
-    Compute the magnitude function, equation (9):
-    """
-    return C['a'] + (C['b1'] * (ctx.mag)) + (C['b2'] * (ctx.mag) ** 2)
-
-
-@_compute_magnitude.add("SP87SE", "SP87DE")
-def _compute_magnitude2(kind, ctx, C):
-    """
-    Compute the magnitude function, equation (5).
-    """
-    return C['a'] + C['b1'] * ctx.mag
-
-
-def _get_site_amplification(ctx, C):
-    """
-    Compute the site amplification function given by FS = eiSi, for
-    i = 1,2,3 where Si are the coefficients determined through regression
-    analysis, and ei are dummy variables (0 or 1) used to denote the
-    different EC8 site classes.
-    """
-    ssa, ssb, ssd = _get_site_type_dummy_variables(ctx)
-
-    return C['sA'] * ssa + C['sB'] * ssb + C['sD'] * ssd
-
-
-def _get_site_type_dummy_variables(ctx):
-    """
-    Get site type dummy variables, which classified the ctx into
-    different site classes based on the shear wave velocity in the
-    upper 30 m (Vs30) according to the EC8 (CEN 2003):
-    class A: Vs30 > 800 m/s
-    class B: Vs30 = 360 - 800 m/s
-    class C*: Vs30 = 180 - 360 m/s
-    class D: Vs30 < 180 m/s
-    *Not computed by this GMPE
-    """
-    ssa = np.zeros(len(ctx.vs30))
-    ssb = np.zeros(len(ctx.vs30))
-    ssd = np.zeros(len(ctx.vs30))
-    # below this point is modified to aggregate
-    # Class D; Vs30 < 180 m/s. Replacede by
-    # Classes C and D under D (AM,LF 2018/11/6)
-    # idx = (ctx.vs30 < 180.0)
-    idx = (ctx.vs30 < 360.0)
-    ssd[idx] = 1.0
-    # Class B; 360 m/s <= Vs30 <= 800 m/s.
-    idx = (ctx.vs30 >= 360.0) & (ctx.vs30 < 800.0)
-    ssb[idx] = 1.0
-    # Class A; Vs30 > 800 m/s.
-    idx = (ctx.vs30 >= 800.0)
-    ssa[idx] = 1.0
-
-#    for value in ctx.vs30:
-#        if 180 <= value < 360:
-#            raise Exception(
-#                'GMPE does not consider site class C (Vs30 = 180-360 m/s)')
-
-    return ssa, ssb, ssd
 
 
 class TusaLanger2016RepiBA08SE(GMPE):
@@ -160,14 +57,15 @@ class TusaLanger2016RepiBA08SE(GMPE):
     who found a mistake in one of the coefficients in the publication. It has
     been updated according to the authors suggestion.
     """
-    kind = "BA08SE"
-
     #: Supported tectonic region type is 'volcanic' because the
     #: equations have been derived from data from Etna (Sicily, Italy)
     DEFINED_FOR_TECTONIC_REGION_TYPE = const.TRT.VOLCANIC
 
     #: Supported intensity measure types are PGA and SA
-    DEFINED_FOR_INTENSITY_MEASURE_TYPES = {PGA, SA}
+    DEFINED_FOR_INTENSITY_MEASURE_TYPES = set([
+        PGA,
+        SA
+    ])
 
     #: Supported intensity measure component is the maximum of two horizontal
     #: components
@@ -175,35 +73,113 @@ class TusaLanger2016RepiBA08SE(GMPE):
         const.IMC.GREATER_OF_TWO_HORIZONTAL
 
     #: Supported standard deviation type is total
-    DEFINED_FOR_STANDARD_DEVIATION_TYPES = {const.StdDev.TOTAL}
+    DEFINED_FOR_STANDARD_DEVIATION_TYPES = set([const.StdDev.TOTAL])
 
     #: Required site parameter is Vs30
-    REQUIRES_SITES_PARAMETERS = {'vs30'}
+    REQUIRES_SITES_PARAMETERS = set(('vs30',))
 
     #: Required rupture parameter is magnitude.
-    REQUIRES_RUPTURE_PARAMETERS = {'mag'}
+    REQUIRES_RUPTURE_PARAMETERS = set(('mag',))
 
     #: Required distance measure is Repi
-    REQUIRES_DISTANCES = {'repi'}
+    REQUIRES_DISTANCES = set(('repi',))
 
-    def compute(self, ctx, imts, mean, sig, tau, phi):
+    def get_mean_and_stddevs(self, sites, rup, dists, imt, stddev_types):
         """
         See :meth:`superclass method
-        <.base.GroundShakingIntensityModel.compute>`
+        <.base.GroundShakingIntensityModel.get_mean_and_stddevs>`
         for spec of input and result values.
         """
-        for m, imt in enumerate(imts):
-            C = self.COEFFS[imt]
+        # extracting dictionary of coefficients specific to required
+        # intensity measure type
+        C = self.COEFFS[imt]
 
-            imean = (_compute_magnitude(self.kind, ctx, C) +
-                     _compute_distance(self.kind, ctx, C) +
-                     _get_site_amplification(ctx, C))
+        imean = (self._compute_magnitude(rup, C) +
+                 self._compute_distance(rup, dists, C) +
+                 self._get_site_amplification(sites, C))
 
-            # convert from log10 to ln and from cm/s**2 to g
-            mean[m] = np.log((10.0 ** (imean - 2.0)) / g)
-            # Return stddevs in terms of natural log scaling
-            sig[m] = np.log(10.0 ** C['SigmaTot'])
+        istddevs = self._get_stddevs(C,
+                                     stddev_types,
+                                     num_sites=sites.vs30.size)
 
+        # convert from log10 to ln and from cm/s**2 to g
+        mean = np.log((10.0 ** (imean - 2.0)) / g)
+        # Return stddevs in terms of natural log scaling
+        stddevs = np.log(10.0 ** np.array(istddevs))
+
+        return mean, stddevs
+
+
+    def _get_stddevs(self, C, stddev_types, num_sites):
+        """
+        Return standard deviations as defined in tables below
+        """
+        assert all(stddev_type in self.DEFINED_FOR_STANDARD_DEVIATION_TYPES
+            for stddev_type in stddev_types)
+        stddevs = [np.zeros(num_sites) + C['SigmaTot'] for _ in stddev_types]
+        return stddevs
+
+    def _compute_distance(self, rup, dists, C):
+        """
+        Compute the distance function, equation (9):
+        """
+        mref = 3.6
+        rref = 1.0
+        rval = np.sqrt(dists.repi ** 2 + C['h'] ** 2)
+        return (C['c1'] + C['c2'] * (rup.mag - mref)) *\
+            np.log10(rval / rref) + C['c3'] * (rval - rref)
+
+    def _compute_magnitude(self, rup, C):
+        """
+        Compute the magnitude function, equation (9):
+        """
+        return C['a'] + (C['b1'] * (rup.mag)) + (C['b2'] * (rup.mag) ** 2)
+
+    def _get_site_amplification(self, sites, C):
+        """
+        Compute the site amplification function given by FS = eiSi, for
+        i = 1,2,3 where Si are the coefficients determined through regression
+        analysis, and ei are dummy variables (0 or 1) used to denote the
+        different EC8 site classes.
+        """
+        ssa, ssb, ssd = self._get_site_type_dummy_variables(sites)
+
+        return (C['sA'] * ssa) + (C['sB'] * ssb) + (C['sD'] * ssd)
+
+    def _get_site_type_dummy_variables(self, sites):
+        """
+        Get site type dummy variables, which classified the sites into
+        different site classes based on the shear wave velocity in the
+        upper 30 m (Vs30) according to the EC8 (CEN 2003):
+        class A: Vs30 > 800 m/s
+        class B: Vs30 = 360 - 800 m/s
+        class C*: Vs30 = 180 - 360 m/s
+        class D: Vs30 < 180 m/s
+        *Not computed by this GMPE
+        """
+        ssa = np.zeros(len(sites.vs30))
+        ssb = np.zeros(len(sites.vs30))
+        ssd = np.zeros(len(sites.vs30))
+        # Class D; Vs30 < 180 m/s.
+        # below this point is modified to aggregate
+        # Class D; Vs30 < 180 m/s. Replacede by
+        # Classes C and D under D (AM,LF 2018/11/6)
+        # idx = (sites.vs30 < 180.0)
+        idx = (sites.vs30 < 360.0)
+        ssd[idx] = 1.0
+        # Class B; 360 m/s <= Vs30 <= 800 m/s.
+        idx = (sites.vs30 >= 360.0) & (sites.vs30 < 800.0)
+        ssb[idx] = 1.0
+        # Class A; Vs30 > 800 m/s.
+        idx = (sites.vs30 >= 800.0)
+        ssa[idx] = 1.0
+
+#        for value in sites.vs30:
+#            if 180 <= value < 360:
+#                raise Exception(
+#                    'GMPE does not consider site class C (Vs30 = 180-360 m/s)')
+
+        return ssa, ssb, ssd
 
     # Coefficients from Table 9 (PGA) and Table 12 (SA); sigma values in log
     # Correction made to coeff b2 (0.14s) by Giuseppina Tusa in email (Jan 15, 2019)
@@ -235,6 +211,8 @@ class TusaLanger2016RepiBA08SE(GMPE):
     0.10  -0.221   0.522   0.030   -2.193  -0.062   2.300   0.006   0   0.412   0.435   0.283   0.231   0.437
     """)
 
+
+
 class TusaLanger2016RepiBA08DE(TusaLanger2016RepiBA08SE):
     """
     Implements Tusa and Langer (2016) using the BA08 model and DE.
@@ -243,8 +221,6 @@ class TusaLanger2016RepiBA08DE(TusaLanger2016RepiBA08SE):
     :class:`openquake.hazardlib.gsim.tusa_langer_2016.TusaLanger2016RepiBA08SE`
     because the same functional form is used, only the coefficients differ.
     """
-    kind = "BA08DE"
-
     # Coefficients from Table 9 (PGA) and Table 13 (SA); sigma values in log
     COEFFS = CoeffsTable(sa_damping=5, table="""
     IMT    a       b1      b2       c1      c2      h       c3      sA  sB      sD      SigmaIE SigmaIS SigmaTot
@@ -274,6 +250,8 @@ class TusaLanger2016RepiBA08DE(TusaLanger2016RepiBA08SE):
     0.10   3.746  -0.339   0.074   -2.612   0.354   12.019  0.004   0  -0.247  -0.054   0.192   0.317   0.443
     """)
 
+
+
 class TusaLanger2016RepiSP87SE(TusaLanger2016RepiBA08SE):
     """
     Implements Tusa and Langer (2016) using the SP87 model and SE.
@@ -282,7 +260,18 @@ class TusaLanger2016RepiSP87SE(TusaLanger2016RepiBA08SE):
     :class:`openquake.hazardlib.gsim.tusa_langer_2016.TusaLanger2016RepiBA08SE`
     with modification to the functional form and different coefficients.
     """
-    kind = "SP87SE"
+    def _compute_distance(self, rup, dists, C):
+        """
+        Compute the distance function, equation (5).
+        """
+        rval = np.sqrt(dists.repi ** 2 + C['h'] ** 2)
+        return C['c1'] * np.log10(rval)
+
+    def _compute_magnitude(self, rup, C):
+        """
+        Compute the magnitude function, equation (5).
+        """
+        return C['a'] + (C['b1'] * (rup.mag))
 
     # Coefficients from Table 8 (PGA) and Table 10 (SA); sigma values in log
     COEFFS = CoeffsTable(sa_damping=5, table="""
@@ -313,6 +302,8 @@ class TusaLanger2016RepiSP87SE(TusaLanger2016RepiBA08SE):
     0.10  -0.538   0.653  -1.814   1.556   0   0.306   0.322   0.285   0.241   0.440
     """)
 
+
+
 class TusaLanger2016RepiSP87DE(TusaLanger2016RepiSP87SE):
     """
     Implements Tusa and Langer (2016) using the SP87 model and DE.
@@ -321,8 +312,6 @@ class TusaLanger2016RepiSP87DE(TusaLanger2016RepiSP87SE):
     :class:`openquake.hazardlib.gsim.tusa_langer_2016.TusaLanger2016RepiSP87SE`
     because the same functional form is used, only the coefficients differ.
     """
-    kind = 'SP87DE'
-
     # Coefficients from Table 8 (PGA) and Table 11 (SA); sigma values in log
     COEFFS = CoeffsTable(sa_damping=5, table="""
     IMT    a       b1      c1      h        sA  sB      sD      SigmaIE SigmaIS SigmaTot
@@ -352,6 +341,7 @@ class TusaLanger2016RepiSP87DE(TusaLanger2016RepiSP87SE):
     0.10   0.219   0.745  -1.929   9.6990   0  -0.233  -0.031   0.191   0.318   0.446
     """)
 
+
 class TusaLanger2016Rhypo(TusaLanger2016RepiBA08SE):
     """
     Implements the GMPE using the BA08 model and hypocentral distance (not
@@ -365,10 +355,18 @@ class TusaLanger2016Rhypo(TusaLanger2016RepiBA08SE):
     because the same functional form is used, only the distance type and
     coefficients differ.
     """
-    kind = 'Rhypo'
-
     # Required distance measure is Rhypo
-    REQUIRES_DISTANCES = {'rhypo'}
+    REQUIRES_DISTANCES = set(('rhypo', ))
+
+    def _compute_distance(self, rup, dists, C):
+        """
+        Compute the distance function, equation (9):
+        """
+        mref = 3.6
+        rref = 1.0
+        rval = np.sqrt(dists.rhypo ** 2 + C['h'] ** 2)
+        return (C['c1'] + C['c2'] * (rup.mag - mref)) *\
+            np.log10(rval / rref) + C['c3'] * (rval - rref)
 
     # Coefficients provided by Giuseppina Tusa in excel file
     # 'SpectralAccXLaura.xlsx' (email dated May 29, 2016) with modification

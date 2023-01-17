@@ -8,8 +8,9 @@ ENV INITRD No
 ENV FAKE_CHROOT 1
 
 # Set Shakemap checkout: https://github.com/usgs/shakemap.git
-#a12d0dc5204e3dff1f7848fcea4c29836cf15d2e
-ENV SHAKEMAP_COMMIT=8dafaa2589224d78d0f4343dcc675fa6644de2ea
+#a12d0dc5204e3dff1f7848fcea4c29836cf15d2e #v4.1.3
+#8dafaa2589224d78d0f4343dcc675fa6644de2ea #v4.1.4
+ENV SHAKEMAP_COMMIT=f23f1aeb252670b5eee25fd3529a78b7ffacd666
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -157,17 +158,17 @@ RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/fm10.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
-COPY ./ext/ofm21.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
+COPY ./ext/ofm22.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 COPY ./ext/fm11_ch.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
 
 # Copy 'tusa_langer_2016.py'
 COPY ./ext/tusa_langer_2016.py /tmp/
-COPY ./ext/pasolini_2008_ipe.py /tmp/
+# COPY ./ext/pasolini_2008_ipe.py /tmp/
 #RUN for TUSA in $(find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py); do cp -v /tmp/tusa_langer_2016.py ${TUSA}; done
 RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
     && DIRNAME_PATHTUSA=$( dirname ${PATHTUSA} ) \
-    && cp -v /tmp/tusa_langer_2016.py ${DIRNAME_PATHTUSA}\
-    && cp -v /tmp/pasolini_2008_ipe.py ${DIRNAME_PATHTUSA}/
+    && cp -v /tmp/tusa_langer_2016.py ${DIRNAME_PATHTUSA}/
+#    && cp -v /tmp/pasolini_2008_ipe.py ${DIRNAME_PATHTUSA}/
 
 #
 WORKDIR ${HOMEDIR_USER}
