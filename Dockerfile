@@ -178,5 +178,9 @@ RUN echo "conda activate base" >> ${HOMEDIR_USER}/.bashrc
 RUN echo "source activate shakemap" >> ${HOMEDIR_USER}/.bashrc
 ENV PATH ${HOMEDIR_USER}/miniconda/envs/env/bin:$PATH
 
+# Add python modules (Issue: #20)
+RUN pip install basemap
+RUN pip install seaborn
+
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
