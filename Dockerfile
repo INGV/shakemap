@@ -149,11 +149,13 @@ RUN bash install.sh
 #RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 #    && conda install -n shakemap numpy==1.20 -y
 
-# Source variable
+# Source variable (Add python modules 'basemap' and 'seaborn'. Issue: #20)
 RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda info --envs \
     && conda activate shakemap \
-    && sm_profile -c world -a -n
+    && sm_profile -c world -a -n \
+	&& pip install basemap \
+	&& pip install seaborn
 
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
@@ -177,10 +179,6 @@ WORKDIR ${HOMEDIR_USER}
 RUN echo "conda activate base" >> ${HOMEDIR_USER}/.bashrc
 RUN echo "source activate shakemap" >> ${HOMEDIR_USER}/.bashrc
 ENV PATH ${HOMEDIR_USER}/miniconda/envs/env/bin:$PATH
-
-# Add python modules (Issue: #20)
-RUN pip install basemap
-RUN pip install seaborn
 
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
