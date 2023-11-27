@@ -2,6 +2,7 @@ FROM debian:buster-slim
 
 MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
 
+
 #
 ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
