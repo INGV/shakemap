@@ -154,9 +154,9 @@ RUN bash install.sh
 RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda info --envs \
     && conda activate shakemap \
-    && sm_profile -c world -a -n \
-	&& pip install basemap \
-	&& pip install seaborn
+    && sm_profile -c world -a -n 
+	#&& pip install basemap \
+	#&& pip install seaborn
 
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
