@@ -155,7 +155,7 @@ RUN bash install.sh
 
 # Source variable (
 # - Add python modules 'basemap' and 'seaborn'. Issue: #20
-# - Add python module 'alpha-shapes' as suggested from Bruce Worden (workaround email 29-Nov-2023)
+# - Add python module 'alpha-shapes' as suggested from Bruce Worden (workaround email 29-Nov-2023. It should be romoved in version 4.2.0)
 RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda info --envs \
     && conda activate shakemap \
