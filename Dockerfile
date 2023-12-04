@@ -126,8 +126,8 @@ RUN mkdir gitwork \
     && git config --global user.email "valentino.lauciani@ingv.it" \
     && git config --global user.name "Valentino Lauciani" \
     && git clone https://github.com/DOI-USGS/ghsc-esi-shakemap shakemap_src \
-    && cd shakemap_src 
-    #&& git checkout ${SHAKEMAP_COMMIT}
+    && cd shakemap_src \
+    && git checkout ${SHAKEMAP_COMMIT}
 
 # Copy modified plotregr.py (issue: https://gitlab.rm.ingv.it/shakemap/shakemap4/-/issues/5)
 COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
