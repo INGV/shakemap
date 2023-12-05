@@ -14,8 +14,10 @@ ENV FAKE_CHROOT 1
 #f23f1aeb252670b5eee25fd3529a78b7ffacd666
 
 ##### Set Shakemap checkout: https://github.com/DOI-USGS/ghsc-esi-shakemap
-# v4.1.5
-ENV SHAKEMAP_COMMIT=ed31eee91a20b3417eef42f510d19905c9d6067d
+# v4.1.5 (but doesn't work)
+#ed31eee91a20b3417eef42f510d19905c9d6067d
+# last commit after v4.1.5
+ENV SHAKEMAP_COMMIT=f28a82fbd59892f6503796be09f3ad089765c731
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -131,7 +133,7 @@ RUN mkdir gitwork \
     && git checkout ${SHAKEMAP_COMMIT}
 
 # Copy modified plotregr.py (issue: https://gitlab.rm.ingv.it/shakemap/shakemap4/-/issues/5)
-COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
+#COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 
 # Add 'conda' source in the '.bashrc' file - It must be run BEFORE to install shakemap software; because, if not exists, the intalleer will add '. /etc/profile.d/conda.sh' that doesn't exist.
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
