@@ -8,12 +8,13 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
 ENV FAKE_CHROOT 1
 
-# DEPRECATED - Set Shakemap checkout: https://github.com/usgs/shakemap.git
+##### DEPRECATED - Set Shakemap checkout: https://github.com/usgs/shakemap.git
 #a12d0dc5204e3dff1f7848fcea4c29836cf15d2e #v4.1.3
 #8dafaa2589224d78d0f4343dcc675fa6644de2ea #v4.1.4
 #f23f1aeb252670b5eee25fd3529a78b7ffacd666
 
-# Set Shakemap checkout: https://github.com/DOI-USGS/ghsc-esi-shakemap
+##### Set Shakemap checkout: https://github.com/DOI-USGS/ghsc-esi-shakemap
+# v4.1.5
 ENV SHAKEMAP_COMMIT=ed31eee91a20b3417eef42f510d19905c9d6067d
 
 # Make RUN commands use `bash --login`:
@@ -153,16 +154,20 @@ RUN bash install.sh
 #RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
 #    && conda install -n shakemap numpy==1.20 -y
 
-# Source variable (
-# - Add python modules 'basemap' and 'seaborn'. Issue: #20
-# - Add python module 'alpha-shapes' as suggested from Bruce Worden (workaround email 29-Nov-2023. It should be romoved in version 4.2.0)
+# 1) Source variables
+# 2) Add python modules 'basemap' and 'seaborn'. Issue: #20
+# 3) Add python module 'alpha-shapes' as suggested from Bruce Worden (workaround email 29-Nov-2023. It should be romoved in version 4.2.0)
+# 4) Install and configure 'strec_cfg'
 RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda info --envs \
     && conda activate shakemap \
     && sm_profile -c world -a -n \ 
     && pip install alpha-shapes \
     && pip install basemap \
-    && pip install seaborn
+    && pip install seaborn \
+    && mkdir ${HOMEDIR_USER}/strec_data \
+    && pip install --upgrade usgs-strec \
+    && strec_cfg update --datafolder ${HOMEDIR_USER}/strec_data --slab --gcmt
 
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
