@@ -133,7 +133,7 @@ RUN mkdir gitwork \
     && git checkout ${SHAKEMAP_COMMIT}
 
 # Copy modified plotregr.py (issue: https://gitlab.rm.ingv.it/shakemap/shakemap4/-/issues/5)
-#COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
+COPY ./ext/plotregr.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakemap/coremods/
 
 # Add 'conda' source in the '.bashrc' file - It must be run BEFORE to install shakemap software; because, if not exists, the intalleer will add '. /etc/profile.d/conda.sh' that doesn't exist.
 RUN echo ". ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh" >> ${HOMEDIR_USER}/.bashrc
