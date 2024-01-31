@@ -63,12 +63,11 @@ shakemap-test:
   script:
     - docker run -it -d --name shakemap4_container --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
     - docker cp $(pwd)/data/local shakemap4_container:/home/shake/.local
-    - docker cp $(pwd)/data/shakemap_data shakemap4_container:/home/shake/
     - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/home/shake/
     - docker cp $(pwd)/test/data shakemap4_container:/home/shake/shakemap_profiles/world/
-    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
-    - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
-    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
+    - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_profiles/ /home/shake/.local/"
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
     - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
         BASENAME_DIREVENT=$( basename ${DIREVENT} ) ;
         echo " ********** BASENAME_DIREVENT=${BASENAME_DIREVENT} ********** ";
