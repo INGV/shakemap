@@ -189,6 +189,14 @@ RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
 #
 WORKDIR ${HOMEDIR_USER}
 
+# Create shakemap_dat
+RUN mkdir -p shakemap_data/topo
+RUN mkdir -p shakemap_data/vs30
+RUN curl -o shakemap_data/vs30/Hellas-geology_18-30_34-43_30s_NoNan.grd "https://webservices.ingv.it/Hellas-geology_18-30_34-43_30s_NoNan.grd"
+RUN curl -o shakemap_data/vs30/Hglobal_italy_vs30_clobber.grd "https://webservices.ingv.it/global_italy_vs30_clobber.grd"
+RUN curl -o shakemap_data/topo/topo_30sec.grd "https://webservices.ingv.it/topo_30sec.grd"
+RUN chown -R ${USER_NAME}:${GROUP_NAME} shakemap_data/
+
 #
 RUN echo "conda activate base" >> ${HOMEDIR_USER}/.bashrc
 RUN echo "source activate shakemap" >> ${HOMEDIR_USER}/.bashrc
