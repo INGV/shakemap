@@ -14,13 +14,13 @@ $ DOCKER_BUILDKIT=1 docker build --no-cache --build-arg ENV_UID=$(id -u) --build
 ### Run ShakeMap
 Run docker container from shakemap4 image:
 ```
-# docker run --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local shakemap4 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping"
+# docker run --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local shakemap4 -p world -c"shake 8863681 select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping"
 ```
 
 ### Override `entrypoint`:
 Enter into the container :
 ```
-$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4 
+$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4 
 ```
 
 ## Mini-HowTo
@@ -43,7 +43,7 @@ i "volumi" sono:
 
 creare un container dall'immagine Docker *shakemap4* montando all'interno i volumi necessari:
 ```
-shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4
+shake@shakemap4:~/gitwork/_shakemap/shakemap4$ docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4
 (shakemap) root@d0263fbd02ae:/opt#
 ```
 
@@ -74,7 +74,7 @@ shake@shakemap4:~/gitwork/_shakemap/shakemap4$
 Entra dentro il docker con questo comando
 
 ```
-docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4:4.1.4
+docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4:4.1.4
 ```
 
 —> attento alla **versione di ShakeMap** da usare (qui per semepio c'è la vesrione **shakemap4:4.1.4**)
@@ -164,7 +164,7 @@ Per esempio ora si usa la 4.1.4
 
 Per lancio della shakemap usare il comando:
 ```
-docker run --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local shakemap4:4.1.4  -p world -c"shake EVENT-ID select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping”
+docker run --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local shakemap4:4.1.4  -p world -c"shake EVENT-ID select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping”
 ```
 
 **—> attento alla versione di ShakeMap da usare.**
@@ -192,7 +192,7 @@ shake@shakemap4-dev:~/gitwork/_shakemap/shakemap4 (master)*$ pwd
 A questo punto usa i comandi:
 
 ```
-docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/shakemap_data:/home/shake/shakemap_data -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4:4.1.4
+docker run -it --rm -v $(pwd)/data/shakemap_profiles:/home/shake/shakemap_profiles -v $(pwd)/data/local:/home/shake/.local --entrypoint=bash shakemap4:4.1.4
 ```
 **—> attento alla versione di ShakeMap da usare.**
 
