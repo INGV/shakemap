@@ -1,0 +1,159 @@
+# NOTE: GUIDE: https://stanislas.blog/2018/09/build-push-docker-images-gitlab-ci/
+# ATTENZIONE: Non ho abilitato il push su DockerHub in quanto l'immagine Docker viene compilata con UID e GID dell'utente dove deve girare; quindi non si puo' pre-compilare
+
+image: docker:19.03.6
+#image: docker:latest
+
+stages:
+  - build-image
+  - test
+#  - push-to-dockerhub
+#  - push-dev-to-dockerhub
+#  - push-tag-to-dockerhub
+#  - cleanup
+
+variables:
+  DOCKER_TLS_CERTDIR: ""
+  # https://gitlab.rm.ingv.it/help/user/project/pipelines/settings#git-strategy
+  GIT_STRATEGY: clone
+  
+before_script:
+  - export CI_JOB_DATE=$( date +%Y%m%d )
+  - SHAKEMAP_CHECKOUT=$( grep "SHAKEMAP_COMMIT=" Dockerfile | awk -F"=" '{print $2}' )
+  - export CONTAINER_TMP_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_REF_SLUG}-sm${SHAKEMAP_CHECKOUT}-our${CI_COMMIT_SHORT_SHA}
+  - export CONTAINER_RELEASE_IMAGE_LATEST=${CI_PROJECT_NAME}:latest
+  - export CONTAINER_RELEASE_IMAGE_SM=${CI_PROJECT_NAME}:sm${SHAKEMAP_CHECKOUT}
+  #- export CONTAINER_BRANCH_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_BRANCH}
+  - export CONTAINER_BRANCH_IMAGE=${CI_PROJECT_NAME}:${CI_COMMIT_REF_NAME}
+  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_RELEASE_IMAGE_LATEST}
+  - export DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_RELEASE_IMAGE_SM}
+  - export DOCKERHUB_CONTAINER_BRANCH_IMAGE=${DOCKERHUB_REGISTRY_USER}/${CONTAINER_BRANCH_IMAGE}
+  - echo $SHAKEMAP_CHECKOUT
+  - echo $CONTAINER_TMP_IMAGE 
+  - echo $CONTAINER_RELEASE_IMAGE_LATEST
+  - echo $CONTAINER_RELEASE_IMAGE_SM
+  - echo ${CONTAINER_BRANCH_IMAGE}
+  - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST
+  - echo $DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM
+  - echo $DOCKERHUB_CONTAINER_BRANCH_IMAGE
+  - echo ${CI_COMMIT_BRANCH}
+  - echo ${CI_COMMIT_REF_NAME}
+  - echo ${CI_COMMIT_TAG}
+  - docker images
+  
+build:
+  stage: build-image
+  tags:
+    - sqlx2-srvr_runner
+  script:
+    - docker build --no-cache --pull --tag ${CONTAINER_TMP_IMAGE} .
+    - docker images 
+    
+py-test:
+  stage: test
+  tags:
+    - sqlx2-srvr_runner
+  script:
+    - docker run --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE} -c ". /home/shake/.bashrc && cd /home/shake/gitwork/shakemap_src && py.test ."
+
+shakemap-test:
+  stage: test
+  tags:
+    - sqlx2-srvr_runner
+  script:
+    - docker run -it -d --name shakemap4_container --rm --entrypoint=bash ${CONTAINER_TMP_IMAGE}
+    - docker cp $(pwd)/data/local shakemap4_container:/home/shake/.local
+    - docker cp $(pwd)/data/shakemap_data shakemap4_container:/home/shake/
+    - docker cp $(pwd)/data/shakemap_profiles shakemap4_container:/home/shake/
+    - docker cp $(pwd)/test/data shakemap4_container:/home/shake/shakemap_profiles/world/
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
+    - docker exec -u root shakemap4_container bash -c "chown -R shake:shake /home/shake/shakemap_data/ /home/shake/shakemap_profiles/ /home/shake/.local/"
+    - docker exec shakemap4_container bash -c "ls -l /home/shake/shakemap_data/ && ls -l /home/shake/shakemap_profiles/ && ls -l /home/shake/shakemap_profiles/world/ && ls -l /home/shake/.local/"
+    - for DIREVENT in $( ls -d test/data/[1-9]* ); do 
+        BASENAME_DIREVENT=$( basename ${DIREVENT} ) ;
+        echo " ********** BASENAME_DIREVENT=${BASENAME_DIREVENT} ********** ";
+        docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'pwd' ;
+        docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c '/home/shake/entrypoint.sh -p world -c "shake ${BASENAME_DIREVENT} select assemble -c \"SM4 run\" model contour shape info stations raster rupture gridxml history plotregr mapping"' ;
+        echo "" ;
+        echo " ----- START - grid.xml diff ----- ";
+        docker exec -e BASENAME_DIREVENT=${BASENAME_DIREVENT} shakemap4_container bash -c 'diff <(grep -v "^<" /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/grid.xml | head -200) <(grep -v "^<" /home/shake/shakemap_profiles/world/data/${BASENAME_DIREVENT}/current/products/grid.xml | head -200)' ;
+        echo " ----- END - grid.xml diff ----- ";
+        echo "" ;
+        echo "" ;
+      done
+  after_script:
+    - docker cp shakemap4_container:/home/shake/shakemap_profiles $(pwd)/data/output
+    - docker stop shakemap4_container
+  artifacts:
+    when: always
+    expire_in: 1 week
+    paths:
+      - /builds/shakemap/shakemap4/data/output
+
+
+#push:
+#  stage: push-to-dockerhub
+#  only:
+#    - master
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    # Push tag with SM commit
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+#    - docker push ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+#    # Remove release images
+#    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_LATEST}
+#    - docker image rm ${DOCKERHUB_CONTAINER_RELEASE_IMAGE_SM}
+
+#push-dev:
+#  stage: push-dev-to-dockerhub
+#  only:
+#    - branches
+#  except:
+#    - master
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    # Remove branch images
+#    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+
+#push-tag:
+#  stage: push-tag-to-dockerhub
+#  only:
+#    - tags
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - echo ${DOCKERHUB_REGISTRY_PSW} | docker login -u ${DOCKERHUB_REGISTRY_USER} --password-stdin
+#    # Push tag latest
+#    - docker tag ${CONTAINER_TMP_IMAGE} ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    - docker push ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+#    # Remove branch images
+#    - docker image rm ${DOCKERHUB_CONTAINER_BRANCH_IMAGE}
+    
+#clean_tags:
+#  stage: clean
+#  script:
+#    - docker run --rm -it lumir/remove-dockerhub-tag --user ${DOCKERHUB_REGISTRY_USER} --password ${DOCKERHUB_REGISTRY_PSW} ${DOCKERHUB_REGISTRY_USER}/shakemap4:latest
+#  only:
+#    - master
+
+#cleanup_job:
+#  stage: cleanup
+#  tags:
+#    - sqlx2-srvr_runner
+#  script:
+#    - docker ps
+#    - docker images
+#    - docker image rm ${CONTAINER_TMP_IMAGE}
+#    - docker ps
+#    - docker images
+#  when: always

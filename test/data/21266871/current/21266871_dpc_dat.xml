@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<!DOCTYPE stationlist [
+<!ELEMENT stationlist (station+)>
+<!ATTLIST stationlist
+  created	CDATA	#REQUIRED
+>
+
+<!ELEMENT station (comp+)>
+<!ATTLIST station
+  code		CDATA 			#REQUIRED
+  name		CDATA 			#REQUIRED
+  insttype	CDATA 			#REQUIRED
+  lat		CDATA 			#REQUIRED
+  lon		CDATA 			#REQUIRED
+  source	(SCSN|CGS|NSMP) 	'SCSN'
+  commtype	(DIG|ANA) 		'DIG'
+  dist          CDATA                   '10.0'
+  loc		CDATA			''
+>
+
+<!ELEMENT comp (acc,vel,psa*)>
+<!ATTLIST comp
+  name          CDATA  #REQUIRED
+  originalname  CDATA  #IMPLIED
+>
+
+<!ELEMENT acc EMPTY>
+<!ELEMENT vel EMPTY>
+<!ELEMENT psa03 EMPTY>
+<!ELEMENT psa10 EMPTY>
+<!ELEMENT psa30 EMPTY>
+<!ATTLIST acc
+  value  CDATA         #REQUIRED
+  flag   CDATA        ''
+>
+<!ATTLIST vel
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa03
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa10
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+<!ATTLIST psa30
+  value CDATA          #REQUIRED
+  flag  CDATA         ''
+>
+]>
+<stationlist created="1545749326">
+<station code="BCL" name="Barcellona_P_Gotto" insttype="UNR" lat="38.1827" lon="15.2316" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.04294802" flag="0" />
+<vel value="0.10715900" flag="0" />
+<psa03 value="0.11841035" flag="0" />
+<psa10 value="0.09554872" flag="0" />
+<psa30 value="0.06966586" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.05136388" flag="0" />
+<vel value="0.08222000" flag="0" />
+<psa03 value="0.12404658" flag="0" />
+<psa10 value="0.10531454" flag="0" />
+<psa30 value="0.04910393" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.03811917" flag="0" />
+<vel value="0.06133300" flag="0" />
+<psa03 value="0.06289950" flag="0" />
+<psa10 value="0.09538019" flag="0" />
+<psa30 value="0.01251827" flag="0" />
+</comp>
+</station>
+<station code="BNT" name="Bronte" insttype="UNR" lat="37.7805" lon="14.8444" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.37413049" flag="0" />
+<vel value="0.41918400" flag="0" />
+<psa03 value="0.95361031" flag="0" />
+<psa10 value="0.72403641" flag="0" />
+<psa30 value="0.05603565" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.25483642" flag="0" />
+<vel value="0.26086600" flag="0" />
+<psa03 value="0.81910530" flag="0" />
+<psa10 value="0.50996747" flag="0" />
+<psa30 value="0.10578466" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.16280440" flag="0" />
+<vel value="0.16896400" flag="0" />
+<psa03 value="0.39994601" flag="0" />
+<psa10 value="0.23038660" flag="0" />
+<psa30 value="0.05750508" flag="0" />
+</comp>
+</station>
+<station code="CAT" name="Catania_Piana" insttype="UNR" lat="37.4473" lon="15.0463" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.21899712" flag="0" />
+<vel value="0.38572900" flag="0" />
+<psa03 value="0.25736617" flag="0" />
+<psa10 value="0.87445897" flag="0" />
+<psa30 value="0.17380428" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.17756330" flag="0" />
+<vel value="0.30993800" flag="0" />
+<psa03 value="0.21065525" flag="0" />
+<psa10 value="0.55539200" flag="0" />
+<psa30 value="0.09311105" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.08427208" flag="0" />
+<vel value="0.20355300" flag="0" />
+<psa03 value="0.09582967" flag="0" />
+<psa10 value="0.30175051" flag="0" />
+<psa30 value="0.09134840" flag="0" />
+</comp>
+</station>
+<station code="CON" name="Corleone" insttype="UNR" lat="37.8138" lon="13.3080" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.00601846" flag="0" />
+<vel value="0.00830800" flag="0" />
+<psa03 value="0.00622286" flag="0" />
+<psa10 value="0.01664695" flag="0" />
+<psa30 value="0.00367910" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.00417201" flag="0" />
+<vel value="0.00951500" flag="0" />
+<psa03 value="0.00501771" flag="0" />
+<psa10 value="0.00897132" flag="0" />
+<psa30 value="0.00504101" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00417548" flag="0" />
+<vel value="0.00715800" flag="0" />
+<psa03 value="0.00398672" flag="0" />
+<psa10 value="0.00810937" flag="0" />
+<psa30 value="0.00299344" flag="0" />
+</comp>
+</station>
+<station code="CSM" name="Casteltermini" insttype="UNR" lat="37.5404" lon="13.6273" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.00690586" flag="0" />
+<vel value="0.01408800" flag="0" />
+<psa03 value="0.01058608" flag="0" />
+<psa10 value="0.01378044" flag="0" />
+<psa30 value="0.00871878" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.00725007" flag="0" />
+<vel value="0.01853700" flag="0" />
+<psa03 value="0.01603804" flag="0" />
+<psa10 value="0.01340404" flag="0" />
+<psa30 value="0.01358422" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00547577" flag="0" />
+<vel value="0.00792800" flag="0" />
+<psa03 value="0.00655909" flag="0" />
+<psa10 value="0.00645761" flag="0" />
+<psa30 value="0.00553464" flag="0" />
+</comp>
+</station>
+<station code="FDF" name="Filadelfia" insttype="UNR" lat="38.7891" lon="16.3000" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.00574057" flag="0" />
+<vel value="0.00437900" flag="0" />
+<psa03 value="0.01568606" flag="0" />
+<psa10 value="0.00623543" flag="0" />
+<psa30 value="0.00117428" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.00460135" flag="0" />
+<vel value="0.00340800" flag="0" />
+<psa03 value="0.01923700" flag="0" />
+<psa10 value="0.00641193" flag="0" />
+<psa30 value="0.00090171" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00561926" flag="0" />
+<vel value="0.00227300" flag="0" />
+<psa03 value="0.00409107" flag="0" />
+<psa10 value="0.00213823" flag="0" />
+<psa30 value="0.00126738" flag="0" />
+</comp>
+</station>
+<station code="GEA" name="Gela" insttype="UNR" lat="37.0562" lon="14.3146" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.01771882" flag="0" />
+<vel value="0.02219400" flag="0" />
+<psa03 value="0.04104781" flag="0" />
+<psa10 value="0.03542211" flag="0" />
+<psa30 value="0.00819102" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.01803063" flag="0" />
+<vel value="0.02344100" flag="0" />
+<psa03 value="0.04588708" flag="0" />
+<psa10 value="0.03469343" flag="0" />
+<psa30 value="0.01158079" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.01595005" flag="0" />
+<vel value="0.00950900" flag="0" />
+<psa03 value="0.02488734" flag="0" />
+<psa10 value="0.01685339" flag="0" />
+<psa30 value="0.00440329" flag="0" />
+</comp>
+</station>
+<station code="ISI" name="Ispica" insttype="UNR" lat="36.7977" lon="14.8923" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.03010321" flag="0" />
+<vel value="0.01153900" flag="0" />
+<psa03 value="0.05327482" flag="0" />
+<psa10 value="0.01097066" flag="0" />
+<psa30 value="0.00229848" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.02245794" flag="0" />
+<vel value="0.01060600" flag="0" />
+<psa03 value="0.03736289" flag="0" />
+<psa10 value="0.01172551" flag="0" />
+<psa30 value="0.00234099" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.02177361" flag="0" />
+<vel value="0.00869700" flag="0" />
+<psa03 value="0.03735727" flag="0" />
+<psa10 value="0.01398842" flag="0" />
+<psa30 value="0.00207548" flag="0" />
+</comp>
+</station>
+<station code="LNT" name="Lentini" insttype="UNR" lat="37.2884" lon="15.0022" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.08674021" flag="0" />
+<vel value="0.04056200" flag="0" />
+<psa03 value="0.20919860" flag="0" />
+<psa10 value="0.03153994" flag="0" />
+<psa30 value="0.00592167" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.08127435" flag="0" />
+<vel value="0.03622100" flag="0" />
+<psa03 value="0.19019420" flag="0" />
+<psa10 value="0.02938843" flag="0" />
+<psa30 value="0.00748687" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.04826845" flag="0" />
+<vel value="0.01561400" flag="0" />
+<psa03 value="0.08235460" flag="0" />
+<psa10 value="0.02138494" flag="0" />
+<psa30 value="0.01012690" flag="0" />
+</comp>
+</station>
+<station code="MZZ" name="Milazzo" insttype="UNR" lat="38.2341" lon="15.2451" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.01174963" flag="0" />
+<vel value="0.01769700" flag="0" />
+<psa03 value="0.02996719" flag="0" />
+<psa10 value="0.02313379" flag="0" />
+<psa30 value="0.00645403" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.01382541" flag="0" />
+<vel value="0.01409200" flag="0" />
+<psa03 value="0.03804364" flag="0" />
+<psa10 value="0.01959532" flag="0" />
+<psa30 value="0.00643758" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00951216" flag="0" />
+<vel value="0.01290500" flag="0" />
+<psa03 value="0.01731012" flag="0" />
+<psa10 value="0.01930098" flag="0" />
+<psa30 value="0.00370138" flag="0" />
+</comp>
+</station>
+<station code="NVR1" name="Novara_di_Sicilia_1" insttype="UNR" lat="38.0124" lon="15.1288" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.10125629" flag="0" />
+<vel value="0.08274800" flag="0" />
+<psa03 value="0.24359094" flag="0" />
+<psa10 value="0.11725989" flag="0" />
+<psa30 value="0.02411460" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.12163425" flag="0" />
+<vel value="0.12986800" flag="0" />
+<psa03 value="0.24451718" flag="0" />
+<psa10 value="0.09946288" flag="0" />
+<psa30 value="0.01441613" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.04103913" flag="0" />
+<vel value="0.04369500" flag="0" />
+<psa03 value="0.07883514" flag="0" />
+<psa10 value="0.07804677" flag="0" />
+<psa30 value="0.01478762" flag="0" />
+</comp>
+</station>
+<station code="PLR" name="Palermo" insttype="UNR" lat="38.1509" lon="13.3425" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.03684944" flag="0" />
+<vel value="0.00635100" flag="0" />
+<psa03 value="0.00564614" flag="0" />
+<psa10 value="0.00697852" flag="0" />
+<psa30 value="0.00228795" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.05898933" flag="0" />
+<vel value="0.00669800" flag="0" />
+<psa03 value="0.00529396" flag="0" />
+<psa10 value="0.00927526" flag="0" />
+<psa30 value="0.00414002" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.01713097" flag="0" />
+<vel value="0.00461100" flag="0" />
+<psa03 value="0.00441811" flag="0" />
+<psa10 value="0.00999782" flag="0" />
+<psa30 value="0.00168088" flag="0" />
+</comp>
+</station>
+<station code="PPL1" name="Portopalo_di_Capo_Passero_1" insttype="UNR" lat="36.6857" lon="15.1328" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.02310691" flag="0" />
+<vel value="0.01594500" flag="0" />
+<psa03 value="0.05814025" flag="0" />
+<psa10 value="0.01269160" flag="0" />
+<psa30 value="0.00566188" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.02209676" flag="0" />
+<vel value="0.01112800" flag="0" />
+<psa03 value="0.04217355" flag="0" />
+<psa10 value="0.01616191" flag="0" />
+<psa30 value="0.00270391" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.02847312" flag="0" />
+<vel value="0.00769400" flag="0" />
+<psa03 value="0.03011354" flag="0" />
+<psa10 value="0.01073560" flag="0" />
+<psa30 value="0.00228662" flag="0" />
+</comp>
+</station>
+<station code="PTR" name="Paterno" insttype="UNR" lat="37.5620" lon="14.9077" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.38568451" flag="0" />
+<vel value="0.57788400" flag="0" />
+<psa03 value="0.68817934" flag="0" />
+<psa10 value="0.70949999" flag="0" />
+<psa30 value="0.27052074" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.19468456" flag="0" />
+<vel value="0.29881600" flag="0" />
+<psa03 value="0.41433648" flag="0" />
+<psa10 value="0.30947427" flag="0" />
+<psa30 value="0.14804079" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.18519611" flag="0" />
+<vel value="0.35959200" flag="0" />
+<psa03 value="0.25679426" flag="0" />
+<psa10 value="0.40065149" flag="0" />
+<psa30 value="0.14948487" flag="0" />
+</comp>
+</station>
+<station code="PTT" name="Patti" insttype="UNR" lat="38.1343" lon="14.9751" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.06528710" flag="0" />
+<vel value="0.08605800" flag="0" />
+<psa03 value="0.11416374" flag="0" />
+<psa10 value="0.20260445" flag="0" />
+<psa30 value="0.03095515" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.07375621" flag="0" />
+<vel value="0.09987100" flag="0" />
+<psa03 value="0.12605328" flag="0" />
+<psa10 value="0.27709455" flag="0" />
+<psa30 value="0.03487197" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.04404145" flag="0" />
+<vel value="0.05764000" flag="0" />
+<psa03 value="0.08693745" flag="0" />
+<psa10 value="0.13174275" flag="0" />
+<psa30 value="0.00804498" flag="0" />
+</comp>
+</station>
+<station code="RCU" name="Reggio_Calabria_Universita" insttype="UNR" lat="38.1214" lon="15.6662" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.00876672" flag="0" />
+<vel value="0.01046500" flag="0" />
+<psa03 value="0.01928248" flag="0" />
+<psa10 value="0.01725984" flag="0" />
+<psa30 value="0.00642797" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.00652496" flag="0" />
+<vel value="0.00918200" flag="0" />
+<psa03 value="0.01526163" flag="0" />
+<psa10 value="0.02051287" flag="0" />
+<psa30 value="0.00743750" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00495323" flag="0" />
+<vel value="0.00699800" flag="0" />
+<psa03 value="0.01025209" flag="0" />
+<psa10 value="0.01238705" flag="0" />
+<psa30 value="0.00581773" flag="0" />
+</comp>
+</station>
+<station code="RGS" name="Ragusa" insttype="UNR" lat="36.9248" lon="14.7032" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.04939449" flag="0" />
+<vel value="0.01774700" flag="0" />
+<psa03 value="0.05891656" flag="0" />
+<psa10 value="0.01740139" flag="0" />
+<psa30 value="0.00278955" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.03684484" flag="0" />
+<vel value="0.01694200" flag="0" />
+<psa03 value="0.05713491" flag="0" />
+<psa10 value="0.01228199" flag="0" />
+<psa30 value="0.00483559" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.01954330" flag="0" />
+<vel value="0.00856400" flag="0" />
+<psa03 value="0.02787791" flag="0" />
+<psa10 value="0.00998085" flag="0" />
+<psa30 value="0.00626036" flag="0" />
+</comp>
+</station>
+<station code="SPR" name="Sperone" insttype="UNR" lat="38.2672" lon="15.6019" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.02544473" flag="0" />
+<vel value="0.03306500" flag="0" />
+<psa03 value="0.04945294" flag="0" />
+<psa10 value="0.03944470" flag="0" />
+<psa30 value="0.01688610" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.02100435" flag="0" />
+<vel value="0.03750000" flag="0" />
+<psa03 value="0.04609465" flag="0" />
+<psa10 value="0.02715495" flag="0" />
+<psa30 value="0.01844117" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.02210177" flag="0" />
+<vel value="0.01548600" flag="0" />
+<psa03 value="0.04466988" flag="0" />
+<psa10 value="0.02359982" flag="0" />
+<psa30 value="0.00457417" flag="0" />
+</comp>
+</station>
+<station code="SRC" name="Siracusa" insttype="UNR" lat="37.0896" lon="15.2924" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.02688780" flag="0" />
+<vel value="0.01534100" flag="0" />
+<psa03 value="0.05039267" flag="0" />
+<psa10 value="0.02131136" flag="0" />
+<psa30 value="0.00418376" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.02504718" flag="0" />
+<vel value="0.01052600" flag="0" />
+<psa03 value="0.02586958" flag="0" />
+<psa10 value="0.02382957" flag="0" />
+<psa30 value="0.00365590" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.01442277" flag="0" />
+<vel value="0.00658600" flag="0" />
+<psa03 value="0.02174479" flag="0" />
+<psa10 value="0.01211806" flag="0" />
+<psa30 value="0.00248939" flag="0" />
+</comp>
+</station>
+<station code="SRT" name="Sortino" insttype="UNR" lat="37.1665" lon="15.0542" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.17579023" flag="0" />
+<vel value="0.05953200" flag="0" />
+<psa03 value="0.34944643" flag="0" />
+<psa10 value="0.04959419" flag="0" />
+<psa30 value="0.00776567" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.17055708" flag="0" />
+<vel value="0.05518800" flag="0" />
+<psa03 value="0.18594544" flag="0" />
+<psa10 value="0.04459262" flag="0" />
+<psa30 value="0.00714409" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.07236036" flag="0" />
+<vel value="0.02609100" flag="0" />
+<psa03 value="0.09815615" flag="0" />
+<psa10 value="0.02028598" flag="0" />
+<psa30 value="0.01190610" flag="0" />
+</comp>
+</station>
+<station code="SVN" name="Santa_Venerina" insttype="UNR" lat="37.6830" lon="15.1299" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="5.20473490" flag="0" />
+<vel value="1.80501400" flag="0" />
+<psa03 value="7.18881157" flag="0" />
+<psa10 value="2.84750161" flag="0" />
+<psa30 value="0.18414028" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="3.44741377" flag="0" />
+<vel value="1.62877700" flag="0" />
+<psa03 value="6.28288205" flag="0" />
+<psa10 value="1.39254593" flag="0" />
+<psa30 value="0.22603145" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="2.75997038" flag="0" />
+<vel value="1.06482700" flag="0" />
+<psa03 value="2.38085079" flag="0" />
+<psa10 value="2.02465916" flag="0" />
+<psa30 value="0.13496644" flag="0" />
+</comp>
+</station>
+<station code="TOR" name="Tortorici" insttype="UNR" lat="38.0443" lon="14.8146" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.02332817" flag="0" />
+<vel value="0.03782600" flag="0" />
+<psa03 value="0.04597508" flag="0" />
+<psa10 value="0.06051814" flag="0" />
+<psa30 value="0.00939923" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.02213233" flag="0" />
+<vel value="0.02691600" flag="0" />
+<psa03 value="0.04103861" flag="0" />
+<psa10 value="0.03747756" flag="0" />
+<psa30 value="0.01058966" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.01131364" flag="0" />
+<vel value="0.01578100" flag="0" />
+<psa03 value="0.03021441" flag="0" />
+<psa10 value="0.03883150" flag="0" />
+<psa30 value="0.00651341" flag="0" />
+</comp>
+</station>
+<station code="TPA" name="Tropea" insttype="UNR" lat="38.6736" lon="15.8891" netid="IT" source="Italian Strong Motion Network (RAN)" commtype="DIG">
+<comp name="--.HGE">
+<acc value="0.01075502" flag="0" />
+<vel value="0.00756200" flag="0" />
+<psa03 value="0.02122837" flag="0" />
+<psa10 value="0.01417258" flag="0" />
+<psa30 value="0.00241131" flag="0" />
+</comp>
+<comp name="--.HGN">
+<acc value="0.01943813" flag="0" />
+<vel value="0.00722700" flag="0" />
+<psa03 value="0.02197627" flag="0" />
+<psa10 value="0.01159806" flag="0" />
+<psa30 value="0.00242592" flag="0" />
+</comp>
+<comp name="--.HGZ">
+<acc value="0.00884418" flag="0" />
+<vel value="0.00357300" flag="0" />
+<psa03 value="0.00966802" flag="0" />
+<psa10 value="0.00732345" flag="0" />
+<psa30 value="0.00115047" flag="0" />
+</comp>
+</station>
+
+</stationlist>
