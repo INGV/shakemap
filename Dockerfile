@@ -1,15 +1,23 @@
 FROM debian:buster-slim
 
-#MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
+MAINTAINER Valentino Lauciani <valentino.lauciani@ingv.it>
+
 
 #
 ENV DEBIAN_FRONTEND=noninteractive
 ENV INITRD No
 ENV FAKE_CHROOT 1
 
-# Set Shakemap checkout: https://github.com/usgs/shakemap.git
-#680fce15728e1d06c1616f4bd18d5dafb030de9a
-ENV SHAKEMAP_COMMIT=a12d0dc5204e3dff1f7848fcea4c29836cf15d2e
+##### DEPRECATED - Set Shakemap checkout: https://github.com/usgs/shakemap.git
+#a12d0dc5204e3dff1f7848fcea4c29836cf15d2e #v4.1.3
+#8dafaa2589224d78d0f4343dcc675fa6644de2ea #v4.1.4
+#f23f1aeb252670b5eee25fd3529a78b7ffacd666
+
+##### Set Shakemap checkout: https://github.com/DOI-USGS/ghsc-esi-shakemap
+# v4.1.5 (but doesn't work)
+#ed31eee91a20b3417eef42f510d19905c9d6067d
+# last commit after v4.1.5
+ENV SHAKEMAP_COMMIT=f28a82fbd59892f6503796be09f3ad089765c731
 
 # Make RUN commands use `bash --login`:
 SHELL ["/bin/bash", "--login", "-c"]
@@ -120,7 +128,7 @@ RUN mkdir gitwork \
     && cd gitwork \
     && git config --global user.email "valentino.lauciani@ingv.it" \
     && git config --global user.name "Valentino Lauciani" \
-    && git clone https://github.com/usgs/shakemap.git shakemap_src \
+    && git clone https://github.com/DOI-USGS/ghsc-esi-shakemap shakemap_src \
     && cd shakemap_src \
     && git checkout ${SHAKEMAP_COMMIT}
 
@@ -150,12 +158,18 @@ RUN bash install.sh
 
 # 1) Source variables
 # 2) Add python modules 'basemap' and 'seaborn'. Issue: #20
+# 3) Add python module 'alpha-shapes' as suggested from Bruce Worden (workaround email 29-Nov-2023. It should be romoved in version 4.2.0)
+# 4) Install and configure 'strec_cfg'
 RUN . ${HOMEDIR_USER}/miniconda/etc/profile.d/conda.sh \
     && conda info --envs \
     && conda activate shakemap \
+    && sm_profile -c world -a -n \ 
+    && pip install alpha-shapes \
     && pip install basemap \
     && pip install seaborn \
-    && sm_profile -c world -a -n
+    && mkdir ${HOMEDIR_USER}/strec_data \
+    && pip install --upgrade usgs-strec \
+    && strec_cfg update --datafolder ${HOMEDIR_USER}/strec_data --slab --gcmt
 
 # Copy own libs
 #COPY ./ext/gmice.py ${HOMEDIR_USER}/gitwork/shakemap_src/shakelib/gmice/
@@ -175,14 +189,6 @@ RUN PATHTUSA=$( find ${HOMEDIR_USER}/miniconda/ -name tusa_langer_2016.py ) \
 #
 WORKDIR ${HOMEDIR_USER}
 
-# Create shakemap_dat
-RUN mkdir -p shakemap_data/topo
-RUN mkdir -p shakemap_data/vs30
-RUN curl -o shakemap_data/vs30/Hellas-geology_18-30_34-43_30s_NoNan.grd "https://webservices.ingv.it/Hellas-geology_18-30_34-43_30s_NoNan.grd"
-RUN curl -o shakemap_data/vs30/Hglobal_italy_vs30_clobber.grd "https://webservices.ingv.it/global_italy_vs30_clobber.grd"
-RUN curl -o shakemap_data/topo/topo_30sec.grd "https://webservices.ingv.it/topo_30sec.grd"
-RUN chown -R ${USER_NAME}:${GROUP_NAME} shakemap_data/
-
 #
 RUN echo "conda activate base" >> ${HOMEDIR_USER}/.bashrc
 RUN echo "source activate shakemap" >> ${HOMEDIR_USER}/.bashrc
@@ -190,4 +196,3 @@ ENV PATH ${HOMEDIR_USER}/miniconda/envs/env/bin:$PATH
 
 # Set entrypoint
 ENTRYPOINT ["./entrypoint.sh"]
-#CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
