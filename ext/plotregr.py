@@ -1,25 +1,26 @@
 # stdlib
+import os.path
 import concurrent.futures as cf
 import json
-import os.path
-
-import matplotlib.pyplot as plt
-import numpy as np
 
 # third party
 from configobj import ConfigObj
-from esi_utils_io.smcontainers import ShakeMapOutputContainer
+import matplotlib.pyplot as plt
+import numpy as np
+
+# neic imports
+from impactutils.io.smcontainers import ShakeMapOutputContainer
 from openquake.hazardlib import imt
 
 # local imports
-from shakelib.utils.imt_string import oq_to_file
-from shakemap.coremods.base import Contents, CoreModule
 from shakemap.utils.config import (
-    config_error,
     get_config_paths,
     get_configspec,
     get_custom_validator,
+    config_error,
 )
+from .base import CoreModule, Contents
+from shakelib.utils.imt_string import oq_to_file
 
 
 class PlotRegr(CoreModule):
@@ -310,8 +311,10 @@ def make_plots(adict):
         plt.ylabel("PGV ln(cm/s)")
     else:
         plt.ylabel(myimt + " ln(g)")
-# the following line restricts the plotting to 300 km max distance (AM, 6/2020)
+
+# the following line restricts the plotting to 300 km max distance (AM, LF, 6/2020)
     plt.xlim(plt.xlim()[0], 300.0)
+
     plt.legend()
 
     fileimt = oq_to_file(myimt)
