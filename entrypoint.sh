@@ -71,30 +71,30 @@ fi
 
 
 
-set -e
-echo "UID=${UID} (from host)"
-echo "GID=${GID} (from host)"
-echo "GROUP_NAME=${GROUP_NAME} (from Dockerfile)"
-echo "USER_NAME=${USER_NAME} (from Dockerfile)"
-if id "${USER_NAME}" &>/dev/null; then
-    echo "Start usermod:"
-    time usermod -u "${UID}" -g ${GID} ${USER_NAME}
-    echo "Done"
-else
-    echo "The user \"${USER_NAME}\" doesn't exist"
-    exit 1
-fi
+#set -e
+#echo "UID=${UID} (from host)"
+#echo "GID=${GID} (from host)"
+#echo "GROUP_NAME=${GROUP_NAME} (from Dockerfile)"
+#echo "USER_NAME=${USER_NAME} (from Dockerfile)"
+#if id "${USER_NAME}" &>/dev/null; then
+#    echo "Start usermod:"
+#    time usermod -u "${UID}" -g ${GID} ${USER_NAME}
+#    echo "Done"
+#else
+#    echo "The user \"${USER_NAME}\" doesn't exist"
+#    exit 1
+#fi
 
-echo "Start chown:"
-time chown -R ${UID}:${GID} /home/${USER_NAME} &
-echo "Done"
+#echo "Start chown:"
+#time chown -R ${UID}:${GID} /home/${USER_NAME} &
+#echo "Done"
 
-whoami
+#whoami
 
 #
-su - ${USER_NAME}
+#su - ${USER_NAME}
 
-whoami
+#whoami
 
 
 
